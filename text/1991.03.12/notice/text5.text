@@ -1,0 +1,86 @@
+\cpage=56;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;\ICONE icozone;11 Les zones de travail\A;TEXT dispose de \bold;dix zones de travail\roman; indpendantes. Chacune peut 
+contenir un texte ou une partie de texte d'une longueur quelconque, jusqu' concurrence 
+d'une certaine taille dtermine lors du dmarrage de TEXT.Ces zones sont utilises pour les oprations \bold;dplace\roman; et 
+\bold;duplique\roman; avec la souris, comme des tampons intermdiaires. 
+Elles sont galement trs utiles pour travailler simultanment sur plusieurs 
+textes, pour les fusionner, pour dplacer une partie de l'un dans 
+l'autre, etc.L'cran montre toujours une \bold;zone principale\roman;, et ventuellement 
+une \bold;zone secondaire\roman; en bas. Normalement, TEXT utilise la zone principale 
+numro zro (voir dans la premire ligne en vido inverse). Le clavier et la souris 
+agissent uniquement dans la zone principale, en haut.\image textczps,2,=;\NOUVEAU;Pour modifier les zones montres, appuyez sur le \bold;bouton du 
+milieu\roman; de la souris, pour le relcher dans la case intitule \bold;zones\roman;.\image dboxzone,2,=;En regard de chaque zone figure le \bold;nombre de caractres utiliss\roman; 
+et ventuellement le \bold;nom du fichier\roman; associ.Le rectangle en traits pleins indique la zone principale (zro dans cet exemle), 
+et le rectangle en pointills la zone secondaire (inutilise dans cet exemple).\bold;Pour changer de zone principale ou secondaire, il suffit de \ital;tirer\bold; 
+le rectangle correspondant avec la souris, pour l'amener sur la zone voulue\roman;. 
+La figure ci-dessous montre comment utiliser la zone principale numro trois, 
+et la zone secondaire numro six:\image textdzon,2,=;Il est galement possible de changer de zone sans utiliser la souris:\D;(SHOW-0..9)\F;\ind 30mm;Permet de travailler dans la zone spcifie. Une 
+pression sur \D;(SHOW-5)\F; (par exemple) partage l'cran en deux parties. La 
+partie suprieure montre la zone principale cinq, et la partie infrieure montre 
+la zone zro anciennement utilise. Une nouvelle pression sur \D;(SHOW-5)\F; 
+ne montre plus que la zone principale numro cinq.\D;(COPY-0..9)\F;\ind 30mm;Spcifie la \bold;zone secondaire\roman;  utiliser.Ceci vous permet dj de travailler sur plusieurs textes simultanment, mais 
+ce n'est pas encore trs utile. Il faut encore pouvoir copier ou transfrer une 
+partie d'une zone dans une autre, ce qu'explique le paragraphe suivant.\T;11.1 Les copies et transferts\A;La touche super-shift \D;(COPY)\F; associe aux touches flches \D;(F)\F;, 
+\D;(G)\F;, \D;(C)\F;, ... copie un \bold;caractre\roman;, un \bold;mot\roman;, 
+une \bold;ligne\roman;, ... dans la zone secondaire (rceptrice).\ATTENTION;\R;Lorsqu'il n'existe pas de zone secondaire rceptrice, donc 
+que l'cran n'est pas partag en deux, TEXT utilise la \bold;prochaine zone vide\roman;.Voil ce qui se passe aprs avoir appuy sur \D;(COPY-G)\F; (copie d'un mot):1)\ind 8mm;L'cran se \bold;partage en deux\roman;, la partie infrieure montre 
+la zone vide numro un.2)\ind 8mm;Le mot  droite du curseur est \bold;copi\roman; dans la zone 
+secondaire numro un.\image textcopm,2,=;De nouvelles pressions sur \D;(COPY-G)\F;, \D;(COPY-F)\F;, etc. ajoutent d'autres 
+mots au premier dans la zone secondaire rceptrice numro un.\ATTENTION;\R;La touche \D;(COPY)\F; copie \bold;sans altrer l'original\roman;, 
+alors que les deux touches \D;(COPY-KILL)\F; \bold;copient puis suppriment\roman; 
+(dplacent) les caractres.Il est amusant de constater l'analogie entre les touches super-shift 
+\D;(CURSOR)\F; et \D;(COPY)\F;:\D;(CURSOR-flche)\F;\ind 47mm;est quivalent   \D;(COPY-flche)\F;, et\D;(CURSOR-KILL-flche)\F;\ind 47mm;est quivalent   \D;(COPY-KILL-flche)\F;avec une \bold;copie\roman; dans la zone secondaire en plus, dans les deux cas.Voici un \bold;bref rsum\roman; des possibilits de copies:\D;(COPY-F)\F;\ind 30mm;Copie un caractre.\D;(COPY-G)\F;\ind 30mm;Copie jusqu' la fin du mot.\D;(COPY-C)\F;\ind 30mm;Copie jusqu' la fin de la ligne.\D;(COPY-X)\F;\ind 30mm;Copie jusqu' la fin de la quatrime ligne.\D;(COPY-Y)\F;\ind 30mm;Copie jusqu' la fin de la page.\D;(COPY-V)\F;\ind 30mm;Copie jusqu' la fin du texte.\D;(COPY-T)\F;\ind 30mm;Copie toute la zone.La touche \D;(KILL)\F; peut s'ajouter  chacune des sept oprations ci-dessus. 
+Le lecteur attentif aura remarqu qu'il n'est pas possible de copier en arrire 
+(en remontant) dans le texte.\ATTENTION;\R;Un caractre est copi avec son \bold;mode\roman; (soulign, exposant, etc.) 
+et son \bold;graphisme\roman; (fond, titre, vidence, etc.).Toutes ces oprations fonctionnent \bold;depuis\roman; la zone principale 
+\bold;vers\roman; la zone secondaire. Il existe aussi une possibilit fort utile 
+de copier \bold;en bloc\roman; toute une zone secondaire dans la zone principale.\D;(COPY-CTRL-0..9)\F;\ind 35mm;Copie la zone spcifie (mme s'il elle n'est pas visible) 
+dans la zone principale.\NOUVEAU;\D;(COPY-UNDO)\F;\ind 35mm;Copie la \bold;zone secondaire actuellement 
+utilise\roman; dans la zone principale.\image textcctr;Le contenu de la zone secondaire n'est pas dtruit. Plusieurs \D;(COPY-CTRL)\F; 
+ou \D;(COPY-UNDO)\F; permettent donc de dupliquer plusieurs fois un mme texte. 
+Si la touche \D;(KILL)\F; est utilise en plus, la zone secondaire est 
+\bold;copie puis dtruite\roman;.\T;11.2 Exemples\A;Il existe beaucoup d'utilisations possibles des zones de travail;  chacun 
+d'imaginer comment en tirer le meilleur parti. Nous donnerons tout de mme deux 
+exemples.\bold;1)\ind 6mm;\_Comment dplacer un mot ou un paragraphe?\_\roman;Avec la souris direz-vous! En effet, c'est plus rapide ainsi, nous l'avons 
+dit et re-dit (voir au paragraphe4.4.2). Mais imaginez un instant que la petite 
+bte soit malade ou casse?\L;Positionnez le curseur au dbut du mot ou du paragraphe  dplacer.\L;Appuyez sur \D;(COPY-KILL-G)\F; jusqu' ce que vous ayez copi tout 
+ce qu'il faut. TEXT utilisera vraisemblablement la zone numro un comme zone 
+rceptrice.\L;Positionnez le curseur o doivent revenir les caractres copis.\L;Appuyez sur \D;(COPY-KILL-CTRL-1)\F; (bravo  celui qui y arrive 
+avec une seule main!), ou plus simplement sur \D;(COPY-KILL-UNDO)\F;.\bold;2)\ind 6mm;\_Comment insrer plusieurs mots identiques\_\ind 6mm;\_sans les retaper chaque fois?\_\roman;\L;Appuyez sur \D;(SHOW-1)\F; et tapez le premier nom, puis \D;(SHOW-2)\F; 
+et tapez le second nom, etc. Par exemple:\ind 30mm;\D;(SHOW-1)\F; Wolfgang Amadeus Mozart\ind 30mm;\D;(SHOW-2)\F; F.X. Sssmayr\ind 30mm;\D;(SHOW-3)\F; "Introitus"\ind 30mm;\D;(SHOW-4)\F; "Kyrie"\ind 30mm;etc.\L;Vous pouvez ainsi introduire jusqu' \bold;neuf noms ou phrases 
+compltes\roman;. 
+Lorsque vous les avez tous entrs, appuyez deux fois sur \D;(SHOW-0)\F; (zro).Il ne reste plus qu' taper votre texte. Appuyez sur \D;(COPY-CTRL-1)\F; pour 
+\ital;Wolfgang Amadeus Mozart\roman;, \D;(COPY-CTRL-2)\F; pour \ital;F.X. Sssmayr\roman;, 
+etc. C'est tout de mme plus rapide ainsi, et il n'y a plus de risque de faute 
+de frappe!\ATTENTION;\R;Il est important de remarquer que toutes les fonctions de 
+copies s'appliquent galement aux \bold;rgles\roman; et aux \bold;images\roman;.Vous pouvez, par exemple, mettre plusieurs rgles dans diffrentes zones. Chaque 
+rgle correspondra  une mise en page spcifique. Elles pourront tre insres dans 
+le texte avec \D;(COPY-CTRL-0..9)\F; de la mme faon qu'un nom. Plus besoin de 
+remettre chaque fois les tabulateurs!\T;\NOUVEAU;\ICONE icofrapp;12 La frappe\A;Si vous ajoutez un "s" oubli  un mot en italique, cette lettre prendra 
+automatiquement le mme graphisme que le reste du mot. Ou encore, vous ajoutez 
+un mot dans un titre, et ce mot aura les mmes grands caractres que le reste 
+du titre.Ce mode de frappe est appel \bold;environnant\roman;. Il est possible de le 
+modifier en appuyant sur le \bold;bouton du milieu\roman; de la souris, pour le 
+relcher dans la case \bold;frappe\roman;. La touche \D;(F8)\F; intitule 
+\D;(Frap.)\F; a le mme effet:\image dboxfrap,3,=;En \ital;cliquant\roman; avec la souris dans \bold;Evidence\roman;, tous les 
+caractres frapps seront mis en vidence, sans se soucier du contexte.Prenons un exemple concret pour illustrer cette possibilit: vous dsirez frapper 
+la formule mathmatique suivante:\ind 30mm;(a+b)\up;\pug;\ur07;2\pog;\down;=
+a\up;\pug;\ur07;2\pog;\down;+2ab+b\up;\pug;\ur07;2\pog;\down;Tapez tout d'abord la formule sans les exposants, avec le caractre de votre 
+choix:\ind 30mm;(a+b)=a+2ab+bLes trois exposants \up;\pug;\ur07;2\pog;\down; sont plus petits que le reste 
+de la formule. Il faut dont crer un nouveau graphisme de caractre (voir paragraphe4.4.5) 
+que nous appellerons \bold;Petit\roman;.\ital;Cliquez\roman; dans la bote de dialogue \bold;frappe\roman; sur 
+\bold;exposant\roman; (dans la premire colonne), et sur \bold;Petit\roman; (dans 
+la deuxime colonne). Il ne reste plus qu' dplacer trois fois le curseur au bon endroit, 
+et  frapper sur le chiffre "2"!Le changement du mode de frappe peut se faire \bold;directement au clavier\roman;, 
+sans passer par la bote de dialogue, pour les utilisateurs avancs:\D;(PROGRA-_)\F;\ind 30mm;mode soulign\D;(PROGRA-,)\F;\ind 30mm;mode exposant\D;(PROGRA-.)\F;\ind 30mm;mode indice\D;(PROGRA-espace)\F;\ind 30mm;mode normal (annule les modes soulign, exposant ou indice)\D;(PROGRA-0)\F;\ind 30mm;premier graphisme "Fond"\D;(PROGRA-1)\F;\ind 30mm;deuxime graphisme "Evidence" (par exemple)...\D;(PROGRA-9)\F;\ind 30mm;dernier graphisme\D;(PROGRA-UNDO)\F;\ind 30mm;remet le mode \bold;environnant\roman;\T;\ICONE icodef;13 Les dfinitions globales\A;Appuyez sur le \bold;bouton du milieu\roman; de la souris, pour le relcher 
+dans la case \bold;dfinitions\roman;. La touche \D;(F4)\F; intitule 
+\D;(Df.)\F; a le mme effet:\image dboxdef,3,=;L'extension est ajoute automatiquement derrire tous les noms de fichiers 
+que vous tapez avec \D;(Prend)\F;, \D;(Sauve)\F; ou \D;(Modif)\F; (voir paragraphe14).\L;\bold;affiche les images\roman;\demi;S'il n'y a pas de croix, les images sont reprsentes par une surface grise.\L;\bold;affiche les rgles\roman;\demi;S'il n'y a pas de croix, les rgles ne sont pas affiches, bien qu'elles conservent 
+leurs fonctions. A n'utiliser que pour vrifier l'aspect du texte.\L;\bold;affiche les fins de paragraphes\roman;\demi;Affiche une petite flche chaque fois que la touche \D;(RETURN)\F; a t utilise.\L;\bold;affiche les cales\roman;\demi;Affiche un rectangle blanc entre les mots dans le mode de mise en page align.\NOUVEAU;\L;\bold;affiche les tabulateurs\roman;\demi;Affiche une flche horizontale pointille chaque fois que la touche \D;(TAB)\F; 
+a t utilise.\NOUVEAU;Toutes ces oprations sont accessibles \bold;directement au clavier\roman;, 
+ce qui acclre le travail pour l'utilisateur avanc:\D;(SHOW)\F; ou \D;(KILL-I)\F;\ind 45mm;Affiche ou cache les \bold;images\roman;\D;(SHOW)\F; ou \D;(KILL-R)\F;\ind 45mm;Affiche ou cache les \bold;rgles\roman;\D;(SHOW)\F; ou \D;(KILL-RETURN)\F;\ind 45mm;Affiche ou cache les \bold;fins de 
+paragraphes\roman;\D;(SHOW)\F; ou \D;(KILL-C)\F;\ind 45mm;Affiche ou cache les \bold;cales\roman;\D;(SHOW)\F; ou \D;(KILL-TAB)\F;\ind 45mm;Affiche ou cache les \bold;tabulateurs\roman;\D;(SHOW-espace)\F;\ind 45mm;Affiche tous les caractres spciaux.\D;(KILL-espace)\F;\ind 45mm;Cache tous les caractres spciaux, pour \bold;montrer le 
+texte tel qu'il sera imprim\roman;.\NOUVEAU;\L;\bold;ascenseur horizontal\roman;\demi;Met un ascenseur horizontal en bas de l'cran. Ceci est utile lorsque le papier 
+de l'imprimante est plus large que l'cran.\L;\bold;aide pour situer le curseur\roman;\demi;Affiche une grande croix cercle pour aider  situer le curseur lors de certains 
+dplacements.\NOUVEAU;\L;\bold;mmorise la dernire case\roman;\demi;Remet la souris dans la dernire case utilise des menus et sous-menus, plutt 
+que de la mettre toujours dans la case vide en haut. Ceci est trs utile pour 
+toutes les oprations rptitives.

@@ -1,0 +1,121 @@
+\cpage=30;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;\ICONE icoregle;7 Les rgles\A;Le rectangle allong au dbut de votre texte est une \bold;rgle\roman;. 
+C'est l que se situent les commandes permettant la mise en page du texte.\image regle,2;On y trouve une \bold;chelle gradue en centimtres\roman; avec, juste en dessous, 
+les indicateurs de \bold;marges\roman; et les \bold;tabulateurs\roman;.\image textregl,2;\T;\ICONE icomgd;7.1 Les marges et le renfoncement\A;Les deux triangles aux extrmits de la rgle spcifient la position des 
+\bold;marges gauche et droite\roman;. En fait, le triangle de gauche est compos de 
+\bold;deux demi-triangles\roman; pour la marge et le \ital;renfoncement\roman;.\image textrmar,2,=;Le \ital;renfoncement\roman; \bold;met en retrait la premire ligne 
+de chaque paragraphe\roman;:\image textrmax,2;Il est  noter que cette indication peut parfaitement se 
+trouver \bold; gauche de la marge gauche\roman;, comme le montre cet exemple:\image textrmay,2;\ATTENTION;\R;Le renfoncement ngatif est utile pour raliser des \bold;indentations\roman;, 
+comme le montre l'exemple ci-dessous. Remarquez l'utilisation du cadratin 
+\D;(CTRL-espace)\F; jusqu' la marge gauche temporaire.\image textrmai,2;Donc, pour \bold;dplacer\roman; l'une de ces trois indications (renfoncement, 
+marge gauche ou marge droite), il suffit de la montrer 
+avec la souris, puis, \bold;tout en maintenant le bouton de gauche press\roman;, 
+de la dplacer  l'endroit souhait. Sitt le bouton relch, le texte est remis 
+en page.\image textrmad,2,=;\NOUVEAU;Une autre faon de mettre en retrait le dbut de chaque paragraphe 
+consiste  laisser colls les deux demi-triangles \ital;marge gauche\roman; et 
+\ital;renfoncement\roman;, et  poser un \bold;tabulateur droite\roman; (voir 
+paragraphe7.2). Il faut alors appuyer sur \D;(TAB)\F;  chaque dbut de 
+paragraphe. De cette faon, \bold;les titres ne sont pas renfoncs\roman;.\image textrmat,2,=;\T;\ICONE icobtab;7.2 Les tabulateurs\A;Les \bold;colonnes de tabulations\roman; sont situes entre les marges gauche et droite. 
+Pour \bold;dplacer\roman; une colonne de tabulation, il faut procder exactement comme pour 
+dplacer une marge, avec le \bold;bouton de gauche\roman; de la souris.\image textrtad,2,=;Les quatre icnes en haut  gauche de la rgle sont des \bold;botes de tabulateurs 
+de rserve\roman;. Au dpart, chacune des quatre botes contient vingt tabulateurs. 
+Pour \bold;ajouter une nouvelle colonne de tabulation\roman;, il faut simplement \bold;sortir 
+un tabulateur de sa bote, et l'amener  sa place\roman; sous la graduation de la rgle, 
+toujours avec le bouton de gauche. Pour \bold;supprimer une colone de tabulation\roman;, 
+il faut \bold;prendre le tabulateur et le remettre dans sa bote\roman;. Vous 
+voyez qu'avec la souris, tout devient simple!\image textrtaa,2,=;Nous avons dit qu'il existe \bold;quatre sortes\roman; de tabulateurs. Voyons  quoi ils 
+servent:\image textrtas,2,=;Le \bold;tabulateur droite\roman; est le plus utilis. Il correspond au tabulateur 
+d'une machine  crire. Le \bold;tabulateur gauche\roman; pousse les caractres 
+vers la gauche, afin de les aligner sur le bord de droite. Le \bold;tabulateur 
+centr\roman; rpartit la moiti des caractres de chaque ct. 
+Le \bold;tabulateur dcimal\roman; est utile 
+pour mettre des nombres en colonne. Il seront alors aligns sur le \bold;point\roman; 
+ou sur la \bold;virgule\roman;.Voici un exemple d'utilisation des diffrents tabulateurs:\image textrtax,2,8mm;Pour \bold;modifier le type d'une colonne de tabulation\roman; existante, la 
+premire ide qui vient  l'esprit est de ranger le tabulateur dans sa bote, 
+puis d'en prendre un du nouveau type. Ceci est bien sr possible, mais il existe 
+un raccourci utile:Sortez un tabulateur de la bote adquate et amenez-le juste sur le tabulateur 
+ modifier (c'est tout). TEXT a rang l'ancien pour vous!\image textrtam,2,=;\ATTENTION;\R;S'il n'y a \bold;pas assez de place\roman; entre deux colonnes de 
+tabulation pour caser tous les caractres, TEXT pousse un peu vers la droite.\NOUVEAU;Les tabulateurs peuvent tre visualiss ou cachs en appuyant sur 
+le \bold;bouton du milieu\roman; de la souris. Tout en le maintenant press, dplacez 
+la souris dans la case du menu \bold;dfinition\roman;. La touche \D;(F4)\F; intitule 
+\D;(Df.)\F; a le mme effet:\image dboxdeft,4,15mm;\T;\ICONE icojustd;7.3 Les modes de mise en page\A;Les quatre modes de mise en page permettent de modifier la prsentation d'un 
+texte. Un \ital;clic\roman; de la souris dans l'icne correspondante suffit.\image textrjum,2,=;Voici un petit texte \bold;align\roman;:\pug;\pum;\tb12;\justif;\marge #+20mm;\large #-40mm;Huitante ou quatre-vingts? C'est la question que l'on pose souvent lorsqu'il 
+s'agit de composer le nombre 80 en lettres. Le terme quatre-vingts 
+ne doit pas clipser le mot huitante, qui plonge de profondes racines 
+dans notre terre romande, dans quelques rgions franaises et en Wallonie.\pom;\pog;\marge #-20mm;\large #+40mm;Toujours le mme texte, mais en \bold;drapeau  droite\roman;:\pug;\pum;\tb12;\drapg;\marge #+20mm;\large #-40mm;Huitante ou quatre-vingts? C'est la question que l'on pose souvent lorsqu'il 
+s'agit de composer le nombre 80 en lettres. Le terme quatre-vingts 
+ne doit pas clipser le mot huitante, qui plonge de profondes racines 
+dans notre terre romande, dans quelques rgions franaises et en Wallonie.\pom;\pog;\marge #-20mm;\large #+40mm;En \bold;drapeau  gauche\roman;:\pug;\pum;\tb12;\marge #+20mm;\hspace 3mm;Huitante ou quatre-vingts? C'est la\hspace 15mm;question que l'on pose souvent\hspace 15.5mm;lorsqu'il s'agit de composer le\hspace 13mm;nombre 80 en lettres. Le terme\hspace 2.5mm;quatre-vingts ne doit pas clipser le\hspace 20.5mm;mot huitante, qui plonge de\hspace 7mm;profondes racines dans notre terre\hspace 13mm;romande, dans quelques rgions\hspace 25mm;franaises et en Wallonie.\pom;\pog;\marge #-20mm;Et \bold;centr\roman; pour terminer:\pug;\pum;\tb12;\centre;\marge #+20mm;\large #-40mm;Huitante ou quatre-vingts? C'est laquestion que l'on pose souventlorsqu'il s'agit de composer lenombre 80 en lettres. Le termequatre-vingts ne doit pas clipser lemot huitante, qui plonge deprofondes racines dans notre terreromande, dans quelques rgionsfranaises et en Wallonie.\pom;\pog;\marge #-20mm;\large #+40mm;En justification \bold;aligne\roman;, TEXT doit ajouter des cales entre certains 
+mots pour aligner la marge de droite.\image textcale,2,=;Les cales peuvent tre visualises ou caches en appuyant sur le 
+\bold;bouton du milieu\roman; de la souris. Tout en le maintenant press, dplacez 
+la souris dans la case du menu intitule \bold;dfinition\roman;. 
+La touche fonction \D;(F4)\F; intitule \D;(Df.)\F; a le mme effet:\image dboxdefc,4,15mm;\T;7.3.1 Les divisions dans les mots\A;Les \bold;ciseaux\roman; indiquent  TEXT s'il peut couper dans les mots ou 
+pas. En gnral, la mise en page est meilleure lorsque TEXT peut diviser les mots, 
+surtout avec des gros caractres ou si les lignes sont troites.\image textrjuc,2,=;La division automatique des mots est un problme complexe. Les rgles  respecter 
+varient fondamentalement d'une langue  l'autre (franais, anglais et allemand 
+par exemple). L'algorithme utilis par TEXT est bien entendu adapt  la langue franaise.Gnralement, les divisions se font \bold;syllabiquement\roman;. Par exemple, 
+le mot \ital;principe\roman; pourra tre divis en \ital;prin-ci-pe\roman;, selon 
+son pellation.Pour d'autres mots, les divisions se font \bold;tymologiquement\roman;. Par 
+exemple, on ne divisera pas \ital;d-sa-veu\roman; d'aprs l'pellation, mais 
+\ital;ds-aveu\roman; selon l'origine du mot.L'opinion n'est pas unanime sur cette question. Il n'est gure possible de 
+s'en tenir rigoureusement  l'une plutt qu' l'autre de ces formes de division. 
+En principe, TEXT divise les mots syllabiquement. Toutefois, certains mots 
+contenus dans un \bold;dictionnaire d'exceptions\roman; sont diviss tymologiquement. 
+Voici un extrait de ce dictionnaire:\newtab 20mm,50mm,80mm;\ital;	atmo-sphre	in-actif	non-obstant	ds-aveu	in-imaginable	pr-occuper	ds-habiller	in-stable	sub-ordonner	ds-obliger	mal-adroit	sur-abondant	ds-union	mal-entendu	trans-action	extra-ordinaire	ms-aventure	tl-scope\roman;Voici quelques exemples de \bold;coupures erronnes\roman; que ne sont pas choisies 
+par TEXT:\ital;	annu-elle	d-j	influ-ence	appro-ximatif	d'a-bord	lu-xurieux	a-vare	deux-ime	moy-ennant	croy-ance	-preuve	si-te\roman;Les mots contenant dj un tiret sont diviss (si ncessaire) uniquement  
+l'endroit du tiret. S'ils contiennent plusieurs tirets, ils seront diviss 
+uniquement  l'endroit du premier tiret. Exemples:\ital;	aime-/t-il	viendra-/t-on	c'est-/-dire\roman;En \bold;mise en page aligne\roman;, TEXT doit augmenter les espaces entre 
+les mots pour que les marges gauche et droite soient alignes. Si ces espaces 
+deviennent trop grands, l'aspect du texte est mauvais, et il est prfrable de 
+recourir aux divisions dans les mots. Cependant, le souci d'obtenir de petits 
+espaces ne doit pas inciter  couper inconsidrment les mots. On estime que la 
+coupure d'un mot en fin de ligne ne devrait pas se prsenter plus de trois fois 
+de suite.Pour choisir la \bold;frquence des coupures\roman;, il est possible d'indiquer 
+ TEXT jusqu'o il peut tendre les espaces. Aprs cette limite, il tentera de diviser 
+le mot du dbut de la ligne suivante.\image textrcou,2,=;En \bold;drapeau  droite,  gauche ou centr\roman;, le problme est un peu 
+diffrent, puisqu'il n'y a pas d'espaces  tendre. L'ide est de considrer 
+la longueur de la partie de la ligne inutilise, par rapport  la ligne complte. 
+Si ce rapport est trop grand, on tente une division.Pour modifier ces paramtres, appuyez sur la touche 
+fonction \D;(F10)\F; intitule \D;(Just.)\F;:\image dboxjust,3,=;\L;Les \bold;espaces tendus de 100% au maximum\roman; signifient qu'un espace 
+peut tre tendu jusqu'au double de sa largeur initiale sans recourir aux divisions dans 
+les mots. Ceci est valable en \bold;mise en page aligne\roman;.\demi;\L;La \bold;partie vide ne dpassant pas 10%\roman; signifie qu'il y a division 
+dans les mots si la ligne est pleine  moins de 90%. Ceci est valable en 
+\bold;drapeau  droite,  gauche ou centr\roman;.\image textj10p,2,=;\L;Les \bold;5 lignes au minimum par paragraphe\roman; sont utilises lors de 
+l'opration de coupure entre les pages (voir paragraphe10).\T;\ICONE icoitl12;7.4 Les interlignes\A;L'interligne reprsente \bold;l'espacement vertical d'une ligne  l'autre\roman;. 
+Il est possible de choisir un interligne: simple (par dfaut), d'une ligne et demi ou 
+de deux lignes.\image textrilm,2,=;Lorsque \bold;l'interligne est trop petit\roman;  la suite d'un indice, d'un exposant 
+ou d'un caractre trop grand, il est augment jusqu' ce qu'il puisse reprendre sa 
+valeur initiale.\image textrilx,3,=;\T;7.5 Plusieurs rgles\A;Jusqu' prsent, nous n'avons utilis qu'une seule rgle place au \bold;dbut du 
+texte\roman;. Mais il est possible d'en ajouter pour modifier 
+la mise en page d'une partie du texte.\bold;Le principe important  retenir est le suivant\roman;: le texte est mis en page 
+\bold;ds\roman; l'endroit o une rgle est ajoute, \bold;jusqu'\roman; 
+la rgle suivante (ou jusqu' la fin du texte s'il n'y en a plus).\T;7.5.1 Insertion d'une rgle\A;Pour \bold;ajouter une rgle\roman;  l'endroit montr par le curseur 
+(petit triangle), il faut appuyer sur le \bold;bouton du milieu\roman; de la souris 
+et le relcher dans la premire case du menu (\bold;rgle\roman;). 
+La touche fonction \D;(F6)\F; intitule \D;(Rgle)\F; a le mme effet. 
+Cette nouvelle rgle est \bold;identique\roman; (marges, tabulateurs, etc.) 
+ la rgle la plus proche contre en-haut.\ATTENTION;\R;Il n'est pas possible d'ajouter une rgle au milieu d'un 
+paragraphe. Dans ce cas, elle est automatiquement remonte au dbut du paragraphe. 
+Il est mme possible d'utiliser cette caractristique volontairement. Prenons 
+un exemple: vous voulez mettre une rgle au dbut d'un paragraphe. Plutt que 
+de positionner prcisment le curseur au dbut, vous \ital;cliquer\roman; avec 
+le bouton de gauche de la souris \bold;n'importe o dans le paragraphe\roman;, 
+puis vous appuyez sur \D;(Rgle)\F;.Pour modifier la mise en page d'une partie de texte, il faut insrer deux 
+rgles qui dlimitent la partie en question, puis modifier la premire.\image textrins,2,=;\ATTENTION;\R;Prenez garde  insrer \bold;d'abord\roman; la 
+deuxime rgle \bold;avant 
+de modifier la premire\roman;, sans quoi il faudra encore modifier la deuxime 
+pour que le texte reprenne sa mise en page initiale.Il est clair que \bold;les rgles ne sont pas imprimes\roman;. Elles sont l uniquement 
+pour donner des indications de mise en page  TEXT. Lorsque les rgles sont nombreuses, 
+il peut tre agrable de les cacher, sans pour autant les supprimer. 
+Pour cela, appuyez sur le \bold;bouton du milieu\roman; de la souris, et relchez-le 
+dans la case du menu intitule \bold;dfinition\roman;. La touche fonction \D;(F4)\F; 
+intitule \D;(Df.)\F; a le mme effet:\image dboxdefr,4,15mm;\T;7.5.2 Destuction d'une rgle\A;Une rgle est vue par TEXT comme \bold;un\roman; caractre. Cela veut dire 
+que toutes les fonctions dtruisant des caractres (souris, \D;(CURSOR-KILL)\F;, 
+etc.) s'appliquent aux rgles de la mme faon. Voyons deux exemples:\bold;Avec la souris\roman;, \ital;cliquez\roman; rapidement n'importe quel endroit de la 
+rgle avec le \bold;bouton de droite\roman; (comme pour mettre en vidence un 
+mot). La rgle est affiche en vido inverse, et le menu apparat. Il ne reste 
+plus qu' \ital;cliquer\roman; l'opration de destruction, et la rgle disparat.\image textrdem,2,=;\ATTENTION;\R;La mise en page est modifie en fonction de la rgle la 
+plus proche contre en-haut.\bold;Avec le clavier\roman;, positionnez le curseur juste aprs la rgle et 
+appuyez sur \D;(DEL)\F; ou \D;(CURSOR-KILL-D)\F;. Il est galement possible 
+de positionner le curseur sur 
+la rgle (le petit triangle est alors dans le coin suprieur gauche de la rgle) 
+et d'utiliser \D;(CURSOR-KILL-F)\F; ou \D;(SHIFT-DEL)\F;.\image textrdek,2,=;

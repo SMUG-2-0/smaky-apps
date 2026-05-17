@@ -1,0 +1,123 @@
+\cpage=17;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;\ICONE icomode;4.4.4 Mode\A;Lorsque vous choisissez l'opration \bold;mode\roman; dans le menu, il faut 
+veiller  \bold;garder le bouton press\roman;, car TEXT vous prsente un deuxime 
+menu, appel \bold;sous-menu\roman;:\image menud1,3,=;\bold;Normal\roman;\ind 30mm;Annule l'un des trois modes: soulign, exposant ou 
+indice.\bold;Soulign\roman;\ind 30mm;Souligne quelques caractres. Il faut savoir qu'en 
+typographie, pour mettre en vidence un ou plusieurs mots, on n'utilise pas le 
+soulign, mais le \bold;gras\roman;. Utilisez donc le soulign  bon escient.\bold;Exposant\roman;\ind 30mm;L'exposant est utilis en mathmatiques pour indiquer 
+la puissance  laquelle est leve un nombre. Dans a\up 1mm;\pug;\ur08;2\pog;\down 1mm;, 
+le chiffre 2 est l'exposant.\bold;Indice\roman;\ind 30mm;L'indice est galement utilis en mathmatiques pour 
+diffrencier plusieurs grandeurs analogues. Dans x\down 1mm;\pug;\ur08;1\pog;\up 1mm;, 
+le chiffre 1 est l'indice.\R;Si l'\bold;interligne\roman; courant n'est plus suffisant suite  un indice 
+ou  un exposant, il est augment pour la ligne en question (voir paragraphe7.4)\T;\ICONE icocar;4.4.5 Caractre\A;Comme pour le mode, il faut veiller  \bold;garder le bouton press\roman;, 
+car TEXT vous prsente un \bold;sous-menu\roman;:\image menud2,3,=;La partie gauche montre les trois lettres "Abc" avec le graphisme 
+rel, et la partie droite donne les \bold;noms\roman; correspondants. Nous 
+voyons ici quatre choix possibles. Le premier choix appel \bold;Fond\roman; 
+correspond aux caractres utiliss lorsque vous frappez du texte. Les trois autres 
+choix seront utiliss pour changer le graphisme des titres et des sous-titres, 
+ainsi que pour faire ressortir un ou plusieurs mots (Evidence).Ces quatre choix sont donns ici comme exemple. \bold;Vous pouvez trs bien en ajouter 
+d'autres (dix au maximum) ou les modifier afin de satisfaire 
+chaque cas particulier\roman;.\NOUVEAU;\R;Lorsque la liste dans le sous-menu est trop longue, elle est 
+automatiquement prsente sur \bold;deux colonnes\roman;.Il faut savoir que le graphisme d'un caractre comprend trois paramtres:\bold;\L;la fonte\L;le style\L;la taille\roman;La \bold;fonte\roman; spcifie la forme d'un caractre. Voici quelques "F" 
+dans diffrentes fontes:\image textfont,2,=;Le \bold;style\roman; indique la faon de reprsenter un caractre. Gras, 
+italique et relief sont des styles. Voici un "F" avec la fonte \ital;Times\roman; dans 
+diffrents styles:\image textstyl,2,=;Le style a une particularit intressante qui le diffrencie de la fonte: \bold;il est 
+possible de cumuler plusieurs styles\roman;. Par exemple, un caractre peut tre 
+gras \bold;\_et\_\roman; italique.La \bold;taille\roman; correspond  la hauteur des caractres. Voici un "F" 
+avec la fonte \ital;Times\roman; et le style \ital;Gras\roman; dans diffrentes 
+tailles:\image texttail,2,=;Voil pour la thorie, reprenons notre sous-menu. L'ide intressante  
+retenir est la suivante: vous dcidez une fois pour toutes que les titres de votre 
+document auront la fonte \ital;Times\roman;, le style \ital;Gras\roman; et la 
+taille \ital;24\roman; (par exemple). Ensuite, pour modifier le graphisme des 
+caractres d'un titre, plus besoin de se souvenir de tout cela, puisqu'il 
+vous suffit de choisir \bold;Titre\roman; avec la souris, et \bold;TEXT s'occupe 
+tout seul de mettre le bon caractre\roman;. Et tout devient simple (pour vous, mais 
+pas pour votre serviteur qui a conu et ralis TEXT!).Il nous reste encore  voir comment modifier ou allonger cette liste. Appuyez 
+et maintenez press le \bold;bouton du milieu\roman; de la souris, pour le relcher 
+dans la case du menu intitule \bold;caractres\roman;. La touche 
+fonction \D;(F7)\F; intitule \D;(Car.)\F; a le mme effet et prsente  l'cran 
+une grande bote rectangulaire appele \bold;bote de dialogue\roman;:\image dboxgenc,3,=;Les dix choix sont reprsents sur deux colonnes. On voit bien ici que seuls 
+les quatre premiers sont utiliss.Essayons de modifier le graphisme des mises en vidence. D'abord un \ital;clic\roman; 
+de la souris dans le cercle plac  gauche du mot \bold;Evidence\roman; (plus loin, 
+nous parlerons du \ital;bouton\roman; Evidence), puis un \ital;clic\roman; dans 
+le rectangle \D;(MODIFIE)\F;. Et voil une autre bote de dialogue:\image dboxcara,3,=;La partie gauche indique la \bold;fonte\roman;, la partie mdiane le \bold;style\roman; 
+et la partie droite la \bold;taille\roman;. Il n'y a plus qu' \ital;cliquer\roman; 
+avec la souris dans les \ital;boutons\roman; appropris. 
+Les fontes ou les tailles absentes sur votre disquette sont 
+refuses avec un petit \ital;bip\roman; dans le haut-parleur.Les deux premires fontes (\bold;Standard\roman; et \bold;Qualit\roman;) correspondent 
+aux caractres internes de l'imprimante, qui seront imprims trs rapidement. Par 
+contre, ils n'existent qu'avec le style gras et ventuellement italique, et en 
+une seule taille (7). Toutes les autres fontes correspondent  des fichiers sur 
+la disquette. Par exemple, le fichier \ital;100_urp09.genc\roman; est utilis 
+pour la fonte \bold;Univers\roman; en taille \bold;9\roman; avec n'importe quel 
+style.Plusieurs styles peuvent tre cumuls. 
+Par exemple: gras, italique et ombr. Tous les styles sont gnrs par calcul, 
+sur la base d'un seul fichier.A chaque taille doit correspondre un fichier sur 
+la disquette, ce qui explique qu'elles ne sont pas toutes disponibles. Les tailles 
+doubles (deux fois plus grandes) sont gnres par calcul.Avant de \ital;cliquer\roman; dans \D;(CREE)\F;, il ne faut pas oublier de 
+donner la \bold;fonction du caractre\roman;. Par exemple: Fond, Evidence, Titre, 
+Sous-titre, Petit, Spcial, etc.\NOUVEAU;La colonne des fontes prsente huit possibilits. Pour en choisir 
+une autre, il faut \ital;cliquer\roman; dans le rectangle  droite du mot FONTE, 
+et taper sa lettre initiale. Il en va de mme pour le style et pour la taille.L'indication en bas  droite du rectangle (par exemple: \bold;u(b)09\roman;) 
+donne le nom du caractre slectionn. Les parenthses indiquent que le caractre 
+est construit sur la base d'un fichier de style \ital;roman\roman;. Par exemple:\newtab 15mm,30mm,45mm;	\bold;tip14\roman;	utilise le fichier \ital;100_tip14.genc\roman;	\bold;t(i)14\roman;	utilise le fichier \ital;100_trp14.genc\roman; (style r=roman)		et construit un italique par calcul.Pour \bold;supprimer un graphisme existant\roman;, utilisez la touche 
+fonction \D;(F7)\F; intitule \D;(Car.)\F;, puis le rectangle 
+\D;(SUPPRIME)\F;. Tous les caractres du texte utilisant ce graphisme reprennent 
+le graphisme des caractres environnants. Ceci est valable dans toutes les zones 
+de travail (voir paragraphe11).\ATTENTION;\R;Il n'est pas possible de supprimer le premier graphisme de la liste, appel 
+gnralement \bold;Fond\roman;.\T;\ICONE icomami;4.4.6 Transforme\A;Veillez  \bold;garder le bouton press\roman;, car TEXT vous prsente un 
+\bold;sous-menu\roman;:\image menud3,3,=;\bold;Minuscules\roman;\ind 30mm;Met tous les caractres en minuscules.\bold;Majuscules\roman;\ind 30mm;Met tous les caractres en majuscules. Une 
+minuscule accentue est transforme en majuscule correspondante sans accent. 
+Aprs une double transformation \ital;majuscules\roman; puis \ital;minuscules\roman;, 
+tous les accents sont donc perdus.\NOUVEAU;\bold;Noms propres\roman;\ind 30mm;Met la premire lettre de chaque 
+mot en majuscule, et le reste en minuscules. Par exemple, le mot 
+\ital;LACHauX-de-foNDS\roman; est transform en \ital;LaChaux-De-Fonds\roman;.\T;\NOUVEAU;\ICONE icocalc;4.4.7 Calcul\A;Cette opration n'apparat que si la souris met en vidence \bold;un et un seul 
+nombre\roman;. Elle est extrmement utile pour la prparation de factures par 
+exemple, afin de raliser les sous-totaux et totaux. Le nombre choisi 
+apparat instantanment en haut de l'cran, aprs \bold;Rsultat=\roman;.\image textcal1,2,=;Pour y ajouter, soustraire, etc. d'autres nombres, ils faut les mettre en vidence 
+avec le bouton de droite de la souris (un seul \ital;clic\roman; suffit), et choisir 
+l'une des oprations dans le menu suivant:\image menud4,3,=;\ATTENTION;Lorsque un menu ou sous-menu apparat, la souris est toujours place dans la 
+premire case, tout en haut. Pour additionner une srie de nombres, il serait 
+agrable que la souris se replace automatiquement sur \ital;additionne\roman;. 
+Ceci est possible en appuyant sur le \bold;bouton du milieu\roman; de la souris, 
+et en le relchant dans la case \bold;dfinition\roman;. La touche \D;(F4)\F; 
+intitule \D;(Df.)\F;  la mme effet:\image dboxdefm,4,15mm;\R;Ce mode est valable pour tous les menus et sous-menus de TEXT. Il acclre 
+ainsi grandement toutes les oprations rptitives.Les deux icnes en haut  gauche sont utiles \bold;lorsque le calcul 
+est termin\roman;.\image ic1,2;\bold;Insre le rsultat dans le texte\roman;  l'endroit montr par le 
+curseur (petit triangle).\image ic2,2;Met le rsultat dans la poubelle.\T;\NOUVEAU;\ICONE icomodi;4.4.8 Modifie\A;Cette opration n'apparat que si la souris met en vidence \bold;une et une seule 
+image ou rgle\roman;.S'il s'agit d'une \bold;image\roman;, l'diteur graphique PLAN est appel pour 
+permettre de la modifier.\ATTENTION;\R;Avec PLAN, n'oubliez pas de \bold;sauver l'image\roman; (en l'entourant 
+avec le bouton de droite de la souris) avant de faire \D;(Fin)\F;.\ICONE icomodr;\demi;S'il s'agit d'une \bold;rgle\roman;, elle est isole en haut de l'cran, pour 
+permettre de la modifier rapidement (voir paragraphe7). 
+Cette opration, apparemment plus complique que la modification directe d'une 
+rgle, s'avre trs utile lorsque les modifications  effectuer sont nombreuses.\T;5 Les dplacements\A;Quand les mains sont occupes sur le clavier  taper du texte, il est souvent 
+prfrable d'utiliser les touches du \bold;clavier\roman; pour dplacer le curseur 
+(petit triangle). Rien n'est plus facile. En effet, le clavier dispose de quatre 
+touches blanches \D;(R)\F;, 
+\D;(D)\F;, \D;(F)\F; et \D;(C)\F; qui dplacent le curseur dans toutes les directions. 
+De plus, quelques touches avoisinantes permettent d'avancer ou de reculer le curseur 
+par \bold;mots\roman;, par \bold;lignes\roman; ou par \bold;pages\roman;.\image textkdep;Si vous appuyez sur \D;(D)\F;, TEXT va bien entendu insrer la lettre 
+"D" dans le texte. Pour lui indiquer que vous voulez reculer d'un caractre, il 
+faut d'abord appuyer sur la touche super-shift \D;(CURSOR)\F;. Tout en la 
+\bold;maintenant presse\roman;, vous appuyez sur la touche correspondant au dplacement.\image textcurs,2,=;Si le curseur est au milieu d'une ligne, \D;(CURSOR-R)\F; le recule d'abord 
+au dbut de la ligne. Une nouvelle pression le recule au dbut de la ligne prcdente. 
+Il en va de mme pour tous les dplacements (mots, lignes ou pages).\R;Lorsque l'\bold;amplitude du dplacement est grande\roman;, 
+il est parfois difficile de situer le petit triangle du curseur. C'est pourquoi 
+TEXT vous aide avec une grande croix cercle:\image textcibl,2,=;Cette aide peut tre supprime en appuyant sur le \bold;bouton du milieu\roman; 
+de la souris. Tout en le maintenant press, dplacez 
+la souris dans la case du menu intitule \bold;dfinition\roman;. 
+La touche fonction \D;(F4)\F; intitule \D;(Df.)\F; a le mme effet:\image dboxdefa,4,15mm;\T;6 Les destructions\A;Pour supprimer un ou plusieurs caractres avec le clavier, il faut procder 
+de faon semblable au dplacement (voir paragraphe5). Donc, vous appuyez sur 
+les touches super-shift \D;(CURSOR)\F; et \D;(KILL)\F; simultanment, puis (tout 
+en maintenant ces deux touches presses) vous choisissez la lettre correspondant 
+ l'amplitude de la destruction. Par exemple, \D;(S)\F; supprime la partie du 
+mot  gauche du curseur, \D;(G)\F; supprime la partie du mot  droite, etc.\image textkdes,2,=;Si le curseur est au milieu d'un mot, \D;(CURSOR-KILL-S)\F; dtruit d'abord 
+jusqu'au dbut du mot. Un deuxime \D;(CURSOR-KILL-S)\F; dtruira entirement 
+le mot prcdent. Il en va de mme pour toutes les destructions (mots, lignes 
+ou pages).\image textkill;Si une destruction n'a pas eu l'effet que vous souhaitiez (toute une ligne 
+a disparu alors que vous vouliez enlever juste un mot), la touche \D;(UNDO)\F; 
+vient  votre secours en faisant \bold;rapparatre tous les caractres dtruits\roman;. 
+Et ceci est valable mme si plusieurs destructions se sont suivies! 
+Seule restriction: ds le moment o vous frappez un caractre ou dplacez le curseur, 
+l'effet de \D;(UNDO)\F; disparat.\ATTENTION;\R;TEXT conserve jusqu' 1'000 caractres dtruits en avant et 1'000 en arrire. 
+\D;(UNDO)\F; devient donc sans effet au del du 
+1'001\up 1mm;\pug;\ur07;e\pog;\down 1mm; caractre dtruit.

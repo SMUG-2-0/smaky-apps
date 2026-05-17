@@ -1,0 +1,131 @@
+\cpage=1;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;1 Introduction\A;Un programme de \bold;traitement de textes\roman; est maintenant une chose tout  fait 
+courante sur la plupart des ordinateurs. Il n'en a pas toujours t ainsi, 
+et il n'est pas inutile d'en faire un bref historique.Les premiers programmes (appels alors "diteurs") ont d'abord t utiliss \bold;par 
+des informaticiens\roman; comme aides dans le dveloppement de leurs propres programmes. 
+Un texte tait une suite de caractres, avec parfois une fin de ligne, 
+sans plus. Des commandes bien compliques permettaient de remonter 
+d'une ligne, d'effacer un caractre, etc.Ensuite, il s'est avr utile de remplacer la bonne vieille \bold;machine  crire\roman; 
+par un ordinateur. Plus de problme pour corriger une faute de frappe trois 
+lignes au-dessus, pour ajouter un mot oubli ou pour dplacer une colonne de 
+tabulation.\image textmach,1,=;Mais on n'en n'est pas rest l. Et l'ordinateur s'attaque maintenant aux 
+travaux de \bold;photocomposition\roman;. Cela sous-entend tous les problmes de mise en 
+page du texte (\ital;justification\roman;), de changement de \ital;polices\roman; 
+de caractres, d'\ital;indentations\roman; et de \ital;renfoncements\roman;, etc.Et en plus, on veut encore marier le texte avec le \bold;graphique\roman;. 
+C'est--dire qu'il doit tre possible de coller dans un texte, lectroniquement 
+bien entendu, un dessin, une figure explicative ou un diagramme.Mais pour que tout ceci soit utilisable par Monsieur-tout-le-monde, donc par un 
+non-informaticien, il faut encore \bold;supprimer toutes les commandes compliques\roman;, 
+et les remplacer par l'usage tellement plus naturel de la \bold;souris\roman;. Et alors l, 
+vous obtenez le programme TEXT, dont cette notice va vous expliquer tous les 
+secrets...\bold;L'cran vous montre, en tout temps, le texte tel qu'il sera 
+imprim\roman;. Avec les styles propres  chaque caractre 
+(gras, italiques, souligns, indices, exposants, etc.), avec les marges et les 
+renfoncements, avec les tabulateurs et les figures!\bold;C'est une des caractristiques fondamentale de TEXT\roman;.Les \bold;oprations simples\roman; telles que le dplacement du curseur, la suppression 
+de quelques caractres ou la recherche d'un mot peuvent s'effectuer \bold;avec le clavier ou 
+avec la souris\roman;. A chacun de choisir sa mthode prfre.D'autres oprations \bold;plus sophistiques\roman; telles que le dplacement d'une 
+colonne de tabulation, le changement de l'interligne ou la mise en vidence d'un mot 
+(ou d'une partie de texte) s'effectuent \bold;uniquement avec la souris\roman;. 
+\bold;C'est tellement plus simple ainsi, et on oublie qu'il s'agit d'oprations 
+complexes\roman;.\image sourisp,3,=;\T;2 Mise en route\A;Aprs avoir \ital;cliqu\roman; l'icne TEXT, l'cran prend 
+l'allure suivante:\image textd1,2,=;La ligne noire tout en haut de la fentre donne quelques renseignements gnraux. 
+Les petits dessins juste en dessous semblent trs compliqus  premire vue, mais 
+vous verrez qu'ils sont simples  manipuler avec la souris (voir paragraphe7). 
+Le rectangle allong avec tous ses dessins s'appelle une \bold;rgle\roman;. La 
+bande verticale grise  gauche est un \bold;ascenseur\roman; (voir paragraphe4.2.1). 
+Lorsque le texte est trs large, une deuxime bande horizontale grise apparat 
+en bas de l'cran.\T;3 La frappe du texte\A;\D;(RETURN)\F;\ind 30mm;Les caractres frapps apparaissent  l'cran. 
+Lors de la frappe d'un paragraphe, 
+il n'est pas ncessaire d'utiliser \D;(RETURN)\F; pour passer  la ligne. TEXT le fait 
+pour vous.\ATTENTION;\ind 30mm;\bold;Ce n'est que lorsque le paragraphe est termin 
+qu'il faut utiliser \D;(RETURN)\F;\roman;.\image textretu,2,30mm;\D;(DEL)\F;\ind 30mm;La touche \D;(DEL)\F; \bold;dtruit les derniers caractres 
+frapps\roman;, un par un. Comme toutes les autres touches, son effet est rpt 
+si elle est maintenue presse pendant plus d'une seconde.\D;(UNDO)\F;\ind 30mm;Une pression sur \D;(UNDO)\F; fait rapparatre \bold;tous les 
+caractres dtruits\roman;. Ceci est valable tant qu'aucun caractre n'a t frapp.\D;(TAB)\F;\ind 30mm;La touche \D;(TAB)\F; avance  la prochaine \bold;colonne de 
+tabulation\roman;. Le paragraphe 7.2 explique comment ajouter, supprimer ou modifier 
+une colonne de tabulation.S'il n'y a plus de tabulateur lorsque vous appuyez sur 
+\D;(TAB)\F;, TEXT passe  la ligne suivante et avance sur le premier tabulateur.\D;(CTRL-espace)\F;\ind 30mm;Il est parfois ncessaire d'insrer des 
+\bold;espaces indivisibles\roman;, appels \ital;cadratins\roman;. Un cadratin 
+est reprsent  l'cran par un carr barr verticalement (\C;), qui s'imprime 
+comme un espace normal.\newtab 30mm,70mm;	 partir du 12\C;juin	M.\C;Dupont	C.\C;F.\C;Ramuz	350\C;kg	(voir paragraphe\C;5)	page\C;45 \C;48	tome\C;IV	16\C;h\C;12\C;min\C;35\C;sec	29\C;%	Enfin\C;!	Pourquoi\C;?	Par exemple\C;:	...Le cadratin vite de sparer deux mots. Par exemple, si le cadratin est omis 
+dans \ital;M. Dupont\roman;, il y a risque d'obtenir:\ind 42mm;... nous rfrant  l'entrevue avec \bold;M.\ind 15mm;Dupont\roman; du 15 mars dernier, ...\D;(SHIFT-RETURN)\F;\ind 30mm;Marque la fin force d'une page, en affichant 
+un trait plein horizontal. Les fins de pages gnres par TEXT sont indiques 
+par un traitill horizontal (voir paragraphe10 pour plus de dtails).Les accents \bold;circonflexe\roman; et \bold;trma\roman; sont flottants, 
+c'est--dire qu'il faut d'abord frapper l'accent, puis la lettre  placer sous 
+l'accent. Il est ainsi possible d'accentuer les cinq \bold;voyelles minuscules\roman;.	    	    Si le caractre frapp aprs l'accent n'est pas une voyelle minuscule, TEXT 
+considre qu'il s'agit de deux caractres distincts. 
+Par exemple, \D;(^)\F; puis \D;(A)\F; donne ^A.Pour insrer un circonflexe ou un trma \bold;seul\roman;, il faut frapper 
+l'accent suivi d'un espace, ou deux fois l'accent.	\D;(^)\F; \D;(espace)\F;	donne   ^	\D;(^)\F; \D;(^)\F;	donne   ^Il est galement possible d'ajouter un circonflexe ou un trma oubli aprs 
+coup. Pour cela, le curseur doit tre \bold;avant\roman; la lettre (voir paragraphes 
+4.2 et 5).\image textacce,2,=;Vous aurez remarqu deux signes particuliers: un \bold;triangle\roman; (clignotant) 
+et un \bold;carr\roman;. Le triangle est appel \bold;curseur\roman;. C'est lui 
+qui indique o vont les caractres frapps. Le carr indique la \bold;fin du texte\roman;.\T;4 La souris\A;Les \bold;trois boutons\roman; de la souris sont utiliss par TEXT de la faon 
+suivante:\image textmous,2,=;\T;4.1 Le curseur et la flche\A;Le \bold;curseur\roman; est un petit triangle clignotant. C'est lui qui indique o vont 
+les caractres frapps, et quels sont les caractres pouvant tre dtruits (en 
+amont ou en aval). Le dplacement du curseur permet donc d'ajouter ou de supprimer 
+des caractres n'importe o dans le texte.La \bold;flche\roman; est lie  la souris. Si les boutons de la souris ne 
+sont pas appuys, son emplacement n'a aucune signification particulire pour TEXT.\image textcufl,3,=;\T;4.2 Le bouton de gauche\A;La flche de la souris permet de \bold;dplacer le curseur\roman; (petit triangle) 
+simplement et rapidement. Cette fonction est tellement pratique que le \bold;bouton de 
+gauche\roman; de la souris est rserv uniquement pour cela.Donc, pour dplacer le curseur, amenez la souris  l'endroit souhait, puis 
+\ital;cliquez\roman; simplement sur le bouton de gauche. La ligne correspondante 
+se centre automatiquement au milieu de l'cran.\T;4.2.1 L'ascenseur\A;La bande verticale grise  gauche symbolise un \bold;ascenseur\roman;, qui permet 
+de dplacer le curseur dans le texte de plusieurs faons:\image iaf,2;\NOUVEAU;Ces flches montent ou descendent le curseur ligne par ligne. 
+\bold;Tant que le bouton de la souris est maintenu press, le texte dfile\roman; 
+dans la direction choisie.\image iap,2;\NOUVEAU;Ces icnes sont utiles pour parcourir le texte \bold;page par page\roman;, 
+en avant ou en arrire. Un \ital;clic\roman; de la souris avance ou recule le 
+curseur sur la sparation de page suivante ou prcdente (trait horizontal).La zone grise permet de monter ou de descendre rapidement le curseur 
+dans n'importe quelle partie du texte, en \ital;tirant\roman; le carr blanc avec 
+la souris, ou en \ital;cliquant\roman; directement au bon endroit:\image textglob,2,=;De plus, l'ascenseur \bold;donne en tout temps l'emplacement 
+du curseur dans le texte\roman;, ce qui est extrmement pratique lorsque 
+le texte devient long.\T;4.3 Le bouton du milieu\A;\bold;Tant qu'il est maintenu press\roman;, le \bold;bouton du milieu\roman; 
+fait apparatre la liste suivante:\image menum,3,=;Plus loin, nous appellerons une telle liste un \bold;menu\roman;. Pour choisir 
+une case dans un menu, il faut dplacer la souris 
+et relcher le bouton lorsque la case voulue est en vido inverse. La \bold;case 
+vide tout en haut\roman; permet de sortir du menu si le bouton du milieu 
+est press par erreur.\ATTENTION;\R;Il faut relever qu'il est important de \bold;maintenir le bouton 
+press tout en dplaant la souris\roman;. D'une faon gnrale (en cas de doute), 
+il vaut mieux maintenir presss les boutons de la souris, et ne pas \ital;cliquer\roman;. 
+S'il ne se passe rien en bougeant, il sera toujours temps de relcher le bouton!Nous expliquerons plus loin la signification de chacune 
+des cases de ce menu.\T;4.4 Le bouton de droite\A;Avec le \bold;bouton de droite\roman;, il faut d'abord \bold;mettre en vidence\roman; 
+une zone de caractres. On pourra ensuite la dtruire, la 
+dupliquer, en modifier le graphisme, etc.Par exemple, amenez la souris au dbut d'un mot ou d'un paragraphe  dtruire, puis 
+appuyez sur le 
+bouton de droite. Tout en le \bold;maintenant press\roman;, dplacez la souris  la fin du 
+mot ou du paragraphe, et lchez le bouton (tant que le bouton reste press, vous pouvez 
+avancer ou reculer la souris aussi longtemps que vous le voulez). 
+Les caractres mis en vidence sont affichs en vido inverse.\image textzone,3,=;\NOUVEAU;\R;Il est possible de \bold;mettre en vidence de grandes parties de texte\roman;. 
+En effet, sitt que la souris arrive dans la dernire ligne visible, le texte 
+dfile en avant. Pour arrter le dfilement, il suffit de remonter un peu la souris, 
+pour l'enlever de la dernire ligne. Si le texte a dfil trop loin, vous pouvez 
+revenir en arrire en plaant la souris dans la premire ligne visible.Une fois le bouton relch, la liste suivante apparat:\image menud,3,=;\NOUVEAU;Ce menu \bold;s'adapte\roman; en fonction de la partie de texte mise en vidence. 
+La figure ci-dessus montre le menu le plus courant. D'autres menus apparaissent 
+lorsque la zone mise en vidence est un \bold;nombre\roman;, une \bold;image\roman; 
+ou une \bold;rgle\roman;.Les paragraphes suivants expliquent dans le dtail chacune des oprations 
+possibles.\ATTENTION;\R;En utilisant TEXT, vous vous rendrez compte 
+qu'il est souvent ncessaire de mettre en vidence \bold;un seul mot\roman;. 
+Ceci est possible \bold;sans bouger la souris\roman;! 
+En effet, il suffit de montrer le mot concern et de \ital;cliquer\roman; rapidement 
+le bouton de droite.\ind 30mm;La mme faon de procder permet de mettre en vidence un 
+\bold;nombre\roman;, une \bold;rgle\roman; ou une \bold;image\roman;.\T;\ICONE icodetr;4.4.1 Dtruit\A;Opration simple et presque sans commentaire. Les caractres mis en vidence 
+sont dtruits. Une petite remarque tout de mme: \bold;en cas d'erreur (destruction 
+involontaire), la touche \D;(UNDO)\F; rcupre tous les caractres dtruits\roman;.\image textdetr,2,=;\ATTENTION;\R;Pour dtruire un mot, n'oubliez pas de prendre l'espace avant 
+ou aprs, sinon il restera deux espaces l'un aprs l'autre.\T;\NOUVEAU;\ICONE icodepl;4.4.2 Dplace\A;Opration lgrement plus complique. Les caractres mis en vidence 
+sont dplacs en bas de l'cran, dans une \bold;zone secondaire\roman;.\image textdepl,2,=;Cinq icnes vous aident  remettre les caractres dans le texte.\image iz1,2;Mettez le curseur (petit triangle)  l'endroit de votre choix dans le texte, 
+avec le bouton de gauche de la souris par exemple. \ital;Cliquez\roman; cette 
+icne, et tous les caractres de la zone secondaire sont \bold;dplacs\roman; 
+ la suite du curseur.\NOUVEAU;Cette opration est quivalente  \D;(COPY-KILL-UNDO)\F; (le paragraphe11 
+donne plus de dtails sur les zones de travail).\ATTENTION;\R;Lorsque la zone secondaire est visible, toutes les fonctions de 
+TEXT sont normalement disponibles. \bold;Il n'est donc pas ncessaire de s'occuper tout 
+de suite des caractres dplacs dans cette zone\roman;.\image iz2,2;Icne presque identique  la prcdente: en \ital;cliquant\roman; 
+avec la souris, les caractres de la zone secondaire sont insrs  l'endroit 
+montr par le curseur. Mais aprs cette opration, la zone secondaire \bold;reste 
+visible et garde son contenu\roman;. Il est donc possible de \bold;dupliquer\roman; 
+plusieurs fois les mmes caractres.\NOUVEAU;Cette opration est quivalente  \D;(COPY-UNDO)\F;.\image iz3,2;Met dans la poubelle (dtruit) tous les caractres contenus dans la zone secondaire.\image iz4,2;Permute la zone secondaire (en bas) avec la zone principale (en haut). Ceci 
+est utile pour effectuer une \bold;correction dans la zone secondaire\roman; avant 
+de la dplacer ou de la dupliquer dans la zone principale.\image iz5,2;En \ital;tirant\roman; cette icne vers le haut ou vers le bas, il est possible 
+\bold;d'augmenter ou de diminuer la zone secondaire\roman;.\image textfron,3;Mme si la zone secondaire est petite, elle peut contenir 
+beaucoup de caractres. Tout comme la zone principale, elle ne montre qu'une partie 
+de son contenu, gnralement la fin.\T;\NOUVEAU;\ICONE icodupl;4.4.3 Duplique\A;La \bold;duplication\roman; ressemble comme deux gouttes d'eau au 
+\bold;dplacement\roman;. Les caractres mis en vidence sont dupliqus en bas 
+de l'cran, \bold;sans tre dtruits ou modifis eux-mmes\roman;.\ATTENTION;\R;Il est possible de \bold;rpter l'opration de dplacement ou de duplication 
+plusieurs fois\roman;. Les caractres dplacs ou dupliqus sont simplement ajouts 
+les uns  la suite des autres dans la zone secondaire.\ind 30mm;Ceci permet, par exemple, de \ital;construire\roman; des phrases 
+ partir de mots dj frapps.

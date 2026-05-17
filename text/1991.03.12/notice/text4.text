@@ -1,0 +1,83 @@
+\cpage=45;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;\ICONE icoimage;8 Les images\A;Des images peuvent tre \ital;colles\roman; lectroniquement dans un texte. 
+En gnral, ces images ont t cres avec \bold;l'diteur graphique PLAN\roman;. 
+Dans le futur, il est prvu de coller des images venant d'autres programmes, 
+et mme des images filmes avec une camra vido.Coller une image est un jeu d'enfant, jugez plutt:\L;\bold;Positionnez le curseur\roman; (petit triangle)  l'endroit o il 
+faut mettre l'image (avec le bouton de gauche de la souris).\L;Appuyez sur le \bold;bouton du milieu\roman; de la souris. Tout en 
+le maintenant press, dplacez la souris dans la case du menu intitule 
+\bold;image\roman;. La touche fonction \D;(F5)\F; intitule \D;(Image)\F; a le 
+mme effet:\image dboximag,3,=;\L;Donnez le \bold;nom de l'image\roman;, puis \ital;cliquez\roman; avec 
+la souris dans le rectangle \D;(COLLE)\F;.\ATTENTION;\R;Comme pour une rgle, une image ne peut pas tre ajoute 
+au \bold;milieu d'un paragraphe\roman;.\image textimag,2,=;L'image est traite ensuite comme \bold;un\roman; caractre, de faon similaire 
+aux rgles. Voir au paragraphe 7.5.2 pour \bold;dtruire une image\roman;.La position horizontale d'une image tient compte du \bold;mode de mise en page\roman; 
+(align, en drapeau  droite, etc.) comme suit:\image textijus,2,=;Si cela ne convient pas, insrez deux rgles (l'une avant et l'autre 
+aprs l'image), puis modifiez le mode de mise en page de la premire.\image texticad,2,=;L'affichage d'une image prend un certain temps, qui est parfois gnant (surtout 
+avec un \ital;floppy disque\roman;). Pour acclrer ceci, vous pouvez demander 
+ TEXT de remplacer les images par des rectangles gris. Le contenu de l'image 
+n'est donc plus visible, mais seulement la position et les dimensions. 
+Pour choisir, appuyez sur le \bold;bouton du milieu\roman; de la souris, et relchez-le 
+dans la case du menu intitule \bold;dfinition\roman;. La touche fonction \D;(F4)\F; 
+intitule \D;(Df.)\F; a le mme effet:\image dboxdefi,4,15mm;\image textigri;\R;A l'impression, l'image est videmment toujours imprime avec son contenu!\T;\ICONE icodepl;8.1 Dplacement d'une image\A;Nous avons vu au paragraphe 4.4.2 comment dplacer une partie de texte avec 
+la souris. Et bien, pour une image, c'est \bold;exactement pareil\roman;!Dmonstration:\image textidep,2,=;L'image sera dplace \bold;en bas de l'cran\roman;, dans une zone secondaire. 
+Un \ital;clic\roman; dans la premire icne sur la sparation entre les zones 
+principale et secondaire (reprsentant une flche contre en haut) dplace l'image 
+ l'endroit montr par le curseur.De la mme faon, il est possible de \bold;dupliquer\roman; une image qui apparatra 
+alors en plusieurs endroits du texte.\T;9 Les recherches et les substitutions\A;\image textloup,2,=;Imaginons un instant que vous tapiez un texte sur la vie et 
+l'oeuvre de \ital;Wolfgang Amadeus Mozard\roman;. A la quinzime page, vous vous 
+apercevez que \ital;Mozard\roman; s'crit \ital;Mozar\_t\_\roman;! Pas de panique, les 
+fonctions de \bold;recherches\roman; et de \bold;substitutions\roman; sont l 
+pour vous aider. Appuyez sur le \bold;bouton du milieu\roman; de la souris, et 
+relchez-le dans la case du menu intitule \bold;change\roman;. La touche fonction 
+\D;(F9)\F; intitule \D;(Change)\F; ou la touche \D;(DEFINE)\F; ont le mme effet:\image dboxrech,3,=;Le curseur (petite barre horizontale) est dans le rectangle allong intitul 
+\bold;Cherche\roman;. Tapez le mot erron \ital;Mozard\roman; puis cliquez avec 
+le bouton de gauche de la souris dans le rectangle intitul 
+\bold;A changer par\roman;. Tapez alors le mot correct \ital;Mozart\roman; 
+et cliquez dans le rectangle \D;(CHANGE)\F;. TEXT cherche le mot demand et vous 
+propose une premire substitution:\image dboxchan,2,=;\D;(CHANGE)\F;\ind 30mm;Change le mot montr par le contenu du rectangle\ind 30mm;\bold;A changer par\roman;, puis cherche le mot suivant.\D;(SUIVANT)\F;\ind 30mm;Ne change pas et cherche le mot suivant.\D;(PARTOUT)\F;\ind 30mm;Change jusqu'au bout sans demander de confirmation. 
+Un petit \ital;bip\roman; se fait entendre  chaque changement.\D;(UN)\F;\ind 30mm;Change uniquement le mot montr, puis stoppe la recherche 
+des suivants.\D;(STOP)\F;\ind 30mm;Ne fait rien et stoppe la recherche des suivants.Reprenons dans le dtail la bote de dialogue \D;(Change)\F;:\D;(PRECEDENT)\F;\ind 30mm;Reprend les derniers mots utiliss dans les rectangles 
+allongs \bold;Cherche\roman; et \bold;A changer par\roman;.\bold;\_Majuscules et minuscules\_\roman;\ind 30mm;Une petite croix ici indique qu'il y a \bold;quivalence\roman; entre les 
+majuscules et les minuscules. 
+Par exemple, la recherche de \ital;\_Mel\_\roman; trouvera indiffremment 
+les mots \ital;\_Ml\_ange\roman;, \ital;d\_ml\_s\roman; ou \ital;\_MEL\_ASSE\roman;.\bold;\_Seulement les mots entiers\_\roman;\ind 30mm;Une petite croix ici indique que TEXT ne recherche que des mots entiers. 
+Par exemple, la recherche de \ital;\_le\_\roman; ne trouvera pas 
+les mots \ital;mal\_le\_\roman;, \ital;\_le\_s\roman; ou \ital;quiva\_le\_nt\roman;.\bold;\_En arrire\_\roman; ou \bold;\_En avant\_\roman;\ind 30mm;Les trois actions \D;(CHERCHE)\F;, \D;(COMPTE)\F; et \D;(CHANGE)\F; 
+s'effectuent en arrire ou en avant \bold;depuis la position du curseur\roman; 
+(petit triangle) selon le \ital;bouton\roman; allum.Les trois choix suivants tiennent compte du \bold;mode\roman; et de la 
+\bold;direction\roman; choisis ci-dessus.\D;(CHERCHE)\F;\ind 30mm;Cherche le contenu du premier rectangle allong (positionne 
+le curseur au dbut). Le contenu du deuxime rectangle allong (\bold;A changer 
+par\roman;) est ignor.\D;(COMPTE)\F;\ind 30mm;Compte le nombre d'occurrences, sans dplacer le curseur.\D;(CHANGE)\F;\ind 30mm;Change un par un par le contenu du premier rectangle allong 
+(\bold;Cherche\roman;) par le deuxime rectangle allong (\bold;A changer par\roman;).\ATTENTION;\R;Pour passer du premier rectangle allong au deuxime, 
+la touche \D;(RETURN)\F; ne peut pas tre utilise. En effet, il est parfois utile 
+d'inclure une \ital;fin de paragraphe\roman; dans un mot cherch. C'est pourquoi 
+\D;(RETURN)\F; insre une petite flche dans le rectangle. Pour passer au deuxime 
+rectangle, il faut soit \ital;cliquer\roman; avec la souris, soit appuyer sur 
+\D;(DEFINE)\F;.Tout ceci peut galement tre fait sans souris et rapidement comme suit:	\D;(DEFINE)\F; Mozard \D;(DEFINE)\F; Mozart \D;(DEFINE)\F;Les rectangles de recherche et de substitution sont dfinis. Les touches super-shift 
+\D;(SEARCH)\F; et \D;(CHANGE)\F; entrent alors en jeu.\D;(SEARCH-F)\F;\ind 30mm;Cherche contre en bas.\D;(SEARCH-D)\F;\ind 30mm;Cherche contre en haut.\D;(SEARCH-C)\F;\ind 30mm;Compte contre en bas.\D;(SEARCH-R)\F;\ind 30mm;Compte contre en haut.\D;(SEARCH-T)\F;\ind 30mm;Compte dans tout le texte.\D;(CHANGE-F)\F;\ind 30mm;Change une fois contre en bas.\D;(CHANGE-D)\F;\ind 30mm;Change une fois contre en haut.\D;(CHANGE-C)\F;\ind 30mm;Change conditionnellement contre en bas.\D;(CHANGE-R)\F;\ind 30mm;Change conditionnellement contre en haut.\D;(CHANGE-X)\F;\ind 30mm;Change tout contre en bas.\D;(CHANGE-E)\F;\ind 30mm;Change tout contre en haut.\D;(CHANGE-T)\F;\ind 30mm;Change dans tout le texte.Une fonction particulire existe pour ceux qui utilisent TEXT pour crer des 
+programmes en \ital;assembleur\roman;:\D;(SEARCH-^)\F;\ind 30mm;Cherche une erreur, c'est--dire "^ ".Si le mot cherch n'est pas trouv, TEXT affiche:\image dboxenot,3,=;Il faut \ital;cliquer\roman; avec la souris dans \D;(VU)\F; pour quittancer 
+cette annonce.\T;10 Les coupures entre les pages\A;Les coupures entre les pages peuvent tre automatiques ou manuelles, ou encore 
+une combinaison de ces deux possibilits. Elles sont reprsentes par un 
+\bold;trait horizontal\roman;  travers toute la page.\image textpage,2;Une pression sur \D;(SHIFT-RETURN)\F; insre une \bold;fin de page manuelle\roman;. 
+Quoi qu'il arrive, l'impression recommence au dbut d'une nouvelle page aprs ce trait 
+horizontal (mme si la page prcdente ne contenait qu'une ligne).La touche fonction \D;(F12)\F; intitule \D;(Coupepages)\F; insre des 
+\bold;fins de pages automatiques\roman;  travers tout le texte, partout o cela 
+est ncessaire, en tenant compte de la grandeur des caractres, des changements 
+d'interlignes, des images, etc.Une image n'est jamais coupe en deux morceaux. De plus, un paragraphe est 
+\bold;group par paquets\roman; de cinq lignes au minimum. Ce nombre peut tre 
+modifi en appuyant sur la touche fonction \D;(F10)\F; intitule \D;(Just.)\F; 
+(voir  la fin du paragraphe7.3.1).\ATTENTION;\R;La modification d'un texte (correction de fautes d'orthographe par exemple) 
+rend caduque les fins de pages automatiques. Il ne faut donc pas oublier 
+de taper \D;(Coupepages)\F; avant l'impression.\T;\ICONE icotout;10.1 La visualisation globale\A;Pour vrifier la mise en page du texte avant l'impression, appuyez sur le 
+\bold;bouton du milieu\roman; de la souris, pour le relcher dans la case du menu 
+intitule \bold;tout\roman;. La touche \D;(F13)\F; intitule \D;(Tout)\F; a le 
+mme effet:\image textpet1,2,=;La page affiche est celle o se trouve le curseur. 
+Les rectangles \D;(PLUSPETIT)\F; et \D;(PLUSGRAND)\F; permettent de 
+rduire ou d'agrandir les dimensions d'une page, et par consquent le 
+\bold;nombre de pages affiches\roman;. En fonction 
+des dimensions d'une page, TEXT affiche encore une ou plusieurs pages suivantes. \image textpet8,2,=;Les trois \ital;boutons\roman; \bold;caractres\roman;, \bold;mots\roman; et 
+\bold;paragraphes\roman; mettent en vidence le texte dans les pages de diffrentes 
+faons.\image textpeti,2,5mm;Si le texte n'est pas reprsent intgralement dans la ou les pages affiches, 
+les rectangles \D;(MONTE)\F; et \D;(DESCEND)\F; affichent les pages prcdentes 
+ou suivantes.\NOUVEAU;Le rectangle \D;(TERMINE)\F; retourne au mode normal d'dition. Le curseur 
+(petit triangle) n'a pas t dplac. \bold;Pour retourner au mode normal d'dition 
+en dplaant le curseur, il suffit de cliquer avec le bouton de gauche 
+de la souris  l'endroit souhait dans l'une des petites pages affiches\roman;.\image textpetf,2,=;

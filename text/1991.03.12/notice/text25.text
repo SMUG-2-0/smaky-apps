@@ -1,0 +1,27 @@
+\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\centre;\ub20;Nouveauts dans  \br80;TEXT\ub20;  version 2.5\justif;\ur10;\L;Par dfaut, TEXT utilise le gnrateur de caractres \bold;Univers09\roman; 
+en lieu et place de Messenger09 pour les 
+graphismes \ital;Fond\roman; et \ital;Evidence\roman;. Le fichier 
+100_URP09.GENC doit donc tre prsent.\L;Les \bold;indentations\roman; sont possibles simplement grce  une nouvelle 
+bote dans les rgles (la cinquime depuis la gauche). Cette bote reprsente 
+une flche tourne contre le bas appele \ital;indentateur\roman;. Il est 
+possible d'en mettre plusieurs dans une mme rgle pour raliser des indentations 
+ \bold;plusieurs niveaux\roman;. L'indentation dbute lorsque la touche \D;(TAB)\F; 
+est appuye, jusqu' la fin du paragraphe \D;(RETURN)\F;. 
+Le paragraphe indent peut tre align, en drapeau  gauche ou  droite, ou centr.\L;Les \bold;tabulateurs numriques\roman; fonctionnent correctement mme avec 
+un nombre sans point ou sans virgule.\L;La touche \D;(CTRL)\F; associe aux flches \bold;dplace le curseur de faon 
+absolue\roman;. Par exemple, \D;(CTRL-C)\F; descend le curseur juste en dessous.\L;Les touches \D;(CURSOR-Z)\F; et \D;(CURSOR-B)\F; dplacent le curseur \bold;paragraphe 
+par paragraphe\roman;. Les autres touches super-shift habituelles telles que 
+\D;(CURSOR-KILL)\F;, \D;(COPY)\F;, etc. fonctionnent aussi.\L;La touche \D;(CLEAR)\F; du pav numrique ferme toutes les images, et permet 
+donc d'appuyer sur \D;(M0)\F; pour \bold;changer de disquette\roman;. 
+De plus, la liste des caractres disponibles sera automatiquement refaite 
+en appuyant sur \D;(Car.)\F; puis \D;(MODIFIE)\F; ou \D;(CREE)\F;.\L;Les touches \D;(PROGRA-[)\F; et -\D;(PROGRA-])\F; insrent les caractres 
+spciaux << et >> (codes 30 et 31 dcimal).\L;Avec \bold;deux lecteurs de disquettes\roman;, si vous prenez un texte sur #mm1:, les 
+\bold;images\roman; seront aussi cherches sur #mm1:. Lorsque vous collez une image, il 
+suffit donc de donner son nom (sans #mm1:) pour qu'elle soit prise sur la 
+mme unit ou dans le mme rpertoire que le fichier texte.\L;Lors d'une erreur avec \D;(Prend)\F; (par exemple: fichier n'existe pas), 
+il est possible \bold;d'diter  nouveau le nom du fichier\roman;.\L;Si vous collez une image en donnant "#mm1:vis", TEXT n'ajoute plus "hn56" 
+juste aprs l'image  chaque reprise du texte.\L;Param: L'interligne par dfaut est de \bold;4.2mm\roman; quelle que soit l'imprimante.\L;La \bold;vue d'ensemble\roman; obtenue avec \D;(Tout)\F; fonctionne mme si les pages 
+sont trs petites. Ceci est utile pour vrifier des tiquettes auto-collantes 
+gnres par GESDO avant impression, car chaque tiquette est une page.\L;Lors du \bold;dmarrage\roman; de TEXT, si un fichier vient  manquer, son 
+nom est affich clairement.\L;L'affichage du nombre de caractres utiliss dans un texte fonctionne 
+correctement au-del de 999.\carte; DR 5.11.85

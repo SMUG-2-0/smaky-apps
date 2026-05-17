@@ -1,0 +1,77 @@
+\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define T:\ub20;\up 2.5mm;\line 0.2mm,166mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,166mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\identoff;\saute -4mm;\image smakyinfo,3,=;\justif;\saute -7mm;\T;\saute -3mm;\image titre,3,=;\saute -6.5mm;\A;TOTO A LA MAISON est un jeu ducatif pour des \B;enfants  partir de quatre ans\R;. 
+Ce didacticiel se veut attractif et trs simple d'emploi. TOTO est un petit 
+personnage sympathique qui vivra avec l'enfant toutes sortes d'aventures 
+extraordinaires,  la maison.\image infomais,2,=;L'enfant peut voir des scnes animes et diffrentes \B;pour chaque lettre du clavier\R;. 
+Il enrichira ainsi son vocabulaire, et apprendra l'alphabet. 
+De courtes pices musicales agrmentent ici et l les actions de TOTO. 
+Ces pices sont issues du rpertoire enfantin et populaire.\D;(A)\F;\ind 7mm;\bold;acrobatie\roman;\ind 30mm;
+TOTO accomplit quelques acrobaties depuis son fauteuil.\D;(B)\F;\ind 7mm;\bold;bain\roman;\ind 30mm;
+TOTO prend son bain. Si l'enfant oublie de couler l'eau, 
+TOTO montre sa dsapprobation et incite  appuyer sur \D;(R)\F;=robinet.\image infobain,2,30mm;\D;(C)\F;\ind 7mm;\bold;cuire\roman;\ind 30mm;
+TOTO utilise la cuisinire pour mijoter un petit plat.\D;(D)\F;\ind 7mm;\bold;dessin\roman;\ind 30mm;
+TOTO effectue un petit dessin au tableau noir. Pour rompre la monotonie, 
+le dessin varie d'une fois  l'autre.\D;(E)\F;\ind 7mm;\bold;cran\roman;\ind 30mm;
+TOTO droule l'cran puis montre des diapositives d'animaux ou d'objets 
+commenant toutes par la lettre "E", prononce "" ou "". L'enfant est invit  dcouvrir 
+le nom de l'objet montr sur l'cran. Si l'cran est droul plusieurs 
+fois, les animaux ou les objets changent.\image infoecr,2,30mm;\D;(F)\F;\ind 7mm;\bold;fte\roman;\ind 30mm;
+C'est la fte de TOTO, et il va chercher  la cuisine un magnifique gteau 
+d'anniversaire. Malheureusement, l'escalier est tout proche...\D;(G)\F;\ind 7mm;\bold;galetas\roman;\ind 30mm;
+TOTO va visiter le galetas de sa maison. La visite se termine par une chute 
+vertigineuse!\newtab 30mm,84mm;\D;(H)\F;\ind 7mm;\bold;histoire\roman;\ind 30mm;
+TOTO va chercher un livre dans la bibliothque, et raconte une histoire 
+suggre par une petite musique anisi qu'une image. TOTO sait lire 
+six histoires diffrentes.\demi;\I;	C'est la mre Michel	A la claire fontaine	Sur le pont d'Avignon	Alouette, gentille alouette	Il tait une bergre	En passant par la Lorraine\R;\image infohis,2,30mm;\saute -2mm;\D;(I)\F;\ind 7mm;\bold;illusion\roman;\ind 30mm;
+TOTO joue  l'illusionniste. Il fait disparatre diffrents meubles dans 
+sa maison. Notez qu'il ne fait pas toujours disparatre les mmes.\D;(J)\F;\ind 7mm;\bold;jumeaux\roman;\ind 30mm;
+Saviez-vous que TOTO a un frre jumeau, exactement semblable  lui?\D;(K)\F;\ind 7mm;\bold;kangourou\roman;\ind 30mm;
+TOTO se prend tout d'un coup pour un kangourou...\D;(L)\F;\ind 7mm;\bold;lune\roman;\ind 30mm;
+C'est la nuit, et la lune va apparatre avec une jolie musique. 
+TOTO se couche. Pour continuer de jouer avec TOTO, l'enfant doit 
+absolument appuyer sur la lettre \D;(S)\F; pour demander le lever du soleil.\image infolune,2,30mm;\D;(M)\F;\ind 7mm;\bold;mlasse\roman;\ind 30mm;
+TOTO fait des btises avec le pot de mlasse dans la cuisine...\D;(N)\F;\ind 7mm;\bold;navire\roman;\ind 30mm;
+TOTO va chercher le navire dans la bouteille, en haut de l'tagre du salon.\D;(O)\F;\ind 7mm;\bold;orage\roman;\ind 30mm;
+Ae, un terrible orage surprend TOTO dans ses activits!\D;(P)\F;\ind 7mm;\bold;poupe\roman;\ind 30mm;
+TOTO aime bien donner le biberon  sa poupe, mais il prfre encore 
+le boire lui-mme!\D;(Q)\F;\ind 7mm;\bold;queue\roman;\ind 30mm;
+Il arrive parfois que TOTO ressemble au Marsupilami...\D;(R)\F;\ind 7mm;\bold;robinet\roman;\ind 30mm;
+TOTO ouvre le robinet pour couler l'eau dans la baignoire. 
+Ceci est prfrable avant qu'il prenne son bain.\D;(S)\F;\ind 7mm;\bold;soleil\roman;\ind 30mm;
+Lever du soleil. Si la lettre \D;(L)\F; a t utilise et que la lune est 
+prsente, TOTO va sortir de son lit, de plus ou moins bonne humeur, et 
+faire un peu de gymnastique matinale.\D;(T)\F;\ind 7mm;\bold;tlvision\roman;\ind 30mm;
+Tranquillement assis dans son fauteuil, TOTO regarde la tlvision.\D;(U)\F;\ind 7mm;\bold;urgent\roman;\ind 30mm;
+Subitement, TOTO est trs press. Il court  travers toute la maison...\D;(V)\F;\ind 7mm;\bold;varicelle\roman;\ind 30mm;
+Voil que TOTO est gravement malade. Son corps est couvert de boutons: 
+c'est la varicelle...\image infovar,2,30mm;\D;(W)\F;\ind 7mm;\bold;wagon\roman;\ind 30mm;
+TOTO va chercher un wagon dans l'armoire, pour jouer.\D;(X)\F;\ind 7mm;\bold;xylophone\roman;\ind 30mm;
+TOTO joue du xylophone, uniquement avec deux notes. Ceci permet  l'enfant 
+d'apprendre la diffrence entre une note aigu et une note grave.\D;(Y)\F;\ind 7mm;\bold;yogourt\roman;\ind 30mm;
+TOTO va chercher un yogourt dans le frigidaire, qu'il mange avec dlice.\D;(Z)\F;\ind 7mm;\bold;zigzag\roman;\ind 30mm;
+TOTO dessine des zigzags contre le mur avec un gros crayon noir. 
+Heureusement, sa baguette magique lui permet de tout effacer en un 
+clin d'oeil!La maison de TOTO a deux tages. Pour passer de l'un  l'autre, TOTO 
+utilise un \B;ascenseur\R;. Afin d'inciter une certaine rflexion chez 
+l'enfant, TOTO demande parfois d'appuyer sur \D;(M)\F; pour monter 
+et sur \D;(D)\F; pour descendre. Mais le plus souvent, il monte et descend 
+spontanment. Attention: il arrive que l'ascenseur se dtraque!\image infoerr,2,30mm;Les actions correspondant aux 26 lettres de l'alphabet ne sont pas toujours 
+strictement identiques. Par exemple, l'cran a parfois de la peine  descendre, 
+et TOTO s'nerve!La \B;souris\R; dplace une main sur l'cran. L'enfant peut montrer un 
+objet ou un meuble avec cette main, puis \I;cliquer\R; sur un bouton 
+de la souris. Si l'objet ou le meuble correspond a une lettre de l'alphabet, 
+TOTO excute l'action correspondante:\image infomain,2,=;\saute -3mm;\image infosour,2,=;Cependant, les actions suivantes ne peuvent pas tre actionnes avec la souris:\newtab 19mm,29mm,69mm,79mm,119mm,129mm;\demi;
+	\D;(I)\F;	illusion	\D;(M)\F;	mlasse	\D;(U)\F;	urgent	\D;(J)\F;	jumeaux 	\D;(O)\F;	orage	\D;(W)\F;	wagon	\D;(K)\F;	kangourou	\D;(Q)\F;	queue	\D;(Z)\F;	zigzagLes \B;touches fonctions\R; \D;(F1)\F;, \D;(F3)\F;, \D;(F5)\F; et \D;(F8)\F; 
+permettent  l'enfant de construire de vritables histoires:\image infodbhi,2,=;Une histoire est une succession d'actions lmentaires, dcrites par une lettre. 
+Dans l'exemple ci-dessus, le script "\B;rb\R;" indique que TOTO devra couler 
+l'eau de son bain (\B;r\R;obinet), puis qu'il se baignera (\B;b\R;ain). 
+Pendant que l'histoire est \I;raconte\R; (en appuyant sur \D;(F8)\F;), 
+l'enfant peut exercer son imagination en expliquant  haute voix ce qu'il voit 
+sur l'cran.Les histoires peuvent tre sauves et reprises sur disquette, sous forme de 
+fichiers (\I;nom.TOTO\R;).Les autres \B;touches fonctions\R; ne doivent pas tre utilises par les enfants. 
+C'est pourquoi elles n'agissent que si elles sont actionnes avec \D;(SHIFT)\F;. 
+Par exemple, \D;(SHIFT-F15)\F; propose le dialogue suivant:\saute -3mm;\image infodbox,2,=;\saute -5mm;\DBO1;\ind 8mm;\B;lettres minuscules\R;\DBO0;\ind 8mm;\B;lettres MAJUSCULES\R;\demi;Les mots choisis sont affichs en bas  gauche de l'cran, en majuscules ou 
+en minuscules selon le bouton enfonc.\demi;\DBC1;\ind 8mm;\B;musiques et bruitages\R;\demi;Si la petite croix est enleve, TOTO perd beaucoup de son intrt. 
+Mais c'est parfois ncessaire, par exemple dans une salle de classe 
+remplie d'enfants jouant avec TOTO sur plusieurs SMAKY!\demi;\DBC1;\ind 8mm;\B;choix aussi avec la souris (main)\R;\demi;L'usage de la souris est tellement naturel qu'il faut parfois interdire 
+son usage pour obliger les enfants  utiliser le clavier.Les mouvements de TOTO sont dcomposs en images lmentaires. 
+Voici deux exemples: la marche et un demi-tour.\image infomouv,2,=;TOTO A LA MAISON, c'est aussi:\demi; 12 Koctets de programme 20 Koctets de table de description des mouvements  8 Koctets de musiques130 Koctets d'images animes (icnes de TOTO) 32 Koctets d'images fixes (maison)\demi;\ecarte;DR 1.7.88

@@ -1,0 +1,83 @@
+\cpage=66;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\T;\ICONE icodisk;14 La reprise et l'archivage\A;Les touches fonctions \D;(Prend)\F; et \D;(Sauve)\F; permettent de 
+reprendre ou d'archiver un texte sur disquette. L'opration \bold;disque\roman; 
+apparaissant avec le \bold;bouton du milieu\roman; de la souris est quivalente. 
+Le milieu de la premire ligne en vido inverse indique le 
+\bold;nom du texte actuellement visible\roman; (par 
+exemple \ital;essai.text\roman;). Si vous tes en train de crer un nouveau texte, 
+et que son nom n'est pas encore connu, la premire ligne n'affiche rien.La touche fonction \D;(Prend)\F; fait apparatre un menu avec deux 
+\ital;boutons\roman;:\image dboxpren,3,=;o  \bold;\_le document entier\_\roman;\demi;Mode normal. Le texte est lu avec sa mise en page, ses rgles, etc.\NOUVEAU;o  \bold;\_le texte seul\_\roman;\demi;Ignore la mise en page (les commandes \ital;boa\roman;) du texte  lire. Ceci 
+est utile pour reprendre des textes faits avec l'ancien diteur EDIT, ou pour 
+refaire totalement diffremment la mise en page d'un texte.\D;(PREND)\F;\demi;Indique la reprise exclusive d'un texte. Si un autre texte 
+est visible dans la fentre, celui-ci est d'abord archiv (s'il a t 
+modifi) ou effac pour faire \bold;place nette au nouveau texte\roman;.\image dboxpmaj,3,=;\D;(AJOUTE)\F;\demi;Ajoute le texte  l'endroit o est le curseur. Le nom du texte (affich au 
+milieu de la premire ligne) n'est pas chang. Vous pouvez, par exemple, crer 
+quelques fichiers avec des salutations standards frquentes (Veuillez 
+agrer, Monsieur, etc.) puis les ajouter  la fin d'une lettre avec 
+\D;(AJOUTE)\F;.\ATTENTION;\R;Avec \D;(AJOUTE)\F;, le fichier insr est 
+mis en page en fonction du contexte (rgle la plus proche contre en-haut). Ce 
+n'est pas le cas avec \D;(PREND)\F;, o le texte garde sa mise en page spcifique.\bold;Qu'arrive-t-il si vous ne vous souvenez plus du nom du texte  prendre?\roman;Heureusement, le Smaky vient  votre aide. \ital;Cliquez\roman; avec la souris 
+dans le rectangle \D;(LISTE)\F;, et vous voyez apparatre la liste de tous les 
+textes archivs, \bold;classe par ordre alphabtique\roman;:\image dboxlist,2,=;Si la liste est longue (plus de 28 textes) et ne peut pas tre prsente en 
+une seule fois, les rectangles \D;(MONTE)\F; et \D;(DESCEND)\F; permettent 
+de la parcourir. Les cinq \ital;boutons\roman; prsents permettent d'afficher 
+la taille (en caractres) de chaque texte, la date de cration, etc.\NOUVEAU;Si votre disquette contient beaucoup de fichiers, et que vous ne voulez 
+lister que ceux qui commencent par DU (par exemple), tapez DU* \bold;avant\roman; 
+de \ital;cliquer\roman; \D;(LISTE)\F;. L'astrisque remplace n'importe quoi. Par 
+exemple, *ET* listera les fichiers L\_ET\_TRE, \_ET\_OILE ou JUILL\_ET\_.Pour lister les fichiers de la deuxime unit de disquettes, appuyez sur \D;(TAB)\F; 
+(pour donner #MM1:) \bold;avant\roman; de \ital;cliquer\roman; \D;(LISTE)\F;.Lorsque vous avez vu le texte recherch, \ital;cliquez\roman; son nom avec 
+la souris (pour le mettre en vidence), puis \ital;cliquez\roman; dans \D;(CHOISIT)\F;.La touche fonction \D;(Sauve)\F; fait apparatre un menu avec deux 
+\ital;boutons\roman;. Si le nom du texte est dj connu, il apparat dans 
+la bote de dialogue. 
+La touche \D;(UNDO)\F; l'efface s'il est ncessaire de donner un autre nom.\image dboxsauv,3,=;o  \bold;\_le document entier\_\roman;Le texte est sauv avec sa mise en page, ses rgles et ses images. C'est le 
+mode normal pour sauver un texte (fichier avec l'extension \ital;.text\roman;).o  \bold;\_le texte seul\_\roman;Le texte est sauv en ngligant le choix des caractres, les rgles et les 
+images colles. A la reprise, tout rapparat avec le caractre du \ital;Fond\roman;. 
+Ce \ital;bouton\roman; est ncessaire pour sauver un \bold;programme BASIC\roman;, 
+\bold;LOGO\roman;, \bold;MODULA\roman; ou \bold;PROLOG\roman;.\ATTENTION;\R;Lorsque vous quittez TEXT avec la touche \D;(Fin)\F; 
+ou \D;(END)\F;, toutes les zones modifies ou non-vides sont proposes pour 
+tre archives.\T;\NOUVEAU;\ICONE icoautre;14.1 Les modifications\A;La touche \D;(F2)\F; intitule \D;(Modif)\F; permet de \bold;dtruire\roman; 
+un texte devenu inutile, de \bold;dplacer\roman; ou de \bold;dupliquer\roman; un 
+texte sur une autre disquette, etc.\image dboxmodi,3,=;\D;(DETRUIT)\F;\demi;Supprime le texte donn dans le rectangle suprieur.\D;(DEPLACE)\F;\demi;Dplace le texte donn dans le rectangle suprieur dans le nom donn dans le 
+rectangle infrieur. Par exemple:\newtab 15mm,50mm,75mm;	ESSAI	ou	ESSAI	#MM1:ESSAI		#MM1:\demi;Dplace ESSAI sur la deuxime unit de disquette (il n'existera plus sur l'unit 
+principale).	ESSAI	LETTRE\demi;Dplace ESSAI en LETTRE sur la mme disquette. En fait, seul le nom est chang.\D;(DUPLIQUE)\F;\demi;Duplique le texte donn dans le rectangle suprieur avec le nom donn dans le 
+rectangle infrieur. Par exemple:	ESSAI	ou	ESSAI	#MM1:ESSAI		#MM1:\demi;Duplique ESSAI sur la deuxime unit de disquette (il existera  double).	ESSAI	LETTRE\demi;Duplique ESSAI en LETTRE sur la mme disquette (il existera  double, avec 
+deux noms diffrents).\T;\ICONE icoprint;14.2 L'impression\A;Pour imprimer votre texte, appuyez sur le \bold;bouton du milieu\roman; de 
+la souris pour le relcher dans la case \bold;imprime\roman;. La touche \D;(F15)\F; 
+intitule \D;(Imp.)\F; a le mme effet:\image dboximp,3,=;\NOUVEAU;\L;\bold;impression simultane\roman;\demi;Une petite croix ici indique que pendant l'impression, vous pouvez continuer 
+d'utiliser TEXT normalement, par exemple pour prparer un autre texte.\ATTENTION;Le texte  imprimer est d'abord sauv sur la disquette, puis un 
+\ital;processus fils\roman; le lit et l'imprime par petites tranches. 
+\bold;Ce mode ne fonctionne donc pas sur une disquette protge en criture\roman; 
+(petite tiquette autocollante sur le ct).\NOUVEAU;o  \bold;Qualit, normal ou brouillon\roman;\demi;Choix de la qualit d'impression. Tous les choix n'existent pas avec toutes 
+les imprimantes!La touche fonction \D;(F11)\F; intitule \D;(Param.)\F; permet de visualiser 
+et ventuellement de modifier quelques paramtres lis  l'imprimante.\image dboxpara,3,=;\bold;L'interligne standard\roman; correspond  l'interligne simple. Par exemple, 
+5.6 permet les trois interlignes rels 5.6mm (simple), 8.4mm (un et demi) et 
+11.2mm (double)  l'aide des icnes de la rgle.\bold;Largeur et hauteur d'une page\roman; dpendent du papier utilis par 
+l'imprimante. Lorsque la largeur du papier dpasse la largeur de l'cran, TEXT 
+met automatiquement l'ascenseur horizontal.\ATTENTION;La valeur par dfaut de tous ces paramtres dpend du \ital;status\roman; 
+de l'imprimante. Ils font ensuite partie intgrante du texte, et sont donc archivs 
+et repris avec lui.\T;14.3 La ligne de commande\A;Il est possible d'ajouter les paramtres suivants dans la ligne de commande:\bold;TEXT ESSAI\roman;\ind 32mm;Lit tout de suite le texte ESSAI.TEXT\bold;TEXT BAS/I\roman;\ind 32mm;Utilise TEXT pour diter des programmes BASIC. 
+L'extension par dfaut devient \ital;.bas\roman;, et le texte sauv ne contient 
+plus de commandes \ital;boa\roman;. En fait, sitt que la ligne de commande contient 
+XYZ/I, les textes sauvs n'ont plus de commandes (par exemple: LOGO/I, ASM/I, 
+etc.).\demi;\bold;TEXT 20%/M\roman;\ind 32mm;Prend 20% de la mmoire pour le texte. Les 
+80% restants sont pour les gnrateurs de caractres, ou pour d'autres programmes.\bold;TEXT 1000/M\roman;\ind 32mm;Prend 1000octets de mmoire pour le texte.\bold;TEXT -5000/M\roman;\ind 32mm;Prend toute la mmoire pour le texte, sauf 
+5000octets.Ces possibilits sont \bold;cumulables\roman;, ce qui permet de donner, par 
+exemple:\bold;TEXT 40%/M SINUS BAS/I\roman; \D;(RETURN)\F;\T;14.4 Les fichiers ncessaires\A;En plus du systme PSos complet, voici la liste des fichiers ncessaires pour 
+que TEXT fonctionne:TEXT.CODE\ind 32mm;programme100_DBOX.LIB\ind 32mm;gestion des botes de dialogue100_DGENC.LIB\ind 32mm;touche \D;(F7)\F; intitule \D;(Car.)\F;100_SCROLL.LIB\ind 32mm;ascenseurs100_LIST.LIB\ind 32mm;touche \D;(LISTE)\F; dans les botes de dialogue100_COUPE.LIB\ind 32mm;algorithme de coupure dans les mots avec dictionnaire d'exceptions100_GENCAR.LIB\ind 32mm;construction des caractres gras, italiques, etc.100_ITP16.GENC\ind 32mm;icnes des rgles, menus, etc.100_NEF11.GENC\ind 32mm;caractres standard100_URP09.GENC\ind 32mm;caractres par dfaut pour "Fond" et "Evidence".\ATTENTION;De plus, \bold;l'imprimante doit tre installe\roman;!\T;15 Format interne\A;\bold;La lecture de ce paragraphe n'est pas indispensable\roman;, puisqu'il explique 
+de quelle faon TEXT code un texte sur disque. Seul le spcialiste trouvera ici 
+matire  satisfaire sa curiosit.Un fichier texte ne contient que des \bold;caractres ASCII standards\roman;, 
+plus quelques \bold;commandes\roman;. Une commande commence par le caractre 
+\ital;boa\roman; "\\" (barre oblique arrire) et se termine par le caractre 
+point-virgule ";".Le \bold;dbut du texte\roman; contient les commandes suivantes:\\ver 1;\\disable <cr>;\\hauteur 304.8mm;\\marsup 20mm;\\marinf 20mm;\\interligne 16pg;\\marge 0mm;\\large 210mm;\\disable justmode textdef textfact;\\disable justif drapeau drapd centre;\\disable marge large renf newtab justtab;\\disable coupe nocoupe <tab>;\\justmode 20,5,5;\\textdef 31;\\textfact 5,2;\\enable <cr>;\\define g_Fond:\\n(f)12pg;\\define g_Titre:\\m(f)17pg;\\define g_Evidence:\\n(bf)12pg;etc.Une \bold;rgle\roman; gnre huit commandes (sur une mme ligne):\\justif;\ind 45mm;mode de mise en page (justification)\\interligne 16pg;\ind 45mm;interligne\\marge 20mm;\ind 45mm;marge gauche\\large 190mm;\ind 45mm;largeur pour le texte\\renf 35mm;\ind 45mm;renfoncement\\newtab 30mm,82.3mm;\ind 45mm;colonnes de tabulation\\justtab n,d;\ind 45mm;modes des tabulateurs\\nocoupe;\ind 45mm;pas de divisions dans les motsUne \bold;image\roman; gnre une seule commande:\\image vis,1,23.7mm;Voici la \bold;liste complte\roman; des commandes. Un paramtre numrique 
+est indiqu de la faon suivante:\ital;xpg\roman;\ind 25mm;paramtre horizontal en points graphiques.\ital;ypg\roman;\ind 25mm;paramtre vertical en points graphiques.\ital;xmm\roman;\ind 25mm;paramtre horizontal en millimtres.\ital;ymm\roman;\ind 25mm;paramtre vertical en millimtres.\\disable \ital;commande(s)\roman;;\ind 45mm;Liste des commandes que le driver 
+d'imprimante doit ignorer.\\disable <tab>;\ind 45mm;Liste des caractres que le driver d'imprimante doit 
+ignorer.\\define g_\ital;Fond:\\n(f)12\roman;;\ind 45mm;Dfinition des caractres utiliss.\ind 45mm;Les fontes possibles (et cumulables) sont:\ind 45mm;i  italique\ind 45mm;b  gras\ind 45mm;o  relief\ind 45mm;s  ombr\ind 45mm;l  double largeur\ind 45mm;f  chasse fixe\\g_\ital;Fond\roman;;\ind 45mm;Utilisation d'un caractre pr-dfini.\\_\ind 45mm;Dbut ou fin de soulign.\\up;\ind 45mm;Dbut d'exposant ou fin d'indice.\\down;\ind 45mm;Dbut d'indice ou fin d'exposant.\\\\\ind 45mm;Imprime un "boa".\\h \ital;xpg\roman;;\ind 45mm;Espace horizontal ventuellement soulign. Cette commande est 
+utilise pour mettre les cales en justification aligne.\\hn \ital;xpg\roman;;\ind 45mm;Espace horizontal jamais soulign. Cette commande est utilise 
+pour faire la marge gauche et les tabulateurs.\\justif;\ind 45mm;Justification aligne.\\justifie;\ind 45mm;Idem.\\justifi;\ind 45mm;Idem.\\drapeau;\ind 45mm;Justification en drapeau  droite.\\drapg;\ind 45mm;Idem.\\drapd;\ind 45mm;Justification en drapeau  gauche.\\centre;\ind 45mm;Justification centre.\\centr;\ind 45mm;Idem.\\nocoupe;\ind 45mm;Pas de divisions dans les mots.\\coupe;\ind 45mm;Divisions dans les mots si ncessaire.\\interligne ypg;\ind 45mm;Valeur de l'interligne.\\hauteur \ital;ymm\roman;;\ind 45mm;Hauteur totale de la page.\\marsup \ital;ymm\roman;;\ind 45mm;Marge suprieure.\\marinf \ital;ymm\roman;;\ind 45mm;Marge infrieure.\\large \ital;xmm\roman;;\ind 45mm;Largeur depuis la marge gauche.\\largeur \ital;xmm\roman;;\ind 45mm;Idem.\\marge \ital;xmm\roman;;\ind 45mm;Marge gauche.\\renf \ital;xmm\roman;;\ind 45mm;Renfoncement positif ou ngatif depuis la marge gauche.\\justmode \ital;j,d,n\roman;;\ind 45mm;Mode de justification global.\ind 45mm;j  % jusqu'o peuvent tre tendus les espaces\ind 45mm;d  % pour la partie vide de la ligne\ind 45mm;n  nombre minimal de lignes par paragraphe\\textdef \ital;b\roman;;\ind 45mm;Dfinitions globales.\ind 45mm;bit 0  affiche les rgles\ind 45mm;bit 1  affiche les images\ind 45mm;bit 3  affiche les fins de paragraphes\ind 45mm;bit 4  aide pour situer le curseur\ind 45mm;bit 5  affiche les cales\ind 45mm;bit 6  affiche les tabulateurs\ind 45mm;bit 7  mmorise la dernire case\ind 45mm;bit 8  ascenseur horizontal\\textfact \ital;x,y\roman;;\ind 45mm;Facteur de rduction pour passer d'un point 
+graphique (pg)  un point rel de l'imprimante.\\newtab \ital;xmm,xmm,xmm\roman;;\ind 45mm;Colonnes de tabulation.\\justtab \ital;m,m,m\roman;;\ind 45mm;Modes des tabulateurs:\ind 45mm;n  pour un tabulateur droite (normal)\ind 45mm;g  pour un tabulateur gauche\ind 45mm;c  pour un tabulateur centr\ind 45mm;d  pour un tabulateur dcimal\\image essai,1,\ital;xmm\roman;;\ind 45mm;Insertion d'une image. 
+Le paramtre \ital;xmm\roman; correspond  l'indentation  gauche de l'image, 
+en tenant compte d'une marge gauche nulle ( cause du \ital;disable marge\roman; 
+au dbut du texte).De plus, un texte contient quelques \bold;caractres spciaux\roman;, 
+dont voici la liste:\newtab 20mm,35mm;\down 0.5mm;\line 0.2mm,100mm;\up 0.5mm;
+\bold;Code	Hexa	Signification\roman;CR	H'0D	fin de paragrapheLF	H'0A	fin de ligneFF	H'0C	fin de page manuellePEOP	H'06	fin de page automatiqueTAB	H'09	avance sur le prochain tabulateurCADRATIN	H'02	espace indivisibleTIRET	H'0B	division dans un mot\ATTENTION;\R;Lorsqu'un texte est sauv avec le \ital;bouton\roman; \bold;text seul\roman;, 
+il ne contient aucune commande et les seuls caractres spciaux admis sont 
+CR, FF, TAB et CADRATIN (les autres sont omis).
