@@ -1,0 +1,33 @@
+\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define T:\ub20;\up 2.5mm;\line 0.2mm,166mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,166mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\identoff;\image smakyinfo,3,=;\centr;\T;Animations avec FILM\A;\justif;Le logiciel FILM permet de raliser de \B;courtes animations cycliques\R; sur l'cran du 
+SMAKY. Une animation est constitue de \B;plusieurs images affiches rapidement\R; 
+les unes aprs les autres, dans un ordre dtermin. Les images peuvent tre 
+ralises avec DESSIN4, PLAN, BASIC, GRAPHE, ou mme digitalises avec SCANNER.L'exemple ci-dessous montre huit images qui dcomposent les mouvements d'un 
+\B;cheval au galop\R;:\image galop,2,=;Avec FILM, ces huit images permettront de simuler le galop du cheval 
+sur l'cran du SMAKY. De plus, en dplaant progressivement les images de gauche  
+droite, on donnera l'illusion que le cheval avance!\image film1,2,=;Un film est constitu d'\B;images\R;, mais aussi d'\B;effets\R; (attentes et 
+transitions). Les images et les effets sont consigns dans un \B;script\R;, 
+qui dtermine l'ordre d'excution.\pum;\centre;\bold;- 2 -\roman;\pom;Par exemple, avec quatre images, on peut imagimer les \B;scripts\R; suivants:\newtab 33mm,75mm,117mm;	Image 1	Image 1	Image 1	Image 2	Image 2	Image 2	Image 3	Image 3	Image 3	Image 4	Image 4	Attend 1 s	Recommence	Image 3	Image 3		Image 2	Image 2		Recommence	Image 1			Attend 1 s			RecommenceOn constate qu'un script est toujours termin par \I;Recommence\R;, car les films 
+sont cycliques.Pour \B;raliser un film\R;, il faut procder comme suit:\B;1)\R;\ind 10mm;\B;Crer les images\R;, avec DESSIN4, PLAN, BASIC, GRAPHE, SCANNER, etc. 
+Toutes les images doivent avoir le mme nom, suivi d'un numro de deux chiffres. 
+Par exemple: ESSAI01, ESSAI02 et ESSAI03. De plus, \B;toutes les images doivent avoir 
+exactement les mmes dimensions\R;.\image filmcree,2,=;\B;2)\R;\ind 10mm;\B;Excuter FILM\R;, puis activer la fonction \D;(PREND)\F;. Donner le nom 
+(ESSAI dans notre exemple) avec l'option \B;fichiers *nn.IMAGE\R;:\demi;\image dboxpren,2,=;\demi;\B;3)\R;\ind 10mm;\B;Construire le script\R;,  l'aide de la liste des images et ventuellement 
+de la liste des effets. Un \I;clic\R; de la souris dans l'ascenseur dplace simplement 
+la liste. Un \I;clic\R; dans la liste insre l'image ou l'effet dans le script.\ind 10mm;Un \I;clic\R; dans la premire case de la liste des images (intitule 
+\B;Tout...\R;) a pour effet d'insrer rapidement toutes les images dans le script.\B;4)\R;\ind 10mm;Lorsque le script est termin, actionner \D;(ANIME)\R; pour observer 
+le rsultat.\B;5)\R;\ind 10mm;Quand le film est termin, vous pouvez le \B;sauver sur disque\R; avec 
+\D;(SAUVE)\F;. Dans notre exemple, un fichier ESSAI.FILM sera cr sur disque.\pum;\centre;\bold;- 3 -\roman;\pom;\DBC1;\ind 10mm;\B;\_affiche\_\R;\demi;L'image slectionne dans la liste est affiche, aprs \B;rduction\R;, dans le 
+rectangle  gauche de la liste.\DBO1;\ind 10mm;\B;\_insre\_\R;\demi;Lors d'un \I;clic\R; dans une liste, l'image ou l'effet est insr \B;avant\R; la 
+case slectionne dans le script.\DBO1;\ind 10mm;\B;\_remplace\_\R;\demi;Lors d'un \I;clic\R; dans une liste, l'image ou l'effet remplace la 
+case slectionne dans le script. Remarque: ceci n'est pas valable pour 
+l'opration \I;Recommence\R; dans le script.\D;(SUPPRIME)\F;\demi;\B;Supprime la case slectionne\R; dans le script. Il n'est pas possible 
+de supprimer l'opration \I;Recommence\R;!\D;(EFFACE)\F;\demi;\B;Efface le script\R;, qui ne contiendra plus que l'opration \I;Recommence\R;. 
+Les images et le mouvement sont conservs.\D;(MOUVEMENT)\F;\demi;Dfinition du mouvement appliqu a la succession d'images. Ceci permet, par exemple, 
+de donner l'illusion qu'un cheval avance:\image dboxmove,2,=;\demi;Aprs avoir \I;cliqu\R; dans \D;(DESSINE)\F;, vous pouvez dessiner une droite 
+ou une ellipse, comme dans DESSIN4 ou PLAN, c'est--dire en \B;maintenant press le 
+bouton de la souris\R;:\image filmmove,2,=;\pum;\centre;\bold;- 4 -\roman;\pom;Avec l'effet \B;transition\R;, le logiciel FILM calcule de 1  31 images intermdiaires, 
+pour passer progressivement de l'image place avant l'effet  celle place aprs.Lors du sauvetage, l'option \DBC1;\B;sauve les images de transition\R; permet de sauver 
+ou non les images gnres automatiquement par les effets de \B;transitions\R;. Si la petite 
+croix est enleve, le fichier .FILM sera plus court, mais il faudra recalculer 
+toutes les images intermdiaires avant chaque visualisation du film.Voici trois exemples de \B;sept transitions\R; calcules entre l'image du haut et 
+celle du bas:\image trans,2,=;\up 1.5mm;\line 0.2mm,166mm;\down 1.5mm;\ub20;EPSITEC system sa, \ur10;CH-1092 Belmont\carte;Juin 1988

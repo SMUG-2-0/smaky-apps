@@ -1,0 +1,63 @@
+\cpage=68;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define LIGNE:\up 1mm;\line 0.2mm;\down 1mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE1:\up 0.5mm;\pug;\phchgen idp84;\code %1;\pog;\down 0.5mm;\define ICONE2:\up 0.5mm;\pug;\phchgen idp85;\code %1;\pog;\down 0.5mm;\define ICONEB1:\down 2mm;\pug;\phchgen idp84;\code %1;\pog;\up 2mm;\define ICONEB2:\down 2mm;\pug;\phchgen idp85;\code %1;\pog;\up 2mm;\define ICONEC1:\pug;\phchgen idp84;\code %1;\pog;\define ICONEC2:\pug;\phchgen idp85;\code %1;\pog;\define ICONEP1:\up 0.5mm;\pug;\phchgen idp42;\code %1;\pog;\down 0.5mm;\define ICONEP2:\up 0.5mm;\pug;\phchgen idp43;\code %1;\pog;\down 0.5mm;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;4 Le bouton du milieu\A;Un \I;clic\R; du bouton du milieu prsente toujours le \B;menu\R; suivant:\image dmmilieu,3,=;\ATTENTION;Ces diffrentes oprations sont accessibles galement avec les 
+\B;touches fonctions\R; \D;(F1)\F;  \D;(F15)\F;:\ind 30mm;\D;(F1)\F;\ind 55mm;Prend\ind 30mm;\D;(F2)\F;\ind 55mm;Ajoute\ind 30mm;\D;(F3)\F;\ind 55mm;Sauve\demi;\ind 30mm;\D;(F4)\F;\ind 55mm;Dfinitions\ind 30mm;\D;(F5)\F;\ind 55mm;Zoom\demi;\ind 30mm;\D;(F7)\F;\ind 55mm;Echelle -\ind 30mm;\D;(F8)\F;\ind 55mm;Echelle 1:1\ind 30mm;\D;(F9)\F;\ind 55mm;Echelle +\demi;\ind 30mm;\D;(F10)\F;\ind 55mm;Rgle\ind 30mm;\D;(F12)\F;\ind 55mm;Ngatif\demi;\ind 30mm;\D;(F13)\F;\ind 55mm;Tout\ind 30mm;\D;(F14)\F;\ind 55mm;Efface\ind 30mm;\D;(F15)\F;\ind 55mm;Imprime\T;4.1 Prend\carte;\ICONE1 65;\A;\B;Reprend\R; sur disque un dessin complet:\image dboxpren,2,=;La touche \D;(LISTE)\F; prsente le nom de tous les dessins 
+existants sur la disquette. Pour afficher la liste des dessins placs 
+dans le \B;deuxime lecteur de disquettes\R; (#mm1:), appuyez sur 
+\D;(TAB)\F; puis \D;(LISTE)\F;:\image dboxlist,2,=;Si le dessin actuellement visible n'est \B;pas  jour\R;, il vous est 
+propos de le mettre  jour avant d'en reprendre un nouveau:\image dboxsave,2,=;\T;4.2 Ajoute\carte;\ICONE1 66;\A;\B;Ajoute\R; un petit dessin contenu sur le disque dans le dessin actuel:\image dboxajou,2,=;Aprs avoir \I;cliqu\R; dans \D;(AJOUTE)\F;, la souris devient \ICONEP1 101;, 
+et il est possible de dplacer le petit dessin:\image dajoute,2,5mm;Pendant le dplacement du rectangle pointill, s'il dpasse 
+le bord de la surface de dessin, \B;l'cran se dplace automatiquement\R;, 
+plus ou moins rapidement selon le dpassement! 
+Lorsque l'emplacement dfinitif est trouv, un \I;clic\R; de la souris 
+termine.\ATTENTION;\REM;Le petit dessin est dplac selon \ICONEP1 27;, c'est--dire 
+selon le \B;pas\R; et le \B;mode de dplacement\R; (automatique, opaque, contour, etc.).\ind 30mm;Le paragraphe2.3.2 donne plus de dtails.\T;4.3 Sauve\carte;\ICONE1 67;\A;Sauve tout le dessin sur disque, dans un fichier \I;.image\R;.\image dboxsauv,2,=;\D;(SAUVE)\F;\ind 30mm;Sauve le dessin, avec confirmation s'il existe dj 
+un fichier .image ayant le mme nom.\demi;\D;(MET A JOUR)\F;\ind 30mm;Mise  jour rapide du dessin.\ATTENTION;\REM;Le cases \D;(SAUVE)\F; et \D;(METAJOUR)\F; sont inactives 
+(grises) si le nom donn est incorrect. Par exemple:\demi;\ind 30mm;\B;l'image\R;\ind 60mm;apostrophe pas admis\ind 30mm;\B;mon_dessin\R;\ind 60mm;nom trop long\ind 60mm;(9 caractres au maximum)\DBC;\B;sauve les pinceaux et les trames\R;\demi;Avec cette option, DESSIN gnre galement un fichier \I;.ddes\R; qui contient 
+l'environnement complet, c'est--dire:\DBF;outil, mode et objet slectionns\DBF;chelle\DBF;pas du dessin et mode de dplacement\DBF;tous les pinceaux (4x7)\DBF;toutes les trames (4x7)\DBF;toutes les oprations contour (8)\DBF;tous les choix de caractres (10)\DBF;choix pour les rectangles et les cerclesLors de la reprise du dessin, tous ces paramtres sont donc conservs.\T;4.4 Dfinitions\carte;\ICONE1 68;\A;Dtermine les \B;dimensions\R; (largeur x hauteur) du dessin. 
+Lorsque les dimensions sont rduites, le dessin est tronqu en bas et/ou  
+droite. La touche \D;(UNDO)\F; efface les dimensions actuelles pour permettre 
+d'en taper de nouvelles.\image dboxdef,2,=;\D;(ECRAN)\F;\ind 30mm;Met les dimensions standard qui correspondent 
+juste  la partie visible sur l'cran.\D;(PAGE)\F;\ind 30mm;Met les dimensions qui correspondent  une page complte 
+sur l'imprimante, selon la \B;prsentation\R; choisie avec le bouton du milieu 
+depuis START.\DBC;\B;zoom gnral\R;\demi;Si les dimensions (lxh) sont modifies, tout le dessin est \B;agrandi\R; ou 
+\B;rduit\R; (sans dformation) pour entrer dans les nouvelles dimensions.\DBO;\B;millimtres\R;\DBO0;\ind 8mm;\B;points graphiques\R;\demi;Les dimensions sont affiches en \B;points\R; ou en \B;millimtres\R; selon 
+l'option choisie. Par exemple, pour raliser un dessin carr de 10 centimtres 
+de ct, il faut \I;cliquer\R; l'option \B;millimtres\R;, appuyer la touche 
+\D;(UNDO)\R; pour effacer les dimensions actuelles, puis frapper 
+\B;100x100\R; au clavier.\DBC;\B;utilise les icnes\R;\demi;Normalement, la partie gauche de l'cran contient toujours des icnes, 
+pour choisir l'outil, le mode, l'objet, etc. Si la petite croix est enleve, 
+ces icnes disparaissent, pour laisser une plus grande surface au dessin. 
+Les icnes apparatront lorsque le \B;bouton du milieu\R; de la souris 
+est appuy, l o se trouve la souris. Par exemple:\image icone1,2,5mm;Ceci est valable quelles que soient les icnes:\image icone2,2,5mm;\DBC;\B;utilise les ascenseurs\R;\demi;Pour augmenter encore plus la surface du dessin, les ascenseurs peuvent 
+tre enlevs. Pour dplacer la partie visible du dessin, il reste la \B;main\R;, 
+et les raccourcis du clavier (voir paragraphe5).\DBC;\B;mmorise la dernire case\R;\demi;Chaque fois qu'un \B;menu\R; apparat, la souris sera positionne dans 
+la dernire case slectionne. On vite ainsi certains dplacements de la 
+souris, surtout lors d'oprations rptitives.\T;4.5 Zoom\carte;\ICONE1 61;\A;\B;Agrandit\R; ou \B;rduit\R; toute l'image:\image dboxzoom,2,=;Si le zoom horizontal est diffrent du zoom vertical, l'image sera dforme. 
+Les dimensions (lxh) de l'image sont augmentes ou diminues en consquence.\T;4.6 Echelle\carte;\ICONE1 71; \ICONE1 72; \ICONE1 73;\A;Il est possible de se \B;rapprocher du dessin pour mieux 
+voir un dtail\R;, ou de \B;s'loigner pour avoir une vue 
+d'ensemble\R; si le dessin est plus grand que l'cran.Lors d'un \B;rapprochement\R; pour mieux voir un dtail (chelle n:1), 
+un rectangle en haut  droite montre la partie agrandie. Les dimensions de 
+ce rectangle varient selon l'chelle.Lors d'un \B;loignement\R; pour avoir une vue d'ensemble (chelle 1:n), 
+tous les outils peuvent tre utiliss (bouton de gauche de la souris), 
+et toutes les modifications avec le bouton de droite sont accessibles, 
+par exemple pour dplacer ou dupliquer une grande partie du dessin, etc. 
+Il est galement possible de \B;sauver\R; ou de \B;reprendre\R; sur disque 
+de grandes parties rectangulaires du dessin.\ICONEB1 71;\ind 20mm;\B;Diminue\R; l'chelle, c'est--dire que les points 
+deviennent plus petits.\ICONEB1 73;\ind 20mm;\B;Augmente\R; l'chelle, c'est--dire que les points 
+deviennent plus grands.\ICONEB1 72;\ind 20mm;\B;Remet l'chelle 1:1\R;, o chaque point est reprsent 
+par un point sur l'cran. Il est galement possible de \I;cliquer\R; l'icne 
+des \B;jumelles\R; \ICONEP1 28;, en haut  gauche.\REM;Les chelles possibles vont de \B;1:8\R; (vue d'ensemble)  \B;16:1\R; 
+(grossissement).\T;4.7 Rgle\carte;\ICONE1 74;\A;Met ou enlve deux \B;rgles centimtriques\R;, l'une en haut et l'autre  
+droite du dessin. Ces rgles correspondent aux dimensions du dessin 
+\B;lorsqu'il sera imprim\R;.\image dregle,2,=;Le \B;triangle\R; prsent dans chaque rgle indique la position de la souris 
+(pointe du crayon dans l'exemple ci-dessus).\T;4.8 Ngatif\carte;\ICONE1 76;\A;Effectue un \B;ngatif\R; de toute l'image. Un deuxime ngatif remet 
+l'image dans son tat initial. Un point teint sur l'cran est noir, alors 
+que le mme point est blanc sur le papier. Il en rsulte qu'une mme image 
+correcte sur le papier est affiche en ngatif sur l'cran, ou l'inverse. 
+Cette opration permet donc d'ajuster facilement une image, pour 
+l'afficher ou l'imprimer.\sh;\image dneg1,2,2mm;\gh;\image dneg2,2,62mm;\T;4.9 Tout\carte;\ICONE1 77;\A;Choisit une chelle (1:n) permettant de voir \B;tout le dessin\R; sur l'cran.\image dtout,2,5mm;\ATTENTION;\REM;Plus la vue d'ensemble est prononce, et plus le dessin a tendance 
+ devenir \B;noir\R; sur l'cran (notamment au niveau des trames), 
+ce qui est parfaitement normal et n'altre en rien le dessin 
+lorsqu'il revient  l'chelle 1:1, ou lorsqu'il est imprim.\T;4.10 Efface\carte;\ICONE1 78;\A;\B;Efface\R; tout le dessin, aprs demande d'une confirmation:\image dboxeff,2,=;\T;4.11 Imprime\carte;\ICONE1 79;\A;\B;Imprime\R; tout le dessin  l'chelle 1:1, mme s'il est plus grand 
+que la partie visible  l'cran. DESSIN permet donc d'imprimer de grandes 
+surfaces sur une imprimante matricielle.\image dboximp,2,=;DESSIN utilise la \B;prsentation\R; choisie avec le bouton du milieu 
+de START.

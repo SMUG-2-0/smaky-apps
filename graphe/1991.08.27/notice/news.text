@@ -1,0 +1,46 @@
+\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\image smakynews,2,=;\ur14;27 octobre 1986\carte;No 35\line 0.3mm;\centre;\ub20;Programme GRAPHE sur SMAKY\line 0.3mm;\image sm1,2,=;\justif;\ur10;Le logiciel GRAPHE \bold;reprsente graphiquement des donnes numriques\roman; 
+en provenance d'autres logiciels. 
+Par exemple, les donnes peuvent provenir directement de FICHE. Le rsultat 
+produit par GRAPHE est une 
+\bold;image\roman;, qui peut tre imprime ou colle lectroniquement dans un texte. 
+On peut mme imaginer de la retoucher avec DESSIN (cependant, tous les exemples 
+imprims ici n'ont t ni retouchs ni complts).\demi;L'icne tout en haut  gauche prsente \bold;16 possibilits intressantes\roman; 
+parmis beaucoup d'autres:\image sm0,2,=;Toutes ces possibilits permettent de \bold;reprsenter diffremment les mmes 
+donnes numriques\roman;. A vous de choisir celle qui convient le mieux!\pum;\centre;\bold;- 2 -\roman;\pom;Les \bold;dimensions du graphique\roman; peuvent tre modifies  volont en dplaant 
+la petite icne en bas  droite de la fentre de dessin. Des \bold;rgles 
+centimtriques\roman; aident  dterminer prcisment les dimensions lors de 
+l'impression.\image sm2,2,=;Toutes les icnes de la partie gauche permettent d'agir sur diffrents 
+paramtres pour modifier la reprsentation graphique:\top;\saute 112mm;\pulm;\large 80mm;\sh;\image i11,3;\gh;\ind 15mm;\bold;Filtre\roman; certaines donnes 
+que l'on ne dsire pas reprsenter. Dans le cas d'une classe d'lves, 
+avec plusieurs moyennes par lve, vous pouvez ne reprsenter que les 
+branches principales.\sh;\image i12,3;\gh;\ind 15mm;Toujours dans le cas d'une classe d'lves, permet de 
+reprsenter les branches pour chaque lve, ou les lves pour chaque branche.\sh;\image i21,3;\gh;\ind 15mm;Choix de l'\bold;angle de vision\roman; pour  
+les vues en trois dimensions.\sh;\image i22,3;\gh;\ind 15mm;Position de la \bold;rfrence horizontale\roman;, 
+qui peut tre calcule automatiquement en fonction de la moyenne gnrale de 
+tous les nombres reprsents.\sh;\image i31,3;\gh;\ind 15mm;Insertion automatique d'une \bold;lgende\roman; pour indiquer 
+les noms correspondants  chaque type de trame, de trait ou de point.\sh;\image i32,3;\gh;\ind 15mm;Choix pour le \bold;systme d'axes\roman;. Prsence ou non des 
+graduations, des fonds de rfrences, etc.\sh;\image i33,3;\gh;\ind 15mm;Insertion du titre  gauche, ou centre ou  droite.\top;\saute 112mm;\marge 111mm;\sh;\image i41,3;\gh;\ind 15mm;Dfinition des 28 \bold;trames\roman; utilises 
+pour les histogrammes et les tranches de gteaux.\sh;\image i42,3;\gh;\ind 15mm;Dfinition des 28 \bold;traits\roman; utiliss 
+pour les lignes brises et les tranches de gteaux.\sh;\image i43,3;\gh;\ind 15mm;Dfinition des 28 \bold;points\roman; utiliss 
+pour les lignes brises.\sh;\image i51,3;\gh;\ind 15mm;Dfinition des trames globales. Par exemple: 
+trames de fond, trames pour les ombres en perspective, etc.\sh;\image i52,3;\gh;\ind 15mm;Dfinition des traits globaux. Par exemple: 
+traits pour les rectangles des histogrames, traits pour les axes, etc.\sh;\image i53,3;\gh;\ind 15mm;Dfinition des \bold;caractres\roman; utiliss pour le 
+titre, les graduations, les lgendes, etc.\polm;\pum;\centre;\bold;- 3 -\roman;\pom;Voici les deux types \ital;histogramme cte  cte\roman; et \ital;histogramme 
+empil\roman; reprsents en \bold;trois dimensions\roman;:\sh;\image sm3,2,0mm;\gh;\image sm4,2,90mm;\demi;Avec le type \ital;ligne brise\roman;, GRAPHE dessine des points qui sont 
+relis par des lignes droites ou par des \bold;courbes\roman;:\sh;\image sm5,2,0mm;\gh;\image sm6,2,90mm;\demi;Le mode \ital;ligne brise opaque\roman; permet de superposer des plans avec 
+diffrentes trames. Dans cet exemple, les points ont ts supprims.Avec le mode \ital;tranche de gteau\roman;, vous pouvez 
+choisir la ou les tranches  carter du centre:\sh;\image sm7,2,0mm;\gh;\image sm8,2,90mm;\demi;Les \ital;lignes brises\roman; peuvent galement apparatre en \bold;trois 
+dimensions\roman;, avec effacement des surfaces caches:\sh;\image sm9,2,0mm;\gh;\image sm10,2,90mm;\pum;\centre;\bold;- 4 -\roman;\pom;GRAPHE prsente de nombreuses \ital;botes de dialogue\roman; selon les 
+paramtres  modifier. Par exemple, le \bold;choix de l'angle de vision pour 
+les vues en trois dimensions\roman; apparat comme suit:\image sm11,2,=;Toutes les \bold;trames\roman; et \bold;lignes\roman; peuvent tre modifies 
+pour un besoin spcifique. 
+En gnral, on distingue soit des trames alternes (une claire, une fonce), 
+soit des trames progressives, comme dans cet exemple:\image sm12,2,=;Les \bold;points\roman; peuvent galement tre dessins individuellement:\image sm13,2,=;Les donnes numriques sont enregistres dans un fichier \bold;.GRAPH\roman; 
+sous une forme ditable (caractres ASCII). Elles peuvent donc provenir aussi 
+bien de TEXT, que du BASIC, etc. La syntaxe est extrmement simple; il suffit 
+de consulter un fichier .GRAPH prsent sur la disquette de dmonstration pour la 
+comprendre.Toutes les dfinitions d'un graphe sont enregistres dans un fichier .DGRA 
+(filtre, angle de vision, trames, traits, etc.). Les oprations \ital;prend\roman; 
+et \ital;sauve\roman; permettent de traiter les graphes (.GRAPH) \bold;et/ou\roman; 
+les dfinitions (.DGRA). Ceci permet, par exemple, pour un graphique donn, de 
+reprendre les dfinitions d'un autre.\ub20;EPSITEC system sa\carte;\ur10;Chemin de la Mouette, CH-1092 Belmont

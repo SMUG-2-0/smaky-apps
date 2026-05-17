@@ -1,0 +1,1 @@
+21729  1  2222717894  1  val16753  1  val15472  1  2222714295  1  francoise13709  1  val13161  1  val11743  0  francoise11665  1  francoise 8442  1  22227 6848  0  vn 6432  0  0 6286  0  val 6144  0  7470 5830  2   francoise  5263  1   francoise  5167  2   francoise  5135  5    4762  0  0 4394  5   

@@ -1,0 +1,1 @@
+	.CHAP	SHOMAC196.ASI	Macro pour l'accs aux priphriques.MACRO	WaitCio	NOP	RR.8		#8, D0	RR.8		#8, D0	RR.8		#8, D0.ENDMACRO.MACRO	WrCio	MOVE.8		#Cio%2, CioControl	WaitCio 	MOVE.8		%1, CioControl.ENDMACRO.MACRO	RdCio	MOVE.8		#Cio%1, CioControl	WaitCio	MOVE.8		CioControl, %2.ENDMACRO.END

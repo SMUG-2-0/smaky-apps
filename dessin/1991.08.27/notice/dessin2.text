@@ -1,0 +1,237 @@
+\cpage=8;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define LIGNE:\up 1mm;\line 0.2mm;\down 1mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE1:\up 0.5mm;\pug;\phchgen idp84;\code %1;\pog;\down 0.5mm;\define ICONE2:\up 0.5mm;\pug;\phchgen idp85;\code %1;\pog;\down 0.5mm;\define ICONEB1:\down 2mm;\pug;\phchgen idp84;\code %1;\pog;\up 2mm;\define ICONEB2:\down 2mm;\pug;\phchgen idp85;\code %1;\pog;\up 2mm;\define ICONEC1:\pug;\phchgen idp84;\code %1;\pog;\define ICONEC2:\pug;\phchgen idp85;\code %1;\pog;\define ICONEP1:\up 0.5mm;\pug;\phchgen idp42;\code %1;\pog;\down 0.5mm;\define ICONEP2:\up 0.5mm;\pug;\phchgen idp43;\code %1;\pog;\down 0.5mm;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;2 Le bouton de gauche\A;Le bouton de gauche de la souris \B;dessine\R; 
+l'objet avec l'outil choisi, tant qu'il est maintenu press.\ATTENTION;\REM;Lorsqu'un objet est dessin par erreur, une pression sur la touche 
+\D;(UNDO)\F; l'annule. 
+En fait, \D;(UNDO)\F; \B;annule n'importe quelle action\R;.\T;2.1 Les outils\A;\image doutils,3,=;Chaque \B;outil\R; permet de dessiner l'\B;objet\R; de son choix. Par exemple: 
+dessin d'une ellipse avec le crayon, ou dessin  main leve avec le pinceau.Habituellement, la souris dplace une petite flche sur l'cran. Avec le 
+logiciel DESSIN, la souris prend diverses formes, selon l'objet slectionn:\image moutils,2,=;\T;2.1.1 Le crayon\carte;\ICONE1 3;\A;\image crayon,2,=;Le \B;crayon\R; ralise toujours des \B;traits fins continus\R;. Il permet 
+de dessiner les objets suivants: traits  main leve, droites, courbes, 
+rectangles  angles droits ou arrondis, cercles et ellipses.\image excrayon,2,=;\T;2.1.2 Le pinceau\carte;\ICONE1 4;\A;\image pinceau,2,=;Le \B;pinceau\R; dessine des traits d'paisseurs variables, avec divers 
+traitills. Il permet de dessiner les mmes objets que le crayon.\image expinc,2,=;\T;2.1.3 Dfinition du pinceau\carte;\ICONE1 30;\A;Choix de la forme du pinceau. Un \I;clic\R; de la souris dans l'un des 4x7 pinceaux 
+de gauche le fait apparatre agrandi  droite. Vous pouvez alors le modifier et 
+inventer ainsi de nouveaux traits, ou simplement l'utiliser avec \D;(D'ACCORD)\F;.\image ddbpdef,2,=;Le pinceau est en fait un motif de 8x8 points qui est dplac sur l'cran 
+pour tracer les droites, cercles, etc. Le \B;carr du milieu\R; reprsente ce 
+motif agrandi.Le petit motif de 1x8 points ( droite) indique \B;l'alternance des points 
+ dessiner\R; pour les traitills, de gauche  droite. Dans l'exemple ci-dessus 
+(Pas=2), il y a donc:12 points puis 4 blancs, 12 points puis 4 blancs, etc.\D;(EFFACE)\F;\ind 30mm;Initialise un trait continu d'paisseur unitaire.\D;(+)\F; \D;(_)\F;\ind 30mm;Augmente ou diminue le pas.\D;(D'ACCORD)\F;\ind 30mm;Slectionne le pinceau choisi.\D;(ANNULE)\F;\ind 30mm;Annule \B;toutes\R; les modifications effectues.Voici quelques exemples de traits  main leve dessins avec 
+diffrents pinceaux:\image dpinceau,2,=;\T;2.1.4 Le vaporisateur\carte;\ICONE1 6;\A;\image dvap,3,=;Le \B;vaporisateur\R; projette la trame choisie de faon progressive 
+et alatoire. Il peut galement s'utiliser en mode \I;gomme\R; (voir 
+paragraphe2.3.1).\image exvap,3,=;\T;2.1.5 Le remplissage\carte;\ICONE1 5;\A;\image bidon,2,=;Le \B;remplissage\R; permet de \I;couler\R; la trame slectionne dans une 
+\B;surface ferme\R; quelconque.\image dpot,3,=;Si la surface n'est pas ferme, par exemple  cause d'un trou minuscule, 
+le remplissage ne s'effectue pas, et un \I;bip\R; se fait entendre!\ATTENTION;\REM;Le remplissage \B;sur un trait\R; ou une surface noire \I;peint\R; 
+tout le trait ou toute la surface avec la trame (bonhomme du milieu).\T;2.1.6 Dfinition des trames\carte;\ICONE1 31;\A;Choix de la \B;trame\R; pour le vaporisateur et le remplissage.\image ddbtdef,2,=;Tout comme pour les pinceaux, il est possible de modifier cette liste 
+pour ses propres besoins. Le carr du milieu reprsente la \B;trame de base agrandie\R;, 
+et le carr de droite la \B;trame relle\R; obtenue en rptant la trame de base 
+dans toutes les directions.\D;(EFFACE)\F;\ind 30mm;Efface les 8x8 points de la trame.\D;(INVERSE)\F;\ind 30mm;Prend le ngatif de la trame.\D;(D'ACCORD)\F;\ind 30mm;Slectionne la trame choisie.\D;(ANNULE)\F;\ind 30mm;Annule \B;toutes\R; les modifications effectues.\T;2.1.7 La loupe\carte;\ICONE1 24;\A;La \B;loupe\R; permet le travail \I;point par point\R;, 
+en se rapprochant du dessin. Aprs avoir \I;cliqu\R; dans 
+l'icne de la loupe, amenez la souris sur la partie du 
+dessin  agrandir, puis \I;cliquez\R; de nouveau. Le rectangle en haut 
+ droite reprsente la partie agrandie. Voici un dessin complet, dont un 
+dtail a t agrandi:\image dloupe1,2;Dans le mode \I;loupe\R;, \B;toutes les oprations sont possibles\R; 
+(crayon, pinceau, vaporisateur, etc.).\ATTENTION;Avec le crayon, un \I;clic\R; de la souris (sans bouger) 
+efface un point noir ou noircit un point effac, quel que soit le mode (noir ou 
+gomme).Les \B;ascenseurs\R;  gauche et en bas permettent de dplacer la partie 
+visible.\image dasc,2,=;\sh;\image iaf,2;\gh;\ind 20mm;Ces flches dplacent un tout petit peu la partie visible, de 
+quatre points exactement. \B;Tant que le bouton de la souris est maintenu 
+press, le dessin dfile dans la direction choisie\R;.\sh;\image iap,2;\gh;\ind 20mm;Ces icnes dplacent la partie visible un cran plus loin. 
+\B;Tant que le bouton de la souris est maintenu 
+press, le dessin dfile dans la direction choisie\R;.Aprs avoir \I;cliqu\R; avec la loupe, le facteur d'agrandissement est 
+toujours de 8:1. Ce facteur est rglable de 5:1 jusqu' 16:1,  l'aide des 
+touches fonctions suivantes:\D;(Echelle _)\F;\ind 30mm;Diminue le facteur d'agrandissement.\D;(Echelle +)\F;\ind 30mm;Augmente le facteur d'agrandissement.\image loupe,2,=;Pendant l'agrandissement d'un dtail, l'icne de la \B;loupe\R; \ICONEP1 24; 
+se transforme en \B;jumelles\R; \ICONEP1 28;. Un \I;clic\R; dans les jumelles 
+\B;remet l'chelle 1:1\R;.\image jumelles,3,=;\T;2.1.8 La main\carte;\ICONE1 15;\A;Tout comme les \B;ascenseurs\R;, la \B;main\R; permet de dplacer la partie 
+visible du dessin. Lorsque le dessin est visible en entier  l'cran, l'icne 
+de la main est inactive (grise), et ne peut pas tre slectionne.Il faut s'imaginer que le dessin est une feuille de papier dispose derrire 
+l'cran du SMAKY. Lorsque le bouton de gauche de la souris est press, \B;la main 
+est pose sur la feuille\R;. Un dplacement de la souris entraine alors un dplacement 
+de la feuille, dans toutes les directions!\T;2.1.9 Les pages\carte;\ICONE1 23;\A;DESSIN possde \B;10 pages\R;, permettant de \B;travailler 
+simultanment sur plusieurs dessins\R;. Pour copier une partie d'un dessin 
+dans un autre, il suffit d'utiliser les \B;bloc-notes\R; (voir paragraphes2.2.9 
+et 3.2.3). Il est ainsi extrmement facile de raliser un dessin  l'aide de 
+morceaux en provenance d'autres dessins.Un \I;clic\R; dans l'icne des pages prsente un \B;menu\R; avec les 
+diffrentes pages et leur contenu, numrotes de 1  9 et 0 pour la dixime. 
+Un \I;clic\R; dans une case du menu permet de travailler immdiatement 
+sur le dessin correspondant.\image menupage,2,=;La page actuellement utilise apparat en gris. Les pages utilises ont un 
+nom, ou "..." lorsque le nom n'est pas encore connu (l'image n'a jamais t 
+sauve sur disque).Pour changer de page sans utiliser la souris, il est possible d'appuyer sur 
+\D;(SHOW)\F; et simultanment sur un chiffre.\T;2.2 Les objets\A;\demi;\image dobjets,3,=;Les objets trait  main leve, droite, courbe, rectangle, cercle et ellipse 
+peuvent tre dessins avec le \B;crayon\R; ou le \B;pinceau\R; comme outil, 
+dans le \B;mode\R; noir ou gomme. 
+En revanche, les objets pav de texte et bloc-notes n'utilisent pas d'outil.\image mobjets,2,=;\T;2.2.1 Les traits  main leve\carte;\ICONE1 7;\A;Tant que le bouton de gauche est 
+maintenu press, tous les mouvements de la souris sont reproduits sur 
+l'cran, avec le crayon ou le pinceau.\image exmainl,3,=;\T;2.2.2 Les droites\carte;\ICONE1 8;\A;Pour dessiner une droite, placer la souris  l'origine, 
+presser le bouton de gauche, et, \B;tout en maintenant le bouton press\R;, 
+dplacer la souris  l'autre extrmit de la droite. Lorsque le bouton est 
+relch, la droite ne peut plus tre modifie, sauf par \D;(UNDO)\F; qui l'efface. 
+Voici un exemple de dessin ralis 
+uniquement avec des traits  main leve et des droites:\image ddroite,2,=;\T;2.2.3 Les lignes courbes\carte;\ICONE1 14;\A;\image dcourbe,2,=;Les lignes courbes sont dessines en posant quelques \B;points de repre\R;, 
+qui sont ensuite relis par une courbe \B;parfaitement lisse\R; calcule par DESSIN.Aprs avoir slectionn l'icne \B;ligne courbe\R;, posez le premier 
+point en \I;cliquant\R; avec le bouton de gauche de la souris. 
+L'cran prend l'allure suivante:\image dcourbe1,2,5mm;On constate que les icnes  gauche et les touches fonction en bas 
+ont chang. Le bouton de gauche de la souris permet de 
+poser de nouveaux points, sans que la courbe apparaisse.\ICONEC2 127;\ind 20mm;La courbe calcule sera \B;ouverte\R;\ICONEB2 10;\ind 20mm;La courbe calcule sera \B;ferme\R;, c'est--dire 
+boucle sur elle-mme.\ICONEC1 27;\ind 20mm;Choix du \B;pas\R; pour poser les points (voir paragraphe2.3.2).\demi;\ICONEB2 16;\ind 20mm;\B;Calcule\R; la courbe ouverte ou ferme passant par les points poss. 
+Il faut deux points au minimum pour une courbe ouverte, et trois pour une courbe ferme.\ICONEC2 17;\ind 20mm;\B;Annule\R; tout.\ATTENTION;\REM;Si un point est pos \B;par-dessus le premier point\R;, une courbe 
+\B;ferme\R; est directement dessine!Lorsque tous les points sont poss, \I;cliquez\R; l'icne \ICONEP2 16;. 
+La courbe est calcule, et l'cran devient:\image dcourbe2,2,5mm;Le bouton de gauche de la souris permet alors de \B;dplacer un point\R; 
+en le \I;tirant\R;, c'est--dire en gardant press le bouton de la souris. 
+Si le bouton de gauche est \I;cliqu\R;, c'est--dire press puis relch 
+rapidement, le point dsign est \B;supprim\R;.\ICONEC2 7;\ind 20mm;Bloque les dplacements sur un axe horizontal.\ICONEC2 8;\ind 20mm;Bloque les dplacements sur un axe vertical.\ICONEB1 27;\ind 20mm;Choix du \B;pas\R; pour les dplacements\ind 20mm;(voir paragraphe2.3.2).\ICONEB2 16;\ind 20mm;Efface les poignes qui marquaient les points, 
+et \B;dessine la courbe dfinitive\R; avec le crayon ou le pinceau.\ICONEC2 17;\ind 20mm;\B;Annule\R; tout.\REM;Il existe beaucoup de possibilits pour calculer une courbe passant par des 
+points prdfinis. L'algorithme utilis par DESSIN correspond aux 
+\I;splines cubiques\R; mathmatiques, qui drivent de leur contre-partie 
+physique. Une \I;spline\R; physique est une longue barre troite en bois 
+ou en plastique utilise pour rejoindre deux points spcifiques par une courbe. 
+Les \I;splines\R; sont formes par des poids en plomb. En variant le nombre 
+et la position des poids, la \I;spline\R; peut passer par des points spcifiques 
+de telle sorte que la courbe rsultante apparaisse lisse et souple.\T;2.2.4 Les rectangles\carte;\ICONE1 127;\A;Rectangles  angles droits ou arrondis, ventuellement trams et transparents 
+ou opaques. Les rectangles peuvent tre dfinis de plusieurs faons en 
+\I;cliquant\R; dans l'icne \ICONEP1 25; (voir paragraphe2.2.5).\image drect,2,=;Le bouton de gauche de la souris doit tre press sur un coin du rectangle. 
+La souris est ensuite dplace jusqu'au coin oppos. Lorsque le bouton est 
+relch, le rectangle dfinitif est tra, avec le crayon ou le pinceau.\image desrect,2,=;\T;2.2.5 Dfinitions des rectangles\carte;\ICONE1 25;\A;L'icne  droite de l'objet \I;rectangle\R; permet de dfinir comment 
+dessiner les rectangles:\image dboxrdef,2,=;\DBC;\B;\ICONEP2 50; pourtour\R;\DBC;\B;\ICONEP2 51; trame\R;\demi;Dessine le pourtour du rectangle, ou une trame  l'intrieur, 
+ou les deux  la fois. La trame est la mme que celle dfinie pour 
+le vaporisateur et le remplissage (voir paragraphe2.1.6).\DBO;\B;\ICONEP2 52; transparent\R;\DBO0;\ind 8mm;\B;\ICONEP2 53; opaque\R;\demi;Le rectangle peut tre transparent ou opaque. Dans ce dernier cas, 
+il recouvre tout ce qui est au-dessous, mme s'il n'est pas tram  
+l'intrieur.\ATTENTION;\REM;Seule la surface, encadre ou non, peut tre transparente!\DBO;\B;\ICONEP2 54; angles droits\R;\DBO0;\ind 8mm;\B;\ICONEP2 56; arrondi\R;\demi;Choix pour les quatre coins du rectangle.Voici quelques cas possibles avec le mode \B;noir\R;:\image rectnoir,2;Voici les mmes cas avec le mode \B;gomme\R;:\image rectgomm,2;\T;2.2.6 Les cercles et les ellipses\carte;\ICONE1 11;\A;Dessin de cercles et d'ellipses, complets ou partiels.\image dcercle,2,=;\T;2.2.7 Dfinitions des cercles\carte;\ICONE1 26;\A;L'icne  droite de l'objet \I;cercle\R; ou \B;ellipse\R; permet 
+de dfinir comment dessiner les cercles:\image dboxcdef,2,=;\DBO;\B;\ICONEP2 59; cercle\R;\demi;Dessine un cercle, ou un arc de cercle, par son \B;rayon\R;.\image descerc1,2,=;\DBO;\B;\ICONEP2 64; cercle\R;\demi;Dessine un cercle par son \B;diamtre\R;. Seuls les cercles complets 
+peuvent tre dessins ainsi.\image descerc2,2,=;\DBO;\B;\ICONEP2 60; ellipse\R;\demi;Dessine une ellipse, ou un arc d'ellipse, par leurs rayons.\image descerc3,2,=;\DBO;\B;\ICONEP2 61; complet\R;\DBO0;\ind 8mm;\B;\ICONEP2 62; 1/2\R;\DBO0;\ind 8mm;\B;\ICONEP2 63; 1/4\R;\demi;Choix de l'\B;arc\R; de cercle ou d'ellipse. Pour les cercles dessins 
+par leur diamtre, l'arc ne peut tre que complet.\T;2.2.8 Les pavs de texte\carte;\ICONE1 13;\A;DESSIN dispose d'une fonction particulirement puissante, permettant 
+d'intgrer des \B;pavs de texte\R; dans une image. Le texte peut tre 
+frapp directement dans DESSIN, avec des fonctions semblables  un 
+logiciel de traitement de texte, ou cr avec les logiciels TEXT ou 
+EDIT, puis import dans le dessin.Aprs avoir \I;cliqu\R; l'icne \ICONEP1 13;, la souris prend la 
+forme \ICONEP1 98;. Il est alors possible de \I;cliquer\R;, dans le 
+dessin,  l'emplacement du coin suprieur gauche du pav de texte  
+crer. Si le \B;bouton de gauche\R; de la souris est \B;maintenu press\R;, le pav 
+peut tout de suite tre \B;dplac\R;. L'cran prend l'allure suivante:\image texte1,2,5mm;Le texte peut alors tre frapp au kilomtre, c'est--dire sans utiliser 
+\D;(RETURN)\F;. En fait, \D;(RETURN)\F; sert uniquement  indiquer la 
+\B;fin d'un paragraphe\R;. La touche \D;(DEL)\F; supprime les 
+derniers caractres frapps. La barre verticale clignotante indique 
+o sont insrs les caractres frapps au clavier; elle sera appele ici 
+\B;point d'insertion\R;. La touche \D;(CURSOR)\F; 
+associe aux touches blanches \D;(R)\F;, \D;(D)\F;, \D;(F)\F; et \D;(C)\F; 
+dplace le point d'insertion comme suit:\D;(CURSOR-D)\F;\ind 30mm;recule d'un caractre\D;(CURSOR-F)\F;\ind 30mm;avance d'un caractre\demi;\D;(CURSOR-R)\F;\ind 30mm;recule d'un paragraphe\D;(CURSOR-C)\F;\ind 30mm;avance d'un paragrapheQuelques autres touches utiles:\D;(CURSOR-S)\F;\ind 30mm;recule d'un mot\D;(CURSOR-G)\F;\ind 30mm;avance d'un mot\demi;\D;(CURSOR-T)\F;\ind 30mm;va au dbut du texte\D;(CURSOR-V)\F;\ind 30mm;va  la fin du texte\image clafle,2;\ATTENTION;Pour dplacer le point d'insertion n'importe o dans l'cran, 
+il est possible de \I;cliquer\R; avec le \B;bouton de gauche\R; de la souris 
+sur un caractre contenu dans le pav de texte. Le point d'insertion 
+se place alors sur la gauche du caractre.Les deux touches \D;(CURSOR-KILL)\F;, associes aux touches de dplacement, 
+suppriment des caractres en amont ou en aval du point d'insertion. 
+Par exemple:\D;(CURSOR-KILL-F)\F;\ind 35mm;supprime le caractre  droite du point d'insertion\D;(CURSOR-KILL-S)\F;\ind 35mm;supprime le mot  gauche du point d'insertionLa touche \D;(CLEAR)\F;, sur le pav numrique, efface tout 
+le texte.\ATTENTION;\REM;La touche \D;(UNDO)\F; n'annule pas la dernire destruction, 
+mais quitte le mode d'dition de pavs de texte, tout comme l'icne \ICONEP2 17;. 
+Au cas o cette touche a t appuye par erreur, \I;cliquez\R;  nouveau sur 
+\ICONEP1 13; pour retourner directement dans le mode d'dition.Le pav de texte est surmont de deux \B;poignes\R;. La poigne de gauche 
+permet de \B;dplacer\R; le pav, et celle de droite de modifier sa \B;largeur\R;. 
+La \B;hauteur\R; du pav n'est pas dtermine par la souris; elle dpend de la 
+longueur du texte contenu. Par exemple, si la largeur du pav est diminue 
+en dplaant la poigne de droite avec le bouton de gauche de la souris, 
+la hauteur du pav augmente. En fait, ceci n'est vrai que si le pav 
+contient quelque chose. S'il est vide, sa hauteur reste toujours gale  
+une seule ligne.Si le texte est trop long, et que le pav heurte le bas du dessin, une \B;grosse 
+flche clignotante\R; apparat en bas  droite du pav. Elle indique que le texte 
+sort du dessin:\image textout,2,5mm;Il est alors possible d'utiliser un caractre plus petit, de diminuer 
+l'interligne ou l'intercaractre (voir plus loin).\REM;Un pav de texte peut trs bien \B;dpasser les dimensions de l'cran\R;, 
+mais pas les dimensions du dessin. Lorsque le pav dpasse l'cran, les 
+\B;ascenseurs\R; permettent de choisir la partie  visualiser. 
+Il est aussi possible de diminuer l'chelle avec la touche fonction \D;(F7)\F;, 
+afin de s'loigner du dessin. Les caractres deviennent bien sr plus petits, 
+peut-tre mme illisibles, mais le but est d'obtenir une vue d'ensemble de la 
+mise en page ralise.Pour \B;crer un nouveau pav de texte\R;, il faut simplement \I;cliquer\R; 
+avec le bouton de gauche  l'endroit souhait, dans le dessin. Le nouveau pav 
+prendra la largeur du pav prcdent. Le texte qui 
+dbordait du pav prcdent sera automatiquement \I;coul\R; dans le nouveau 
+pav. Il est ainsi trs simple de raliser plusieurs colonnes, par exemple.\image paves4,2,=;La figure ci-dessus montre que seul le \B;dernier pav\R; a une poigne en haut 
+ droite. Tous les autres ont une poigne en bas  droite, parce qu'il 
+est possible de \B;modifier la hauteur\R; de tous les pavs sauf du dernier, 
+dont la hauteur dpend du restant de texte  \I;couler\R;  l'intrieur. 
+Si la hauteur d'un pav est modifie, avec la poigne en bas  droite, le 
+texte est automatiquement \I;recoul\R; dans tous les pavs suivants.\ATTENTION;\REM;Pour \B;modifier la hauteur\R; d'un pav en dplaant sa poigne en bas  droite, 
+\B;sans modifier sa largeur\R;, slectionnez l'icne \ICONEP2 8;  gauche de l'cran!\REM;On peut crer un maximum de \B;10pavs\R; simultanment.\T;2.2.8.1 La mise en page\carte;\ICONE2 33;\A;Pendant l'dition de pavs de texte, les icnes  gauche de l'cran sont 
+compltement changes. Certaines icnes reprsentent un \B;curseur\R; qui 
+peut prendre cinq positions diffrentes. Pour monter ou descendre un curseur 
+d'une unit, il faut simplement \I;cliquer\R; dans sa partie suprieure 
+ou infrieure:\image curseur3,2,=;\ATTENTION;\REM;Les curseurs apparaissent gris lorsqu'ils sont inactifs. 
+Par exemple, le curseur  droite des ciseaux n'est actif que si les ciseaux sont 
+slectionns!La touche \D;(HELP)\F; rsume toutes les possibilits des icnes de gauche.\T;2.2.8.2 La justification\carte;\ICONE2 1; \ICONE2 2; \ICONE2 3; \ICONE2 4;\A;\ICONEB2 1;\ind 20mm;\B;Justification aligne\R;. Le texte est align sur les bords 
+gauche et droit du pav.\ICONEB2 32;\ind 20mm;Augmente ou diminue l'\B;espace de justification entre les 
+caractres\R;. Lorsque le curseur est tout en bas, sur1, seuls les espaces entre 
+les mots sont augments. En \I;cliquant\R; dans la partie suprieure du curseur, 
+celui-ci monte d'un cran, et les espaces entre les caractres sont lgrement 
+augments (comme dans les journaux). Plus le curseur monte, et plus les espaces 
+entre les caractres augmentent.\image justif,2;\REM;Le mot "l'authenticit",  la 6me ligne dans l'exemple ci-dessus, 
+est seul dans la ligne. Si le curseur est sur1, il reste cal  gauche. 
+Si le curseur est sur 2, 3, 4 ou 5, l'espace entre ses caractres est augment, 
+afin de l'aligner  droite.\ICONEC2 2;\ind 20mm;\B;Justification en drapeau  droite\R;.\demi;\ICONEC2 4;\ind 20mm;\B;Justification centre\R;.\demi;\ICONEC2 3;\ind 20mm;\B;Justification en drapeau  gauche\R;.\demi;\ind 20mm;Le curseur pour augmenter l'espace de justification entre les caractres 
+est inoprant avec ces trois modes de justification.\T;2.2.8.3 Les divisions\carte;\ICONE2 5;\A;\ICONEB2 5;\ind 20mm;Permet les \B;divisions dans les mots\R;, selon les rgles 
+syllabiques et tymologiques habituelles du SMAKY.\ICONEB2 36;\ind 20mm;Ce curseur augmente ou diminue le \B;nombre de divisions\R; 
+dans les mots. Par dfaut, il est rgl au maximum, sur5. Lorsque la 
+largeur pour le texte devient trop troite, et qu'il y a trop de divisions, 
+ce curseur peut tre abaiss.Gnralement, les divisions se font \B;syllabiquement\R;. Par exemple, 
+le mot \I;principe\R; pourra tre divis en \I;prin-ci-pe\R;, selon 
+son pellation.Pour d'autres mots, les divisions se font \B;tymologiquement\R;. Par 
+exemple, on ne divisera pas \I;d-sa-veu\R; d'aprs l'pellation, mais 
+\I;ds-aveu\R; selon l'origine du mot. Voici quelques exemples:\newtab 20mm,50mm,80mm;\I;	atmo-sphre	in-actif	non-obstant	ds-aveu	in-imaginable	pr-occuper	ds-habiller	in-stable	sub-ordonner	ds-obliger	mal-adroit	sur-abondant	ds-union	mal-entendu	trans-action	extra-ordinaire	ms-aventure	tl-scope\R;\T;2.2.8.4 L'habillage des images\carte;\ICONE2 21;\A;\ICONEC2 21;\ind 20mm;Permet l'\B;habillage automatique des images\R;.\ICONEB2 39;\ind 20mm;Ce curseur augmente ou diminue l'\B;espace horizontal\R; pour 
+habiller les images. Lorsqu'il est au maximum, sur5, seules les lignes vierges 
+de toute image sont remplies avec le texte (voir l'exemple de droite, ci-dessous).\demi;\ICONEB2 34;\ind 20mm;Ce curseur augmente ou diminue l'\B;espace vertical\R; pour 
+habiller les images.\image habille,2;\ATTENTION;Pour \B;dplacer une image\R;, procdez comme suit:1)\ind 8mm;\I;Cliquez\R; dans \ICONEP2 17; (le texte disparat provisoirement).2)\ind 8mm;Dplacez l'image avec le bouton de droite (voir paragraphe3.2.2).3)\ind 8mm;\I;Cliquez\R; dans \ICONEP1 13; (le texte rapparat).\T;2.2.8.5 L'interligne\carte;\ICONE2 11; \ICONE2 13;\A;\ICONEC2 11;\ind 20mm;\B;Diminue\R; l'interligne.\ICONEC2 13;\ind 20mm;\B;Augmente\R; l'interligne.\ICONEB2 12;\ind 20mm;\B;Remet l'interligne standard\R; du gnrateur de caractres 
+utilis. La valeur de l'interligne est grise lorsqu'elle 
+est gale  l'interligne du gnrateur de caractres choisi. Elle est en vido 
+inverse lorsque l'interligne est plus petit que la hauteur des caractres, 
+et donc que les lignes risquent de se toucher (voir l'exemple de gauche, ci-dessous).\image interli,2;Le cercle dans l'exemple de gauche montre que le "q" du mot "laquelle" touche 
+le haut du "b" de "Weber".\T;2.2.8.6 L'intercaractre\carte;\ICONE2 18; \ICONE2 20;\A;\ICONEC2 18;\ind 20mm;\B;Diminue\R; l'intercaractre.\ICONEC2 20;\ind 20mm;\B;Augmente\R; l'intercaractre.\ICONEB2 19;\ind 20mm;Remet l'intercaractre  \B;zro\R;. 
+Lorsque l'intercaractre est plus petit que zro (ngatif), les caractres se rapprochent. 
+Lorsqu'il est plus grand que zro, les caractres s'loignent. Il est ainsi 
+possible de modifier l'allure d'un texte, sans changer de gnrateur de caractres.\image intercar,2;\REM;Il est possible de diminuer l'intercaractre  tel point que les caractres 
+se chevauchent. Ceci permet de jolies mises en page avec des caractres italiques:\image italique,2,=;\T;2.2.8.7 Choix du caractre\carte;\ICONE2 6; \ICONE2 27;\A;\ICONEB2 6;\ind 20mm;\B;Choix du caractre\R;. Tout le texte, rparti ventuellement 
+dans plusieurs pavs, utilise forcment un seul et mme caractre. 
+Au dpart, DESSIN4 propose un seul caractre appel \B;Fond\R;. Vous pouvez bien 
+sr en choisir d'autres et les modifier  votre guise:\image dbox10ca,2,=;Pour modifier le caractre \I;Grand\R;, il faut \I;cliquer\R; dans le bouton 
+situ  gauche, puis \I;cliquer\R; dans \D;(MODIFIE)\F;:\image dboxmcar,2,=;L'\B;ascenseur\R; permet de parcourir la liste des caractres disponibles. 
+Un \I;clic\R; dans une flche en haut ou en bas de l'ascenseur monte ou 
+descend d'une ligne. \B;Si le bouton est maintenu press, la liste dfile\R;. 
+Les trois caractres "Abc" sont toujours affichs, sans tenir compte des modes 
+gras, italique, relief, etc.\ATTENTION;Seuls les caractres dont la deuxime lettre du nom est un \B;R\R; peuvent 
+profiter des options gras, italique, relief, ombr, largeurx2 et dimensionsx2. 
+Par exemple: T\B;R\R;P23, U\B;R\R;P09, etc.\DBC;\B;Affiche\R;\demi;S'il n'y a pas de petite croix, c'est le nom du caractre qui est affich 
+ la place des trois lettres "Abc". Par exemple: urp09, trp14, etc.\DBC;\B;Tout\R;\demi;S'il n'y a pas de croix, seule une partie des caractres existants sont affichs. 
+Pour voir ceux qui sont cachs, il faut mettre la croix.Pour rendre visible 
+ou pour cacher un gnrateur, procdez comme suit depuis START:\demi;1)\ind 8mm;\I;Clic\R; dans le gnrateur (SMA_xxxxx.GENC) avec le \B;bouton de droite\R;.2)\ind 8mm;Choix de \B;modifie\R; dans le menu.3)\ind 8mm;Mettre ou enlever la croix \B;visualisation\R;.\ATTENTION;Lors de la cration d'un nouveau caractre, \B;il ne faut pas oublier de 
+donner le nom de fonction\R; en haut  droite (Titre, Petit, Grand, Spcial, etc.).\LIGNE;\ICONEB2 27;\ind 20mm;Un \I;clic\R; dans le triangle suprieur cherche sur disque 
+un caractre \B;plus grand\R;. Un \I;clic\R; dans le triangle infrieur 
+cherche un caractre \B;plus petit\R; de la mme famille.\T;2.2.8.8 Reprise d'un texte\carte;\ICONE2 24;\A;\ICONEB2 24;\ind 20mm;Prend un fichier .TEXT sur disque, cr avec les logiciels 
+TEXT ou EDIT. La mise en pages effectue avec ces logiciels est ignore.\image dboxtext,2,=;\T;2.2.8.9 Dplacement\carte;\ICONE2 7; \ICONE2 8; \ICONE1 27;\A;\ICONEC2 7;\ind 20mm;Bloque les dplacements sur un axe horizontal.\ICONEC2 8;\ind 20mm;Bloque les dplacements sur un axe vertical.\ICONEB1 27;\ind 20mm;Choix du \B;pas\R; pour les dplacements\ind 20mm;(voir paragraphe2.3.2).\T;2.2.8.10 Comment terminer\carte;\ICONE2 16; \ICONE2 17;\A;\ICONEB2 16;\ind 20mm;Fige dfinitivement le ou les pavs de texte dans le dessin. 
+DESSIN4 demande une confirmation, car en cas de rponse positive, il ne restera plus 
+que la gomme ou l'opration \B;dtruit\R; du bouton de droite pour enlever ou modifier 
+le texte.\ICONEB2 17;\ind 20mm;\B;Annule\R;. Un \I;clic\R; sur \ICONEP1 13; remettra tous les 
+pavs de texte, avec leur contenu. Ceci permet de retourner dans le mode normal de 
+DESSIN, pour dplacer des images, dessiner des filets, etc.Voici un exemple de mise en page, ralis avec les pavs de texte:\image page1,1,=;Pour les mises en pages complexes, il est conseill de mettre en place 
+d'abord les lments graphiques (figures, filets, titres, etc.), puis de 
+sauver l'image sur disque. Les textes seront \I;couls\R; en dernier, et 
+l'image sauve sur disque sous un autre nom. Ainsi, si une correction doit 
+tre effectue dans le texte, il ne faut pas tout recommencer.Lors de la ralisation d'une pleine page A4, l'cran du SMAKY est bien trop 
+petit pour visualiser toute la page  l'chelle 1:1. La touche fonction \D;(Tout)\F; 
+permet non seulement de voir toute la page, mais galement de travailler sur la 
+vue d'ensemble de la page (dessin, cration de pavs de textes, etc.).\image page18,2,5mm;Les touches fonctions \D;(Echelle_)\F; et \D;(Echelle+)\F; peuvent tre 
+utilises en tout temps, pour modifier l'chelle de visualisation:\image page14,2,5mm;\T;2.2.9 Les blocs-notes\carte;\ICONE1 17; \ICONE1 18; \ICONE1 19;\A;Dessine le contenu du \B;bloc-notes\R;. Chacun des trois blocs-notes 
+peut contenir une partie de dessin quelconque, visible ou invisible, contenue 
+dans cette page ou dans une autre (voir paragraphe2.1.9). Lorsqu'un bloc-notes 
+est vide, son icne est grise.Pour remplir un bloc-notes, il faut entourer une partie de dessin avec 
+le \B;bouton de droite\R; de la souris, puis choisir \B;bloc-notes\R; dans le 
+menu (voir paragraphe3.2.3).Les blocs-notes se vident automatiquement lorsque le dessin est effac avec 
+\D;(Efface)\F;, lors de la reprise d'un autre dessin avec \D;(Prend)\F;, 
+ou lors d'une modification des dimensions (lxh) avec \D;(Df.)\F;.\REM;Les blocs-notes fonctionnent aussi avec des chelles plus petites que 1:1.\T;2.3 Les modes\A;Les modes concernent les outils, les objets et certaines oprations du 
+\B;bouton de droite\R; de la souris.\T;2.3.1 Noir ou gomme\carte;\ICONE1 1; \ICONE1 2;\A;Les modes \B;noir\R; et \B;gomme\R: s'appliquent au crayon, au pinceau 
+et au vaporisateur. Par exemple, le mode \I;gomme\R; avec un trait  main leve et 
+un gros pinceau continu simule bien l'effet d'une gomme. Mais il est aussi 
+possible de dessiner une ellipse en mode gomme. Tous les points rencontrs par 
+l'ellipse seront alors effacs.Le \B;vaporisateur\R; en mode \I;gomme\R; est assez tonnant!Les \B;blocs-notes\R; peuvent galement tre reproduits en mode \I;gomme\R;.\T;2.3.2 Le pas\carte;\ICONE1 27;\A;Un \I;clic\R; dans \ICONEP1 27; propose la bote de dialogue suivante:\image dboxpas,2,=;Le \B;pas du dessin\R; s'applique  tous les objets, sauf au trait  main 
+leve, ainsi qu'aux oprations \B;dplace\R;, \B;duplique\R;, \B;zoom\R;, 
+\B;tourne\R;, \B;miroir\R; et \B;dforme\R; du bouton de 
+droite de la souris. Contrairement au logiciel PLAN, la grille correspondant 
+au pas n'est jamais visible!Voici un exemple de dessin, entirement ralis avec des rectangles et 
+un pas de 8:\image pas8,2,=;Le mode de \B;dplacement\R; agit pour les oprations \B;dplace\R; et 
+\B;duplique\R;, ainsi que lors de la reprise du contenu d'un 
+\B;bloc-notes\R; et lors de l'ajout d'un fichier .IMAGE (touche 
+fonction \D;(Ajoute)\F;).\image modes,2,=;Dans ces quatre exemples, le mot \B;smaky\R; a t dplac par-dessus l'image 
+de l'ordinateur, dans les quatre modes possibles. Voici les effets obtenus avec 
+les modes \B;noir\R; et \B;gomme\R;:\image ddmode,3,=;On constate que l'effet  l'intrieur de la partie du dessin dplace 
+ou duplique est diffrent si son contour a un trou (anneau de droite).

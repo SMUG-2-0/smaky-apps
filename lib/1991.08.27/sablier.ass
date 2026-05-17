@@ -1,0 +1,1 @@
+	.TITLE	SABLIERRF	.PROC	M680002		; mnmonics CALM 2	.RADIX	10.		; base 10 par dfaut	.HEX			; listing en hexadcima; Numros des appels; ------------------SABLIER_OPEN	=	H'A820	; affiche un sablierSABLIER_NEXT	=	H'A821	; avance un sablierSABLIER_CLOSE	=	H'A822	; efface un sablierSABLIER_MAJ	=	H'A823	; met  jour un sablier	.END

@@ -1,0 +1,121 @@
+\cpage=3;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define SQUARE:\up 1.6mm;\rect 1.6mm,0.2mm,0,1.6mm;\down 1.6mm;\ind 6mm;\bold;\_\define CIRCLE:o\ind 6mm;\bold;\_\define END:\_\roman;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;
+\gepos 1;\up 4mm;\rect 5mm,0.2mm,0,h2-h1;\fillrect 5mm,21,h2-h1;\down 4mm;\demi;\define EX:\cr;\pug;\ital;Exemples:\pog;\demi;\T;1 Introduction\A;Le logiciel GRAPHE \B;reprsente graphiquement des donnes numriques\R; 
+en provenance d'autres logiciels. Par exemple, les donnes peuvent provenir 
+directement de FICHE. Le rsultat produit par GRAPHE est une \B;image\R;, qui 
+peut tre imprime ou colle lectroniquement dans un texte. On peut mme 
+imaginer de la retoucher avec DESSIN.Habituellement, GRAPHE est appel directement depuis FICHE. Cependant, GRAPHE 
+peut trs bien s'utiliser seul, et reprsenter des donnes numriques calcules 
+par un programme BASIC, ou dites avec TEXT, etc.Comme d'habitude, la mise en route s'effectue en \I;cliquant\R; l'icne GRAPHE.\image graico,4,=;Aprs environ 20 secondes, l'cran prend l'allure suivante:\image grainit,2,=;\REM;Le dossier \B;EXGRAPHE:\R;, prsent sur la plupart des disquettes GRAPHE, contient 
+\B;16graphiques de dmonstration\R;, appels G1.GRAPH  G16.GRAPH.\T;2 Utilisation\A;Le logiciel GRAPHE possde toute une panoplie d'icnes sur le ct gauche de 
+l'cran:\image graicones,2,=;Nous allons tudier chacune des ces icnes dans le dtail.\image grai9z,3;Les \B;dimensions du graphique\R; peuvent tre modifies  volont en dplaant 
+la petite icne en bas  droite de la fentre de dessin.\image gradim,2,=;Des \B;rgles centimtriques\R; aident  dterminer prcisment les dimensions 
+lors de l'impression. La touche fonction \D;(F10)\F; intitule \D;(Rgle)\F; met 
+ou enlve les deux rgles.\T;2.1 Les choix principaux\A;\image grai0ab,3;Cette icne prsente une liste de 16 possibilits de base:\image gradb0ab,2,=;Toutes ces possibilits permettent de \B;reprsenter diffremment les mmes 
+donnes numriques\R;. A vous de choisir celle qui convient le mieux!Un simple \I;clic\R; de la souris dans le graphique voulu suffit. Pour ne rien 
+choisir du tout, il faut appuyer sur \D;(F0)\F; ou \D;(END)\F;.\T;2.1.1 Les histogrammes\A;\image grai1ab,3;Choix du mode \I;histogramme\R;, o chaque nombre est reprsent par un 
+rectangle plus ou moins haut.\image grai1c,3;Choix du type de l'histogramme:\demi;\image gradb1c,2,=;\CIRCLE;cte  cte\END;\demi;Les valeurs d'un mme groupe sont reprsentes par des barres les unes 
+ cts des autres. Un espace spare les groupes entre eux.\image grahicc,2,=;\CIRCLE;empil\END;\demi;Les valeurs d'un mme groupe sont reprsentes par des barres empiles 
+les unes sur les autres. La hauteur totale d'un empilement correspond  la \B;somme 
+des valeurs\R; du groupe.\image grahiem,2,=;\ATTENTION;\REM;En mode histogramme \B;empil\R;, les nombres ngatifs ne peuvent 
+pas tre reprsents. Si une ou plusieurs valeurs sont ngatives, GRAPHE ne dessine 
+rien du tout!\CIRCLE;0.25\END;\CIRCLE;0.5\END;\CIRCLE;0.75\END;\CIRCLE;1\END;\CIRCLE;1.5\END;\CIRCLE;2\END;\demi;Espacement entre les barres. Avec un espacement de 1, les barres se touchent. 
+Avec un espacement plus grand que 1, les barres se \B;chevauchent\R;.\image grahilg,2,=;Chaque barre est dessine avec un rectangle tram. Les \B;traits\R; du rectangle 
+et la \B;trame\R;  l'intrieur peuvent tre modifis (voir paragraphes2.3.1 et 2.3.2).\T;2.1.2 Les lignes brises\A;\image grai2ab,3;Choix du mode \I;ligne brise\R;, o chaque groupe de nombres est reprsent par 
+une ligne brise diffrente.\image grai2c,3;Choix du type de ligne brise:\demi;\image gradb2c,2,=;\CIRCLE;transparent\END;\demi;Les lignes brises sont reprsentes par de simples traits, qui se croisent 
+ventuellement. Le paragraphe2.3.2 explique comment modifier les traits.\image gralbtr,2,=;\CIRCLE;opaque\END;\demi;Les lignes brises sont reprsentes par des surfaces pleines, qui se cachent 
+l'une derrire l'autre.\image gralbop,2,=;\SQUARE;dessine les points\END;\demi;Dessine les points correspondant aux valeurs du tableau. 
+Le paragraphe2.3.3 explique comment modifier le graphisme des \B;points\R;.\image gralipt,2,=;\SQUARE;lie les points par des droites\END;\SQUARE;lie les points par des courbes\END;\demi;Les points d'intersections peuvent tre lis par des droites ou par des courbes. 
+Lorsque les courbes sont utilises, il n'est pas possible de tramer les surfaces.\image gralbco,2,=;\REM;Les courbes sont calcules comme des \I;splines cubiques\R;.\SQUARE;trame les surfaces\END;\demi;En mode \B;opaque\R;, une trame remplit la surface forme par la ligne 
+brise et la rfrence horizontale. Si la ligne brise croise plusieurs fois 
+la rfrence horizontale, plusieurs surfaces seront trames. 
+Le paragraphe2.3.1 explique comment modifier les \B;trames\R;.\T;2.1.3 Les camemberts\A;\image grai3ab,3;Choix du mode \I;camembert\R;, o chaque groupe de nombres est reprsent 
+par un cercle dcoup en \B;secteurs\R; (ou tranches).\ATTENTION;\REM;En mode \B;camembert\R;, les nombres ngatifs ne peuvent 
+pas tre reprsents. Si une ou plusieurs valeurs sont ngatives, GRAPHE ne dessine 
+rien du tout!\image grai3c,3;Choix de dtail pour les camemberts: inscription des pour-cent et secteurs 
+ loigner du centre:\image gradb3c,2,=;\SQUARE;affiche les %%\END;\demi;Affiche dans chaque secteur le pour-cent par rapport aux autres secteurs. 
+La somme des tous les secteurs est toujours gale  100.\CIRCLE;%% automatique\END;\demi;GRAPHE choisit automatiquement le mode \B;%%ajout\R; ou \B;%%effac\R;, 
+en fonction de la trame qui remplit le secteur (si elle est claire ou fonce).\CIRCLE;%% dtour\END;\demi;Les pour-cent sont dessins  l'intrieur d'un \B;rectangle vide\R;, afin 
+d'obtenir une bonne lisibilit dans tous les cas.\CIRCLE;%% ajout\END;\CIRCLE;%% effac\END;\demi;Les pour-cent sont toujours ajouts ou effacs dans les secteurs, quelles que 
+soient les trames utilises.\image gracapc,2,=;\SQUARE;Janvier\END;\SQUARE;Fvrier\END;\SQUARE;etc.\END;\demi;Choix des secteurs  mettre en vidence, en les loignant du centre.Chaque secteur d'un camembert est dessin avec deux lignes droites et un arc 
+de cercle, puis rempli avec une trame. Les \B;traits\R; du secteur 
+et la \B;trame\R;  l'intrieur peuvent tre modifis (voir paragraphes2.3.1 et 2.3.2).\T;2.1.4 Les listes\A;\image grai4ab,3;Choix du mode \I;liste\R;, o tous les nombres du graphique sont reprsents 
+sous forme de chiffres placs dans un \B;tableau  deux dimensions\R;.\image grai4c,3;Choix de dtails pour les listes:\image gradb4c,2,=;\SQUARE;mme largeur pour toutes les colonnes\END;\demi;Normalement, les colonnes varient en fonction des nombres contenus. Avec une 
+petite croix, toutes les colonnes ont la mme largeur: celle permettant d'afficher 
+le nombre le plus long du tableau.\image gralilg,2,=;\SQUARE;met les trames\END;\demi;Met trois trames diffrentes dans les colonnes, dans les titres des colonnes 
+et dans les titres des lignes. Pour modifier ces \B;trames\R;, consultez le 
+paragraphe2.3.1. Les \B;traits\R; utiliss pour les lignes horizontales et 
+verticales du tableau peuvent galement tre modifis (voir paragraphe2.3.2).\image gralitt,2,=;\CIRCLE;nombres inchangs\END;\CIRCLE;"2.00"\END;\CIRCLE;"2   "\END;\CIRCLE;"2.- "\END;\demi;Lorsque la partie \B;fractionnaire\R; des nombres est \B;nulle\R;, vous pouvez 
+choisir comment afficher le nombre.\T;2.2 Les choix secondaires\A;Les choix secondaires peuvent tre combins avec les 4 choix principaux 
+(histogramme, ligne brise, camembert et liste). Par exemple, \B;tous les graphiques 
+peuvent tre reprsents en perspective\R;.\T;2.2.1 Le filtre\A;\image grai5a,3;Lorsque le graphique contient beaucoup de valeurs, il est parfois ncessaire 
+de le dcomposer en plusieurs sous-graphiques. Le filtre permet de choisir quels 
+nombres il faut reprsenter, et quels nombres il faut cacher (filtrer). 
+Et ceci en X et en Y!\image gradb5a,2,=;La grande liste prsente tous les noms de lignes ou de colonnes.\CIRCLE;X\END;\CIRCLE;Y\END;\demi;Choix des lignes ou des colonnes prsentes dans la grande liste de gauche.\D;(PRENDTOUT)\F;\ind 30mm;\D;(FILTRETOUT)\F;\ind 30mm;Prend ou filtre \B;toutes les valeurs\R; de la liste.\D;(PRENDUN)\F;\ind 30mm;\D;(FILTREUN)\F;\ind 30mm;Prend ou filtre \B;la valeur slectionne\R; dans la liste. 
+Pour slectionner une autre valeur, un simple \I;clic\R; suffit.Les touches fonctions \D;(F7)\F;, \D;(F9)\F;, \D;(F10)\F; et \D;(F12)\F; 
+permettent galement le prendre ou de filtrer.\ATTENTION;\REM;Certains graphiques ncessitent un nombre minimal de valeurs. 
+Par exemple, il faut au moins deux valeurs en X pour les camemberts (deux secteurs).Voici un graphique en \I;ligne brise\R; complet (sans filtre):\image grafilt,2,=;Voici le mme graphique, avec une valeur filtre en X:\image grafiltx,2,=;Voici le mme graphique, avec une valeur filtre en Y:\image grafilty,2,=;\T;2.2.2 Les axes\A;\image grai5b,3;Cette icne permet d'\B;inverser les axes X et Y\R;. Dans un histogramme 
+empil, les noms reprsents sur l'axe horizontal correspondent  Y, et les 
+barres empilent les valeurs en X. Par exemple, l'axe horizontal affiche des noms 
+d'lves, et les barres empilent les diffrentes notes de chaque lve. Une inversion 
+de X et de Y aura pour consquence d'afficher les noms de branches sur l'axe horizontal, 
+et d'empiler les diffrents lves pour chaque branche.\image gradb5b,2,=;\CIRCLE;mode normal\END;\demi;Effectue les groupes selon Y. Par exemple: un camembert par lve et un secteur 
+par branche.\CIRCLE;mode inverse\END;\demi;Effectue les groupes selon X. Par exemple: une colonne par branche et une ligne 
+brise par lve.Voici un \I;histogramme empil\R; en \B;mode normal\R;:\image graaxen,2,=;Voici le mme graphique en \B;mode inverse\R;:\image graaxei,2,=;\SQUARE;axe X invers\END;\SQUARE;axe Y invers\END;\demi;Normalement, les donnes sont reprsentes dans l'ordre. Par exemple, si les 
+noms sont classs avec FICHE par ordre alphabtique, un histogramme les prsentera 
+classs de gauche  droite sur l'axe horizontal. Avec \B;axeYinvers\R;, ils 
+seront prsents classs de droite  gauche.\T;2.2.3 Les courbes de Gauss\A;\image grai5c,3;Une courbe de Gauss compte la frquence d'apparition des nombres identiques 
+d'une liste. Statistiquement, elle devrait avoir l'allure d'une courbe en \I;cloche\R;. 
+Par exemple, la moyenne des notes d'une classe devraient prsenter cette fameuse 
+courbe, indiquant une faible quantit de mauvaises notes ainsi que de trs bonnes 
+notes, avec un maximum de notes dans la moyenne.\image gragauss1,2,=;\image gradb5c,2,=;\SQUARE;courbe de Gauss\END;\demi;Enclenche le calcul de la frquence de rptition des nombres identiques.\B;Echantillonnage:\R;\CIRCLE;0.25 unit\END;\CIRCLE;0.5  unit\END;\CIRCLE;1    unit\END;\CIRCLE;2    units\END;\CIRCLE;4    units\END;\demi;Indique la tolrance utilise pour considrer que deux nombres sont identiques. 
+Par exemple, avec \B;1unit\R;, GRAPHE mettra sur le mme compte les nombres 
+6.51, 7.1 et 7.49 (compte7).\image gragauss2,2,=;Le mode \B;courbe de Gauss\R; peut s'utiliser avec les histogrames, les lignes 
+brises, les camemberts (pas trs utile) et les listes. Voici par exemple une 
+courbe de Gauss en mode \B;ligne brise\R; lie par des \B;courbes\R;:\image gragauss3,2,=;\T;2.2.4 La perspective\A;\image grai6a,3;Les histogrammes, les lignes brises et les camemberts peuvent apparatre en 
+deux ou en \B;trois dimensions\R; (perspective).\image gracamemb,2,=;\image gradb6a,2,=;\SQUARE;perspective\END;\demi;Enclenche le mode perspective (reprsentation tri-dimensionnelle).Les trois paramtres numriques \I;profondeur\R;, \I;angle gauche\R; et 
+\I;angle droite\R; dterminent l'\B;angle de vision\R;:\image gradbpres,3,=;\CIRCLE;mme niveau\END;\CIRCLE;l'un derrire l'autre\END;\demi;Dans le mode \B;histogramme cte  cte\R;, l'effet est le suivant:\image grapreshc,2,=;Dans le mode \B;histogramme empil\R;, l'option \B;l'un derrire l'autre\R; 
+dcale chaque barre contre le fond, au fur et  mesure de l'empilement:\demi;\image grapreshe,2,=;Dans le mode \B;ligne brise\R;, l'option \B;l'un derrire l'autre\R; produit 
+une surface dans l'espace:\demi;\image grapreslb,2,=;\SQUARE;mode rapide "fil de fer"\END;\demi;Cette option est surtout utile lors des essais, pour acclrer le dessin. 
+Les \B;trames\R; ne sont plus dessines, et les \B;faces caches\R; sont visibles.\demi;\image grapresff,2,=;\T;2.2.5 La rfrence horizontale\A;\image grai6b,3;La rfrence horizontale est normalement place  zro. Elle peut aussi 
+tre dplace n'importe o.\image gradb6b,2,=;\CIRCLE;rfrence horizontale  zro\END;\demi;Mode par dfaut.\image graref1,2,=;\CIRCLE;rfrence horizontale sur la moyenne\END;\demi;GRAPHE calcule la moyenne de tous les nombres, et place automatiquement la 
+rfrence sur cette valeur moyenne.\image graref2,2,=;\CIRCLE;rfrence horizontale  \D;()\F;\END;\demi;Permet de placer la rfrence  n'importe quelle valeur (6 dans cet exemple).\image graref3,2,=;On repre ainsi aisment toutes les notes insuffisantes!\T;2.2.6 La lgende\A;\image grai7a,3;GRAPHE peut gnrer automatiquement une lgende pour indiquer les noms correspondant 
+ chaque type de trame, de trait ou de point. Ceci est valable pour les histogrammes, 
+les lignes brises et les camemberts. Vous pourrez placer la lgende n'importe o dans 
+le graphique.\image gradb7a,2,=;\SQUARE;affiche la lgende\END;\demi;Indique  GRAPHE qu'il doit gnrer automatiquement une lgende. Si la position 
+choisie par GRAPHE ne vous plat pas, vous pouvez la \B;dplacer\R; en la \I;tirant\R; 
+avec un bouton de la souris.\image graleg,2,=;\SQUARE;grand rectangle autour\END;\demi;Dessine un grand rectangle tout autour de la lgende.\SQUARE;petits rectangles\END;\demi;Dessine de petits rectangles autour de chaque trame, trait ou point de la lgende.\image gralegrec,2,=;\SQUARE;lignes au lieu des points\END;\demi;Dans le mode \B;ligne brise\R;, il est possible de choisir si GRAPHE doit 
+afficher les \B;traits\R; ou les \B;points\R; dans la lgende.\image graleglp,2,=;\T;2.2.7 Les graduations\A;\image grai7b,3;Normalement, les axes sont gradus. Cette icne permet d'en choisir le mode:\image gradb7b,2,=;\SQUARE;axe\END;\demi;Dessine l'axe X, Y ou Z.\SQUARE;graduation\END;\demi;Dessine la graduation le long de l'axe X, Y ou Z.\SQUARE;noms\END;\demi;Dessine les noms ou les chiffres le long de l'axe X, Y ou Z.\image gragraxyz,2,=;\SQUARE;fond du zro (X-Y)\END;\SQUARE;fond de gauche (Y-Z)\END;\SQUARE;fond de droite (X-Z)\END;\demi;Dtermine s'il faut dessiner les fonds. Le paragraphe2.3.1 explique comment 
+dfinir les \B;trames\R;.\image gragrafon,2,=;\REM;Le \B;fond du zro (X-Y)\R; et le \B;fond de gauche (Y-Z)\R; n'existent que 
+dans le cas d'un graphique en \B;perspective\R;.\SQUARE;graduation externe\END;\SQUARE;graduation interne\END;\demi;Dtermine si les graduations le long des trois axes doivent tre dessines 
+ l'extrieur,  l'intrieur, ou les deux.\T;2.2.8 Le titre\A;\image grai7c,3;Un graphique a un titre, qui est affich tout en haut.\image gradb7c,2,=;\SQUARE;affiche le titre\END;\demi;Indique s'il faut dessiner le titre du graphique.\CIRCLE;cadr  gauche\END;\CIRCLE;centr\END;\CIRCLE;cadr  droite\END;\demi;Dtermine la position du titre.\image gratitre,2,=;\T;2.3 Les dfinitions\A;\T;2.3.1 Les trames\A;\image grai8a,3;Cette icne permet de dfinir les \B;trames\R; dessines  l'intrieur des barres 
+(histogrammes),  l'intrieur des surfaces (lignes brises) ou  l'intrieur des 
+secteurs (camemberts).\image gradb8a,2,=;\CIRCLE;1..n\END;\demi;Indique qu'il faut utiliser, \B; partir de la trame slectionne\R;, les trames 
+successives pour les barres, les surfaces ou les secteurs.\image gratra1n,2,=;\CIRCLE;un seul\END;\demi;Indique que toutes les barres, toutes les surfaces ou tous les secteurs doivent 
+tre dessins avec la \B;mme trame\R; (trame slectionne).\CIRCLE;ombr\END;\demi;Pour le mode \B;ligne brise\R; en perspective (l'un derrire l'autre), utilise 
+les \B;neuf trames  partir de la trame slectionne\R; en fonction de l'inclinaison 
+de la surface. On simule ainsi une source lumineuse qui claire le volume dans 
+l'espace.\image gratraom,2,=;\image grai9a,3;Cette icne permet de dfinir les trames globales (trames pour les fonds et 
+certaines faces des histogrammes en perspective).\image gradb9a,2,=;\T;2.3.2 Les traits\A;\image grai8b,3;Cette icne permet de dfinir les \B;traits\R; utiliss pour 
+les lignes brises et pour les secteurs (camemberts).\image gradb8b,2,=;\CIRCLE;1..n\END;\demi;Indique qu'il faut utiliser, \B; partir du trait slectionn\R;, les traits 
+successifs pour les lignes brises ou les secteurs.\CIRCLE;un seul\END;\demi;Indique que toutes les lignes brises ou tous les secteurs doivent 
+tre dessins avec le \B;mme trait\R; (trait slectionn).\image grai9b,3;Cette icne permet de dfinir les traits globaux (traits pour les axes).\image gradb9b,2,=;Par exemple, pour ne pas dessiner de grille, il suffit d'effacer la matrice 
+de dfinition des traitills horizontaux et verticaux.\image gratradef,2,=;\T;2.3.3 Les points\A;\image grai8c,3;Cette icne permet de dfinir les \B;points\R; utiliss pour les lignes brises.\image gradb8c,2,=;\CIRCLE;1..n\END;\demi;Indique qu'il faut utiliser, \B; partir du point slectionn\R;, les points 
+successifs pour les lignes brises.\CIRCLE;un seul\END;\demi;Indique que toutes les lignes brises doivent 
+tre dessines avec le \B;mme point\R; (point slectionn).\T;2.3.4 Les caractres\A;\image grai9c,3;Choix des caractres utiliss dans un graphique.\image gradb9c,2,=;GRAPHE utilise les noms \I;Titre\R;, \I;AxeX\R;, \I;AxeY\R;, \I;AxeZ\R; 
+et \I;Lgende\R; pour dessiner les noms, les chiffres, etc. Par exemple, pour 
+mettre des plus gros caractres au titre, il faut \I;cliquer\R; dans le cercle 
+ gauche du nom \I;Titre\R;, puis \I;cliquer\R; dans \D;(MODIFIE)\F;. Vous pouvez 
+alors choisir un autre caractre, \B;sans modifier le nom de fonction du caractre\R;.\image gracar,2,=;\T;2.4 Les entres/sorties\A;Le logiciel GRAPHE gre trois sortes de fichiers:\B;.GRAPHE\R;\ind 30mm;Donnes numriques, indpendantes de la faon dont elles 
+seront reprsentes.\B;.DGRA\R;\ind 30mm;Dfinitions pour des donnes numriques, c'est--dire: type 
+de graphique, dimensions, filtre, angle de vue pour les perspectives, matrices 
+des trames, traits et points, caractres, etc.\B;.IMAGE\R;\ind 30mm;Fichier image, qui peut tre coll lectroniquement dans 
+une texte, ou repris par DESSIN.\image graio,2,=;La touche fonction \D;(F1)\F; intitule \D;(Prend)\F; prsente la bote de 
+dialogue suivante:\image gradbin,2,=;Normalement, les deux petites croix sont prsentes. Cependant, il est possible, 
+pour un graphique donn, de \B;reprendre les dfinitions d'un autre\R; (par exemple). 
+Il est bien entendu impossible de reprendre une image!La touche fonction \D;(F3)\F; intitule \D;(Sauve)\F; prsente la bote de 
+dialogue suivante:\image gradbout,2,=;Normalement, les deux premires croix (image et dfinitions) sont prsentes. 
+La troisime croix (graphique) n'est utile que si GRAPHE a t \B;appel directement 
+depuis FICHE\R;. En effet, dans ce cas le fichier .GRAPH n'existe pas encore sur 
+disque.\T;2.5 Les dfinitions\A;En principe, GRAPHE redessine tout le graphique  chaque modification. La touche 
+fonction \D;(F4)\F; intitule \D;(Df.)\F; permet de changer ce mode:\image gradbdef,2,=;Lorsqu'une petite croix est mise, GRAPHE ne redessine que lorsque vous appuyez 
+sur la touche fonction \D;(F8)\F; intitule \D;(Redessine)\F;.

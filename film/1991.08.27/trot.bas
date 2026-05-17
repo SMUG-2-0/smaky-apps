@@ -1,0 +1,1 @@
+  100 Delete "trot.move"  110 Open File(1),"trot.move",7  120 Let T%=406*2/14  130 Put File(1),T%  140 For I=-406 To +406-14 Step +14  150 Let T%=0  160 Put File(1),T%   170 Let T%=I  180 Put File(1),T%   190 Next I  200 Close File(1)  210 End

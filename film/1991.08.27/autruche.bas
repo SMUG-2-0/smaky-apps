@@ -1,0 +1,1 @@
+  100 Delete "autruche.move"  110 Open File(1),"autruche.move",7  120 Let T%=400*2/10  130 Put File(1),T%  140 For I=-400 To +400-10 Step 10  150 Let T%=0  160 Put File(1),T%   170 Let T%=I  180 Put File(1),T%   190 Next I  200 Close File(1)  210 End

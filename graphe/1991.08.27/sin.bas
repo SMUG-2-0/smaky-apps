@@ -1,0 +1,1 @@
+   50 Open File(1),"sin.asm",7  100 For I=0 To 90  200 Print File(1), Format(4,0) 1000*Sin(I*Pi/180)  300 Next I  500 Close File(1)

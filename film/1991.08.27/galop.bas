@@ -1,0 +1,1 @@
+  100 Delete "galop.move"  110 Open File(1),"galop.move",7  120 Let T%=400*2/20  130 Put File(1),T%  140 For I=-400 To +400-20 Step +20  150 Let T%=0  160 Put File(1),T%   170 Let T%=I  180 Put File(1),T%   190 Next I  200 Close File(1)  210 End
