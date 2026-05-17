@@ -1,0 +1,68 @@
+\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\image smakynews,2,=;\ur14;2 aot 1986\carte;No 32\line 0.3mm;\centre;\ub20;Systme version 4\line 0.3mm;\justif;\ur10;Le systme version 4 se distingue principalement par les points suivants:\demi;\L;multi-fentres\L;plus grande simplicit d'emploi (programme START)Le \bold;multi-fentres\roman; permet l'excution de quatre programmes simultanment. 
+Ils disposent tous d'une grande fentre, et une seule est visible  la fois. 
+Tous les programmes, visibles et invisibles, \bold;s'excutent simultanment\roman;, en 
+fonction des temps morts, de leurs priorits, etc. On exploite ici pleinement 
+les possibilits \bold;multi-tches\roman; du Smaky  travers le noyau temps-rel.\image multiwdp,2,=;Les touches \D;(F16)\F;  \D;(F19)\F;, au-dessus du pav numrique, visualisent 
+directement les programmes en excution dans les fentres 1  4. Un effet similaire 
+ un changement de diapositive accompagne chaque changement de fentre. De plus, 
+quatre icnes tout en haut de l'cran indiquent l'tat des fentres (inutilis, occup 
+ou visible), et peuvent tre \ital;cliques\roman; avec la souris.\image photo1,2,=;\bold;START\roman; remplace l'ancien ICONE, et occupe la premire fentre en permanence. 
+Des icnes reprsentent non seulement les programmes excutables (.code), mais 
+\bold;tous les fichiers\roman;.\pum;\centre;\bold;- 2 -\roman;\pom;\newtab 50mm;Il existe en fait \bold;quatre types d'icnes\roman;:\demi;\L;les \bold;units physiques\roman;	(#MM0:, #QUICK:, etc.)\L;les \bold;dossiers\roman;	(DOSSIER:, LETTRES:, etc.)\L;les \bold;programmes\roman;	(DESSIN.CODE, TEXT.CODE, etc.)\L;les \bold;documents\roman;	(MAISON.IMAGE, ESSAI.TEXT, etc.)Ces quatre types se diffrencient par le \bold;cadre autour de l'icne\roman;. 
+Le nom du fichier est toujours indiqu juste au-dessous.\image typico,2,=;Un \ital;clic\roman; du bouton de \bold;gauche\roman; excute directement une action: 
+ouverture d'une unit physique ou d'un dossier, excution d'un programme, etc.Un \ital;clic\roman; du bouton de \bold;droite\roman; prsente un menu pour 
+\ital;dtruire\roman;, \ital;dplacer\roman;, \ital;dupliquer\roman;, etc. 
+Voici un tableau rsum de ces possibilits:\sh;\image starth0,2,=;\gh;\sh;\saute 20mm;\image starth1,2,=;\gh;\saute 73.4mm;\image starth2,2,=;L'opration \ital;systme\roman;, obtenue un \ital;cliquant\roman; une unit physique 
+avec le bouton de droite, indique o sont cherchs tous les \bold;fichiers systme\roman; 
+(programmes, gnrateurs de caractres ou d'icnes, librairies, etc.). 
+Avec le rseau, par exemple, il est possible de chercher tous les fichiers systme 
+sur le serveur, tout en archivant ses documents sur la disquette locale.\pum;\centre;\bold;- 3 -\roman;\pom;De mme qu'une unit physique contient un certain nombre de fichiers, un 
+\bold;dossier\roman; contient un sous-ensemble de fichiers. 
+Le principe se rpte autant de fois que ncessaire, 
+pour permettre des sous-dossiers dans un dossier, des sous-sous-dossiers, etc. 
+Anciennement le terme de \bold;rpertoire\roman; tait utilis pour dsigner 
+un dossier.Avec START, les oprations \ital;dtruit\roman;, \ital;dplace\roman; ou 
+\ital;duplique\roman; appliques  un dossier 
+\bold;concernent tout le contenu du dossier\roman;, et mme les sous-dossiers 
+et leurs contenus, etc.Chaque disquette contient un dossier vide appel DOSSIER:. Pour \bold;crer un nouveau 
+dossier\roman;, il faut dupliquer DOSSIER:. Son double prend le nom DOSSIER1:, qu'il 
+ne reste plus qu' modifier en \ital;cliquant\roman; avec le bouton de droite, 
+puis en choisissant \ital;modifie\roman;.Lorsqu'un \bold;programme\roman; (.code) est \ital;dtruit\roman;, \ital;dplac\roman; 
+ou \ital;dupliqu\roman;, \bold;tous les fichiers associs suivent\roman; 
+(gnrateurs de caractres ou d'icnes, librairies, images, etc.). 
+Il est donc trs simple de gnrer une nouvelle disquette complte avec les 
+programmes de son choix. Voici comment procder avec un Smaky double-floppy:\demi;\L;Mettre une disquette vierge en #MM1:\L;La formater (\ital;clic\roman; dans #MM1: avec le bouton de droite, puis choix 
+de \ital;formate\roman;)\L;Dupliquer SYSTEM.CODE (\ital;clic\roman; dans SYSTEM.CODE avec le bouton de 
+droite, choix de \ital;duplique\roman;, puis \ital;tirer\roman; jusque dans la 
+grande fentre de #MM1:)\L;Dupliquer DESSIN.CODE (idem)\L;Dupliquer ...\L;La nouvelle disquette est prte  l'emploi!En dupliquant SYSTEM.CODE, c'est l'imprimante actuellement utilise qui est copie. 
+Pour gnrer une disquette avec une autre imprimante, il faut changer d'imprimante 
+\bold;avant\roman; de dupliquer SYSTEM.CODE. Pour cela, appuyez sur le \bold;bouton 
+du milieu\roman;, et choisissez l'opration \ital;imprimante\roman;.\image starth3,2,38mm;Par dfaut, les icnes sont reprsentes par \bold;ordre alphabtique\roman;, 
+et les fichiers \ital;systme\roman; ne sont pas visibles. 
+L'indication \bold;78/124fichiers\roman; informe qu'il y a 78 fichiers visibles 
+sur un total de 124.La case \bold;LISTE\roman;, en haut  droite de chaque fentre, prsente la bote 
+de dialogue suivante:\image dboxliste,2,=;Les deux colonnes sous \ital;Classement par:\roman; dterminent \bold;deux critres 
+de classement\roman;. Dans l'exemple ci-dessus, les fichiers sont classs par \ital;ordre 
+alphabtique\roman;, et en cas d'galit par \ital;extensions\roman;.\pum;\centre;\bold;- 4 -\roman;\pom;La case \bold;AUTRE\roman;, en haut  droite de la fentre des units physiques, 
+permet d'installer une nouvelle \bold;unit physique\roman;. Par exemple, un disque 
+virtuel ou un nouveau serveur sur le rseau.\image dboxautre,2,=;Pour installer un \bold;disque virtuel\roman; (disque en mmoire vive), il faut 
+\ital;cliquer\roman; dans #QUICK:, puis spcifier la taille, qui correspond 
+ la quantit de mmoire utilise (100'000 pour un petit disque virtuel).Avec un Smaky ne disposant que d'un lecteur de disquettes, le disque virtuel 
+permettra de copier des fichiers d'une disquette sur une autre:\demi;\L;Installer le disque virtuel\L;L'ouvrir (\ital;clic\roman; dans #QUICK: avec le bouton de gauche)\L;Dupliquer les fichiers souhaits de #MM0: jusque dans la fentre de #QUICK:\L;Mettre la nouvelle disquette (\ital;clic\roman; dans la petite disquette tout en haut 
+ gauche de l'heure, mettre la nouvelle disquette, puis de nouveau \ital;clic\roman;)\L;Dplacer les fichiers de #QUICK: jusque dans la fentre de #MM0:\bold;\_REMARQUES\_\roman;Tous les transferts sur une disquette version 4 doivent s'effectuer en ayant 
+dmarr avec le nouveau systme. En effet, le nouveau FOS crit un \bold;numro de 
+contrle\roman; avec chaque fichier, ce qui permet de dtecter les changements de 
+disquettes incorrects!Le fichier 100_IIP24.GENC contient toutes les icnes de START. La \bold;correspondance 
+document-programme\roman; est contenue dans le fichier START.INFO (exemple: pour document 
+.IMAGE, appeler DESSIN.CODE).Le \bold;nom de l'imprimante\roman; utilise est enregistr dans 100_INFO. 
+La macro de dmarrage 100_BOOT.CLE installe l'imprimante avec l'ordre 
+INSTALL#PRINTER$%%P. En effet, le paramtre %%P correspond au nom de 
+l'imprimante complet (par exemple LQ800). Le paramtre %%Q correspond au 
+nom de l'imprimante sans numro (par exemple LQ).A chaque programme correspond un fichier .FILES qui contient la \bold;liste de tous 
+les fichiers associs\roman; (gnrateurs de caractres, librairies, etc.). Le fichier 
+SYSTEM.FILES contient la liste de tous les fichiers ncessaires au systme 
+d'exploitation, dont voici le contenu:\pug;\ur07;
+\pui;\interligne 3mm;
+\newtab 10mm,47mm,84mm,121mm,158mm;
+\rect 35mm,0.2mm,0;
+\sh;	SYSTEM.FILES -CXL	SYSTEM.CODE -CX+L	100_SHI.BIN -CXL	100_NTR.BIN -CXL	100_FOS.BIN -CXL	100_FLO.DRIV -CXL	100_WIN.DRIV -CXL	100_INFO -CXL	100_LIB.BIN -CXL	100_DIS.DRIV -CXL	100_GRA.LIB -CXL\gh;\sh;		100_NEF07.GENC -CX+L		100_KEY.DRIV -CXL		100_SYNT.DRIV -CXL		100_CLOCK.DRIV -CXL		100_CLE.CODE -CL		100_SNF07.GENC -CX+L		100_BOOT.CLE -CL		100_MOUSE.CODE -CL		100_CLOCK.CODE -CL		100_MOUSE.DRIV -CXL		100_%%p.DRIV -CXL\gh;\sh;			100_USART.DRIV -CXL			100_LDIMA.CODE -CL			100_GENCAR.LIB -CXL			100_DBOX.LIB -CXL			100_DGENC.LIB -CXL			100_LIST.LIB -CXL			100_SCROLL.LIB -CXL			START.CODE -CL			START.INFO -CXL			100_IIP24.GENC -CX+L			100_EPRO.LIB -CXL\gh;				100_F.MERR -CXL				100_RECUP.CODE -CL				100_FBOOT.BIN -CXL				100_SBOOT.BIN -CXL				100_MEM.DRIV -CXL				100_NRF09.GENC -CX+L				100_NEF11.GENC -CX+L				%%q_DRF07.GENC -CXL				%%q_DRP07.GENC -CXL				%%q_QRF07.GENC -CXL				%%q_QRP07.GENC -CXL\pog;\poi;\ub20;EPSITEC system sa\carte;\ur10;Chemin de la Mouette, CH-1092 Belmont

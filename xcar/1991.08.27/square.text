@@ -1,0 +1,12 @@
+\ver 1;\disable <cr>;\zoom;\width 7pt;\hauteur 296.8mm;\marsup 4.8mm;\marinf 4.1mm;\interligne 20pg;\large 0mm;\marge 5.1mm;\large 203.3mm;\dimcar 11pg,3pg,9pg;\disable justmode textdef textfact;\disable justif drapeau drapd centre;\disable marge large renf newtab justtab;\disable coupe nocoupe label <tab>;\justmode 100,10,5;\textdef 1114315;\textfact 3,3;\enable <cr>;\define g_Fond:\sqp14pg;\define g_Titre:\sqp30pg;\g_Fond;\justif;\interligne 20pg;\marge 9.9mm;\large 189.3mm;\renf 0mm;\newtab 40.7mm;\justtab n;\coupe;\hn 19pg;\hn 19pg;\hn 19pg;\zoom 1;\image SQUARE,1,9.7mm;\zoom;\hn 19pg;\justif;\interligne 20pg;\marge 24.9mm;\large 159.3mm;\renf 0mm;\newtab 40.7mm;\justtab n;\coupe;\hn 78pg;\hn 78pg;\g_Titre;Un peu d'histoire\hn 78pg;\g_Fond;\hn 78pg;La \h 15pg;plupart \h 15pg;des \h 15pg;caractres \h 15pg;actuels \h 14pg;trouvent 
+\hn 78pg;leurs \h 7pg;origines \h 7pg;dans \h 8pg;l'alphabet \h 7pg;classique \h 7pg;romain, 
+\hn 78pg;dessin \h 5pg;par \h 5pg;l'empereur \h 5pg;Trajan \h 5pg;en \h 5pg;l'an \h 5pg;20 \h 4pg;avant 
+\hn 78pg;Jsus-Christ. \h 11pg;Aujourd'hui, \h 12pg;toutes \h 11pg;les \h 12pg;fantaisies 
+\hn 78pg;semblent permises, mais la base reste la mme.\hn 78pg;\hn 78pg;\g_Titre;Le caractre Square\hn 78pg;\g_Fond;\hn 78pg;La \h 12pg;bote \h 12pg;englobant \h 12pg;un \h 13pg;caractre \h 12pg;Square \h 12pg;est 
+\hn 78pg;presque carre. Ceci donne \h 1pg;des caractres aplatis 
+\hn 78pg;et larges:\hn 78pg;\zoom 2;\image SQUARE3,1,29mm;\zoom;\hn 78pg;\hn 78pg;Trs \h 2pg;particulier, \h 2pg;ce \h 2pg;caractre \h 2pg;convient \h 1pg;essentiel
+\hn 78pg;lement \h 12pg;pour \h 12pg;des \h 13pg;titres.\hn 78pg;Le \h 5pg;fichier \h 5pg;SMA_SQP00.GENC \h 5pg;du \h 4pg;SMAKY \h 4pg;permet 
+\hn 78pg;de \h 1pg;gnrer \h 1pg;toutes \h 1pg;les \h 1pg;tailles \h 1pg;comprises \h 1pg;entre \h 1pg;24 
+\hn 78pg;et \h 5pg;99 \h 5pg;points. \h 5pg;Sans \h 5pg;contraintes, \h 5pg;ce \h 4pg;caractre \h 4pg;ne 
+\hn 78pg;donne \h 9pg;pas \h 10pg;de \h 9pg;bons \h 10pg;rsultats \h 9pg;dans \h 9pg;les \h 9pg;petites 
+\hn 78pg;tailles.\hn 78pg;\zoom 2;\image SQUARE2,1,28.2mm;\zoom;\hn 78pg;
