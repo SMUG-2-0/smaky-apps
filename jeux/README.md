@@ -1,3 +1,3 @@
 # Smaky legacy games
 
-See https://github.com/blupi-games/smaky-legacy
+See also https://github.com/blupi-games/smaky-legacy
