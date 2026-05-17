@@ -1,0 +1,49 @@
+\cpage=13;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2mm;\line 0.2mm,120mm;\down 2mm;\define A:\ur10;\up 2mm;\line 0.2mm,120mm;\down 2mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define DT:\pug;\lgr10;\define FT:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define CADRE:\pug;\ub12;\sapos 8;\texte;\sapos 9;\\cr;\gepos 8;\up 0.9il;\\rect 1.1il,0.2mm,0,h9-h8;\\fillrect 1.1il,21,h9-h8;\\gepos 9;\pog;\ind 30mm;\define IN:\newtab 8mm,20mm;\interligne 3mm;\pug;\ub08;in\ur08;\define OUT:\ub08;out\ur08;\define MOD:\ub08;mod\ur08;\define FIOM:\pog;\interligneg;\newtab 15mm,30mm,45mm,60mm,75mm,90mm,105mm;\define EXEMPLE:\pug;\bold;Exemple:\pog;\ind 30mm;\define REMARQUE:\pug;\bold;Remarque:\pog;\ind 30mm;\T;2.2.1 Les sous-fentres\A;\CADRE;?GETDIM|Le registre D3.32 contient les dimensions 
+standards d'un caractre, qui correspondent  l'interligne (y) et  
+l'intercaractres (x). Le registre D4.32 contient les dimensions en points 
+(hauteur et largeur) de la \bold;fentre principale\roman; utilise par le processus.\IN:	-\OUT:	D3.32	dimensions (dy;dx) d'un caractre	D4.32	dimensions (dy;dx) de la fentre principale	D7.16	erreur\MOD:	D3.32, D4.32, D7.16\FIOM:Les sous-fentres permettent de \bold;fragmenter\roman; une fentre en plusieurs 
+morceaux rectangulaires (10 au maximum). Une sous-fentre est caractrise par un numro. 
+Au dbut (aprs LIB,?OPELIB), la sous-fentre utilise a le numro zro, et 
+correspond  toute la fentre.\image swdo,2,=;\CADRE;?CREWDO|\bold;Cre une nouvelle sous-fentre\roman; dans la librairie. Si 
+les dimensions ne sont pas correctes, aucune erreur n'est rendue (c'est 
+lors du LIB,?USEWDO que l'erreur sera rendue). La fentre utilise reste la 
+mme.\IN:	D3.32	point en haut  gauche (y;x)	D4.32	dimensions (dy;dx)\OUT:	D5.16	numro de la sous-fentre	D7.16	erreur (ERLWFU = trop de sous-fentre)\MOD:	D5.16, D7.16\FIOM:\REMARQUE;Les coordonnes du point en haut  gauche (D3.32) et les dimensions (D4.32) 
+doivent tre \bold;multiple de 8 en X\roman; et \bold;multiple de 2 en Y\roman;. 
+Si ce n'est pas le cas, LIB,?CREWDO prend la valeur directement infrieure.\CADRE;?KILWDO|\bold;Dtruit une sous-fentre\roman;. Il n'est pas possible 
+de dtruire la sous-fentre utilise actuellement.\IN:	D5.16	numro de la sous-fentre\OUT:	D7.16	erreur (ERLWUS = sous-fentre utilise)\MOD:	D7.16\FIOM:\CADRE;?USEWDO|\bold;Utilise une nouvelle sous-fentre\roman;, en sauvant au 
+pralable l'tat (positions des curseurs typo et graphique) de la 
+sous-fentre actuelle.\IN:	D5.16	numro de la sous-fentre\OUT:	D7.16	erreur (ERLWNI = numro inconnu)\MOD:	D7.16\FIOM:\REMARQUE;Si les dimensions ne sont pas correctes, une erreur est rendue, et la 
+fentre utilise n'est pas change. Il faut alors dtruire la fentre 
+incorrecte (avec LIB,?KILWDO), puis la re-crer (avec LIB,?CREWDO).\CADRE;?MODWDO|\bold;Modifie\roman; les dimensions d'une sous-fentre existante.\IN:	D3.32	point en haut  gauche (y;x)	D4.32	dimensions (dy;dx)	D5.16	numro de la sous-fentre\OUT:	D7.16	erreur (ERLWNI = numro inconnu)\MOD:	D7.16\FIOM:\CADRE;?GETWDO|\bold;Donne des informations\roman; sur la sous-fentre utilise 
+actuellement.\IN:	-\OUT:	D3.32	point en haut  gauche (y;x)	D4.32	dimensions (dy;dx)	D5.16	numro de la sous-fentre	D7.16	erreur\MOD:	D3.32, D4.32, D5.16, D7.16\FIOM:\T;2.2.2 Les touches fonctions\A;\image claf0,2,=;La fentre $DIS_7 en bas de l'cran permet de donner en tout temps une 
+significations aux 16*2 touches fonctions.Chaque touche peut avoir \bold;2 significations\roman; diffrentes. Le texte dans la 
+moiti infrieure correspond  la touche fonction seule, et le texte 
+dans la moiti suprieure correspond  la touche fonction actionne 
+avec la touche \D;(SHIFT)\F; en plus.\CADRE;?AFMENU|Affiche dans le bas de l'cran la signification 
+des 16*2 touches fonctions.\IN:	A3.32	^liste de 12 textes\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:Le premier groupe de deux textes correspond  la touche solitaire de 
+gauche. Les cinq doubles textes suivants correspondent aux cinq groupes de 
+trois touches. Chaque groupe de trois touches peut contenir deux lignes de 
+17 caractres. Le premier texte correspond  la ligne suprieure et le 
+deuxime  la ligne infrieure.\REMARQUE;Si un texte commence par un espace, il est affich tel quel. Par 
+contre, s'il ne commence pas par un espace, il est centr au milieu du 
+groupe de trois touches.\EXEMPLE;\DT;		MOVE.32	#R16^TXMENU,A3		.16	LIB,?AFMENU		...	TXMENU:		.ASCIZ	""		; touche solitaire de gauche		.ASCIZ	"Stop"		; 5 caractres au maximum		.ASCIZ	"Rponse"		; premier groupe de trois		.ASCIZ	" oui  moyen  non"		.ASCIZ	""		; deuxime groupe de trois		.ASCIZ	""		.ASCIZ	""		; troisime groupe de trois		.ASCIZ	""		.ASCIZ	""		; quatrime groupe de trois		.ASCIZ	""		.ASCIZ	""		; dernier groupe de trois		.ASCIZ	""		; tout  droite		.EVEN\FT;Il est possible d'associer  chaque touche fonction une \bold;barre 
+horizontale\roman; qui vient en-dessous. Cette barre permet d'indiquer si un mode 
+est enclench ou dclench, lors d'un fonctionnement en \ital;flip-flop\roman; par 
+exemple.\CADRE;?SETBARRE|\bold;Met\roman; une barre sous une touche fonction.\IN:	D3.8	numro de la touche (0..15)\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:\CADRE;?CLRBARRE|\bold;Enlve\roman; une barre sous une touche fonction.\IN:	D3.8	numro de la touche (0..15)\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:\CADRE;?INVBARRE|\bold;Inverse\roman; l'tat d'une barre sous une touche fonction.\IN:	D3.8	numro de la touche (0..15)\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:\REMARQUE;Chaque fois que LIB,?AFMENU est utilis, \bold;toutes les barres sout 
+effaces\roman;.\T;2.2.3 Les gnrateurs de caractres\A;\CADRE;?RSTGC|\bold;Rutilise le gnrateur de caractres par dfaut\roman;, 
+dont la description est contenue dans l'en-tte du fichier binaire.\IN:	-\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:\CADRE;?SYNGC|\bold;Transforme\roman; un nom de gnrateur de caractres du 
+type MRF17 ou M(BOF)17 en \bold;trois bytes cods\roman; pour le driver 
+d'cran.\IN:	A3.32	^nom gnrateur de caractres\OUT:	D3.8	fonte	D4.8	style/chasse	D5.8	taille	D7.16	erreur\MOD:	D3.32, D4.32, D5.32, D7.16\FIOM:\EXEMPLE;\DT;		MOVE.32	#R16^TGGENC,A3	; A3 <-- ^fsctt		.16	LIB,?SYNGC		; D3/D4/D5 <-- paramtres gc.		JUMP,NE	ERROR		MOVE.32	#{A6}+OBUCAR,A3	; A3 <-- ^buffer		MOVE.8	#LOADGC,{A3}+0	; <LOADGC>		MOVE.8	D3,{A3}+1		; <fonte>		MOVE.8	D4,{A3}+2		; <style/chasse>		MOVE.8	D5,{A3}+3		; <taille>		MOVE.8	#USEGC{A3}+4,	; <USEGC>		MOVE.8	D3,{A3}+5		; <fonte>		MOVE.8	D4,{A3}+6		; <style/chasse>		MOVE.8	D5,{A3}+7		; <taille>		MOVE.16	#4+4,D3		; D3 <-- lg dans buffer		.16	LIB,?STRING	; charge puis utilise gc.		JUMP,NE	ERROR		...	TPGENC:	.ASCIZ	"NRF08"		; petit gnrateur	TMGENC:	.ASCIZ	"NRF12"		; gnrateur normal	TGGENC:	.ASCIZ	"M(BOF)17"		; grand gnrateur relief		.EVEN\FT;Le chargement ou l'utilisation d'un gnrateur par le driver 
+d'cran se fait toujours en envoyant la commande (LOADGC, USEGC ou KILLGC) suivie 
+de trois bytes dont la signification est la suivante:\demi;\L;\bold;fonte\roman;	(caractre ASCII avec 2^7=0)\L;\bold;style\roman;	(caractre ASCII avec 2^7=1 si chasse fixe)\L;\bold;chasse\roman;	(taille en binaire)Le driver d'cran utilise le module GENCAR (100_GENCAR.LIB ou SYS_GENCAR.LIB) 
+pour \bold;construire des gnrateurs de caractres gras, italique, etc.\roman;. 
+sur la base d'un gnrateur normal (roman).Pour permettre de \bold;cumuler plusieurs styles diffrents\roman; 
+(par exemple: gras, italique et relief), 
+le bit 2^7 de la fonte vaut 1, et le style contient 8 bits indpendants 
+(un par style):\demi;\L;\bold;fonte\roman;	(caractre ASCII avec 2^7=1)\L;\bold;style\roman;	(8 bits indpendants)\L;\bold;chasse\roman;	(taille en binaire)Les 8 bits du style sont les suivants:BGCBOLD	=  0	; B --> bold (gras)BGCITAL		=  1	; I --> italic (italique)BGCOUTL	=  2	; O --> outline (relief)BGCSHAD	=  3	; S --> shadow (ombr)BGCLARG	=  4	; L --> large (double largeur)BGCFIX		=  7	; F --> fix (chasse fixe)Le module GENCAR n'est utilis que si le bit 2^7 de la fonte vaut1. De plus, 
+dans ce cas, GENCAR \bold;double les dimensions\roman; (hauteur et largeur) si le fichier 
+correspondant au gnrateur n'existe pas. Par exemple, NRF12 sera utilis pour 
+construire un pseudo NRF24 deux fois plus grand. La seule restriction est que 
+la largeur du gnrateur construit ne doit pas dpasser 32 points, ce qui est 
+d'ailleurs valable pour tous les gnrateurs construits par le module GENCAR.\REMARQUE;La prsence de \bold;paranthses\roman; dans le nom force le bit 2^7=1 
+dans la fonte, donc l'utilisation du module GENCAR.

@@ -1,0 +1,41 @@
+\define T:\br40;\define R:\ub20;\define A:\ur10;\define D:\pug;\phchgen krp28;\define F:\pog;\A;\newtab 20mm,40mm,60mm,80mm;\bold;Plusieurs nouveauts intressantes sont apparues dans la rvision PSos 3.31 pour 
+le programme TEXT. En voici la liste pour que tous les programmes en bnficient.\roman;\T;GENCAR\A;Le driver d'cran utilise le module GENCAR (SYS_GENCAR.LIB ou 100_GENCAR.LIB) 
+pour \bold;construire des gnrateurs de caractres gras, italique, etc\roman;. 
+sur la base d'un gnrateur normal (roman).Le chargement ou l'utilisation d'un gnrateur par le driver 
+d'cran se fait toujours en envoyant la commande (LOADGC, USEGC ou KILLGC) suivie 
+de trois bytes dont la signification tait la suivante:	fonte (caractre ASCII avec 2^7=0)	style (caractre ASCII avec 2^7=1 si chasse fixe)	chasse (taille en binaire)Pour permettre de \bold;cumuler plusieurs styles diffrents\roman; 
+(par exemple: gras, italique et relief), 
+le bit 2^7 de la fonte vaut 1, et le style contient 8 bits indpendants 
+(un par style).	fonte (caractre ASCII avec 2^7=1)	style (8 bits indpendants)	chasse (taille en binaire)Les 8 bits du style sont alors les suivants:BGCBOLD	=  0	; B --> bold (gras)BGCITAL	=  1	; I --> italic (italique)BGCOUTL	=  2	; O --> outline (relief)BGCSHAD	=  3	; S --> shadow (ombr)BGCLARG	=  4	; L --> large (double largeur)BGCFIX	=  7	; F --> fix (chasse fixe)Le module GENCAR n'est utilis que si le bit 2^7 de la fonte vaut 1. De plus, 
+dans ce cas, GENCAR \bold;double les dimensions\roman; (hauteur et largeur) si le fichier 
+correspondant au gnrateur n'existe pas. Par exemple, NRF12 sera utilis pour 
+construire un pseudo NRF24 deux fois plus grand. La seule restriction est que 
+la largeur du gnrateur construit ne doit pas dpasser 32 points, ce qui est 
+d'ailleurs valable pour tous les gnrateurs construits par le module GENCAR.L'appel LIB,?SYNGC accepte une nouvelle syntaxe pour permettre l'utilisation du 
+module GENCAR et des styles cumuls.	\bold;fonte ( styles ... ) taille\roman;Par exemple:	M()9	N(F)12	N(BOF)24	etc.\image gencar,3,=;En fait, la prsence de \bold;paranthses\roman; dans le nom force le bit 2^7=1 dans la 
+fonte, donc l'utilisation du module GENCAR.L'ordre GENCAR du \bold;FILER\roman; utilisant LIB,?SYNGC, il est possible de taper:	GENCAR N(BSF)12 \D;(RETURN)\F;Cette nouvelle syntaxe est galement utilisable dans l'diteur graphique \bold;PLAN\roman;.\T;LIST\A;Le module LIST (SYS_LIST.LIB ou 100_LIST.LIB) contient un nouvel appel extrmement 
+pratique pour choisir un fichier existant sur disque. Les botes de dialogue 
+\bold;Prend\roman; dans TEXT et PLAN ont une touche LISTE supplmentaire.\image newsld1,3,=;La liste est prsente  l'utilisateur, \bold;class par ordre alphabtique\roman;. 
+Si la liste est longue (plus de 28 fichiers) et ne peut pas tre prsente 
+en un seul morceau, l'ascenseur (monte et/ou descend) permet de la parcourir. 
+Quelques informations peuvent tre affiche pour chaque fichier (taille, dates, 
+etc.). Dans ce cas, l'cran n'affiche plus que 14 fichiers, en une seule colonne.\image newsld2,3,=;Cette bote de dialogue peut tre utilise sans souris, avec les touches programmables 
+\D;(F1)\F;  \D;(F15)\F; et \D;(CURSOR-flches)\F;.Un \ital;clic\roman; de la souris dans le critre de recherche (par exemple *.text) 
+permet de le modifier. Si la liste est trs longue, il est ainsi possible 
+de mieux cerner le fichier cherch (par exemple fig*.text).\image newsld3,3,=;LIST_DBOX	=	H'A814\R;LIST_DBOX\A;; Demande  l'utilisateur quel fichier il veut avec une jolie dbox.; in	A3.L	critre avec * et ? (.ext est quivalent  *.ext);	A4.L	^buffer pour recevoir le nom;	D2.W	mode d'ouverture pour la dbox;	D3.L	position centre (y;x) si BDBPOS dans D2.W;	D4.L	zro (pour l'instant); out	D3.W	dernire touche (RETURN/END);	D7.W	erreur; mod	D3.L, D7.WVoici un exemple d'utilisation, trs simple, hlas en CALM-2:	LOAD.L	A4,#(A6)+OBUNAME	; A4 <-- ^buffer pour le nom	LOAD.L	A3,#R16"TXCRIT	; A3 <-- ^critre (extension)	CLR.L	D4	TCLR.B	(A6)+OFLAGS:#BMDBOX	LOAD.W	D2,#2^BDBSAV	; D2 <-- mode (avec sauvetage)	.W	LIST_DBOX		; liste et choix selon dbox ...	JUMP,EQ	40$		; ok => 40$	CLR.W	D2		; D2 <-- mode (sans sauvetage)	.W	LIST_DBOX		; liste et choix selon dbox ...	JUMP,NE	40$		; erreur => 40$	TSET.B	(A6)+OFLAGS:#BMDBOX40$:	PUSH.W	D7	TEST.B	(A6)+OFLAGS:#BMDBOX	JUMP,BC	50$	CALL	AFFTOUT		; redessine tout le texte50$:	LOAD.L	A3,#R16"TXSOFTK	.W	LIB,?AFMENU	; remet les soft-keys standards	POP.W	D7	JUMP,NE	ERROR	COMP.W	D3,#CR	JUMP,EQ	PREND	JUMP	ANNULETXCRIT:	.ASCIZ	".text"		; critre de rechercheL'appel LIST_DBOX est d'abord fait en sauvant l'cran sous la dbox (2^BDBSAV dans 
+D2.W). Si cela n'est pas possible par manque de mmoire, on refait LIST_DBOX sans 
+sauver l'cran (zro dans D2.W), puis on redessine tout l'cran (routine AFFTOUT). 
+Ceci permet d'utiliser LIST_DBOX mme s'il reste peu de mmoire.\T;RECTO\A;L'appel LIB,?DRRECTO dessine des rectangles \bold;ombrs\roman;, de faon similaire 
+ LIB,?DRRECT. Il faut utiliser LIB,?DRMDEF au pralable pour dfinir la texture 
+(trame) de l'ombre.\image recto,2,=;?DRRECTO	=	D'106\R;LIB,?DRRECTO\A;; Trace un rectangle ombr.; L'ombre est une trame dfinie avec LIB,?DRMDEF !; in	D3.L	origine coin suprieur gauche y;x;	D4.L	dimensions dy;dx;	D2.B	mode;	D1.W	paisseur de l'ombre (1..n); out	D7.W	erreur; mod	D7.WLe mode d'inversion (INVDOT dans D2) peut s'utiliser car il n'y a pas de recouvrement 
+entre le rectangle et l'ombre.\T;MOUSE\A;La souris, normalement reprsente par une \bold;flche\roman;, se transforme 
+en un \bold;sablier\roman; lorsque le Smaky est \ital;occup\roman;.\sh;\image fleche,8,20mm;\gh;\image sablier,8,50mm;Ceci est ralis par le programme de gestion de la souris (SYS_MOUSE.CODE ou 
+100_MOUSE.CODE). Il ne reste plus qu' dfinir ce que veut dire le terme 
+\ital;occup\roman;.\bold;Un programme occup est un programme qui n'est pas en attente d'une touche du 
+clavier (dans l'appel LIB,?GETCAR)\roman;. Deux petits dlais temporisent cette notion 
+un peu brutale pour passer de l'tat libre  occup (0.5 seconde), 
+ou occup  libre (0.125 seconde). De plus, pour que le sablier soit dessin, 
+il faut remplir deux conditions:  -  ne plus appeler LIB,?GETCAR depuis 0.5 seconde au minimum  -  \bold;bouger la souris\roman;Si l'utilisateur ne touche pas sa souris, il ne se rend donc pas compte que le 
+Smaky est occup.Tous les appels utilisant LIB,?GETCAR bnficient des mmes avantages (par exemple: 
+LIB,?EDIT, LIB,?GETFILE, LIB,?MMENU, LIB,?YESNO, DBOX_EDIT, etc.). \bold;La seule exception 
+est l'appel LIB,?IFCAR\roman;.\carte;DR 11.4.85

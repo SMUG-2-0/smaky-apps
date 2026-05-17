@@ -1,0 +1,68 @@
+\cpage=35;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;3 Utilisation d'EDICAR\A;\image diedicar,3,=;Pour utiliser EDICAR, il suffit de \I;cliquer\R; l'icne correspondante. 
+La touche fonction \D;(F1)\F; intitule \B;Prend\R; permet de reprendre 
+le gnrateur de caractres de son choix:\image dedicar,2,=;L'cran ressemble beaucoup  DESSIN. La partie gauche est presque semblable, 
+et la partie droite est nouvelle. La partie centrale, qui reprsente un caractre, 
+contient toujours un petit rectangle en haut  droite pour afficher le caractre 
+ l'chelle 1:1.\T;3.1 Les gnrateurs de caractres\A;Un gnrateur de caractres contient \B;128 caractres\R; d'une mme famille. 
+Ces caractres sont numrots de 0  127:\demi;\B; 15     29\R;\ind 30mm;lettres accentues\B; 48     57\R;\ind 30mm;chiffres\B; 65     90\R;\ind 30mm;lettres majuscules\B; 97    122\R;\ind 30mm;lettres minuscules\REM;Un gnrateur est parfois utilis pour des \B;icnes\R;. Dans ce cas, 
+les numros ci-dessus ne correspondent plus, puisque chaque \I;caractre\R; est 
+en fait un petit dessin.Un caractre est inscrit dans une \I;matrice\R;, avec quelques points de 
+repres:\image decar,2,=;La \B;rfrence gauche\R; et la \B;ligne de base\R; sont constantes pour 
+tous les caractres. Par contre, la \B;largeur\R; varie d'un caractre  
+l'autre (chasse proportionnelle).\B;EDICAR considre chacun des 128 caractres comme un petit dessin, qui peut tre 
+travaill avec les outils, les objets et les modes, comme avec DESSIN\R;.\image disep,3;Cet \B;objet\R; dessine une ligne horizontale ou verticale, pour servir de 
+repre. Trs utile par exemple pour montrer le haut des lettres minuscules.\ATTENTION;\REM;Le dessin d'un deuxime repre efface automatiquement le premier. 
+De plus, un simple \I;clic\R; du bouton de gauche efface le repre.\image dibloc,3;Les \B;blocs-notes\R; sont trs utiles avec EDICAR. En effet, ils peuvent 
+contenir une partie d'un autre caractre que celui qui est visible. Ainsi, on 
+pourra par exemple mettre dans un bloc-note un quart de la lettre "O", et 
+l'utiliser pour dessiner les lettres "D", "G" et "Q", en utilisant les rotations 
+et les symtries.Le \B;bouton de droite\R; de la souris agit comme dans DESSIN. Il permet donc 
+de dplacer, dupliquer, tourner, agrandir, etc. Par contre, il ne dessine qu'un 
+rectangle pointill (pas de filet ni de crochet).\T;3.2 Les dfinitions\A;La touche fonction \D;(F4)\F; intitule \B;Df.\R; prsente la bote de 
+dialogue suivante:\image dedbdef,2,=;C'est l que sont dfinis les paramtres globaux  tous les caractres. 
+\B;Largeur\R; et \B;hauteur\R; de la matrice, \B;ligne de base\R;, etc. 
+Pour un gnrateur de caractres, le \B;premier\R; et le \B;dernier caractre\R; 
+valent toujours 0 et 127. Lorsqu'il s'agit d'icnes, il peut y en avoir moins.La touche \D;(RETURN)\F; \B;passe au paramtre suivant\R;. Un \I;clic\R; de la souris 
+dans le paramtre  modifier est galement possible.\REM;Il est possible de modifier ces paramtres \B;en cours de travail\R;. 
+Par exemple, si les dimensions (largeur et hauteur) sont agrandies, 
+les matrices des 128 caractres seront galement agrandies. Dans ce cas, 
+les caractres restent \I;colls\R; en haut  gauche dans chaque matrice.\T;3.3 Choix du caractre  dessiner\A;\image dicode,3;Les flches  gauche et  droite prsentent le \B;caractre prcdent\R; ou 
+\B;suivant\R;. 
+Un \I;clic\R; dans l'icne du milieu (65A) prsente \B;tous les caractres\R; de la 
+faon suivante:\image dedall,2,=;Il suffit de \I;cliquer\R; le caractre  visualiser.\REM;La touche \D;(RETURN)\F; passe galement au caractre suivant.\T;3.4 Les oprations\A;\image dishift,3;\B;Dcale\R; d'un point le caractre dans la direction choisie, ce qui revient 
+au mme que d'entourer tout le caractre avec le bouton de droite de la souris, 
+puis de le dplacer.\REM;Si le dcalage fait dborder le caractre, la partie disparue ne rapparatra 
+pas en dcalant le caractre dans l'autre direction.\image diprop,3;Les flches  gauche et  droite dplacent la \B;largeur du caractre\R;, qui 
+doit varier pour les caractres  chasse proportionnelle. Un \I;clic\R; dans 
+l'icne du milieu place automatiquement la largeur juste aprs le dernier point.\image dinb,3;Dtermine le \B;nombre de dcalages\R; produits par un seul \I;clic\R;. 
+Les flches  gauche et  droite diminuent ou augmentent ce nombre, et l'icne 
+du milieu remet \B;1x\R;.\image diab,3;L'icne de gauche \B;superpose\R; au caractre actuellement visible un autre 
+caractre du mme gnrateur. La bote de dialogue suivante permet de choisir 
+le caractre:\image dedbcar,2,=;L'icne de droite superpose au caractre actuellement visible un caractre 
+provenant d'un \B;autre gnrateur\R;. Le nom de l'autre gnrateur est demand.\ATTENTION;\REM;Si l'autre gnrateur est plus petit, le caractre superpos est 
+\I;coll\R; dans le coin suprieur gauche. S'il est plus grand, le caractre est 
+simplement tronqu  droite et en bas.\image diauto,3;\B;Transforme\R; automatiquement tous les caractres en gras, italique, relief, 
+ombr, etc. Il ne reste plus qu' utiliser EDICAR pour faire d'ventuelles 
+retouches.\image dedbtrans,2,=;\image diaeiou,3;Duplique les six caractres "a", "e", "i", "o", "u" et "c" aux emplacements 
+rservs pour les \B;lettres accentues\R; (15  29). Cette opration s'utilise lors 
+de la cration d'un nouveau gnrateur. Il ne reste alors plus qu' dessiner 
+les accents.\T;3.5 Les squences enregistres\A;Les \B;squences enregistres\R; permettent une foule d'applications trs 
+spectaculaires. Vous pouvez imaginer, par exemple, d'paissir un caractre en 
+le dupliquant plusieurs fois. Ou de faire de l'italique en dplaant plus ou moins 
+des tranches horizontales d'un caractre. Mais tout ceci devra tre rpt sur les 
+128 caractres, ce qui demande beaucoup de courage.Mais c'est ici qu'interviennent les squences enregistres. En effet, ds 
+que l'icne \B;enregistreur\R; est allume, tout ce qui est fait avec la souris 
+est enregistr, et pourra se rpter sur tous les autres caractres.\image dimacro,3;Un \I;clic\R; de la souris dans l'enregistreur allume ou teint l'icne pour 
+\B;dmarrer\R; ou \B;stopper l'enregistrement\R;. L'icne PLAY de gauche excute 
+\B;une seule fois\R; la squence, pour vrifier si tout joue. L'icne PLAY de 
+droite excute la squence jusqu' ce que le premier ou le dernier caractre soit 
+rencontr. La touche \D;(END)\F; stoppe tout si ncessaire.\ATTENTION;\REM;N'oubliez pas, en enregistrant une squence, de \B;passer au caractre 
+suivant\R; avant de stopper l'enregistrement. Sinon, la squence sera rpte 
+sans fin sur le mme caractre!Voici quelques exemples:\image demacro,3,=;\T;3.6 La syntaxe des noms de fichiers\A;Les gnrateurs de caractres sont rpertoris selon trois critres 
+principaux:\L;\B;la fonte\R;\L;\B;le style\R;\L;\B;la taille\R;La \B;fonte\R; spcifie la forme des caractres, par exemple:\image defonte,2,=;Le \B;style\R; indique la faon de reprsenter un caractre, par exemple:\image destyle,2,=;Un gnrateur de caractre est sauv sur disquette, dans un fichier dont 
+le nom doit respecter une syntaxe trs prcise:\L;premire lettre: \B;fonte\R; (par exemple: U pour univers)\L;deuxime lettre: \B;style\R; (par exemple: I pour italique)\L;troisime lettre: \B;chasse\R; (par exemple: P pour proportionnel)\L;deux chiffres: \B;taille en points\R; (correspond  la hauteur de la lettre E).\image desynt,2,=;Par exemple, TRP14 signifie \I;times roman\R; en chasse proportionnelle de 
+taille 14. EDICAR ajoute automatiquement le prfixe \B;100_\R; et le suffixe 
+\B;.GENC\R;  ces noms.Les \B;26 fontes\R; possibles sont rparties comme suit:\newtab 10mm,20mm,60mm,70mm;	\B;A\R;	arabe	\B;N\R;	normal	\B;B\R;		\B;O\R;	gothique	\B;C\R;	computer	\B;P\R;		\B;D\R;	\I;standard\R;	\B;Q\R;	\I;qualit\R;	\B;E\R;		\B;R\R;		\B;F\R;	fonction	\B;S\R;	graphique	\B;G\R;	grec	\B;T\R;	times	\B;H\R;	hershey	\B;U\R;	univers	\B;I\R;	icones	\B;V\R;		\B;J\R;		\B;W\R;		\B;K\R;	clavier	\B;X\R;	test	\B;L\R;	logo	\B;Y\R;		\B;M\R;	messenger	\B;Z\R;	\ATTENTION;\REM;Les fontes \I;standard\R; et \I;qualit\R; sont rserves 
+pour l'imprimante!Les \B;styles\R; sont beaucoup moins nombreux:	\B;R\R;	normal	\B;B\R;	gras	\B;I\R;	italique	\B;E\R;	troit\ATTENTION;\REM;Le style \B;R\F; (normal) permet, lors de l'utilisation du gnrateur 
+de caractres dans TEXT, DESSIN, PLAN, etc., de \B;gnrer automatiquement\R; 
+des styles gras, italique, relief, ombr, double largeur ou double dimension.Il n'existe que deux \B;chasses\R; possibles:	\B;P\R;	proportionnel	\B;F\R;	fixe

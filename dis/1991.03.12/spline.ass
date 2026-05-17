@@ -1,0 +1,1 @@
+	.TITLE		SPLINE.ASS	.PROC		M68000		; mnmonics CALM	.BASE		10'10		; base 10 par dfaut;	.LAYOUT		HEX		; listing en hexadcima; Numros des appels; ------------------	.SYSCALL.16	SPLINE_SPLINE_OPEN	=	16'A850	; dbutSPLINE_CLOSE	=	16'A851	; finSPLINE_FIRST	=	SPLINE_OPENSPLINE_LAST	=	SPLINE_CLOSE	.END

@@ -1,0 +1,10 @@
+1 Les outilsChaque \B;outil\R; permet de dessiner l'\B;objet\R; de son choix. Par exemple: 
+dessin d'une ellipse avec le crayon, ou dessin  main leve avec le pinceau.2 Le crayonLe \B;crayon\R; ralise toujours des \B;traits fins continus\R;. Il permet 
+de dessiner les objets suivants: traits  main leve, droites, courbes, 
+rectangles  angles droits ou arrondis, cercles et ellipses.3 Le vaporisateurLe \B;vaporisateur\R; projette la trame choisie de faon progressive 
+et alatoire. Il peut galement s'utiliser en mode \I;gomme\R;.4 Les droitesPour dessiner une droite, placer la souris  l'origine, 
+presser le bouton de gauche, et, \B;tout en maintenant le bouton press\R;, 
+dplacer la souris  l'autre extrmit de la droite. Lorsque le bouton est 
+relch, la droite ne peut plus tre modifie, sauf par \D;(UNDO)\F; qui l'efface. 
+Voici un exemple de dessin ralis 
+uniquement avec des traits  main leve et des droites:

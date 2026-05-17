@@ -1,0 +1,1 @@
+HP45DH:(CH$)LOCAL NB,I%,C%,T%NB=0I%=1DO C%=ASC(MID$(CH$,I%,1)) IF C%>=%0 AND C%<=%9  T%=C%-%0  NB=NB*16+FLT(T%) ELSEIF C%>=%A AND C%<=%F  T%=C%-%A+10  NB=NB*16+FLT(T%) ELSE  T%=-1 ENDIF I%=I%+1UNTIL T%=-1RETURN NB

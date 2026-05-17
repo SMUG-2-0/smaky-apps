@@ -1,0 +1,33 @@
+\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\image smakynews,2,=;\ur14;17 aot 1987\carte;No 47\line 0.3mm;\centre;\ub20;SUPER-DESSIN version 3.0\line 0.3mm;\image newsdump,3,=;\justif;\ur10;La nouvelle version 3.0 de DESSIN contient les nouveauts suivantes:\newtab 85mm;- zooms quelconques	- main pour dplacer la feuille- rotations libres	- pas- dformations ...	- mode pour les dplacements- 10 pages de travail	- crochet plus efficace\pum;\centre;\bold;- 2 -\roman;\pom;Aprs avoir entour la partie du dessin  modifier avec le bouton de droite de 
+la souris, slectionnez \bold;zoom\roman;, \bold;tourne\roman; ou \bold;dforme\roman; 
+dans le menu. Choisissez ensuite \bold;autre...\roman; ou une dformation 
+(trapze, paralllogramme ou quelconque):\image newsmenu,2,=;La partie de dessin slectionne apparat 
+alors avec \bold;quatre poignes\roman;, que vous pouvez \ital;tirer\roman; avec 
+le \bold;bouton de gauche\roman;. Lorsque la modification est termine, 
+\ital;cliquez\roman; le \bold;bouton de droite\roman; de la souris.\R;Les touches fonctions \D;(F7)\F; et \D;(F8)\F; permettent de \bold;bloquer\roman; 
+le dplacement des poignes dans le sens horizontal ou vertical.Voici un exemple de \bold;zooms\roman; quelconques:\image newszoom,2,=;Pendant un zoom, la partie suprieure de l'cran indique les facteurs d'agrandissement 
+(>1.000) ou de rduction (<1.000) horizontaux et verticaux.Voici un exemple ralis avec les \bold;rotations\roman; libres:\image newstour,3,=;Pendant une rotation, la partie suprieure de l'cran indique l'angle, 
+compris entre 0 et 180 degrs (dans n'importe quel sens).\pum;\centre;\bold;- 3 -\roman;\pom;Voici un exemple de quelques \bold;dformations\roman; fantaisies:\image newsdef1,2,=;Pour comprendre les dformations, on peut se reprsenter le dessin ralis sur 
+une \bold;feuille de caoutchouc\roman; tendue sur un cadre constitu de quatre 
+baguettes rigides. En dplaant une poigne, on bouge deux baquettes, et la 
+feuille de caoutchouc est tendue ou dtendue!\R;Les trames ont t ajoutes \bold;aprs\roman; les dformations, afin d'obtenir 
+une meilleure qualit. Il est prfrable de procder ainsi autant que possible.Autres exemples de dformations!\image newsdef2,2,=;\image newsdef3,2,=;\image newsicpa,3;DESSIN possde \bold;10 pages\roman;, pour permettre de \bold;travailler 
+simultanment sur plusieurs dessins\roman;. Pour copier une partie de dessin 
+dans un autre, il suffit d'utiliser les \bold;bloc-notes\roman;. Il est ainsi 
+extrmement facile de raliser un dessin  l'aide de morceaux en provenance 
+d'autres dessins.Un \ital;clic\roman; dans l'icne des pages prsente un \bold;menu\roman; avec les 
+diffrentes pages et leurs contenus, numrotes de 1  9 et 0 pour la dixime. 
+Un \ital;clic\roman; dans une case du menu permet de travailler immdiatement 
+sur le dessin correspondant.\pum;\centre;\bold;- 4 -\roman;\pom;\image newsicma,3;La petite \bold;main\roman; est un nouvel outil permettant de \bold;dplacer la partie 
+visible\roman; du dessin plus facilement qu'avec les ascenseurs.Il faut s'imaginer que le dessin est une feuille de papier dispose derrire 
+l'cran du SMAKY. Lorsque le bouton de gauche de la souris est press, \bold;la main 
+est pose sur la feuille\roman;. Un dplacement de la souris entraine alors un dplacement 
+de la feuille, dans toutes les directions!Les \bold;flches\roman; aux extrmits des \bold;ascenseurs\roman; peuvent tre presses 
+longtemps: le dessin dfile alors dans la direction choisie.\image newsicdd,3;Cette icne permet de choisir le \bold;pas\roman; et le \bold;mode de dplacement\roman; 
+comme suit:\image newsdbdd,2,=;\R;Lorsque le pas est actif, l'cran ne comporte pas de grille!Le mode de dplacement agit pour les oprations \bold;dplace\roman; et 
+\bold;duplique\roman;, ainsi que lors de la reprise du contenu d'un 
+\bold;bloc-notes\roman; et lors de l'ajout d'un fichier .IMAGE (touche 
+fonction \D;(Prend)\F; puis \D;(AJOUTE)\F;).\image newsmddd,2,=;Dans ces quatre exemples, le mot \bold;smaky\roman; a t dplac par-dessus l'image 
+de l'ordinateur, dans les quatre modes possibles.\R;Pendant le dplacement du rectangle pointill, s'il dpasse le bord 
+de la surface de dessin, \bold;l'cran se dplace automatiquement\roman; 
+(plus ou moins rapidement, selon le dpassement)!\ub20;EPSITEC system sa\carte;\ur10;Chemin de la Mouette, CH-1092 Belmont

@@ -1,0 +1,1 @@
+   50 Dim D(12)   60 DT=2   80  For I=1 To 12  100 DT=Sqr(DT)   110 D(I)=DT  120 Next I  200 For I=1 To 12  220 Print D(13-I)  250 Next I  290 T=440  295 DT=1.05947  300 For I=1 To 12  320 T=T*DT  340 Print Format(4,9)T  360 Next I

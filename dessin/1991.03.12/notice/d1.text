@@ -1,0 +1,165 @@
+\cpage=3;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;1 Introduction\A;Le logiciel DESSIN est idal pour raliser des \B;dessins artistiques\R;, 
+alors que PLAN est optimis pour les dessins techniques. Pour cela, DESSIN 
+travaille directement dans les fichers \I;images\R;, point par point. Les 
+dessins produits peuvent donc tre directement imprims, ou \I;colls\R; 
+lectroniquement dans un texte. Il est aussi possible de travailler dans DESSIN 
+sur des images produites par PLAN (mais pas l'inverse), ou sur des copies 
+d'cran, ce qui est trs utile pour la ralisation de notices.Le logiciel EDICAR est un \B;\_di\_teur de \_car\_actres\R; ou d'icnes. 
+Toutes les fonctions de DESSIN permettent de raliser des caractres trs varis, 
+qui pourront ensuite s'utiliser et s'imprimer avec TEXT.\image dintegr,2,=;Les cercles reprsentent des fichiers de natures diffrentes:\demi;\B;.PLAN\R;\ind 30mm;Fichier graphique structur\B;.IMAGE\R;\ind 30mm;Fichier image constitu de points allums ou teints\B;.GENC\R;\ind 30mm;Fichier gnrateur de caractres\B;.TEXT\R;\ind 30mm;Fichier de texte\T;1.1 La souris\A;La souris est \B;indispensable\R; pour pouvoir utiliser DESSIN ou EDICAR. 
+Elle remplace en quelque sorte le crayon. Il est important, pour une utilisation 
+optimale, de disposer d'une \B;surface de travail d'au moins 30x30cm\R;, 
+exempte d'obstacles.\L;L'action d'appuyer l'un des trois boutons, puis de le 
+relcher immdiatement est dsigne par le verbe "\B;cliquer\R;".\L;L'action d'appuyer l'un des trois boutons, puis de dplacer 
+la souris tout en le maintenant press, pour finalement le relcher est 
+dsigne par le verbe "\B;tirer\R;".\image cliquer,2,=;\ATTENTION;\REM;Les verbes "\B;cliquer\R;" et "\B;tirer\R;" sont toujours 
+en \I;italique\R; dans ce manuel.\T;2 Utilisation de DESSIN\A;\image didessin,3,=;Aprs avoir \I;cliqu\R; l'icne DESSIN, l'cran prend l'allure suivante:\image ddessin,2,=;L'cran est divis comme suit:\image dzone,2,=;\T;2.1 Le bouton de gauche\A;Le bouton de gauche de la souris \B;dessine\R; 
+l'objet avec l'outil choisi, tant qu'il est maintenu press.\ATTENTION;\REM;Lorsqu'un objet est dessin par erreur, une pression sur la touche 
+\D;(UNDO)\F; l'annule. 
+En fait \D;(UNDO)\F; \B;annule n'importe quelle action\R;.\T;2.1.1 Les outils\A;\image doutils,3,=;Chaque \B;outil\R; permet de dessiner l'\B;objet\R; de son choix. Par exemple: 
+dessin d'une ellipse avec le crayon, ou dessin  main leve avec le pinceau.\image dicrayon,3;Le \B;crayon\R; ralise toujours des traits fins continus. Il permet 
+de dessiner les objets suivants: traits  main leve, droites, courbes, rectangles, 
+rectangles  coins arrondis, cercles et ellipses.\image dipinceau,3;Le \B;pinceau\R; dessine des traits d'paisseurs variables, avec divers 
+traitills. Il permet de dessiner les mmes objets que le crayon.\image dipdef,3;Choix de la forme du pinceau. Un \I;clic\R; de la souris dans l'un des 4x7 pinceaux 
+de gauche le fait apparatre agrandi  droite. Vous pouvez alors le modifier et 
+inventer ainsi de nouveaux traits, ou simplement l'utiliser avec \D;(D'ACCORD)\F;.\image ddbpdef,2,=;Le pinceau est en fait un motif de 8x8 points qui est dplac sur l'cran 
+pour tracer les droites, cercles, etc. Le \B;carr du milieu\R; reprsente ce 
+motif agrandi.Le petit motif de 1x8 points ( droite) indique \B;l'alternance des points 
+ dessiner\R; pour les traitills, de gauche  droite. Dans l'exemple ci-dessus 
+(Pas=2), il y a donc:\demi;6 points, 4 blancs, 2 points, 4 blancs et on recommence ...\demi;\D;(EFFACE)\F;\ind 30mm;Initialise un trait continu d'paisseur unitaire.\D;(+)\F; \D;(_)\F;\ind 30mm;Augmente ou diminue le pas.\D;(D'ACCORD)\F;\ind 30mm;Slectionne le pinceau choisi.\image dpinceau,2,=;\image divap,3;Le \B;vaporisateur\R; projette la trame choisie de faon progressive 
+et alatoire. Il peut galement s'utiliser en mode \I;gomme\R; (voir 
+paragraphe2.1.3).\image dvap,3,=;\image dipot,3;Le \B;remplissage\R; permet de \I;couler\R; la trame slectionne dans une 
+\B;surface ferme\R; quelconque.\image dpot,3,=;\ATTENTION;\REM;Le remplissage sur un trait noir \I;peint\R; 
+tout le trait avec la trame (bonhomme du milieu).\image ditdef,3;Choix de la \B;trame\R; pour le vaporisateur et le remplissage.\image ddbtdef,2,=;Tout comme pour les pinceaux, il est possible de modifier cette liste 
+pour ses propres besoins. Le carr du milieu reprsente la \B;trame de base agrandie\R;, 
+et le carr de droite la \B;trame relle\R; obtenue en rptant la trame de base 
+dans toutes les directions.\D;(EFFACE)\F;\ind 30mm;Efface les 8x8 points de la trame.\D;(INVERSE)\F;\ind 30mm;Prend le ngatif de la trame.\D;(D'ACCORD)\F;\ind 30mm;Slectionne la trame choisie.\D;(ANNULE)\F;\ind 30mm;Annule \B;toutes\R; les modifications effectues.\image diloupe,3;La \B;loupe\R; permet le travail \I;point par point\R;. Le rectangle en haut 
+ droite reprsente la partie agrandie. Voici un dessin complet, dont nous 
+allons agrandir un dtail:\image dloupe1,2,=;\image dloupe2,2,=;Dans ce mode, \B;toutes les oprations sont possibles\R; (crayon, pinceau, 
+vaporisateur, etc.).\ATTENTION;Avec le crayon, un \I;clic\R; de la souris (sans bouger) 
+efface un point noir ou noircit un point effac, quel que soit le mode (noir ou 
+gomme).Les \B;ascenseurs\R;  gauche et en bas permettent de dplacer la partie 
+visible. Les flches aux extrmits des ascenseurs dplacent la partie visible 
+d'un demi-cran.\image dasc,2,=;Un deuxime \I;clic\R; dans l'icne de la loupe \B;remet l'chelle 1:1\R;.\ATTENTION;\REM;Il est galement possible d'avoir une \B;vue d'ensemble\R; d'un 
+dessin plus grand que l'cran (voir paragraphe2.3.3).\T;2.1.2 Les objets\A;\image dimain,3;\B;Trait  main leve\R;. Tant que le bouton de gauche est 
+maintenu press, tous les mouvements de la souris sont reproduits sur 
+l'cran.\image didroite,3;\B;Ligne droite\R;. Pour dessiner une droite, placer la souris  l'origine, 
+presser le bouton de gauche, et, \B;tout en maintenant le bouton press\R;, 
+dplacer la souris  l'autre extrmit de la droite. Lorsque le bouton est 
+relch, la droite ne peut plus tre modifie. Voici un exemple de dessin ralis 
+uniquement avec des traits  main leve et des droites:\image ddroite,2,=;\image displine,3;\B;Ligne courbe\R; passant par des points prdfinis.Chaque \I;clic\R; du bouton de gauche \B;pose un point\R;. 
+Lorsque tous les points sont poss, le bouton de droite \B;lie tous 
+les points par une courbe parfaitement lisse\R;, dans l'ordre o ils 
+ont t poss.Il est alors possible de \B;dplacer\R; un point mal plac en le 
+\I;tirant\R; avec le bouton de gauche. Le bouton du milieu \B;supprime\R; 
+le point montr. Le bouton de droite \B;termine\R; en redessinant la courbe 
+avec le crayon ou le pinceau dfinitif.Pour dessiner une \B;courbe ferme\R;, c'est--dire boucle sur elle-mme, 
+il suffit de poser le dernier point sur le premier.\image dcourbe,2,=;\ATTENTION;Il faut poser deux points au minimum, et vingt au maximum.\REM;Il existe beaucoup de possibilits pour calculer une courbe passant par des 
+points prdfinis. L'algorithme utilis par DESSIN correspond aux 
+\I;splines cubiques\R; mathmatiques, qui drivent de leur contre-partie 
+physique. Une \I;spline\R; physique est une longue barre troite en bois 
+ou en plastique utilise pour rejoindre deux points spcifiques par une courbe. 
+Les \I;splines\R; sont formes par des poids en plomb. En variant le nombre 
+et la position des poids, la \I;spline\R; peut passer par des points spcifiques 
+de telle sorte que la courbe rsultante apparaisse lisse et souple.\image direct,3;\B;Rectangles\R;  coins normaux ou  coins arrondis. 
+L'icne de droite permet le choix du rayon pour les rectangles  coins arrondis.\image ddbrdef,2,=;\image drect,2,=;\image dicercle,3;\B;Cercle\R;, \B;ellipse\R;, ou arc de cercle ou d'ellipse. 
+L'icne de droite permet le choix de l'arc pour les cercles et les ellipses.\image ddbadef,2,=;\image dcercle,2,=;\image ditexte,3;\B;Ligne de texte\R;. Un \I;clic\R; du bouton de gauche positionne le 
+curseur (petit trait horizontal). Le clavier permet ensuite de frapper le texte.\D;(DEL)\F;\ind 30mm;Efface le dernier caractre frapp.\D;(RETURN)\F;\ind 30mm;Passe  la ligne suivante.\D;(UNDO)\F;\ind 30mm;Efface toutes les lignes frappes.\image diabc,3;\B;Choix du caractre\R; utilis pour la frappe.\image ddb10car,2,=;Il est possible de dfinir jusqu' \B;dix caractres diffrents\R;. 
+La figure ci-dessus montre les cinq caractres standards choisis par DESSIN. 
+Le \B;bouton rond\R; slectionn dtermine \B;quel est le caractre utilis 
+pour la frappe\R;.\REM;S'il ne reste pas assez de mmoire, DESSIN supprime automatiquement un 
+ou plusieurs caractres en partant depuis le bas (gothique, times, univers, etc.).Essayons de modifier le caractre \I;Univers\R;. D'abord un \I;clic\R; 
+dans le bouton situ  gauche, puis un \I;clic\R; dans \D;(MODIFIE)\F;. 
+Et voil une autre bote de dialogue:\image ddbxxcar,2,=;L'\B;ascenseur\R; permet de parcourir la liste des caractres disponibles. 
+Un \I;clic\R; dans une flche en haut ou en bas de l'ascenseur monte ou 
+descend d'une ligne. \B;Si le bouton est maintenu press, la liste dfile\R;. 
+Les trois caractres "Abc" sont toujours affichs, sans tenir compte des modes 
+gras, italique, relief, etc.\L; \B;Affiche\R;\demi;S'il n'y a pas de petite croix, c'est le nom du caractre qui est affich 
+ la place des trois lettres "Abc". Par exemple: urp09, trp14, etc.\L; \B;Tout\R;\demi;Normalement, seuls les caractres normaux (voir remarque ci-dessous) sont affichs. 
+En mettant une petite croix ici, tous les caractres seront affichs (icnes, 
+graphiques, etc.).\REM;Les caractres \I;normaux\R; sont en fait des caractres dont la chasse est 
+\B;Roman\R; (par exemple: N\B;R\R;F09, T\B;R\R;P14, etc.) et qui sont \B;visualiss\R; 
+(voir paragraphe4.3.6 du manuel INTRODUCTION).\ATTENTION;Lors de la cration d'un nouveau caractre, \B;il ne faut pas oublier de 
+donner le nom de fonction\R; en haut  droite (Titre, Petit, Grand, Spcial, etc.).\image dibloc,3;Dessine le contenu du \B;bloc-notes\R;. Chacun des trois blocs-notes 
+peut contenir une partie quelconque, visible ou invisible, du dessin. Le 
+paragraphe2.2.2 explique comment remplir un bloc-notes.\T;2.1.3 Les modes\A;Les modes \B;noir\R; et \B;gomme\R: s'appliquent au crayon, au pinceau 
+et au vaporisateur. Par exemple, le mode \I;gomme\R; avec un trait  main leve et 
+un gros pinceau continu simule bien l'effet d'une gomme. Mais il est aussi 
+possible de dessiner une ellipse en mode gomme. Tous les points rencontrs par 
+l'ellipse seront effacs.\image dimode,3;Le mode \B;noir\R; allume les points. 
+Le mode \B;gomme\R; teint ou efface les points.Le \B;vaporisateur\R; en mode \I;gomme\R; est assez tonnant!Les \B;caractres\R; et les \B;blocs-notes\R; peuvent galement tre 
+reproduits en mode \I;gomme\R;.\T;2.2 Le bouton de droite\A;Le bouton de droite de la souris s'utilise de trois faons diffrentes 
+pour \B;slectionner une partie du dessin en vue de la modifier\R;. 
+\image dientoure,3;La faon standard consiste  entourer la partie  modifier par un 
+\B;rectangle\R;.\image dentoure,3,=;\image difilet,3;Le \B;filet\R; permet de dlimiter  main leve une forme ferme plus complexe.\image dfilet,3,=;\REM;Si le bouton de droite est relch alors que le contour n'est \B;pas encore 
+ferm\R;, DESSIN tente de le fermer lui-mme en joignant le point de dpart au point 
+d'arrive par une ligne droite.\image dicrochet,3;Un simple \I;clic\R; du bouton de droite avec le \B;crochet\R; 
+a pour effet de slectionner tout l'objet montr, c'est--dire tous 
+les points contigus.\image dcrochet,3,=;Aprs l'emploi de l'une de ces trois mthodes, le \B;menu\R; suivant apparat:\image dmdroite,3,=;\REM;Avec le filet et le crochet, un rectangle pointill englobant la partie du 
+dessin slectionne apparat avant ce menu.\T;2.2.1 Dtruit, dplace et duplique\A;\image didetr,3;\B;Dtruit\R; (efface) la partie slectionne.\image didepl,3;\B;Dplace\R; la partie slectionne, tant que le bouton de droite est 
+maintenu press.\image didupl,3;\B;Duplique\R; la partie slectionne, tant que le bouton de droite est 
+maintenu press.\image ddupl,2,=;\T;2.2.2 Les blocs-notes\A;\image dimetbn,3;Met la partie slectionne dans l'un des trois blocs-notes. En choisissant 
+l'opration \B;bloc-notes\R; dans le menu, il faut prendre garde  \B;maintenir 
+le bouton press\R; pour choisir le bloc-notes concern dans un \I;sous-menu\R;.\ATTENTION;La partie du dessin mise dans le bloc-notes n'est pas sauve  
+part, mais \B;reste dans le dessin\R;. Ceci permet des effets de rptition 
+trs intressants:\image dfrise,2,=;\B;1\R;\ind 10mm;Dessin du motif de base.\B;2\R;\ind 10mm;Le motif de base est mis dans le bloc-notes. \B;Le rectangle 
+pointill (dessin avec le bouton de droite) doit aller jusqu'au bout de la 
+rptition souhaite, vers la droite\R;.\B;3\R;\ind 10mm;Redessine une seule fois le contenu du bloc-notes.\B;4\R;\ind 10mm;\I;Cliquer\R; deux fois dans l'icne \B;loupe\R; pour mettre 
+ jour le dessin, et voil le rsultat!\ATTENTION;\REM;Ceci n'est possible que de \B;gauche  droite\R; ou de 
+\B;haut en bas\R;.\T;2.2.3 Zoom, tourne, miroir, etc.\A;\image dizoom,3;\B;Zoom\R;. Agrandit ou rduit d'un facteur 2. 
+L'opration peut se produire simultanment dans les deux directions 
+ou seulement dans une direction (dformation).\image dzoom,2,=;\image ditourne,3;\B;Rotation\R; d'un quart de tour dans un sens ou dans l'autre, ou d'un demi 
+tour.\image dtourne,2,=;\image dimiroir,3;Le \B;miroir\R; permet d'obtenir le reflet (horizontal ou vertical) d'une partie 
+du dessin.\sh;\image dmiroir1,2,5mm;\gh;\image dmiroir2,2,65mm;Il s'agit en fait d'une \B;symtrie axiale\R;, avec l'axe plac horizontalement 
+ou verticalement. Dans l'exemple ci-dessus, le dessin de gauche est une symtrie 
+avec axe vertical du dessin de droite.\image dicontour,3;L'opration \B;coutour\R; permet diffrents effets intressants:\demi;\B;Contour\R;\ind 30mm;Extrait le contour simple d'une forme quelconque.\B;Ombre\R;\ind 30mm;Extrait le contour ombr d'une forme quelconque.\B;Perspective\R;\ind 30mm;Ne conserve que les traits de perspective.\B;Gras\R;\ind 30mm;Empte une partie du dessin.\image dcontour1,2,=;\image dcontour2,2,=;La succession de plusieurs oprations contour, ombre, perspective et gras 
+donne des rsultats spectaculaires:\image dcontour3,2,=;Voici un exemple de dessin ralis avec l'opration \B;contour\R;:\image dcontour,2,=;L'opration \B;ombre\R; simule un clairage plac en haut  gauche. 
+Pour dplacer cette source d'clairage, il suffit d'utiliser astucieusement 
+l'opration de \B;rotation\R;:\image dombre,2,=;Un autre exemple d'utilisation de l'opration \B;perspective\R;:\sh;\image dpersp1,2,5mm;\gh;\image dpersp2,2,65mm;\REM;L'opration \B;perspective\R; s'utilise parfois pour enlever toutes 
+les surface noires d'un dessin.\image dirneg,3;\B;Ngatif\R;. Inverse toute la zone slectionne.\T;2.2.4 La loupe\A;\image dirloupe,3;Agrandit le dtail entour avec le bouton de droite. L'chelle et le cadrage 
+sont calculs automatiquement, pour correspondre au mieux  la partie slectionne.\ATTENTION;\REM;Un \I;clic\R; dans la loupe en haut  gauche \B;remet l'chelle 1:1\R;. 
+Voir galement au paragraphe2.1.1.\T;2.2.5 Le sauvetage partiel\A;\image dirsauve,3;Le \B;sauvetage partiel\R; est trs utile pour archiver sur disquette des parties 
+de dessins, et pour composer ainsi des \B;bibliothques de symboles divers\R;.Les parties sauves ne sont rien d'autre que des \B;petits dessins\R; (fichiers 
+\I;.image\R;) qu'il est possible d'insrer dans n'importe quel grand dessin 
+avec l'opration \B;prend\R; (voir paragraphe2.3.1).\image dsauve,2,=;\T;2.3 Le bouton du milieu\A;Un \I;clic\R; du bouton du milieu prsente toujours le menu suivant:\image dmmilieu,3,=;\ATTENTION;Ces diffrentes oprations sont accessibles galement avec les 
+\B;touches fonctions\R; \D;(F1)\F;  \D;(F15)\F;:\ind 30mm;\D;(F1)\F;\ind 55mm;Prend\ind 30mm;\D;(F2)\F;\ind 55mm;Modifie\ind 30mm;\D;(F3)\F;\ind 55mm;Sauve\demi;\ind 30mm;\D;(F4)\F;\ind 55mm;Dfinitions\demi;\ind 30mm;\D;(F7)\F;\ind 55mm;Echelle -\ind 30mm;\D;(F8)\F;\ind 55mm;Echelle 1:1\ind 30mm;\D;(F9)\F;\ind 55mm;Echelle +\demi;\ind 30mm;\D;(F10)\F;\ind 55mm;Rgle\ind 30mm;\D;(F12)\F;\ind 55mm;Ngatif\demi;\ind 30mm;\D;(F13)\F;\ind 55mm;Tout\ind 30mm;\D;(F14)\F;\ind 55mm;Efface\ind 30mm;\D;(F15)\F;\ind 55mm;Imprime\T;2.3.1 Les accs disque\A;\image diprend,3;\B;Reprend\R; un dessin complet, ou \B;ajoute\R; un petit dessin dans le dessin 
+actuel. La touche \D;(LISTE)\F; prsente les noms de tous les dessins prsents 
+sur la disquette.\REM;Pour afficher la liste des dessins placs dans le \B;deuxime lecteur de 
+disquettes\R; (#mm1:), appuyez sur \D;(TAB)\F; puis \D;(LISTE)\F;.\image disauve,3;Sauve tout le dessin dans un fichier \I;.image\R;.\L;\B;sauve les pinceaux et les trames\R;\demi;Avec cette option, DESSIN gnre galement un fichier \I;.ddes\R; qui contient 
+l'environnement complet (pinceaux, trames, objet slectionn, etc.). Lors de la 
+reprise du dessin, tous ces paramtres sont donc conservs.\image dimodif,3;Permet de \B;dtruire\R;, de \B;dplacer\R; ou de \B;dupliquer\R; un fichier 
+dessin.\T;2.3.2 Les dfinitions\A;\image didef,3;Dtermine les \B;dimensions\R; (largeur x hauteur) du dessin. 
+Lorsque les dimensions sont rduites, le dessin est tronqu en bas et/ou  
+droite. La touche \D;(UNDO)\F; efface les dimensions actuelles pour permettre 
+d'en taper de nouvelles.\image ddbdef,2,=;\D;(ECRAN)\F;\ind 30mm;Met les dimensions standard qui correspondent 
+juste  la partie visible sur l'cran.\D;(PAGE)\F;\ind 30mm;Met les dimensions qui correspondent  une page complte 
+sur l'imprimante (gnralement A4 vertical, moins les marges).o\B;points graphiques\R;o\B;millimtres\R;\demi;Les dimensions sont affiches en \B;points\R; ou en \B;millimtres\R; selon 
+l'option choisie. Par exemple, pour raliser un dessin carr de 10 centimtres 
+de ct, il faut \I;cliquer\R; l'option \B;millimtres\R;, appuyer la touche 
+\D;(UNDO)\R; pour effacer les dimensions actuelles, puis frapper 
+\B;100x100\R; au clavier.\T;2.3.3 L'chelle\A;Il est possible de se \B;rapprocher du dessin pour mieux 
+voir un dtail\R;, ou de \B;s'loigner pour avoir une vue 
+d'ensemble\R; si le dessin est plus grand que l'cran.Lors d'un \B;rapprochement\R; pour mieux voir un dtail (chelle n:1), 
+un rectangle en haut  droite montre la partie agrandie. Les dimensions de 
+ce rectangle varient selon l'chelle.Lors d'un \B;loignement\R; pour avoir une vue d'ensemble (chelle 1:n), 
+les outils ne peuvent plus tre utiliss (bouton de gauche de la souris). 
+Par contre, les modifications avec le bouton de droite sont accessibles, 
+par exemple pour dplacer ou dupliquer une grande partie du dessin. 
+Il est galement possible de \B;sauver\R; ou de \B;reprendre\R; sur disque 
+de grandes parties rectangulaires du dessin.\image diechm,3;\B;Diminue\R; l'chelle, c'est--dire que les points deviennent plus petits.\image diechp,3;\B;Augmente\R; l'chelle, c'est--dire que les points deviennent plus grands.\image diech11,3;\B;Remet l'chelle 1:1\R;, o chaque point est reprsent par un point sur 
+l'cran. Il est galement possible de \I;cliquer\R; l'icne \B;loupe\R; allume 
+en haut  gauche.\REM;Les chelles possibles vont de \B;1:8\R; (vue d'ensemble)  \B;16:1\R; 
+(grossissement).\image ditout,3;Choisit une chelle (1:n) permettant de voir \B;tout le dessin\R; sur l'cran.\image dtout,2,=;\ATTENTION;\REM;Plus la vue d'ensemble est prononce, et plus le dessin a tendance 
+ devenir noir sur l'cran (notamment au niveau des trames). 
+Cela est parfaitement normal et n'altre en rien le dessin 
+lorsqu'il revient  l'chelle 1:1, ou lorsqu'il est imprim.\T;2.3.4 Divers\A;\image diregle,3;Met ou enlve deux \B;rgles centimtriques\R;, l'une en haut et l'autre  
+droite du dessin. Ces rgles correspondent aux dimensions qu'aura le dessin 
+\B;lorsqu'il sera imprim\R;.\image dregle,2,=;Le \B;triangle\R; prsent dans chaque rgle indique la position de la souris 
+(pointe du crayon dans l'exemple ci-dessus).\image dinegatif,3;Effectue un \B;ngatif\R; de toute l'image. Un deuxime ngatif remet 
+l'image dans son tat initial. Un point teint sur l'cran est noir, alors 
+que le mme point est blanc sur le papier. Il en rsulte qu'une mme image 
+correcte sur le papier est affiche en ngatif sur l'cran, ou l'inverse. 
+Cette opration permet donc d'ajuster facilement une image, pour 
+l'afficher ou l'imprimer.\sh;\image dneg1,2,2mm;\gh;\image dneg2,2,62mm;\image diefface,3;\B;Efface\R; tout le dessin, aprs demande d'une confirmation.\image diimprime,3;\B;Imprime\R; tout le dessin  l'chelle 1:1, mme s'il est plus grand 
+que la partie visible  l'cran. DESSIN permet donc d'imprimer de grandes 
+surfaces sur une imprimante matricielle.

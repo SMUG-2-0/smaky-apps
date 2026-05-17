@@ -1,0 +1,56 @@
+\cpage=46;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2mm;\line 0.2mm,120mm;\down 2mm;\define A:\ur10;\up 2mm;\line 0.2mm,120mm;\down 2mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define DT:\pug;\lgr10;\define FT:\pog;\define DG:\pug;\lgr10;\pui;\interligne 3mm;\define FG:\pog;\poi;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define CADRE:\pug;\ub12;\sapos 8;\texte;\sapos 9;\\cr;\gepos 8;\up 0.9il;\\rect 1.1il,0.2mm,0,h9-h8;\\fillrect 1.1il,21,h9-h8;\\gepos 9;\pog;\ind 30mm;\define RECT:\pug;\ub12;\sapos 8;\texte;\sapos 9;\\cr;\gepos 8;\up 0.85il;\\rect 1.05il,0.2mm,0,h9-h8;\\gepos 9;\pog;\define IN:\newtab 8mm,20mm,30mm;\interligne 3mm;\pug;\ub08;in\ur08;\define OUT:\ub08;out\ur08;\define MOD:\ub08;mod\ur08;\define FIOM:\pog;\interligneg;\newtab 15mm,30mm,45mm,60mm,75mm,90mm,105mm;\define EXEMPLE:\pug;\bold;Exemple:\pog;\ind 30mm;\define REMARQUE:\pug;\bold;Remarque:\pog;\ind 30mm;\T;2.4 La souris\A;La souris est gre par le programme 100_MOUSE.CODE ainsi que par le 
+driver 100_MOUSE.DRIV. La librairie fait appel au programme de gestion de 
+la souris ainsi qu'au driver pour permettre un \ital;partage\roman; de la souris 
+entre les diffrents programmes.C'est 100_MOUSE.CODE qui s'occupe du \bold;dessin de la flche\roman; associe  la 
+souris. Il n'est donc pas ncessaire d'effectuer ce travail dans les 
+diffrents programmes utilisateurs.\CADRE;?GCHMOU|Permet de savoir si une souris est connecte au 
+Smaky. Cette distinction s'effectue lors du dmarrage.\IN:	-\OUT:	D6.16	zro	=> pas de souris		autre	=> souris existe (correspond au canal)	D7.16	erreur\MOD:	D6.16, D7.16\FIOM:Lorsque D6.16 est diffrent de zro, la valeur correspond au canal de 
+#MOUSE. Cela peut tre utile pour envoyer une commande spciale  la 
+souris (positionnement par exemple).\CADRE;?MOUSE|\IN:	D3.16	zro	=> ancienne mthode, avec un processus fils		un	=> souris standard (SELECT-UNDO-EXECUTE)		deux	=> souris par le clavier, sablier automatique		trois	=> souris pas le clavier, sablier manuel (LIB,?WAITMOUSE)\OUT:	D7.16	erreur\MOD:	D7.16\FIOM:Avec le \bold;mode un\roman;, utilis par le FILER et le BASIC, 
+les boutons de la souris ont la signification suivante:\demi;\ind 30mm;\bold;SELECT  --  UNDO  --  EXECUTE\roman;\L;\bold;SELECT\roman;\ind 30mm;permet de \ital;piquer\roman; des noms dans la fentre\L;\bold;UNDO\roman;\ind 30mm;identique  la touche \D;(UNDO)\F; du clavier\L;\bold;EXECUTE\roman;\ind 30mm;identique  la touche \D;(RETURN)\F; du clavier\REMARQUE;Pour \ital;piquer\roman; des mots avec le bouton SELECT de la souris, il 
+est ncessaire d'envoyer le caractre IMAENA (image enable)  la fentre. 
+Le driver d'cran construit alors une image alphanumrique chaque fois 
+qu'un caractre est crit dans la fentre. Pour supprimer cette image, il 
+faut envoyer le caractre IMADIS (image disable).\DT;		MOVE.8	#IMAENA,D3		; D3 <-- "image enable"		.16	LIB,?AFCAR		; construit l'image\FT;Cette image n'est valable que dans la sous-fentre utilise lorsque le 
+caractre IMAENA a t envoy, et avec le mme gnrateur de caractres.Avec les \bold;modes deux et trois\roman;, la lecture de la souris s'effectue 
+\bold;par le clavier\roman;,  l'aide de \ital;touches\roman; spciales dont voici 
+les codes:	\bold;KEYMGP\roman;		--> bouton de gauche press	\bold;KEYMMP\roman;	--> bouton du milieu press	\bold;KEYMDP\roman;		--> bouton de droite press\demi;	\bold;KEYMGR\roman;		--> bouton de gauche relch	\bold;KEYMMR\roman;	--> bouton du milieu relch	\bold;KEYMDR\roman;		--> bouton de droite relch\demi;	\bold;KEYMPO\roman;		--> souris dplace\REMARQUE;Ce mode est indispensable pour l'utilisation des botes de dialogues 
+(dbox).L'appel LIB,?GETKEY rend tous ces codes, alors que LIB,?GETCAR, LIB,?IFCAR, LIB,?GETLINE, 
+etc. filtrent KEYMPO. Pour tre inform sur les dplacements de la souris, 
+\bold;il faut donc utiliser LIB,?GETKEY\roman;.KEYMPO indique que la souris a t dplace, mais ont ne connat pas sa position. 
+Pour cela, il faut utiliser LIB,?IFMOUSE juste aprs.\CADRE;?IFMOUSE|\bold;Lit la souris\roman;, sans attendre qu'elle bouge ou 
+que le clavier soit assign au processus appelant. S'utilise en mode deux ou trois, 
+aprs avoir reu le \ital;caractre\roman; KEYMPO.\IN:	-\OUT:	D4.32	coordonnes de la souris (y;x)	D3.8	tat des 3 boutons de la souris	D7.16	erreur (souris hors de la fentre)\MOD:	D3.8, D4.32, D7.16\FIOM:\REMARQUE;La position rendue est relative  la fentre o l'on est, \bold;mais 
+pas  la sous-fentre\roman;.En \bold;mode deux\roman;, la souris reprsente normalement par une 
+\bold;flche\roman;, se transforme en un \bold;sablier\roman; lorsque le Smaky 
+est \ital;occup\roman;.\sh;\image fleche,8,30mm;\gh;\image sablier,8,60mm;\bold;Un programme occup est un programme qui n'est pas en attente d'une touche du 
+clavier (dans l'appel LIB,?GETCAR)\roman;. Deux petits dlais temporisent cette notion 
+un peu brutale pour passer de l'tat libre  occup (0.5 seconde), 
+ou occup  libre (0.125 seconde).Tous les appels utilisant LIB,?GETCAR bnficient des mmes avantages (par exemple: 
+LIB,?EDIT, LIB,?GETFILE, LIB,?MMENU, LIB,?YESNO, DBOX_EDIT, etc.). \bold;La seule exception 
+est l'appel LIB,?IFCAR\roman;.En \bold;mode trois\roman;, c'est l'appel LIB,?WAITMOUSE qui dcide s'il faut afficher 
+la flche ou le sablier:\CADRE;?WAITMOUSE| Indique si la souris est une flche ou un sablier.\IN:	D4.16	0 => sablier		1 => flche\OUT:	-\MOD:	D7.16\FIOM:\CADRE;?RDMOUSE|Lit la souris, avec attente si le clavier n'est 
+pas assign au processus appelant, ou si la souris est immobile. 
+\bold;S'utilise uniquement en mode zro!\roman;\IN:	-\OUT:	D4.32	coordonnes de la souris (y;x)	D3.8	tat des 3 boutons de la souris	D7.16	erreur\MOD:	D3.8, D4.32, D7.16\FIOM:Lorsque la souris est hors de la fentre, l'erreur ERDIOUT est rendue, 
+et D4.32 contient les coordonnes absolues dans le bitmap 1024x1024 
+points.Les bits suivants permettent de connatre l'tat des boutons:\demi;	\bold;BMOLEFT\roman;	--> bouton de gauche (SELECT)	\bold;BMOCENT\roman;	--> bouton du centre (UNDO)	\bold;BMORIGHT\roman;	--> bouton de droite (EXECUTE)\REMARQUE;L'tat des boutons est statique, c'est--dire que tant qu'un 
+bouton est press, le bit correspondant reste  un.\T;2.4.1 Les menus\A;Dans plusieurs programmes, il peut tre utile de faire apparatre un 
+menu \bold; l'endroit o est la souris\roman;, \ital;par-dessus\roman; ce 
+qui se trouve dans la fentre. Les programmes TEXT et PLAN utilisent abondamment 
+cette possibilit.\image mmenu,3,=;\CADRE;?MMENU|Affiche un menu pour la souris, l o est la 
+flche. Au dpart, la flche de la souris est \bold;toujours\roman; dans la case 
+indique en entre dans D3.\IN:	A3.32	^liste de .ASCIZ termine par un zro	D3.16	choix initial (0..n)        <-- ATTENTION, C'EST NOUVEAU!\OUT:	D3.16	choix selon l'utilisateur (0..n)	D7.16	erreur\MOD:	D3.16, D7.16\FIOM:Lorsque l'tat des boutons de la souris change, on sort de LIB,?MMENU, avec 
+dans D3.16 le numro de la case o tait la flche. Par exemple, si LIB,?MMENU 
+est appel lorsque le bouton de gauche est press, on sort sitt qu'il est 
+relach, ou sitt que le bouton de droite et/ou du milieu est press en 
+plus.Une \bold;erreur\roman; peut survenir dans les cas suivants:\demi;\L;lorsque la souris n'est pas dans la fentre du programme\L;lorsque la fentre est trop petite pour contenir tous 
+les .ASCIZ (en largeur ou en hauteur)\L;lorsqu'il n'y a plus assez de mmoire pour sauver l'cran 
+\ital;sous\roman; le menu?MMENU procde de la faon suivante:\demi;\L;Cherche combien de .ASCIZ sont donns, et quel est le plus 
+long et le plus haut.\L;Calcul les dimensions du rectangle devant contenir le menu en 
+fonction du gnrateur de caractres (qui peut avoir une chasse 
+variable).\L;Cre une sous-fentre  la dimensions du menu.\L;Sauve le contenu de la sous-fentre cr en envoyant le 
+caractre SAVWDO au driver d'cran.\L;Efface la sous-fentre, dessine le cadre en paisseur double, 
+puis place les textes.\L;Inverse une case en fonction des mouvements de la souris, en 
+attendant que l'tat des boutons change.\L;Restitue le contenu de la sous-fentre en envoyant le caractre 
+GETWDO.\L;Libre la sous-fentre.La liste des .ASCIZ peut contenir des changements de \bold;gnrateurs 
+de caractres\roman; (.8USEGCfst) et des \bold;lignes horizontales\roman; (.8-1).\EXEMPLE;\DT;	GCTXF	=	'N!2^7		; fonte du texte (N)	GCTXS	=	2^BGCFIX		; style/chasse du texte (F)	GCTXT	=	12		; taille du texte (12)	GCICF	=	'S		; fonte des icnes (S)	GCICS	=	'N		; style/chasse des icnes (NP)	GCICT	=	16		; taille des icnes (16)	ICOSPACE	=	1		; 1/4 espace	ICODETR	=	20		; icne dtruit	ICODEPL	=	21		; icne dplace	ICODUPL	=	22		; icne duplifie	ICOMODE	=	23		; icne mode	ICOCAR	=	24		; icne caractre	10$:		.16	LIB,?GETCAR	; attend clavier/souris ...		COMP.16	#KEYMDP,D3		; bouton de droite press ?		JUMP,EQ	50$		; oui => 50$		...\FT;\DT;	50$:		MOVE.32	#R16^TMMENU,A3	; A3 <-- ^liste de .ASCIZ		CLR.16	D3		; D3 <-- case par dfaut		.16	LIB,?MMENU		; affiche, et attend choix ...		JUMP,NE	ERROR		COMP.16	#0,D3		; case vide ?		JUMP,EQ	DORIEN		COMP.16	#1,D3		; dtruit ?		JUMP,EQ	DODETRUIT		COMP.16	#2,D3		; dplace ?		JUMP,EQ	DODEPLACE		...		JUMP	10$	TMMENU:		.ASCIZ	" "		; premire case vide		.8	-1		; ligne horizontale		.8	USEGC,GCICF,GCICS,GCICT		.8	ICOSPACE,ICODETR,ICOSPACE		.8	USEGC,GCTXF,GCTXS,GCTXT		.ASCIZ	" dtruit"		.8	USEGC,GCICF,GCICS,GCICT		.8	ICOSPACE,ICODEPL,ICOSPACE		.8	USEGC,GCTXF,GCTXS,GCTXT		.ASCIZ	" dplace"		.8	USEGC,GCICF,GCICS,GCICT		.8	ICOSPACE,ICODUPL,ICOSPACE		.8	USEGC,GCTXF,GCTXS,GCTXT		.ASCIZ	" duplifie"		.8	-1		; ligne horizontale		.8	USEGC,GCICF,GCICS,GCICT		.8	ICOSPACE,ICOMODE,ICOSPACE		.8	USEGC,GCTXF,GCTXS,GCTXT		.ASCIZ	" mode"		.8	USEGC,GCICF,GCICS,GCICT		.8	ICOSPACE,ICOCAR,ICOSPACE		.8	USEGC,GCTXF,GCTXS,GCTXT		.ASCIZ	" caractre"		.8	0		.EVEN\FT;
