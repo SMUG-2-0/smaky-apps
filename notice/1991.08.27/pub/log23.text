@@ -1,0 +1,32 @@
+\identoff;
+\colonne 3;
+\marge 15mm,110mm,95mm;
+\marsup 10mm,10mm,60mm;
+\large 70mm,95mm,110mm;
+\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;
+\ur10;\image fiche,2;\saute -2mm;\B;\R;\B;FICHE\R; permet de \B;saisir des donnes\R; -la mise en page sur l'cran est 
+dfinie par l'utilisateur- de les \B;trier\R; selon diffrents critres et de 
+les \B;imprimer\R; selon le format choisi. \B;FICHE\R; est \B;relationnel\R; et sait 
+galement faire tous les \B;calculs\R;.\image tableau,2;\saute -3mm;\B;COMPTA\R; permet de connatre la \B;situation\R; de fortune d'une personne ou d'une 
+entreprise  un moment donn et dterminer le \B;rsultat financier\R; qui dcoule 
+de la marche des affaires.\saute 3mm;Le tableur \B;TABLEAU\R; fait apparatre sur l'cran un immense tableau tout prt, 
+qu'il suffit de remplir. Le \B;SMAKY\R; excutera instantanment tous les calculs prescrits 
+et affichera les rsultats. Si les valeurs sont modifies, l'ensemble du tableau 
+sera recalcul en un clin d'oeil.\image graphe,2;\saute -2mm;\B;GRAPHE\R; permet de reprsenter gra- phiquement les donnes numriques en provenance 
+de \B;FICHE, COMPTA\R; ou \B;TABLEAU\R;.\saute -2mm;\rect 37mm,8lp,0,85mm;\pug;\ub17;\ind 10mm;Adresses, gestion\ind 10mm;Comptabilit\ind 10mm;Tableur\ind 10mm;Reprsentation graphique\pog;\image dfiche,2;\saute -4mm;\ind 10mm;\I;Adresses traites avec FICHE\R;\saute 4mm;\image dcompta,2,5mm;\saute -4mm;\ind 10mm;\I;Bilan obtenu au moyen de COMPTA\R;\saute 4mm;\image dgraphe,2;\saute -4mm;\ind 10mm;\I;Reprsentation de nombres par des camemberts\R;\image text,2;\saute -2mm;\B;TEXT\R; est un traitement de 
+textes performant et simple 
+d'emploi. Le clavier 
+est utilis pour la frappe 
+du texte. La souris permet 
+ensuite la mise en pages du 
+texte, \bold;qui est visualis  
+l'cran tel qu'il sera 
+imprim\roman;, avec des caractres 
+de types et tailles variables.
+\demi;\B;TEXT\R; permet les \bold;divisions 
+automatiques en fin de ligne\roman;.\image dessin,2;\saute -2mm;L'diteur graphique \B;DESSIN\R; est idal pour raliser des \B;dessins 
+artistiques\R;, des illustrations ou des \B;mises en pages\R; complexes. 
+\B;DESSIN\R; travaille au niveau des \ital;points\roman;. Les dessins 
+produits peuvent tre directement imprims, ou \I;colls\R; dans un texte.\image edicar,2;\saute -2mm;\B;EDICAR\R; permet 
+de \B;crer\R; de nouveaux caractres ou de \B;modifier\R; le graphisme de caractres 
+existants. Il est galement utile pour crer des \B;sigles spciaux\R;.\saute -2mm;\rect 37mm,8lp,0,85mm;\pug;\ub17;\ind 10mm;Traitement de textes\ind 10mm;Mise en page\ind 10mm;Prparation de figures\ind 10mm;Cration de caractres\pog;\image dtext,2;\saute -4mm;\ind 10mm;\I;Texte mathmatique avec formules et figure\R;\saute 4mm;\image ddessin,2;\saute -4mm;\ind 10mm;\I;Une image cre par le peintre Nicolas Ruffieux\R;\saute 4mm;\image dedicar,1;\saute -4mm;\ind 10mm;\I;Divers caractres crs avec EDICAR\R;

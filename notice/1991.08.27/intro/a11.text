@@ -1,0 +1,464 @@
+\cpage=3;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\up 0.5mm;\pug;\phchgen iip96;\code %1;\pog;\down 0.5mm;\define ICOIM:\sh;\up 4.4mm;\image %1,2,107mm;\gh;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;1 Le logiciel START\A;Le logiciel \B;START supervise l'utilisation du SMAKY\R;. 
+Il occupe en permanence la premire fentre. Au dpart, 
+START visualise deux sous-fentres:\image start,2,=;La fentre suprieure indique les \B;units physiques\R; 
+prsentes. Dans cet exemple, il s'agit d'un SMAKY avec deux 
+lecteurs de disquettes. Le nom \B;#MM0:\R; est donn au 
+lecteur de gauche, et \B;#MM1:\R;  celui de droite. Dans 
+d'autres configurations, les units physiques varient 
+(disque dur, rseau, etc.).La grande fentre infrieure prsente le \B;contenu de 
+l'unit #MM0:\R;, donc de la disquette de gauche. Pour 
+accder au contenu du deuxime lecteur de disquettes, il 
+faut y introduire une disquette, puis \I;cliquer\R; l'unit 
+#MM1: avec le \B;bouton de gauche\R; de la souris pour 
+l'\B;ouvrir\R;.\T;1.1 Les fichiers\A;Une fentre ouverte prsente tous les fichiers contenus 
+sous forme de petits dessins appels \B;icnes\R;. Il existe 
+en fait \B;quatre types d'icnes\R;:\newtab 50mm;\L;les \B;units physiques\R;	(#MM0:, #QUICK:, etc.)\L;les \B;dossiers\R;	(EXEMPLES:, LETTRES:, etc.)\L;les \B;logiciels\R;	(DESSIN4.CODE, TEXT.CODE, etc.)\L;les \B;documents\R;	(JOLI.IMAGE, ESSAI.TEXT, etc.)Ces quatre types se diffrencient par le \B;cadre autour 
+de l'icne\R;. Le nom du fichier est toujours indiqu juste 
+au-dessous:\image starttypi,2,=;Un \I;clic\R; de la souris dans une icne produit 
+diffrentes actions, selon le bouton utilis (gauche ou 
+droite), et selon le type de l'icne. Le \B;bouton du 
+milieu\R; sera tudi plus loin (paragraphe1.4).Un \I;clic\R; du bouton de \B;gauche\R; excute 
+directement une action:\demi;\L;ouverture d'une unit physique ou d'un dossier\L;excution d'un logiciel\L;etc.Un \I;clic\R; du bouton de \B;droite\R; prsente un menu 
+pour:\demi;\L;dtruire\L;dplacer\L;dupliquer\L;etc.Voici un tableau rsum de ces possibilits:\sh;\image starth0,2,=;\gh;\sh;\saute 20mm;\image starth1,2,=;\gh;\sh;\saute 59mm;\image starth2,2,=;\gh;\sh;\saute 86.7mm;\image starth3,2,=;\gh;\saute 127mm;\image starth4,2,=;\T;\ICOIM startiuni;1.1.1 Les units physiques\A;La fentre suprieure de START indique toujours les 
+\B;units physiques\R; prsentes. Il s'agit des disques 
+(disquettes, disques durs winchester et disques virtuels) et 
+des serveurs sur le rseau. Voici quelques exemples:\image startuph,2,=;\T;\ICOIM startidos;1.1.2 Les dossiers\A;De mme qu'une unit physique contient un certain nombre 
+de fichiers, un \B;dossier\R; contient un \B;sous-ensemble 
+de fichiers\R;. Le principe se rpte autant de fois que 
+ncessaire, pour permettre des sous-dossiers dans un 
+dossier, des sous-sous-dossiers, etc. Le terme 
+\B;rpertoire\R; est parfois utilis dans d'anciens manuels 
+pour dsigner un dossier.\image startdir,2,=;Chaque disquette contient un dossier vide appel 
+\B;DOSSIER:\R;, qui sert  \B;gnrer de nouveaux 
+dossiers\R; avec l'opration \B;duplique\R; (voir 
+paragraphe1.2.1).\ATTENTION;\REM;Le dossier vide (appel DOSSIER:) ne peut 
+pas tre ouvert, puisqu'il ne doit rien contenir.\T;\ICOIM startipro;1.1.3 Les logiciels\A;Le nom d'un logiciel est toujours termin par 
+\B;.CODE\R;. Un logiciel a besoin de plusieurs fichiers 
+pour s'excuter correctement (gnrateurs de caractres ou 
+d'icnes, librairies, images, etc.). C'est pourquoi un 
+fichier invisible contenant la \B;liste de tous les fichiers 
+ncessaires\R; est associ  chaque logiciel. Par exemple, 
+TEXT!CODE contient la liste des fichiers ncessaires  
+TEXT.CODE. Lorsqu'un logiciel est dtruit, dplac ou 
+dupliqu, tous les fichiers associs suivent 
+automatiquement.\NOUVEAU;Normalement, un \I;clic\R; dans un logiciel avec le bouton de gauche 
+l'excute dans la prochaine fentre libre. Cependant, si 
+le mme logiciel est \B;dj en excution\R;, START demande:\image dbox2eme,2,=;Par exemple, DESSIN4 dispose de 10 pages, pouvant contenir autant d'images 
+diffrentes. Il est donc prfrable d'aller dans DESSIN4, de changer 
+de page, et de crer une nouvelle image ou de modifier une image 
+existante, plutt que d'excuter DESSIN4 une nouvelle fois. 
+La mmoire vive sera ainsi conomise!Le tableau ci-dessous donne les capacits des principaux logiciels:\newtab 4mm,34mm;\B;	logiciel	capacit\R;\up 1mm;\line 0.2mm;\down 1mm;	TEXT.CODE	10 zones pour un seul texte	DESSIN4.CODE	10 pages indpendantes	PLAN.CODE	 1 plan	FICHE.CODE	50 fichiers indpendants	TABLEAU.CODE	20 feuilles indpandantes	GRAPHE.CODE	 1 graphique	BASIC.CODE	 1 programme	LOGO.CODE	 1 programme	SIGMAP.CODE	 1 partition	SIGMAS.CODE	 1 morceau	EDICAR.CODE	 1 gnrateur de caractres\NOUVEAU;Si la touche \D;(PROGRA)\F; est maintenue presse pendant le 
+\I;clic\R; sur un logiciel, un menu apparat:\image startmmex,2,=;Ceci permet de choisir dans quelle \B;fentre\R; doit s'excuter le 
+logiciel. Les nombres entre [] correspondent aux quatre icnes tout 
+en haut de l'cran. Les fentres dj occupes apparaissent en gris dans 
+le menu.\REM;Il est aussi possible d'appuyer sur \D;(PROGRA)\F; lors d'un 
+\I;clic\R; sur un \B;document\R;!\T;\ICOIM startidoc;1.1.4 Les documents\A;Tous les fichiers qui ne sont ni des dossiers ni des 
+logiciels sont appels \B;documents\R;. Il peut s'agir d'un 
+texte, d'un dessin, d'une base de donnes, d'un gnrateur 
+de caractres, etc. Chaque document possde un nom, suivi 
+d'un point puis d'une \B;extension\R;. L'extension prcise 
+la nature du document. A chaque type de document correspond 
+un logiciel, qui est excut lorsque le document est 
+\I;cliqu\R; avec le \B;bouton de gauche\R; de la souris.Voici les principales extensions et leur 
+signification:\newtab 4mm,24mm,52mm;\B;	extension	logiciel	signification\R;\up 1mm;\line 0.2mm;\down 1mm;	.TEXT	TEXT.CODE	texte avec mise en page	.IMAGE	DESSIN4.CODE	dessin "point par point"	.PLAN	PLAN.CODE	dessin avec rgles de constructions	.FICHE	FICHE.CODE	base de donnes	.TABLE	TABLEAU.CODE	feuille de calcul du tableur	.BAS	BASIC.CODE	programme BASIC	.LOGO	LOGO.CODE	programme LOGO	.PART	SIGMAP.CODE	partition de musique	.MIDI	SIGMAS.CODE	arrangement musical	.GENC	EDICAR.CODE	gnrateur de caractres	.GRAPH	GRAPHE.CODE	valeurs d'un graphique\ATTENTION;Lorsqu'un document est \I;cliqu\R; avec le 
+\B;bouton de gauche\R;, START excute le logiciel associ 
+puis prend le document. A partir de cet instant, toutes les 
+oprations effectues depuis le logiciel (\B;prend\R;, 
+\B;sauve\R;, etc.) ont lieu \B;dans l'unit et dans le 
+dossier o tait le document original\R;.\REM;Un texte contenant des images possde galement un 
+fichier invisible donnant la \B;liste de toutes les images 
+utilises\R;. Par exemple, LIVRE!TEXT contient la liste des 
+images colles dans LIVRE.TEXT. Lorsqu'un document (texte, 
+base de donne, etc.) est dtruit, dplac ou dupliqu, tous 
+les fichiers associs suivent automatiquement, comme pour 
+les logiciels (.CODE).\T;1.2 Le bouton de droite\A;Un \I;clic\R; du bouton de droite de la souris sur 
+l'icne d'un fichier prsente \B;diffrents menus\R; selon 
+la nature de l'icne. Les paragraphes suivants (1.2.x) 
+expliquent chaque opration possible.\image startmd,3,=;\ICONE 105;\ind 15mm;indique qu'il faut \B;maintenir press\R; le bouton de la souris.\B;..\R;\ind 15mm;indique que cette opration dbouche sur un \B;dialogue\R;\T;1.2.1 Dtruit, dplace et duplique\carte;\ICONE 113;\A;Dtruit, dplace ou duplique l'icne \I;clique\R;. Pour 
+supprimer un document, il suffit de \I;cliquer\R; 
+l'opration \B;dtruit\R; dans le menu. En revanche, pour 
+\B;dplacer\R; ou \B;dupliquer\R; un document, il faut 
+\B;maintenir press\R; le bouton de la souris (\PRESS;), et amener le 
+document jusque dans la fentre ou le dossier o il doit aller. 
+C'est lorsque le bouton est relch que l'opration de dplacement 
+ou de duplication commence.\image startddd,2,=;Pour dplacer ou dupliquer un document \B;dans un dossier qui 
+n'est pas ouvert\R;, il suffit de l'amener avec la souris sur 
+l'icne du dossier:\image startdde,2,=;Dans l'exemple ci-dessus, le document sera dplac dans 
+le dossier COURRIER: de la disquette #MM1:.\REM;Il est galement possible de dplacer ou de dupliquer 
+un document \B;dans une unit qui n'est pas ouverte\R;, directement 
+dans la fentre des units physiques (tout en haut).\ATTENTION;\B;Dplacer\R; un document dans la mme unit 
+ou dans le mme dossier n'a aucun sens, puisque c'est 
+l'ordre de classement qui dtermine la position des icnes 
+(voir paragraphe1.3.4).\B;Dupliquer\R; un document dans la mme unit ou dans le 
+mme dossier gnre un double du document avec un nom 
+diffrent.Voici quelques exemples:\newtab 4mm,50mm;\B;	document initial	double du document\R;\up 1mm;\line 0.2mm;\down 1mm;	MAISON.IMAGE	MAISON\B;1\R;.IMAGE	ESSAI1.TEXT	ESSAI\B;2\R;.TEXT	LETTRE123.TEXT	LETTRE12\B;4\R;.TEXT	PERSONNEL.FICHE	PERSONNE\B;1\R;.FICHE (max 15 
+caractres)Les oprations \I;dtruit\R;, \I;dplace\R; ou 
+\I;duplique\R; appliques  un dossier \B;concernent tout le 
+contenu du dossier\R;, et mme les sous-dossiers et leur 
+contenu, etc.\ATTENTION;Pour \B;crer un nouveau dossier\R;, il faut 
+dupliquer \B;DOSSIER:\R;. La question suivante est alors pose:\NOUVEAU;\image dboxddir,2,=;Le \B;nombre approximatif de fichiers qui seront contenus dans 
+le dossier\R; ne vise pas a limiter le nombre maximum de fichiers 
+que pourra contenir le dossier, mais simplement  optimiser 
+le temps d'accs aux fichiers.Lorsqu'un \B;logiciel\R; (.CODE) ou un document est 
+\I;dtruit\R;, \I;dplac\R; ou \I;dupliqu\R;, \B;tous les 
+fichiers associs suivent\R; (gnrateurs de caractres ou 
+d'icnes, librairies, images, etc.). Par exemple, avant de 
+\B;dupliquer\R; le logiciel DESSIN4.CODE, START pose la question 
+suivante:\NOUVEAU;\image dboxdcode,2,=;Ceci permet de trouver le meilleur compromis possible entre 
+la place utilise sur disque et le confort d'utilisation. La 
+question pose varie en fonction du logiciel ou du document 
+dupliqu.Par exemple, lorsque vous dupliquez un texte cr avec le 
+logiciel TEXT.CODE, la question suivante est pose:\NOUVEAU;\image dboxdtext,2,=;Lorsque plusieurs fichiers sont concerns par une opration 
+\B;dtruit\R;, \B;dplace\R; ou \B;duplique\R;, START affiche 
+ce qu'il fait:\image dboxfile,2,=;Lorsqu'un fichier existe dj et qu'il a une 
+date de cration identique ou plus rcente, START ne 
+transfre pas le fichier et affiche:\B;... pas ncessaire (identique)\R;\demi;ou\demi;\B;... pas ncessaire (plus ancien)\R;\NOUVEAU;\B;Avant\R; de commencer un \B;dplace\R; ou un \B;duplique\R;, 
+START vrifie s'il reste suffisamment de place dans l'unit destination 
+pour tous les fichiers concerns. Si ce n'est pas le cas, rien 
+n'est dplac ou dupliqu, et un avertissement est affich:\image dboxfull,2,=;Il est trs simple de \B;gnrer une nouvelle disquette 
+complte\R; avec les logiciels de son choix. Voici comment 
+procder avec un SMAKY double-disquettes:\demi;\DBF;Mettre une disquette vierge en #MM1:\DBF;La formater (\I;clic\R; dans #MM1: avec le bouton de 
+droite, puis choix de \I;formate\R;)\DBF;Dupliquer SYSTEM.CODE (\I;clic\R; dans SYSTEM.CODE avec 
+le bouton de droite, choix de \I;duplique\R;, puis 
+\I;tirer\R; jusque dans la grande fentre de #MM1:)\DBF;Dupliquer DESSIN4.CODE (idem)\DBF;Dupliquer ...\DBF;La nouvelle disquette est prte  l'emploi!\image startgflo,2,=;Lorsque vous dupliquez \B;SYSTEM.CODE\R;, 
+START pose la question suivante:\NOUVEAU;\image dboxsysc,2,=;\DBC;imprimante(s)\demi;Si la petite croix est enleve, il ne sera pas possible 
+d'imprimer depuis la disquette. START ne dupliquera pas le 
+pilote d'imprimante (SMA_LQ800.DRIV), les modules PRINTA et 
+PRINTB, les caractres propres  l'imprimante (DRF07, QRF07, 
+etc.), etc.\DBC;rseau\demi;Si la petite croix est enleve, START ne dupliquera pas 
+le pilote du rseau Z, RCVNET.CODE, SMA_BAL.DRIV, etc.\DBC;liaison srie\demi;La liaison srie est utilise par le scanner, le plotter, 
+les logiciels de communication par modem, etc. Elle n'est 
+pas utilise par SIGMA.\DBC;explications des nouveauts\demi;Si la petite croix est enleve, les explications des nouveauts 
+de START contenues dans START.NEWS ne seront pas dupliques.Ensuite, START pose une deuxime question:\NOUVEAU;\image dboxsysi,2,=;Toutes les imprimantes qu'il est possible de connecter  
+un SMAKY sont mentionnes. Les noms qui apparaissent ventuellement 
+en gris correspondent  des pilotes d'imprimantes absents sur 
+le disque ou la disquette source.\DBC;= imprimantes  dupliquer\demi;Choix des imprimantes  dupliquer. Gnralement, une seule 
+imprimante est duplique, mais il est ventuellement possible 
+d'en dupliquer plusieurs. Dans ce cas, une seule pourra tre 
+utilise  la fois!\DBO;= imprimante  utiliser\demi;Parmi toutes les imprimantes  dupliquer, choix de celle 
+qui sera utilise.Finalement, START pose une troisime question:\NOUVEAU;\image dboxmach,2,=;Choix de la machine pour laquelle il faut gnrer le systme. 
+Si les fichiers ncessaires n'existent pas, le nom de la machine 
+apparat gris. Si les fichiers ncessaires n'existent que pour une 
+seule machine, cette troisime question est simplement saute.\REM;Il est possible de gnrer une disquette capable de dmarrer sur un 
+SMAKY100 et sur un SMAKY324. Pour cela, il faut dupliquer une premire fois 
+SYSTEM.CODE avec \DBO1;\B;SMAKY100\R;, puis une deuxime fois avec 
+\DBO1;\B;SMAKY324\R;. Cela n'est pas possible avec un SMAKY8, puisque le 
+format de la disquette est diffrent (\I;hard sectored\R;).\T;1.2.2 Modifie\carte;\ICONE 115;\A;Modifie le \B;nom d'un document\R;, ou ses 
+\B;attributs\R;.\image dboxmodif,2,=;Le \B;nom du fichier\R; est spar en \B;deux parties\R;. 
+A gauche le nom  proprement parler, et  droite l'extension 
+qui ne peut pas tre modifie.La \B;date de cration\R; est l  titre 
+d'information. Elle ne peut tre modifie que si elle est 
+incorrecte (par exemple: FF/FF/FF ou 02/13/87), ou si elle 
+est suprieure  la date du jour.La \B;taille\R; du fichier, en octets, ne peut 
+pas tre modifie. Elle est l uniquement  titre 
+d'information.Les petites croix au-dessous correspondent aux 
+\B;attributs\R;. \B;L'absence de croix rend les oprations 
+suivantes impossibles:\R;\DBC;\B;\_destruction\_\R;\demi;Il est impossible de dtruire le document par 
+inadvertance. Avant de dtruire un \B;dossier\R; et tous les 
+documents qu'il contient, il faut mettre la croix ici.\ATTENTION;\REM;Lors de la \B;destruction d'un dossier\R;, 
+mme les documents indestructibles contenus seront 
+supprims!\DBC;\B;\_lecture\_\R;\demi;Le document ne peut plus tre repris ou imprim. Un 
+\B;dossier\R; devient totalement inaccessible, avec tous les 
+documents qu'il contient.\DBC;\B;\_criture\_\R;\demi;Le document peut tre repris ou imprim, mais plus 
+modifi.\DBC;\B;\_visualisation\_\R;\demi;Le document n'est plus visible, sauf si l'option 
+\I;cach\R; de LISTE est active (voir paragraphe1.3.4).\DBC;\B;\_changement de nom\_\R;\demi;Le nom ne peut pas tre modifi. L'extension ne peut 
+jamais tre modifie!\DBC;\B;\_lecture par rseau\_\R;\demi;La reprise  travers le rseau n'est pas possible. Elle 
+reste possible localement.Un \B;dossier\R; devient inaccessible  travers le 
+rseau, avec tous les documents qu'il contient. Cet attribut 
+ne peut jamais tre modifi (mis ou enlev)  distance,  
+travers le rseau.\DBC;\B;\_criture par rseau\_\R;\demi;Le document ne peut pas tre modifi  travers le rseau, mais 
+seulement repris. Cela est toujours possible localement.Pour un \B;dossier\R;, ces mmes remarques sont valables.Pour modifier rapidement plusieurs fichiers, il est possible 
+d'utiliser les \B;slections multiples\R; (voir paragraphe1.2.4). 
+START propose alors de modifier les fichiers slectionns comme 
+suit:\image dboxmodim,2,=;A chaque attribut correspondent deux boutons carrs. Une petite 
+croix dans le premier (-) indique qu'il faut enlever l'attribut, 
+donc interdire l'opration. Une petite croix dans le deuxime 
+(+) indique qu'il faut ajouter l'attribut, donc autoriser l'opration. 
+S'il n'y a pas de petite croix, l'attribut n'est pas modifi.\ATTENTION;\REM;Pour un attribut donn, il n'est pas possible 
+de mettre les deux petites croix.\T;1.2.3 Accs\carte;\ICONE 125;\A;Lorsque le document ESSAI.IMAGE est \I;cliqu\R; dans le 
+dossier JOLI:, START excute le logiciel DESSIN4.CODE puis 
+prend l'image. Si ensuite la fonction \D;(Prend)\F; du 
+logiciel DESSIN4 est utilise en donnant le nom MAISON, 
+c'est l'image #MM0:\B;JOLI:\R;MAISON.IMAGE qui sera 
+cherche. \B;Tous les noms de fichiers donns depuis DESSIN4 
+sont alors pris par dfaut dans le dossier JOLI:\R;.\DBF;\I;Clic\R; du bouton de gauche dans JOLI:ESSAI.IMAGE\ind 8mm;Le logiciel DESSIN4.CODE est excut, puis 
+JOLI:ESSAI.IMAGE est charg\DBF;Touche fonction \D;(F1)\F; = \D;(Prend)\F;\DBF;MAISON \D;(RETURN)\F;   --> Prend 
+\B;JOLI:\R;MAISON.IMAGEEn revanche, si DESSIN4 est excut en \I;cliquant\R; 
+l'icne DESSIN4.CODE, les fichiers ne seront pas pris dans 
+JOLI:, mais dans #MM0:.\DBF;\I;Clic\R; du bouton de gauche dans DESSIN4.CODE\ind 8mm;Le logiciel DESSIN4.CODE est excut\DBF;Touche fonction \D;(F1)\F; = \D;(Prend)\F;\DBF;MAISON \D;(RETURN)\F;   --> Prend 
+\B;#MM0:\R;MAISON.IMAGESi DESSIN4.CODE est frquemment utilis pour crer des 
+images dans JOLI:, il y a avantage  ce que le dossier JOLI: 
+contienne \B;un accs  DESSIN4\R;. Pour le crer, 
+\I;cliquez\R; l'icne DESSIN4.CODE avec le bouton de droite 
+de la souris. Le menu suivant apparat:\image startmacc,3,=;\I;Tirez\R; l'option \B;accs\R; jusque dans le dossier 
+JOLI:. Cette opration s'effectue exactement de la mme 
+faon que \B;duplique\R;. Une icne DESSIN4.CODE entoure 
+d'un \B;hexagone pointill\R; apparat dans le dossier:\image startacc,2,=;Les hexagones pointills indiquent la prsence, non pas 
+d'un logiciel, mais simplement d'un \B;accs au 
+logiciel\R; qui se trouve lui-mme dans le dossier 
+systme.Pour crer un nouveau dessin dans JOLI:, il suffit de 
+\I;cliquer\R; l'accs DESSIN4.CODE (dans JOLI:) avec le 
+bouton de gauche de la souris.\DBF;\I;Clic\R; du bouton de gauche dans l'\B;accs\R; 
+JOLI:DESSIN4.CODE\ind 8mm;Le logiciel DESSIN4.CODE est excut\DBF;Dessin d'une oeuvre d'art ...\DBF;Touche fonction \D;(F3)\F; = \D;(Sauve)\F;\DBF;OEUVRE \D;(RETURN)\F;   --> Cre le dessin 
+\B;JOLI:\R;OEUVRE.IMAGEIl n'est \B;pas ncessaire de mettre  jour les accs\R;, lorsqu'un 
+logiciel change!Pour crer rapidement plusieurs accs, il est possible d'utiliser 
+les \B;slections multiples\R; (voir paragraphe1.2.4).\REM;Un accs est matrialis dans un dossier par la 
+prsence d'un \B;fichier .CODE de longueur nulle\R; (zro 
+octet).\T;1.2.4 Les slections multiples\A;Le bouton de droite de la souris permet de dtruire, 
+dplacer ou dupliquer \B;un seul\R; fichier. Pour agir sur 
+plusieurs fichiers, il faut rpter l'opration autant de 
+fois qu'il y a de fichiers. Les slections multiples 
+permettent de \I;cliquer\R; \B;autant de fichiers que vous 
+le dsirez\R;, et de choisir ensuite l'opration (dtruit, 
+dplace, duplique, accs ou modifie).Pour effectuer une slection multiple, \B;appuyez sur la 
+touche super-shift\R; \D;(COPY)\F;, et, tout en maintenant 
+cette touche presse, \I;cliquez\R; avec le bouton de droite 
+tous les fichiers dsirs. Le menu dtruit, dplace et 
+duplique n'apparat pas. Le fichier \I;cliqu\R; reste 
+simplement mis en vidence.Avant de \I;cliquer\R; le dernier fichier, \B;relcher la 
+touche\R; \D;(COPY)\F;. Le menu apparatra de nouveau, et 
+l'opration choisie concernera l'\B;ensemble des fichiers 
+cliqus\R;. Par exemple, pour dupliquer tous les fichiers 
+slectionns, il faut maintenir press le bouton de la 
+souris (\PRESS;) lorsque l'opration \I;duplique\R; est choisie. Vous 
+pourrez alors \I;tirer\R; le dernier fichier dans la fentre 
+voulue. Lorsque le bouton de la souris sera relch, tous 
+les fichiers seront dupliqus.\image startsm1,2,=;\ATTENTION;Pour \B;annuler la slection d'un fichier\R;, 
+vous pouvez le \I;cliquer\R; une deuxime fois, tout en 
+maintenant press \D;(COPY)\F;. Pour \B;annuler toute la 
+slection\R;, il suffit d'appuyer sur la touche 
+\D;(UNDO)\F;.\REM;Il est bien entendu possible de relcher la touche 
+\D;(COPY)\F;, de dplacer l'\B;ascenseur\R;, puis de 
+continuer la slection multiple. Cependant, la slection 
+multiple ne peut s'effectuer qu' l'intrieur d'un mme 
+dossier ou d'une mme unit!\NOUVEAU;Lorsque le \B;bouton de droite\R; de la souris est press 
+entre deux icnes, un \B;rectangle pointill\R; est dessin tant 
+qu'il est maintenu press:\image startsr1,2,=;Lorsqu'il est relch, toutes les 
+icnes entoures par le rectangle sont slectionnes, et le menu 
+habituel apparat:\image startsr2,2,=;Si la touche \D;(COPY)\F; est presse pendant le dessin du rectangle, 
+le menu n'apparat pas, et les icnes entoures sont simplement 
+slectionnes. Il est alors possible de slectionner d'autres icnes, 
+ou d'annuler la slection d'une icne, comme vu plus haut.Il est parfois ncessaire de slectionner une quantit d'icnes tellement 
+grande, qu'il est plus rapide de tout slectionner, puis d'annuler la 
+slection de quelques icnes. Pour \B;tout slectionner\R;, il faut 
+\I;cliquer\R; dans la case \B;#MM0:*\R;, puis choisir \B;slectionne\R;:\image startsma,2,=;Pour dupliquer \B;toutes les images d'un dossier\R;, il 
+existe un moyen encore plus rapide et plus simple.1)\ind 10mm;\I;Cliquez\R; dans la case \B;LISTE\R;, et 
+donnez \B;*.graph\R; comme noms de fichiers  lister, puis 
+\I;cliquez\R; dans \D;(LISTE)\F;.\demi;2)\ind 10mm;\I;Cliquez\R; dans la case 
+\B;#MM0:*.graph\R;. Le menu habituel dtruit, dplace, 
+duplique, etc. apparat:\image startsm2,2,=;3)\ind 10mm;Choisissez \B;duplique\R;, 
+et, tout en maintenant press le bouton de la souris (\PRESS;), 
+\I;tirez\R; le rectangle dans la fentre de destination:\image startsm3,2,=;4)\ind 10mm;\I;Cliquez\R; dans la touche \D;(DUPLIQUE)\F;:\image startsm4,2,=;\REM;L'option "duplique18fichiers" s'enclenche\ind 30mm;automatiquement ds que la case\ind 30mm;\B;#MM0:EXGRAPHE:*.graph\R; contient autre chose\ind 30mm;qu'une seule "*" comme noms de fichiers  lister.\T;1.2.5 Edite\carte;\ICONE 119;\A;Permet de modifier un document contenant du texte 
+(caractres ASCII). Les documents suivants peuvent tre dits:\B;*.TEXT\R;\ind 35mm;texte\B;*.FICHE\R;\ind 35mm;base de donne\B;*.GRAPH\R;\ind 35mm;valeurs  reprsenter graphiquement\B;*.NEWS\R;\ind 35mm;explications des nouveauts\demi;\B;*.CLE\R;\ind 35mm;macro du C.L.E.\B;*.FILER\R;\ind 35mm;macro du FILER\demi;\B;*.ASC\R;\ind 35mm;programme en assembleur\B;*.BAS\R;\ind 35mm;programme BASIC\B;*.LOGO\R;\ind 35mm;programme LOGO\B;*.MOD\R;\ind 35mm;programme MODULA-2\demi;\B;START_USER.INFO\R;\ind 35mm;paramtrisation de START (voir 
+paragraphe 1.5.1)\B;*!*\R;\ind 35mm;fichier "!" (voir paragraphe 1.5.2)L'dition s'effectue simplement avec le clavier, en utilisant 
+\D;(CURSOR)\F;, \D;(CURSOR-KILL)\F;, etc.\D;(CURSOR-flches)\F;\ind 45mm;dplace le curseur\D;(CURSOR-KILL-flches)\F;\ind 45mm;dtruit autour du 
+curseur\D;(DEL)\F;\ind 45mm;dtruit le caractre  gauche du 
+curseurLa \B;touche fonction\R; \D;(F1)\F; frappe directement 
+les caractres \B;#mm0:\R;, \D;(F2)\F; frappe directement 
+\B;#mm1:\R;, etc. Ceci est extrmement pratique lors de 
+l'dition d'une \I;macro\R; par exemple.Lorsque l'dition est termine, la touche \D;(F0)\F; 
+demande s'il faut \B;mettre  jour\R; le document dit.\T;1.2.6 Visualise\carte;\ICONE 126;\A;Permet de visualiser les principaux documents gnrs par 
+les logiciels du SMAKY,  savoir:\NOUVEAU;\DBF;les \B;textes\R; (.text .news .bas .logo etc.)\DBF;les \B;images\R; (.image)\NOUVEAU;\DBF;les \B;plans\R; (.plan)\DBF;les \B;gnrateurs de caractres\R; (.genc)Lors de la visualisation d'images, un \I;clic\R; avec 
+n'importe quel bouton de la souris prsente le menu suivant:\image startmv,2,=;Lors de la visualisation d'un texte, d'un plan ou d'un gnrateur 
+de caractres, seules les deux premires cases existent (suivant 
+et slectionne). Les touches fonction peuvent galement tre 
+utilises:\NOUVEAU;\D;(Suivant)\F;\ind 30mm;Visualise le document suivant. Pour 
+visualiser trs rapidement le document suivant, 
+\B;START anticipe vos demandes\R; en lisant jusqu' 20 documents 
+d'avance, qui sont stocks en mmoire.Si la touche super-shift \D;(KILL)\F; est maintenue presse 
+lors du \I;clic\R; sur \B;visualise\R; dans le menu, START 
+ne lira pas les images suivantes, et les fonctions \D;(Suivant)\F; 
+et \D;(Slectionne)\F; seront inactives (grises).\D;(Slectionne)\F;\ind 30mm;Slectionne le document visualis. 
+Son nom, en haut de la fentre, apparat en vido inverse. 
+Lorsque vous appuyez sur \D;(Fin)\F;, tous les documents slectionns 
+apparaissent en invers, comme lors d'une slection multiple 
+avec \D;(COPY)\F; (voir paragraphe1.2.4). Un \I;clic\R; avec 
+le \B;bouton de droite\R; sur l'un des documents slectionns 
+prsentera le menu \B;dtruit\R;, \B;dplace\R;, \B;duplique\R;, 
+etc.Cette possibilit est extrmement puissante, par exemple, pour 
+"faire le mnage" sur un disque. Tous les documents slectionns 
+pourront tre dtruits, ou dplacs sur un autre disque!Voici un exemple de visualisation d'un \B;texte\R;:\NOUVEAU;\image startvtex,2,5mm;L'ascenseur  gauche permet de parcourir le texte, cran 
+par cran. Les indications en haut de la fentre donnent le \B;nom 
+du fichier\R;, et la \B;taille\R; sans les commandes "boa" 
+puis avec les commandes "boa".Voici un exemple de visualisation d'une \B;image\R;:\image startvima,2,5mm;Les indications en haut de la fentre donnent le \B;nom 
+du fichier\R; image, les \B;dimensions\R; en points (largeur 
+x hauteur), le \B;numro de codage\R; utilis (toujours #4 
+pour l'instant), et le \B;gain de place\R; ralis par le 
+codage.Les touches fonction suivantes n'existent que lors de la 
+visualisation d'une image:\D;(Tout)\F;\ind 30mm;Rduit ou agrandit l'image pour qu'elle 
+occupe toute la fentre.\D;(Ngatif)\F;\ind 30mm;Inverse le fond de l'image.\D;(Gauche)\F;\ind 30mm;Visualise la partie gauche de l'image.\D;(F11)\F;\ind 30mm;Visualise la partie centrale de l'image.\D;(Droite)\F;\ind 30mm;Visualise la partie droite de l'image.\D;(Haut)\F;\ind 30mm;Visualise la partie suprieure de l'image.\D;(F14)\F;\ind 30mm;Visualise la partie centrale de l'image.\D;(Bas)\F;\ind 30mm;Visualise la partie infrieure de l'image.Voici un exemple de visualisation d'un \B;plan\R;:\NOUVEAU;\image startvpla,2,5mm;Les indications en haut de la fentre donnent le \B;nom 
+du plan\R;, les \B;dimensions\R; en points graphiques, et la 
+\B;loupe\R; utilise pour reprsenter le plan dans la fentre.Les touches fonction sont les mmes que lors de 
+la visualisation d'une image, sauf \D;(F8)\F;:\D;(Carac)\F;\ind 30mm;Utilise les gnrateurs de caractres 
+rels.Voici un exemple de visualisation d'un \B;gnrateur de 
+caractres\R;:\image startvgen,2,5mm;Les indications en haut de la fentre donnent le \B;nom 
+du fichier\R;, le \B;nombre de caractres\R; 
+contenus (presque toujours 128), les \B;dimensions\R; d'un 
+caractre en points (largeur x hauteur), et le \B;nom de 
+l'auteur\R; (EDICAR par dfaut).\T;\NOUVEAU;1.2.7 Imprime\carte;\ICONE 123;\A;Imprime directement un document quelconque. START peut imprimer 
+les documents suivants:\DBF;les \B;textes\R; (.text .news .bas .logo  etc.)\DBF;les \B;images\R; (.image)L'impression s'effectue avec la \B;prsentation\R; courante, choisie 
+avec le bouton du milieu (voir paragraphe1.4.1).\image dboximp,2,=;\DBC;\B;\_nombre de copies  tirer : \D;(    )\F;\_\R;\demi;Nombre d'exemplaires  imprimer.\DBC;\B;\_impression simultane\_\R;\demi;Tout ce qui doit tre imprim est d'abord sauv sur 
+disque. Il est alors possible de continuer d'utiliser 
+START, avec l'impression qui s'excute en "tche 
+de fond".Sur un serveur d'impression, l'impression est toujours 
+simultane. Avec une disquette protge contre l'criture, 
+l'impression ne peut pas tre simultane.\REM;Si le nombre de copies  tirer est plus grand que un, l'impression est 
+forcment simultane!\DBC;\B;\_imprime seulement les pages de \D;(    )\F;  \D;(    )\F;\_\R;\demi;\DBC;\B;\_pages paires\_\R;\DBC;\B;\_pages impaires\_\R;\demi;Choix des pages  imprimer. Pour n'imprimer que la troisime page, 
+par exemple, il faut donner: \B;de33\R;. 
+Les options pages paires ou impaires permettent d'imprimer d'abord le recto, 
+puis le verso dans un deuxime passage.\ATTENTION;\REM;Avec un document de 100pages, si l'on demande d'imprimer la dernire 
+page, les 99 premires doivent tre formates, ce qui prend un certain temps. 
+Cette remarque n'est pas valable avec le logiciel TEXT, qui est suffisamment 
+malin pour imprimer trs rapidement la page demande, dans tous les cas!\DBC;\B;\_rsultat dans le fichier : \D;(        )\F;\_\R;\demi;L'impression est dtourne dans un fichier disque, qui 
+pourra tre contrl et imprim par la suite.\T;1.2.8 Paramtres\carte;\ICONE 118;\A;Accde aux paramtres d'un \B;logiciel\R;. \B;Ces 
+paramtres doivent tre modifis avec la plus grande 
+prudence\R;. En fait, il est surtout intressant de les 
+visionner!\image dboxparam,2,=;\DBF;\B;\_Niveau systhtiseur \D;()\F;\_\R;\demi;Gnre des sons diffrents en fonction du niveau 
+choisi:\demi;0\ind 15mm;aucun bruit1\ind 15mm;bruits simples2\ind 15mm;normal3\ind 15mm;bruits trs prononcs\REM;Le niveau ne correspond pas  la puissance sonore, mais 
+modifie la \B;nature mme des sons\R; (bips, erreurs, 
+etc.)!\DBF;\B;\_Caractres standards \D;()\F;\_\R;\demi;Caractres utiliss en standard par le logiciel. Une 
+\B;toile\R; indique l'emploi des caractres les plus 
+courants. Un logiciel qui n'utilise pas l'toile ne doit 
+pas tre modifi. En revanche, l'toile peut tre remplace 
+par un caractre spcifique (par exemple: un caractre plus 
+grand pour faire une dmonstration).\DBF;\B;\_Priorit \D;()\F;\_\R;\demi;Priorit du logiciel par rapport aux autres logiciels. 
+Une priorit de 8 correspond  un logiciel trs prioritaire 
+(logiciel interactif), et 29  un logiciel peu prioritaire 
+(calculs, formatages, etc.).\DBF;\B;\_Lg stack \D;()\F;\_\R;\demi;Longueur du stack utilisateur (USP) rserve pour le 
+logiciel. Ne jamais raccourcir, ventuellement allonger!\DBF;\B;\_Texte \D;()\F;\_\R;\demi;Texte d'identification du logiciel (auteur, copyright, 
+etc.).\DBF;\B;\_Dimensions de la fentre \D;()\F;\_\R;\demi;Dimensions minimales et maximales, en X et en Y, de la 
+fentre ncessaire au logiciel.\DBF;\B;\_Units utilises :\_\R;\demi;Units physiques ncessaires au logiciel (fentre, 
+clavier et synthtiseur). L'\B;image gnrique\R; affiche 
+une image de mme nom que le logiciel pendant son 
+chargement, si elle existe (par exemple: DESSIN4.IMAGE pour 
+DESSIN4.CODE).\DBF;\B;\_Rvision\_\R;\demi;Numros de rvision et de version du logiciel.\T;1.2.9 Verrouille et dverrouille\carte;\ICONE 96;\A;Tous les fichiers documents (textes, images, bases de 
+donnes, etc.) peuvent tre \B;verrouills  l'aide d'une 
+clef\R;, afin d'en interdire l'accs  toute personne. 
+Une clef est un nom quelconque, de 
+15 caractres au maximum, choisi par l'utilisateur. Cette 
+clef ne verrouille pas seulement l'accs au fichier, mais 
+\I;crypte\R; directement le contenu du fichier. Ainsi, mme 
+avec des outils spciaux comme un diteur de disque (EDISK), 
+il est impossible de prendre connaissance du contenu du 
+fichier. Mme un spcialiste connaissant particulirement 
+bien le SMAKY n'y arriverait pas (si vous ne le croyez pas, 
+essayez de \I;dcrypter\R; un fichier verrouill, et vous 
+serez convaincu!).\ATTENTION;\B;Le corollaire d'une si bonne protection est 
+qu'il ne faut absolument pas oublier la clef, sans quoi 
+votre fichier sera irrmdiablement perdu!\R;Les verrous trouvent une utilit toute particulire sur 
+le serveur d'un rseau, ou lorsqu'une disquette est 
+entrepose dans un lieu public.Pour verrouiller un fichier directement depuis n'importe 
+quel logiciel, il suffit de prcder le nom par la clef 
+suivie d'une apostrophe  l'envers. Par exemple, depuis 
+DESSIN4.CODE, appuyer sur \D;(Sauve)\F;, puis donner le 
+nom:\demi;	\B;CHAMPIGNON`ESSAI\R;\B;CHAMPIGNON\R;\ind  30mm;Nom de la clef. Ne pas dpasser 
+15 caractres, lettres ou chiffres.\B;`\R;\ind  30mm;Apostrophe  l'envers \D;(CTRL-')\F;.\B;ESSAI\R;\ind  30mm;Nom standard du fichier.Il faudra redonner le nom avec la clef (CHAMPIGNON`ESSAI) 
+pour reprendre cette image par la suite. Pour prciser une 
+autre unit ou un autre dossier, la clef s'insre juste 
+avant le nom du fichier:\demi;	\B;#MM1:IMAGES:CHAMPIGNON`ESSAI\R;START permet de verrouiller ou de dverrouiller un 
+document quelconque, simplement en le \I;cliquant\R; avec le 
+bouton de droite de la souris:\image startclv,2,5mm;La dernire case du menu propose \B;verrouille\R; si le 
+document n'est pas encore verrouill, et \B;dverrouille\R; 
+s'il l'est dj. Dans les deux cas, START demande le nom de 
+la clef comme suit:\demi;\image startcld,2,=;La clef apparat volontairement  l'cran sous la forme 
+XXXXX, pour viter que quelqu'un puisse la dcouvrir en 
+regardant par-dessus votre paule!Souvent, on utilise une mme clef pour diffrents 
+fichiers. Lors du choix de la clef, les deux options 
+suivantes existent:\demi;\DBO;\B;un seul fichier\R;\DBO;\B;plusieurs fichiers\R;Si l'option \DBC1;\B;plusieurs fichiers\R; est choisie, le 
+choix de la clef n'apparatra plus, et START prendra 
+toujours la mme clef pour verrouiller et dverrouiller. 
+Pour stopper ce mode et donner une autre clef, il faut 
+\I;cliquer\R; le bouton du milieu de la souris, et choisir 
+\B;clef\R;:\image startclm,2,=;Vous pouvez alors \I;cliquer\R; l'option \B;un seul 
+fichier\R;, puis \D;(D'ACCORD)\F;.\REM;Si vous \I;cliquez\R; MAISON.IMAGE, START excute le 
+logiciel DESSIN4. \B;Si l'image est verrouille, START vous 
+demandera le nom de la clef avant d'excuter DESSIN4!\R; 
+START demande galement la clef pour les oprations 
+\B;dite\R; et \B;visualise\R; du bouton de droite de la 
+souris.Lorsque START prsente les listes avec les \B;tailles\R; 
+et les \B;dates\R;, un petit "V" tout  droite indique quels 
+sont les fichiers verrouills:\image startcll,2,5mm;\T;1.2.10 Informations\carte;\ICONE 103;\A;Affiche quelques informations concernant une \B;unit 
+physique\R;:\image dboxinfu,2,=;\ATTENTION;Le \B;mode\R; (\I;lecture et criture\R; ou 
+\I;lecture seulement\R;) indique la prsence ou non de 
+l'tiquette de protection sur la petite fente de la 
+disquette.Voici les principaux \B;noms physiques\R; et leurs significations:\B;$FLO\R;\ind 30mm;unit de disquettes (floppy disk)\B;$WIN\R;\ind 30mm;disque dur winchester sur les anciens SMAKY100\B;$SCSI\R;\ind 30mm;disque dur winchester sur les nouveaux SMAKY100 et les SMAKY324\B;$MEM\R;\ind 30mm;disque virtuel, c'est--dire utilisant la mmoire vive du SMAKY\REM;Un nom physique est toujours termin par un soulign "_" et un numro. 
+Par exemple: $FLO_0 correspond au lecteur de disquettes de gauche, et $FLO_1 
+ celui de droite.\T;1.2.11 Nom du disque\carte;\ICONE 101;\A;Chaque disque (disquette, disque dur, etc.) peut avoir un 
+nom. Gnralement, on accde  un fichier plac dans le 
+deuxime lecteur de disquettes en donnant le nom 
+\B;#MM1:LETTRE.TEXT\R;. Si la disquette possde un nom, on 
+pourra aussi l'accder en donnant 
+\B;#TRAVAIL:LETTRE.TEXT\R;. "TRAVAIL" est ici le nom donn  
+la disquette.\image dboxnom,2,=;L'icne dans la fentre des units physiques indique les 
+\B;deux noms possibles pour accder aux fichiers de la 
+disquette\R;:\image startnom,3,=;\REM;Lorsque vous travaillez avec deux disquettes ayant le 
+mme nom, seule la premire utilise pourra tre accde par 
+son nom.Normalement, tous les fichiers systmes sont dans #MM0:. 
+Avec un disque dur, il est parfois agrable de mettre tous 
+ces fichiers dans un dossier (par exemple #MM0:SYSTEME:). 
+Pour indiquer au SMAKY cette option, il faut utiliser le 
+deuxime rectangle \B;dossier systme\R;, en inscrivant 
+SYSTEME.\T;1.2.12 Formate\carte;\ICONE 116;\A;Formate une disquette comme suit:\image dboxform,2,=;Le \B;nom de la disquette\R; est constitu de 14 
+caractres au maximum (lettres ou chiffres). Par exemple, le 
+nom TRAVAIL permettra d'accder au fichier MAISON.IMAGE en 
+donnant #MM1:MAISON.IMAGE ou #TRAVAIL:MAISON.IMAGE!Le \B;formatage physique\R; n'est ncessaire que si la 
+disquette est neuve. Il dure environ une minute.Le \B;formatage logique\R; vide compltement une 
+disquette, et cre le dossier vide DOSSIER:. Il dure environ 
+dix secondes.\ATTENTION;\REM;\B;Le formatage d'une disquette est 
+irrversible\R;. Avant de reformater une disquette dj 
+utilise, prenez garde  ce qu'elle ne contienne plus rien 
+d'important.\T;\NOUVEAU;1.2.13 Copie\carte;\ICONE 102;\A;L'opration \B;copie\R; permet de copier intgralement des 
+disquettes entires, quelle que soit la configuration du SMAKY:\L;SMAKY avec un seul lecteur de disquettes\L;SMAKY avec deux lecteurs de disquettes\L;SMAKY avec un disque dur et un lecteur de disquettesLorsque tous les fichiers d'une disquette sont \B;dupliqus\R; 
+sur une autre, les deux disquettes ne sont pas exactement les 
+mmes. Les contenus des diffrents fichiers sont bien identiques, 
+mais leurs organisations et leurs emplacement peuvent varier. 
+Le temps ncessaire pour dupliquer tous les fichiers dpend 
+du nombre et de la taille des fichiers.Par contre, avec l'opration \B;copie\R;, les deux disquettes 
+sont parfaitement identiques, puisque tous les blocs sont copis, 
+les uns aprs les autres. Le temps ncessaire pour copier toute 
+une disquette est toujours le mme, que la disquette contienne 
+un seul fichier, ou cent cinquante fichiers!\ATTENTION;\REM;L'opration \B;copie\R; n'est possible que 
+si la disquette d'origine (disquette source) est ouverte, 
+c'est--dire s'il existe une fentre montrant son contenu. 
+Rappel: pour ouvrir une disquette, il faut \I;cliquer\R; 
+avec le bouton de gauche sur son icne.Avec un SMAKY disposant d'\B;un seul lecteur de disquettes\R;, 
+il suffit de \I;cliquer\R; l'opration \B;copie\R; dans le 
+menu. La question suivante est alors pose:\image dboxc1f,2,=;Il faudra ensuite permuter un certain nombre de fois les 
+disquettes source et destination, selon les injonctions de 
+START. Par exemple:\image dboxc1f1,2,=;\REM;Le nombre de permutations dpend uniquement de la quantit 
+de mmoire libre. Plus il reste de mmoire libre, moins il 
+faudra faire de permutations!Avec un SMAKY disposant de \B;deux lecteurs de disquettes\R;, 
+il faut choisir \B;copie\R; dans le menu, puis, \B;tout en maintenant 
+press le bouton\R; (\PRESS;), dplacer la souris jusque dans l'icne 
+de la disquette destination:\image dboxcff,2,=;Avec un SMAKY disposant \B;d'un disque dur et d'un lecteur 
+de disquettes\R;, la copie s'effectue en deux temps:1)\ind 30mm;Ecriture d'un fichier .DI sur le disque dur. Ce 
+fichier contient l'image de la disquette source. Il contient 
+donc tous les fichiers qui taient prsents sur la disquette, un 
+peu comme un dossier. Mais,  la diffrence d'un dossier, il 
+ne peut pas tre ouvert pour accder  son contenu. La taille 
+d'un fichier .DI est toujours de 737'280octets.2)\ind 30mm;Copie du fichier .DI sur une disquette rceptrice.Pour crer un fichier .DI sur disque dur, il faut choisir 
+\B;copie\R; dans le menu, puis, \B;tout en maintenant 
+press le bouton\R; (\PRESS;), dplacer la souris jusque dans une fentre 
+du disque dur, ou dans une icne d'un dossier. START pose la 
+question:\image dboxcfw,2,=;\REM;Si la disquette possde un nom (voir paragraphe1.2.11), 
+il est propos comme nom pour le fichier .DI!Pour copier intgralement un fichier .DI sur une disquette, 
+il faut le \I;cliquer\R; avec le bouton de droite de la souris, 
+puis choisir \B;copie\R; dans le menu:\image menudi,2,=;Tout en maintenant press le bouton (\PRESS;), il faut alors amener 
+la souris sur l'icne de la disquette, dans la premire sous-fentre 
+de l'cran (comme pour un "duplique").Pendant la copie, START indique le travail qu'il reste  
+faire:\image dboxcwt,2,=;La lettre dans l'ascenseur indique:\B;L\R;\ind 30mm;Lecture sur l'unit source.\demi;\B;E\R;\ind 30mm;Ecriture sur l'unit destination.\T;1.2.14 Systme\carte;\ICONE 117;\A;L'opration \I;systme\R;, obtenue un \I;cliquant\R; une 
+unit physique avec le bouton de droite, indique o sont 
+cherchs tous les \B;fichiers systme\R; (logiciels, 
+gnrateurs de caractres ou d'icnes, librairies, etc.). 
+Avec le rseau, par exemple, il est possible de chercher 
+tous les fichiers systme sur le serveur, tout en archivant 
+ses documents sur la disquette locale.La ligne suprieure de START, en vido inverse, indique 
+en permanence quelle est l'unit systme (par exemple: 
+\B;Systme en #MM0:\R;).\image startsys,2,=;\ATTENTION;\REM;Si vous excutez un logiciel plac dans une 
+\B;unit non systme\R;, ou dans un dossier, START l'excute 
+correctement, mais tous les gnrateurs de caractres ou 
+d'icnes, toutes les librairies, etc. sont cherchs dans 
+l'unit systme!\T;1.2.15 Dinstalle\carte;\ICONE 112;\A;Dinstalle une \B;unit physique\R;. Par exemple, la 
+mmoire utilise par un \B;disque virtuel\R; sera de nouveau 
+libre pour d'autres occupations, mais le contenu du disque 
+virtuel sera perdu.

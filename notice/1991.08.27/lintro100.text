@@ -1,0 +1,335 @@
+\ub20;1 \_Mise en marche\_\ur10;La figure ci-dessous montre comment relier le clavier, la 
+souris et l'cran  l'unit centrale. Le cordon secteur 220V 
+vient derrire l'cran, et c'est l'interrupteur de l'cran qui 
+fait office d'interrupteur gnral.Lorsque ceci est fait, vous pouvez mettre le Smaky sous tension 
+et introduire une disquette dans le floppy numro zro (c'est 
+celui de gauche). L'tiquette doit tre tourne contre le haut, et 
+vers vous.\bold;REMARQUE\roman; :\ind 40mm;Il est important d'enlever les disquettes avant une 
+mise sous tension ou un arrt du Smaky.Aprs environ 40 secondes, l'cran prend l'allure suivante:\ub20;2 \_Le clavier\_\ur10;Le clavier possde 108 touches rparties de la faon suivan
+te:	1)	62 lettres, chiffres et signes spciaux	2)	 7 touches \bold;super-shift\roman;	3)	16 touches \bold;fonctions\roman;	4)	23 touches numriques\ub20;2.1 \_Notation\_\ur10;Pour indiquer qu'il faut appuyer sur la touche "END", et non 
+sur les trois touches "E" "N" D", la notation (END) est utilise. 
+Par exemple:	EDIT (RETURN)signifie qu'il faut appuyer sur les touches (E) (D) (I) (T), puis 
+sur la touche (RETURN).\ub20;2.2 \_Les touches (SHIFT) et (CTRL)\_\ur10;La touche (SHIFT) permet d'atteindre les lettres majuscules, 
+ainsi que les signes placs sur la moiti suprieure de certaines 
+touches (+ " *  % ...) comme sur une machine  crire.La touche (CTRL) permet d'atteindre les signes placs \bold;sur la 
+droite\roman; de certaines touches ( ~ < > ...).\ub20;2.3 \_Les 7 touches (CURSOR)  (CHANGE)\_\ur10;Les \bold;touches super-shift\roman; sont toujours actionnes \bold;simultanment\roman; 
+avec une autre touche, comme les touches (SHIFT) et (CTRL). Par 
+exemple, la touche (CURSOR) est utilise avec les quatre touches 
+blanches plus six autres touches environnantes.(CURSOR-F) signifie qu'il faut appuyer sur (CURSOR), puis, \bold;en 
+maintenant cette touche presse\roman;, qu'il faut appuyer sur la lettre 
+(F).Il est possible de \bold;cumuler\roman; plusieurs touches super-shift pour \bold;
+une seule action\roman;. Par exemple:	(CURSOR-KILL-R)signifie qu'il faut appuyer sur (CURSOR) et (KILL) dans n'importe 
+quel ordre, puis, en maintenant ces deux touches presses, qu'il 
+faut appuyer sur la lettre (R).\ub20;2.4 \_La touche (CAPS)\_\ur10;La touche (CAPS) allume ou teint le mot "CAPS" en haut dans 
+l'cran.Lorsque "CAPS" est visible sur l'cran, toutes les lettres sont 
+majuscules, mais les signes spciaux gnrs restent dans la 
+moiti infrieure des touches. Normalement, "CAPS" doit tre 
+teint.\ub20;2.5 \_Les 16 touches (F0)  (F15)\_\ur10;Les 16 \bold;touches fonctions\roman; ont une \bold;action variable\roman; selon l'utili
+sation du Smaky. Elles sont rparties en cinq groupes de trois 
+touches, plus une touche solitaire  gauche. Les cases en bas de 
+l'cran donnent la signification des touches fonctions  un 
+instant donn.\ub20;2.6 \_Le pav numrique\_\ur10;Le \bold;clavier numrique\roman; permet d'atteindre plus facilement les 
+chiffres, avec en plus quelques touches utiles lors de la frappe 
+de nombres.(.)		point dcimal(ENTER)		entre le nombre frapp(000)		triple zro(CLEAR)		annule entirement le nombre frapp(DEL)		annule le dernier chiffre frapp\ub20;2.7 \_Les touches (M0) et (M1)\_\ur10;\bold;Une disquette ne peut pas tre enleve n'importe quand\roman;. Pour 
+indiquer s'il est autoris d'enlever une disquette, l'cran 
+contient deux icnes, celle de gauche pour le floppy zro, et 
+l'autre pour le floppy un.Les touches (M0) et (M1) permettent de passer d'un tat  
+l'autre, alternativement. Voyons comment introduire une disquette 
+dans le deuxime floppy:   -	mettre la disquette dans le floppy de droite ($FLO_1)   -	appuyer sur (M1) (l'icne s'allume)   -	utiliser la disquette ...   -	appuyer sur (M1) (l'icne s'teint)   -	enlever la disquette\ub20;3 \_La souris\_\ur10;La souris, bien que facultative, est vritablement un moyen de 
+communication avec l'ordinateur trs utile, et facile  manipuler. 
+Il est important, pour une utilisation optimale, de disposer d'une 
+\bold;surface de travail d'au moins 30x30 cm\roman;, exempte d'obstacles.La souris permet de dplacer une flche dans l'cran, afin de 
+"montrer" une icne ou un nom.L'action qui consiste  appuyer l'un des trois bouton, puis  
+le relacher immdiatement est dsigne par le verbe "\bold;cliquer\roman;".L'action qui consiste  appuyer l'un des trois bouton, puis  
+dplacer la souris tout en le maintenant press, pour finalement 
+le relacher est dsigne par le verbe "\bold;tirer\roman;".Si aucune flche ne bouge sur l'cran lors d'un dplacement de 
+la souris, cela signifie que la souris n'est \bold;pas installe\roman;. Pour 
+l'installer, il faut donner la commande:	100_mouse {0} (RETURN)Pour "\bold;dinstaller\roman;" la souris, il faut dplacer la flche dans 
+le coin suprieur gauche de l'cran (dans le sigle PSos), puis \bold;
+cliquer simultanment les trois boutons\roman;.\ub20;4 \_Utilisation\_\ur10;Chaque icne reprsente sur l'cran correspond  un programme. 
+Actuellement, l'icne situe en haut  gauche est slectionne. La 
+touche super-shift (CURSOR) associe aux touches suivantes permet 
+de slectionner n'importe quelle icne:Slectionnez ainsi l'icne BASIC. La touche (RETURN) permet 
+d'entrer dans l'icne. La liste de tous les programmes BASIC 
+contenus sur le disquette apparat:Utilisez le mme principe pour choisir le programme REBONDI, et 
+appuyez de nouveau sur (RETURN). Aprs une dizaine de secondes, le 
+programme REBONDI s'excute.Pour l'excuter une nouvelle fois, appuyez sur la touche 
+fonction (RUN).Pour revenir aux icnes du dbut, appuyez sur la touche 
+fonction (F0) intitule (Bye), puis sur l'une des trois intitule 
+(Oui).Vous venez d'excuter votre premier programme! \ind 30mm;Avant d'\bold;teindre le Smaky\roman;, il faut slectionner 
+l'icne ARRET et appuyer sur (RETURN). Aprs 
+avoir rpondu (Oui)  la confirmation, vous 
+pouvez enlever la ou les disquettes puis \bold;couper 
+le courant\roman;.\ub20;4.1 \_Le traitement de textes EDIT\_\ur10;\ind 30mm;EDIT est un programme de traitement de tex
+tes trs performant et simple d'emploi. La 
+frappe du texte s'effectue aussi simplement 
+qu'avec une machine  crire. Les caractres 
+taps apparaissent sur l'cran. Il est alors 
+facile de corriger les fautes d'orthographe, 
+d'ajouter un mot ou une phrase oublie, ou 
+d'apporter n'importe quelle correction. EDIT 
+peut galement s'utiliser pour diter un \bold;pro
+gramme BASIC\roman; ou un programme assembleur.Aprs avoir slectionn l'icne EDIT, l'cran montre les 
+options possibles,  savoir :L'cran montre ensuite la liste des textes correspondants  
+l'option choisie. Le choix \bold;< crer>\roman; permet de \bold;crer un nouveau 
+texte\roman;.\ub20;4.1.1 \_Insertion\_\ur10;\ind 40mm;Les caractres frappes apparaissent sur 
+l'cran. Lors de la frappe d'un paragraphe, il 
+n'est pas ncessaire d'utiliser la touche (RETURN) 
+pour passer  la ligne. EDIT le fait pour vous. \bold;Ce 
+n'est que lorsque le paragraphe est termin qu'il 
+faut utiliser (RETURN)\roman;. \ind 40mm;La touche (DEL) \bold;dtruit les derniers caractres 
+frapps\roman;, un par un. Comme toutes les autres tou
+ches, son effet est rpt si elle est maintenue 
+presse pendant plus d'une seconde. \ind 40mm;La touche (TAB) avance  la prochaine colonne de 
+tabulation. Les taquets de tabulation sont poss 
+tout les huit caractres.\ub20;4.1.2 \_Dplacement et destruction\_\ur10; \ind 40mm;Le curseur (petit triangle) indique o doivent 
+venir les caractres frapps, et quels sont les 
+caractres pouvant tre dtruits (en amont ou en 
+aval). La touche super-shift (CURSOR) associe aux 
+touches flches (R), (D), (F), etc. permet de 
+dplacer le curseur (petit triangle).Si le curseur est au milieu d'une ligne, (CURSOR-R) le recule 
+d'abord au dbut de la ligne. Une nouvelle pression le recule au 
+dbut de la ligne prcdente. Il en va de mme pour tous les 
+dplacements (mots ou lignes). \ind 40mm;Les touches super-shift (CURSOR) et (KILL) 
+associes aux mmes touches que pour les dplace
+ments permettent de dtruire en amont ou en aval un 
+caractre, un mot, une ligne, etc. \ind 40mm;Une premire pression sur (UNDO) fait rappara
+tre la dernire destruction. Une nouvelle pression 
+fait rapparatre \bold;toutes les destructions\roman;. Ceci est 
+valable tant que rien d'autre n'a t fait (inser
+tion ou dplacement).\ub20;4.1.3 \_La souris\_\ur10;Les trois boutons de la souris ont la signification suivante:Le bouton de gauche (positionne) \bold;dplace le curseur\roman; (petit 
+triangle)  l'endroit montr par la souris.Le bouton de droite (modifie) permet, tant qu'il est press, 
+ de \bold;mettre en vidence\roman; une partie du texte. Lorsqu'il est relach, 
+une liste d'oprations apparat. Voici comment procder pour \bold;
+dtruire\roman; un mot:Pour \bold;dplacer\roman; ou \bold;duplifier\roman; une partie de texte, il faut d'abord 
+placer le curseur (petit triangle) avec le bouton de gauche  
+l'endroit voulu, puis procder comme pour une destruction.Lorsque la flche de la souris est dans la \bold;fentre globale\roman; 
+(tout  gauche), les trois boutons permettent les fonctions 
+suivantes:Le bouton du milieu (absolu) effectue un dplacement absolu de 
+la partie visible dans la fentre par-rapport au texte entier.Le bouton de gauche (haut) amne en haut de la fentre une 
+ligne de votre choix.Le bouton de droite (bas) amne en bas de la fentre une ligne 
+de votre choix.\ub20;4.1.4 \_La justification\_\ur10;L'opration appele "justification" consiste  \bold;mettre en page\roman; 
+le texte. Cette opration est entirement automatique. Vous pouvez 
+insrer des \bold;commandes\roman; dans le texte pour indiquer  EDIT comment 
+il doit justifier (alignement des marges, changement de caract
+res, indentations, etc). Bien entendu, ces commandes sont \bold;invisi
+bles lors de l'impression\roman;.Pour justifier le texte, appuyez sur les touches fonctions 
+suivantes:(Entres/sorties)(Justification)(Tout)			justifie tout le texteToutes les commandes commencent par une \bold;barre oblique arrire\roman; 
+(\\) et sont termine par un \bold;point-virgule\roman; (;). Le caractre "barre 
+oblique arrire" est souvent abrg par "boa".Les paramtres numriques peuvent tre donns en \bold;millimtres\roman;, 
+en nombre de caractres ou en nombre de lignes. Exemples:\\ind 10;	indentation de 10 caractres\\ind 25mm;	indentation de 25 millimtres\\ind 8.5mm;	indentation de 8.5 millimtresLes paramtres numriques sont mentionns dans la liste ci-dessous 
+par xx (horizontal), yy (vertical) ou nn (sans units).\\justif;\ind 30mm;texte align sur les marges gauche et droite\\justifie;\ind 30mm;comme \\justif;\\justifi;\ind 30mm;comme \\justif;\\drapeau;\ind 30mm;texte align sur la marge gauche\\drapd;\ind 30mm;comme \\drapeau;\\drapg;\ind 30mm;texte align sur la marge droite\\centre;\ind 30mm;texte centr dans la ligne\\centr;\ind 30mm;comme \\centre;\\ind xx;\ind 30mm;indentation du texte jusqu' la fin de l'alina 
+(RETURN)\\coupe;\ind 30mm;autorise les \bold;coupures dans les mots\roman;\\nocoupe;\ind 30mm;plus de coupure dans les mots\\vcoupe;\ind 30mm;demande confirmation  l'utilisateur pour cha
+que coupure\\espmot nn;\ind 30mm;spcifie le nombre maximum d'espaces admis 
+entre deux mots avant d'effectuer une coupure\\espcar nn;\ind 30mm;spcifie le nombre maximum d'espaces admis 
+entre deux caractres (ne fonctionne pas pour 
+l'instant)\\image nom;\ind 30mm;insre une image (voir au chapitre 4.2.4 pour 
+la cration d'une image)Les commandes suivantes sont dpendantes de l'imprimante 
+utilise. Celles indiques ici sont valables pour une CP-80:\ub20;4.1.5 \_Quitter EDIT\_\ur10;Pour quitter EDIT, il faut actionner la touche fonction (F0) si 
+elle est appele (Fin), ou (PROGRA-END) dans tous les cas.Si le texte dit a subi des modifications, EDIT vous propose 
+de l'\bold;archiver\roman; sur disquette, en gardant le mme nom.\ub20;4.2 \_L'diteur graphique PLAN\_\ur10;\ind 30mm;PLAN permet de crer des graphiques quelcon
+ques (schmas lectriques, plans mcaniques, 
+figures explicatives, diagrammes, etc.) puis de 
+les insrer dans un texte sans colle ni ci
+seaux. Tout comme le programme de traitement de 
+textes remplace la machine  crire, l'diteur 
+graphique remplace la planche  dessin ou le 
+chevalet d'artiste. \bold;Toutes les figures de cette 
+notice ont t ralises avec PLAN!\roman;La souris est \bold;indispensable\roman; pour crer ou modifier un graphi
+que. Elle s'utilise de la faon suivante:Voici la signification des principales touches fonctions:(Prend)		\bold;prend un nouveau plan\roman; sur la disquette(Add)		ajoute n'importe o un petit plan(sauve)		\bold;sauve tout le plan\roman; sur la disquette(Refait)	redessine le plan(Grille)	fait apparatre une grille de dessin(Efface)	\bold;efface tout le plan\roman;(Imprime)	\bold;imprime le plan\roman;\ub20;4.2.1 \_Le bouton de gauche (dessine)\_\ur10;Le bouton de gauche permet, tout en le maintenant press, de \bold;
+dessiner l'objet indiqu en bas  gauche de l'cran\roman;. Par dfaut, 
+il s'agit d'un trait  main leve.\ub20;4.2.2 \_Le bouton du milieu (choisi)\_\ur10;Pour dessiner autre chose, appuyez le bouton du milieu et, \bold;tout 
+en le maintenant press\roman;, choisissez l'objet voulu dans la liste.La premire partie de la liste permet de \bold;choisir l'objet  
+dessiner\roman;. Certains choix font apparatre une deuxime liste.La deuxime partie de la liste permet de \bold;choisir le mode de 
+dessin\roman;, c'est--dire l'paisseur des traits, la couleur (si vous 
+disposez d'une imprimante couleur), le mode et le pas.\ub20;4.2.3 \_Le bouton de droite (modifie)\_\ur10;Le bouton de droite permet de \bold;modifier\roman; (effacer, dplacer, 
+duplifier, etc.) une partie de votre dessin. Pour cela, il faut 
+procder en \bold;trois temps\roman;:   a)	choisir la zone  modifier   b)	choisir l'opration   c)	effectuer l'oprationPour effectuer d'autres oprations (duplification, zoom, 
+rotation, etc.), la marche  suivre est la mme.\ub20;4.2.4 \_Insertion d'une image dans EDIT\_\ur10;La premire opration consiste  \bold;entourer le dessin  insrer\roman; 
+dans un texte avec le bouton de droite de la souris (comme pour un 
+dplacement). Il faut ensuite choisir l'opration "imprime" 
+reprsente par:PLAN vous demande alors un nom de fichier (il ajoutera automa
+tiquement l'extension .IMAGE). Donnez par exemple le nom ESSAI. 
+Ds lors, il est possible d'insrer cette image dans un texte en 
+tapant (dans EDIT) la commande:	\\image essai;Lors de l'impression, l'image est \bold;colle lectroniquement\roman; dans 
+le texte. Voici, comme exemple, l'impression du fichier DEMO.
+TEXT:\ub20;4.3 \_L'interprteur BASIC\_\ur10;\ind 30mm;Le BASIC est un langage de programmation 
+performant et trs simple d'emploi. Il est 
+particulirement bien adapt  l'apprentissage 
+de la programmation. De plus, il permet la 
+gestion de toutes les ressources du Smaky (gra
+phique, synthtiseur, souris, touches fonc
+tions, etc).Aprs avoir slectionn l'icne BASIC, l'cran montre la liste 
+de tous les programmes existants. Le choix \bold;< crer>\roman; permet de \bold;
+crer un nouveau programme\roman;.Si vous choisissez le programme ARBALETE, l'interprteur BASIC 
+puis le programme ARBALETE sont charg en mmoire. L'cran prend 
+l'allure suivante:\ub20;4.3.1 \_Visualisation d'un programme\_\ur10;Appuyez sur la touche fonction (List) puis sur (RETURN). Les 
+touches fonctions suivantes peuvent alors tre utilises:(Pause)\ind 40mm;interrompt \bold;provisoirement\roman; le dfilement(Continue)\ind 40mm;reprend le dfilement aprs (Pause)(Stop)\ind 40mm;interrompt \bold;dfinitivement\roman; le dfilement(Rapide)\ind 40mm;acclre le dfilement tant que cette touche reste 
+pressePour ne lister qu'une partie du programme, utilisez:List .. 100 (RETURN)       depuis le dbut jusqu' la ligne 100List 100 .. (RETURN)       depuis la ligne 100 jusqu' la finList 100 .. 200 (RETURN)   depuis la ligne 100 jusqu' la 200\ub20;4.3.2 \_Liste des programmes\_\ur10;Pour connatre les noms de tous les programmes contenus sur la 
+disquette \bold;principale\roman;, donnez l'ordre:	Lib (RETURN)Pour connatre les noms de tous les programmes contenus sur la 
+disquette \bold;secondaire\roman;, donnez l'ordre:	Lib #mm1: (RETURN)\bold;REMARQUE\roman;:\ind 40mm;Le nom \bold;#mm1:\roman; s'obtient simplement en appuyant sur 
+la touche (TAB).\ub20;4.3.3 \_Chargement d'un programme\_\ur10;Avant de charger un programme BASIC, il faut tre sr qu'il n'y 
+en a pas dj un autre en mmoire. Pour effacer l'ventuel 
+programme en mmoire, donnez l'ordre:	New (RETURN)Vous pouvez maintenant charger un programme contenu sur la 
+disquette \bold;principale\roman; en donnant l'ordre:	Enter 'rebondi (RETURN)\bold;REMARQUE\roman;:\ind 40mm;La touche programmable (SHIFT-F1) frappe directe
+ment le mot "Enter" suivi d'un espace et d'un 
+guillemet. Donc:	(SHIFT-F1) rebondi (RETURN)Pour charger un programme contenu sur la disquette \bold;secondaire\roman;, 
+il faut prcder le nom du programme par "#mm1:":	Enter '#mm1:rebondi (RETURN)ou	(SHIFT-F1) (TAB) rebondi (RETURN)\ub20;4.3.4 \_Excution d'un programme\_\ur10;Lorsqu'un programme est charg en mmoire (avec Enter), il 
+s'excute parfois automatiquement. Si ce n'est pas le cas, il faut 
+encore appuyer la touche fonction (Run) pour l'excuter.\ub20;4.3.5 \_Sauvetage d'un programme\_\ur10;Pour sauver sur disquette le programme actuellement en mmoire, 
+il faut donner l'ordre:	Save 'essai (RETURN)ou	(SHIFT-F2) essai (RETURN)Le nom "essai" est un mot de votre invention qui dsignera par 
+la suite le programme en question.S'il existe dj un programme BASIC appel "essai", le Smaky 
+vous demande si vous voulez le dtruire.\ub20;4.4 \_L'diteur de caractres EDGAR\_\ur10;\ind 30mm;Tous les caractres et les \bold;icnes\roman; visibles 
+sur l'cran du Smaky sont dfinis par une ma
+trice de points allums ou teints. EDGAR per
+met de crer ou de modifier un gnrateur de 
+caractres, avec le clavier ou la souris.Aprs avoir choisi un nom dans la liste propose, appuyez sur 
+la touche fonction (Edit). L'cran montre alors le caractre 
+correspondant  la lettre "A":Les touche fonctions suivantes sont utiles:(-1)\ind 40mm;montre le caractre prcdent(+1)\ind 40mm;montre le caractre \bold;suivant\roman;Les touches (R), (D), (F) et (C) dplacent le curseur dans 
+toutes les directions. La barre d'espace inverse l'tat (allum ou 
+teint) du point sous le curseur.La touche (HELP) donne \bold;tous les autres renseignements utiles\roman;.Un fichier "gnrateur de caractres" regroupe 128 caractres 
+ou icnes au maximum. Un nom de gnrateur de caractres est 
+compos de \bold;cinq caractres\roman;,  savoir:Le tableau ci-dessous donne la liste des principaux gnrateurs 
+de caractres du Smaky100. Les toiles indiquent quels gnra
+teurs sont ncessaires pour un programme donn. Seuls les quatre 
+gnrateurs ayants une toile dans la colonne "systme" sont 
+absoluments indispensables sur une disquette.|-------|--------------------------|---------|------|------|| nom	| contenu                  | systme | EDIT | PLAN ||-------|--------------------------|---------|------|------|| NRF03 | caractres               |         |  *   |      || NRF05 | caractres               |         |  *   |  *   || NRF07 | caractres               |         |  *   |  *   || NEF07 | carac. touches fonctions |    *    |      |      || SNF07 | icnes touches fonctions |    *    |      |      || NRF09 | caractres standards     |    *    |      |      || MRP09 | caractres               |         |      |  *   || NEF11 | caractres               |         |  *   |  *   || PNP16 | icnes pour PLAN         |         |      |  *   || MRF17 | caractres "messenger"   |         |  *   |  *   || HRP23 | caractres "hershey"     |         |      |  *   || ONP23 | caractres "old english" |         |      |  *   || SNF60 | icnes de base           |    *    |      |      ||-------|--------------------------|---------|------|------|\ub20;4.5 \_La gestion de l'imprimante PRINT\_\ur10;\ind 30mm;PRINT permet d'imprimer un fichier texte ou 
+graphique quelconque. De plus, il permet de 
+choisir les \bold;paramtres d'impression\roman; (type des 
+caractres, dimensions du papier et des marges, 
+etc).Aprs avoir slectionn l'icne PRINT, les choix suivants sont 
+possibles:La premire ligne d'icnes permet \bold;d'imprimer\roman; un texte, un 
+programme basic, un programme assembleur ou une image graphique. 
+La deuxime ligne d'icnes permet de choisir les \bold;paramtres 
+d'impression\roman;,  savoir:STYLE\ind 40mm;style des caractres (normal, gras, italique ou 
+qualit)TAILLE\ind 40mm;taille des caractres (largeur)INTERL\ind 40mm;espacement entre deux lignes (interligne)DIM\ind 40mm;dimensions des marges (gauche/droite et suprieure
+/infrieure)A4\ind 40mm;dimensions standards pour du papier A4 verticalA4\ind 40mm;dimensions standards pour du papier A4 horizontalLe \bold;changement des marges\roman; (DIM) s'effectue en tapant au clavier 
+un chiffre (en centimtres) termin par (RETURN). Les touches 
+(CURSOR-C) et (CURSOR-R) permettent de passer au \bold;paramtre 
+suivant\roman; ou prcdent.Avec la souris, il suffit de montrer la ou les marges  
+dplacer, puis d'appuyer sur l'un des trois boutons.\bold;REMARQUE\roman;:\ind 40mm;Le choix des caractres (style et taille) est 
+modifi sitt qu'une commande "boa" est rencontre 
+dans le texte (voir paragraphe 4.1.4). Le change
+ment du style et de la taille n'aura donc \bold;aucun 
+effet\roman; pour un texte qui commence par \\nq24; (par 
+exemple).\ub20;4.6 \_Le testeur de disquettes TFLO\_\ur10;\ind 30mm;Une disquette est un support d'informations 
+fragile. Il peut suffir d'un doigt sur la sur
+face magntique pour dtruire une partie de son 
+contenu. En cas de doute, TFLO vous informe sur 
+l'tat d'une disquette.Les deux grandes zones rectangulaires reprsentent les deux 
+faces de la disquette. Un rectangle hachur indique un bloc \bold;
+difficile  lire\roman; (mais pas impossible). Un rectangle blanc indique 
+un \bold;bloc illisible\roman;.\ub20;4.7 \_Le formateur de disquettes FORMAT\_\ur10;\ind 30mm;Avant d'utiliser une disquette neuve, il est 
+ncessaire de la \bold;formater\roman; physiquement (cette 
+opration prend environ une minute). Il est 
+galement possible de vider le contenu d'une 
+disquette dj utilise (ceci ne prend que 
+quelques secondes).\bold;ATTENTION\roman;:\ind 40mm;Le formatage d'une disquette est irrversible. 
+Prenez donc garde  ce que la disquette ne contien
+ne plus rien d'important.\ub20;4.8 \_Le copieur de disquettes FCOPY\_\ur10;\ind 30mm;La copie \bold;rgulire\roman; d'une disquette de tra
+vail est indispensable, par mesure de scurit. 
+FCOPY permet la copie intgrale d'une disquet
+te, que vous ayez un ou deux floppy.Si vous avez deux floppy, il est possible de copier du floppy 
+zro vers le floppy un, ou l'inverse. La copie s'effectue rapide
+ment (environ une minute et demie).Si vous n'avez qu'un seul floppy, la copie s'effectuera en 14 
+tranches, donc ncessitera 14 permutations de disquettes.\bold;ATTENTION\roman;:\ind 40mm;Avant d'utiliser une disquette neuve comme disquet
+te rceptrice, \bold;n'oubliez pas de la formater\roman; (voir 
+paragraphe 4.7).\ub20;4.9 \_Le manipulateur de fichiers FILER\_\ur10;\ind 30mm;Le FILER permet de visualiser le contenu 
+d'une disquette, de copier slectivement des 
+fichiers sur une autre disquette, de dtruire 
+ou de renommer un fichier, etc.Un nom de fichier est termin par une \bold;extension\roman;, c'est--dire 
+un point suivi de quelques caractres. Cette extension prcise la 
+\bold;nature\roman; du fichier. Les extensions les plus courantes sont:|-----------|-------------------------------------------|| extension | nature					||-----------|-------------------------------------------|| .text     | texte ralis avec EDIT			|| .plan     | dessin ralis avec PLAN			|| .image    | dessin prt pour l'impression		|| .bas      | texte d'un programme BASIC		|| .asm      | texte d'un programme assembleur		|| .code     | programme excutable			|| .genc     | gnrateur de caractres			||-----------|-------------------------------------------|Lorsque le FILER vous demande le \bold;nom d'un fichier\roman;, vous pouvez 
+utiliser les caractres suivants:   (*)\ind 40mm;remplace un nombre quelconque de caractres (ven
+tuellement aucun)   (?)\ind 40mm;remplace un (et un seul) caractrePar exemple, pour prendre en considration tous les programmes 
+BASIC, il faut donner le nom:	*.basSi un fichier est sur le \bold;deuxime floppy\roman;, il faut prcder le 
+nom du fichier par:	#mm1:qui s'obtient simplement en appuyant sur la touche (TAB). Par 
+exemple:	#mm1:*.bas\bold;REMARQUE\roman;:\ind 40mm;Il ne faut \bold;jamais mettre d'espaces\roman;  l'intrieur 
+d'un nom de fichier. Une erreur classique consiste 
+ donner:	#mm1:  *.bas		<--- FAUXPour \bold;quitter le FILER\roman;, il faut appuyer sur la touche fonction 
+(Stop), puis sur (RETURN).\ub20;4.9.1 \_Listage d'une disquette\_\ur10;Appuyez sur la touche fonction (List), puis sur (RETURN). Le 
+Smaky pose alors la question:	Fichier(s)  lister :Appuyez sur les deux touches fonctions (*) et (.bas), puis sur 
+(RETURN). Lorsque la liste est termine, le caractre ">" appa
+rat, et vous pouvez donner une autre commande.Pour faire apparatre quelques informations supplmentaires 
+pour chaque fichier, il faut appuyer sur (List) puis \bold;(/) (E)\roman; 
+(RETURN). Le FILER vous donne alors la taille, les attributs et la 
+date et l'heure de cration du fichier.Pour \bold;imprimer la liste\roman; au lieu de l'afficher, il faut prcder 
+le dernier (RETURN) par les deux touches fonctions (>) et (#prin
+ter). Voici un exemple complet:	(List) (/) (E) (RETURN)	(*) (.bas) (>) (#printer) (RETURN)\ub20;4.9.2 \_Copie slective\_\ur10;Comme exemple, nous allons copier tous les programmes BASIC 
+contenu dans la disquette principale sur une deuxime disquette. 
+Il faut d'abord insrer une disquette formate (voir paragraphe 
+4.7) dans le floppy un ( droite) puis appuyer sur (M1). Les deux 
+icnes en haut de l'cran doivent s'allumer.Appuyez sur la touche fonction (Mxfer), puis (RETURN). Le Smaky 
+demande:	Fichier(s)  transfrer :Appuyez sur les deux touches fonctions (*) et (.bas) puis (RE
+TURN). Le Smaky pose la question:	Rpertoire de destination :Appuyez sur la touche fonction (#mm1:), puis (RETURN). Le trans
+fert dmarre, et le FILER affiche les fichiers transfrs au fur 
+et  mesure. La touche (END) permet d'interrompre en tout temps.\ub20;4.9.3 \_Destruction\_\ur10;Pour dtruire un fichier (sans possibilit de retour), appuyez 
+sur la touche fonction (Delet.), puis sur (RETURN). Le Smaky 
+demande:	Fichier(s)  dtruire :Tapez le nom du fichier  dtruire, puis (RETURN). Une confir
+mation est encore demande par scurit.\ub20;4.9.4 \_Changement de nom\_\ur10;Pour changer le nom d'un fichier, appuyer sur (Renam.) puis sur 
+(RETURN). Le Smaky demande:	Fichier  renommer :Donnez le nom du fichir  renommer, puis (RETURN). Le Smaky 
+demande encore:	Nouveau nom :Donnez le nouveau nom termin par (RETURN).\ub20;5 \_Quelques dtails\_\ur10;Ce chapitre explique quelques dtails sur le Smaky pour 
+l'utilisateur avanc.\ub20;5.1 \_L'icne REP\_\ur10;\ind 30mm;L'icne REP permet de dterminer, d'une 
+faon globale, si les fichiers de donnes (tex
+tes, dessins, programmes BASIC, etc.) doivent 
+tre cherchs sur le floppy principal (floppy 
+zro) ou sur le floppy secondaire (floppy un). 
+Ce deuxime cas est trs utile, car il permet 
+de mettre dans le floppy principal une \bold;disquet
+te "systme"\roman; sur laquelle aucun fichier ne sera 
+crit.Voici comment procder pour mettre vos fichiers de donnes sur 
+le floppy secondaire  partir d'une disquette vierge:  -	mettez une disquette vierge dans le floppy un ( droite)  -	formatez cette disquette avec l'icne FORMAT  -	slectionnez l'icne REP, puis FLOPPY 1Vous pouvez maintenant utiliser EDIT, PLAN, BASIC, etc. Tous 
+vos fichiers seront archivs sur cette nouvelle disquette. Avant 
+de l'enlever, \bold;n'oubliez pas d'appuyer sur la touche (M1)\roman; (voir 
+paragraphe 2.7).\ub20;5.2 \_ICONE\_\ur10;Lorsque les icnes de base sont visibles, les touches suivantes 
+peuvent tre utilise: \ind 40mm;La touche (CURSOR) associe aux flches (R), (D), 
+(F), etc. permet de \bold;dplacer\roman; l'icne slectionne 
+(voir paragraphe 4 pour plus de dtails). \ind 40mm;La touche (RETURN) excute l'icne slectionne. 
+Certaines icnes font apparatre une autre srie 
+d'icnes ou une liste de fichiers. Une \bold;deuxime 
+pression rapide\roman; sur (RETURN) interrompt l'affichage 
+de la liste des fichiers et excute le programme 
+choisi. \ind 40mm;Les touches (PROGRA-RETURN) permettent de taper le 
+nom du fichier  prendre en toutes lettres. Si, par 
+exemple, vous savez que vous voulez prendre le 
+programme BASIC appel CALCUL, vous pouvez procder 
+comme suit: \ind 40mm;  -  slectionner l'icne BASIC avec (CURSOR) \ind 40mm;  -  appuyer sur (PROGRA-RETURN) \ind 40mm;  -  taper le nom CALCUL puis (RETURN) \ind 40mm;La touche (END) ou la touche fonction (Stop) \bold;
+iterro
+mpent\roman; une action en cours (slection d'une 
+icne, affichage d'une liste de fichiers, etc). \ind 40mm;Au lieu de slectionner une icne, il est possible 
+de taper en toutes lettres le nom d'un programme. 
+Dans ce cas, la touche (DEL) efface le dernier 
+caractre frapp. \ind 40mm;Efface tous les caractres frapps. \ind 40mm;La touche (DEFINE) permet d'atteindre les commandes 
+(Mem, Install, Dir, etc.) directement avec les 
+touches fonctions. \ind 40mm;La touche (MACRO) inverse l'affichage des icnes 
+(blanc sur fond noir). Ceci est utile avant d'im
+primer une copie de l'cran avec (SHIFT-M3).Lorsque les icnes ne sont pas utiliss pendant plus de cinq 
+minutes (aucune touche frappe au clavier), l'cran passe en \bold;
+intensit rduite\roman;, par mesure d'conomie. Il suffit alors d'ap
+puyer sur n'importe quelle touche pour repasser en intensit 
+normale.\ub20;5.3 \_Paramtrisation du dmarrage\_\ur10;Lors du dmarrage du Smaky (appel parfois "bootstrap"), un 
+certain environement est install. Il s'agit de:  -	affichage de l'heure en haut  droite dans l'cran  -	deuxime floppy appel \bold;#mm1:\roman;  -	imprimante CP-80 appele \bold;#printer\roman;  -	pas de sourisIl est parfois ncessaire de \bold;changer cet environnement\roman;. Ceci 
+s'effectue trs simplement en ditant le fichier 100_BOOT.CLE 
+comme suit:  -	slectionner l'icne EDIT sans appuyer sur (RETURN)  -	appuyer sur (PROGRA-RETURN)  -	taper le nom 100_BOOT.CLE puis (RETURN)Le contenu actuel de 100_BOOT.CLE est le suivant:\mr20;	|---------------------------------------|	|					|	|	Display no			|	|	Abort no			|	|	Install #clock $clock		|	|	100_clock {9}			|	|	Install #mm1 $flo_1		|	|	Install/v #printer $cp80	|	|					|	|---------------------------------------|\ur10;\mr28;\bold;Display no\roman;\ur10;N'affiche pas les lignes de 100_BOOT.CLE pour acclrer le 
+dmarrage.\mr28;\bold;Abort no\roman;\ur10;En cas d'erreur, continue normalement.\mr28;\bold;Install #clock $clock\roman;\ur10;Installe l'horloge dans le Smaky. Cette opration est indispen
+sable, car l'horloge est utilise pour dater les fichiers (date de 
+cration, date de dernire modification et date de dernire 
+utilisation).\mr28;\bold;100_clock {9}\roman;\ur10;Excute dans la fentre numro 9 (en haut  droite de l'cran) 
+le programme 100_clock qui affiche la date, le jour de la semaine 
+et l'heure.\mr28;\bold;Install #mm1 $flo_1\roman;\ur10;Installe le deuxime floppy en lui donnant le nom #mm1:. S'il 
+n'existe pas, l'installation n'est pas faite.\mr28;\bold;Install/v #printer $cp80\roman;\ur10;Installe virtuellement (/v) l'imprimante CP-80. Virtuellement 
+signifie que la gestion de l'imprimante (driver) n'est charge en 
+mmoire que lors d'une impression. Pendant le reste du temps, la 
+mmoire reste libre pour d'autres applications.Les imprimantes suivantes peuvent tre installes:Install/v #printer $oki84Install/v #printer $oki92\mr28;\bold;100_mouse {0}\roman;\ur10;Installe la souris dans la fentre zro (qui correspond  tout 
+l'cran).Voici un exemple du fichier 100_BOOT.CLE modifi:\mr20;	|---------------------------------------|	|					|	|	Display no			|	|	Abort no			|	|	Install #clock $clock		|	|	100_clock {9}			|	|	Install #mm1 $flo_1		|	|	Install/v #printer $oki92	|	|	100_mouse {0}			|	|					|	|---------------------------------------|\ur10;\ub20;5.4 \_Paramtrisation des icnes\_\ur10;Les icnes affiches sur l'cran peuvent tre changes facile
+ment, puisqu'elles sont contenues dans un gnrateur de caractres 
+appel SNF60. Le programme EDGAR permet de les visualiser, des les 
+modifier, ou d'en crer de nouvelles (voir paragraphe 4.4).Pour modifier l'ordre dans lequel elles apparaissent  l'cran, 
+il faut diter le fichier ICONE.LIST. Sa syntaxe gnrale est la 
+suivante:\mr20;	|-------------------------------------------------------|	|	SNF60 NEF11					|	|	2	"Edit"	LIST "*.text" "< crer>"	|	|	13	"Plan"	LIST "*.plan" "< crer>"	|	|	3	"Basic"	LIST "*.bas"  "< crer>"	|	|	etc ...						|	|-------------------------------------------------------|\ur10;SNF60		gencar pour les icnesNEF11		gencar pour les listes de fichiers2		code de l'icne "Edit""Edit"		ligne de commandeLIST		demande une liste de fichiers"*.text"	fichiers  lister"< crer>"	signification du premier choixEn ralit, l'icne EDIT fait apparatre une deuxime srie de 
+trois icnes pour choisir la nature du fichier  diter (voir 
+paragraphe 4.1). Ceci s'crit de la faon suivante:\mr20;	|-------------------------------------------------------|	|	2	 "Edit"	   ICONE 32 3 4			|	|	-	["text/i"  LIST "*.text" "< crer>"]	|	|	-	["basic/i" LIST "*.bas"  "< crer>"]	|	|	-	["asm/i"   LIST "*.asm"  "< crer>"]	|	|-------------------------------------------------------|\ur10;ICONE		indique une deuxime liste d'icnes32 3 4		codes des ces icnes"text/i"	suite de la ligne de commande\bold;REMARQUE\roman;:\ind 40mm;Ces 4 lignes ne sont en fait qu'une seule et mme 
+ligne. En effet, une fin de ligne (RETURN) suivie 
+immdiatement d'un tiret (-) est ignore.Certaines icnes ne doivent pas ragir de la mme faon selon 
+la \bold;configuration du Smaky\roman; (un ou deux floppy). C'est le cas, par 
+exemple, pour TFLO, FCOPY et FORMAT.\mr20;	|-------------------------------------------------------|	|	IF F	8	ICONE 23      "$flo_0"		|	|	IF D	8	ICONE 23 24   "$flo_0" "$FLO_1"	|	|-------------------------------------------------------|\ur10;IF F		configuration avec un seul floppyIF D		configuration avec deux floppyIF W		configuration avec un winchester et un floppy\carte;DR 2.11.84

@@ -1,0 +1,83 @@
+\cpage=151;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\up 0.5mm;\pug;\phchgen iip96;\code %1;\pog;\down 0.5mm;\define ICOIM:\sh;\up 4.4mm;\image %1,2,107mm;\gh;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;18 La musique avec SIGMA\A;\sh;\image isigma,3;\gh;\ind 40mm;Le logiciel \bold;SIGMA\roman; permet de commander 
+\bold;tout synthtiseur disposant d'une prise MIDI\roman;. L'emploi d'un ordinateur 
+pour commander un synthtiseur ouvre des possibilits indites et inconnues jusqu' 
+ce jour. Par exemple, SIGMA est une aide prcieuse pour l'apprentissage de la 
+musique et du solfge, ainsi que pour la composition.\ind 40mm;Si vous ne disposez pas d'un "vrai" synthtiseur, 
+\bold;le gnrateur de sons interne du SMAKY peut tre utilis\roman;, 
+jouant ainsi jusqu' trois voix simultanment.Le logiciel SIGMA comporte \bold;deux parties principales\roman; qui correspondent  deux 
+icnes et  deux fichiers .CODE sur la disquette:\image sigtout,2,=;\L;\bold;SIGMAP\roman;\ind 30mm;Editeur de partition permettant de dessiner des symboles 
+musicaux avec la souris (notes, silences, liaisons, etc.), et d'imprimer des 
+partitions de trs bonne qualit.\demi;\L;\bold;SIGMAS\roman;\ind 30mm;Squenceur multi-pistes permettant d'enregistrer ce qui 
+est jou au clavier, de composer des rythmes, de modifier les timbres des sons, etc.\T;18.1 L'diteur de partitions\A;\image sigmap,3,=;L'diteur de partitions permet de \bold;dessiner une partition musicale\roman; 
+directement sur l'cran, \bold;avec la souris\roman;. La faon de procder 
+ressemble beaucoup au logiciel PLAN. 
+Vous pouvez d'ailleurs aussi dessiner des lignes droites, des rectangles, etc. 
+pour complter la partition. L'insertion de lignes de texte permet l'criture 
+des paroles d'un chant par exemple.\image sigdpart,2,5mm;En tout temps, vous pouvez \bold;couter\roman; et \bold;corriger\roman; la mesure 
+visible sur l'cran. L'\bold;ascenseur horizontal\roman; permet d'avancer ou de 
+reculer dans la partition, mesure par mesure.La partie suprieure de l'cran donne les indications suivantes:\demi;\bold;Mes:3-8\roman;\ind 30mm;La partition comporte huit mesures, et on est dans 
+la troisime.\demi;\bold;Symb:350 9%\roman;\ind 30mm;350 symboles utiliss (notes, silences, liaisons, etc.) 
+qui occupent le 9% de la mmoire.La range d'icnes \bold;verticale\roman;  gauche de l'cran permet de choisir le 
+groupe d'icnes affich \bold;en bas\roman;.\image sigicohv,2,=;\ATTENTION;L'cran ne montre qu'une mesure  la fois (mme si elle est courte), et c'est 
+\bold;l'ascenseur horizontal\roman; qui permet d'avancer ou de reculer dans les mesures.Au dpart, la partition ne contient qu'une seule mesure. La touche \D;(RETURN)\F; 
+\bold;cre une nouvelle mesure vide\roman;. Un \ital;clic\roman; dans la flche de droite de l'ascenseur 
+a le mme effet. En fait, ceci n'est valable que si l'on est dans la dernire 
+mesure de la partition. Dans tous les autres cas, on passe simplement  la 
+mesure suivante.\REM;Il n'est pas possible de crer plus d'une mesure vide  la fin de la partition.La signification des \bold;trois boutons de la souris\roman; est toujours indique 
+en haut de l'cran.\L;Le \bold;bouton de gauche\roman; de la souris dessine le symbole slectionn. 
+\bold;Tant qu'il est maintenu press\roman;, le symbole peut toujours tre dplac.\L;Le \bold;bouton de droite\roman; de la souris \bold;dtruit\roman; ou 
+\bold;dplace\roman; le symbole 
+montr. Un \ital;clic\roman; sans bouger la souris dtruit le symbole montr. Si le 
+bouton est \bold;maintenu press\roman;, le symbole est dplac.Pour les \bold;droites\roman;, les \bold;rectangles\roman; et les \bold;liaisons\roman;, 
+il est possible de ne dplacer qu'une extrmit ou qu'un coin selon l'endroit 
+montr par la souris.\image siggdet,2,=;Si le bouton de droite est press alors que la souris est dans une zone vide, 
+un rectangle pointill est dessin tant qu'il est maintenu press pour \bold;entourer 
+un groupe\roman;. Lorsqu'il est relch, le menu suivant apparat:\image sigmgroup,3,=;\T;18.2 Le squenceur\A;\image sigmas,3,=;SIGMA s'utilise galement comme un \bold;enregistreur multi-piste\roman;. 
+Vous pouvez par exemple jouer l'accompagnement d'un morceau et l'enregistrer 
+sur la premire piste. Ensuite, tout en coutant la premire piste enregistre, 
+vous jouez la mlodie qui s'enregistre sur la deuxime piste. Et ainsi de suite, 
+jusqu' huit pistes. Et si les huit pistes ne suffisent pas, vous les fusionnez 
+en une seule piste, ce qui laissera de nouveau sept pistes libres pour d'autres 
+voix!\image sigdseq,2,5mm;Un \bold;mtronome\roman;, rglable entre 30 et 240 oscillations par minute, 
+vous aide  jouer rgulirement.La \bold;vitesse d'excution\roman; est ajustable pour permettre, par exemple, 
+d'enregistrer un morceau plus lentement qu'il ne sera reproduit.Les \bold;huits carrs\roman;  gauche des pistes dterminent quelles sont les voix 
+entendues lors de l'coute \D;(PLAY)\F; ou lors d'un enregistrement \D;(RECORD)\F;.\ATTENTION;Les \bold;huit boutons ronds\roman; dterminent \bold;sur quelle piste s'effectue 
+l'enregistrement\roman; \D;(RECORD)\F;. Il ne peut y avoir qu'un seul bouton rond slectionn. 
+Les touches fonctions \D;(F10)\F; et \D;(F11)\F; intitules \bold;Param.\roman; et \bold;Son\roman; 
+agissent galement sur la piste slectionne pour l'enregistrement.\D;(PLAY)\F;\ind 30mm;ou\D;(RETURN)\F;\ind 30mm;\bold;Dmarre l'coute\roman;  l'endroit montr par la petite flche 
+en haut de la premire piste (indicateur d'avance). 
+\bold;Le bouton de gauche de la souris permet d'ailleurs de dplacer cette petite flche\roman; 
+directement  l'endroit souhait.\D;(RECORD)\F;\ind 30mm;ou\D;(espace)\F;\ind 30mm;\bold;Dmarre l'enregistrement\roman;, avec coute simultane de toutes 
+les pistes choisies. Les changements de prslection (touches vertes 1  24 sur 
+le DX100) et les mouvements des deux molettes sont galement enregistrs.\D;(STOP)\F;\ind 30mm;ou\D;(END)\F;\ind 30mm;\bold;Stoppe l'coute ou l'enregistrement\roman;. En fait, n'importe 
+quelle touche ou action avec la souris stoppe tout.\D;( << )\F;\ind 30mm;ou\D;(TAB)\F;\ind 30mm;\bold;Revient au dbut\roman; (met la petite flche tout  gauche).Le \bold;mtronome\roman; permet de marquer chaque temps par un petit top sonore produit 
+dans le haut-parleur du SMAKY. En fonction de la vitesse choisie par l'\bold;ascenseur\roman;, 
+le mtronome produit de 30  240 tops par minute.\T;18.2.1 Le ruban perfor\A;Cette reprsentation montre un fragment d'environ 8secondes d'un morceau de 
+musique, d'une faon semblable aux vieux rubans perfors des pianos mcaniques. 
+\bold;L'axe horizontal reprsente le temps\roman;, avec un trait vertical  chaque 
+seconde.\bold; L'axe vertical reprsente la hauteur des notes\roman;, avec un 
+traitill horizontal entre \ital;si\roman; et \ital;do\roman;, et un autre entre 
+\ital;mi\roman; et \ital;fa\roman;. Le clavier de piano dessin verticalement 
+ gauche aide  reprer la hauteur d'une note.\image sigdedit,2,5mm;Les traits horizontaux plus ou moins longs correspondent aux \bold;notes joues\roman;. 
+Plus un trait est fonc, et plus la note a t joue fortement.\L;Le \bold;bouton de gauche\roman; dessine une nouvelle note appartenant  la piste 
+dont le numro est indiqu en haut  droite. Un \ital;clic\roman; dans ce numro passe 
+ la piste suivante. Les huit \bold;rectangles gris  droite correspondent  huit forces 
+de frappe diffrentes\roman;, qu'il faut choisir avant de dessiner la note.\demi;\L;Un \ital;clic\roman; du \bold;bouton de droite\roman; dtruit la note montre, pour autant 
+qu'elle appartienne  la piste choisie en haut  droite. Si le bouton de droite 
+est \bold;maintenu press\roman;, la note est \bold;dplace\roman; ou \bold;modifie\roman; 
+selon l'endroit montr.\T;18.2.2 Le rythme\A;Le rythme est \bold;dessin avec la souris\roman; directement sur l'cran. 
+Chaque ligne horizontale correspond  une ou deux percussions diffrentes 
+(grosse caisse, tambour, cymbale, etc.). 
+Les \ital;tops\roman; de dclenchement sont dessins avec le \bold;bouton de gauche\roman;. 
+Le \bold;bouton de droite\roman; supprime le \ital;top\roman; montr.\image sigdrythm,2,5mm;\ATTENTION;Cette partie du logiciel SIGMA \bold;s'adapte  n'importe quelle bote 
+ rythme\roman;, jusqu' un maximum de 32 percussions. 
+En effet, les listes des noms de percussion  gauche et des numros correspondant 
+ droite sont modifiables  volont, par un simple \ital;clic\roman; de la souris  
+l'endroit souhait.Un rythme est compos de plusieurs mesures diffrentes, permettant ainsi de 
+crer des \ital;breaks\roman;, des \ital;solos\roman;, ou d'autres variations. Un \ital;clic\roman; 
+en haut  gauche permet ventuellement de changer le \bold;1x\roman; jusqu' \bold;999x\roman;, 
+pour indiquer le nombre de rptitions de la mesure. L'\bold;ascenseur\roman; horizontal 
+permet de parcourir l'ensemble des mesures.\T;18.2.3 Les sons\A;Cette icne permet \bold;d'accder aux sons du synthtiseur\roman;. 
+Ceci n'est possible que pour un synthtiseur DX100, DX27 ou DX7.\image sigddx100,2,5mm;\L;Un \ital;clic\roman; du \bold;bouton de gauche\roman; dans n'importe quel paramtre permet 
+de le modifier.\L;Un \ital;clic\roman; du \bold;bouton de droite\roman; dans l'un des paramtres du gnrateur 
+d'enveloppes permet de modifier \bold;graphiquement\roman; les quatre enveloppes:\image sigden100,2,5mm;

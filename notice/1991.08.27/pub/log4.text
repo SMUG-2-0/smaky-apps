@@ -1,0 +1,31 @@
+\identoff;
+\colonne 2;
+\marge 15mm,95mm;
+\marsup 10mm,10mm;
+\large 70mm,110mm;
+\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;
+\ur10;\image plan,2;\saute -3mm;\B;\R;Le logiciel \B;PLAN\R; 
+remplace la planche  dessin, 
+avec en plus la possibilit 
+de gommer ou de dplacer 
+une partie du dessin \B;sans 
+tout recommencer\R;.PLAN est l'outil idal pour le 
+dessin de plans mcaniques, 
+de schmas lec- troniques, 
+de formules mathmatiques ou chimiques, de 
+figures gomtriques et de plans d'architectes.\B;SIGMA\R; est un logiciel musical permettant d'crire 
+des \B;partitions\R; et de commander tout \B;synthtiseur\R; disposant 
+d'une prise MIDI. Produire rapidement des partitions de 
+bonne qualit est maintenant  la porte des musiciens, 
+professeurs de musique, directeurs, etc. Les notes sont dessines 
+sur l'cran, avec la souris.\B;START\R; supervise l'utilisation du SMAKY, gre les dossiers, 
+visualise, trie, imprime et copie les \B;documents\R;. C'est galement lui 
+qui excute les logiciels, gnre les disquettes et facilite l'emploi 
+du rseau.\demi;\image langues,2;\saute -3mm;Le \B;LOGO\R; est un langage particulirement bien adapt aux enfants. 
+La \B;tortue\R; permet de raliser des figures gomtriques: pour les 
+enfants, c'est l'occasion d'apprendre les mathmatiques.\demi;Le \B;BASIC\R; du SMAKY contient des ordres supplmentaires permettant de comman- der 
+directement le \B;synthtiseur\R; et la \B;souris\R;, et de programmer 
+\B;sans numros de lignes\R;.\demi;Le langage \B;MODULA-2\R; se prte bien  une approche structure 
+et conduit  un style de travail connu sous le nom de \B;programmation 
+structure\R;. Il est un descendant direct du PASCAL, avec des possibilits 
+supplmentaires en multi- programmation et avec le concept de module notamment.\image dplan,2;\saute -4mm;\ind 10mm;\I;Faade sud d'une maison dessine avec PLAN\R;\saute 4mm;\image sigma,2;\saute -4mm;\ind 10mm;\I;Partition ralise avec SIGMA\R;\saute 4mm;\image dstart,2,7mm;\saute -4mm;\ind 10mm;\I;SMAKY utilisant START\R;\saute 12mm;\ind 21mm;Logiciels dvelopps en Suisse par:\image epsitec,2,=;

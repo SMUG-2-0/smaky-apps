@@ -1,0 +1,50 @@
+\cpage=49;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;
+\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;2 Le C.L.E.\A;La ligne tout en haut de l'cran, juste  droite du sigle "smaky", appartient 
+au programme \B;C.L.E.\R; (\I;command line editor\R;). 
+Une pression sur la touche \D;(M3)\F; permet de frapper une commande, 
+qui sera excute par \D;(RETURN)\F;. 
+Pour redonner le clavier au programme initial, il faut \I;cliquer\R; 
+avec le bouton de gauche de la souris dans la grande fentre.Pour donner une commande C.L.E., il est galement possible de \I;cliquer\R; 
+avec le bouton de gauche de la souris dans la ligne suprieure de l'cran, par 
+exemple dans le sigle "smaky".\image cle,2,=;La commande la plus frquemment utilise consiste  \B;excuter un programme\R; 
+en tapant son nom suivi de \D;(RETURN)\F;. Par exemple:	\B;BASIC\R; \D;(RETURN)\F;Le progamme s'excutera dans la \B;premire fentre libre\R;. Pour \B;forcer une fentre 
+bien prcise\R;, il faut donner son numro entre {}. Par exemple:	\B;FILER {11}\R; \D;(RETURN)\F;En fait, \B;{11}\R; est une contraction de \B;{#DISPLAY=$DIS_11}\R;. Il est 
+possible d'\B;installer\R; ainsi plusieurs units logiques. Par exemple:	\B;{#OUTPUT=$OKI84,#INPUT=$KEY_10}\R;Pour \B;assigner\R; simplement un nom logique  un nom physique, sans installer 
+le driver, il faut terminer l'assignation par \B;/A\R;:	\B;{#OUTPUT=#MO/A,#INPUT=#MI/A}\R;\T;2.1 La touche F0\A;La touche fonction \D;(F0)\F; du C.L.E. permet d'atteindre \B;trois modes\R; 
+pour les touches \D;(F1)\F;  \D;(F15)\F;.\image astclef0,2,=;\REM;Il faut utiliser \D;(F0)\F; ou \D;(SHIFT-F0)\F; pour passer d'un mode  l'autre.Normalement, c'est le mode \D;(Exec.)\F; qui est visible. Il permet d'excuter 
+directement les programmes inscrits en bas des touches avec \D;(F1)\F;  \D;(F15)\F;, 
+et ceux inscrits en haut des touches avec \D;(SHIFT-F1)\F;  \D;(SHIFT-F15)\F;.\image astclef0e,2,=;C'est gnralement la macro de dmarrage (100_BOOT.CLE) qui dtermine quels 
+programmes sont inscrits, et dans quelles touches fonctions, avec la commande 
+\B;DEFINE\R;.\CADRE;DEFINE Fn="programme"Par exemple:\CADRE;DEFINE F1="Dessin"\CADRE;DEFINE F15="Arrt"\REM;Il faut utiliser les numros F17  F31 (+16) pour inscrire les programmes en 
+\D;(SHIFT)\F; dans la partie suprieure des touches.Normalement, pour excuter un programme, il faut appuyer sur une touche fonction 
+\D;(Fn)\F;, puis sur \D;(RETURN)\F;. Pour viter l'emploi de \D;(RETURN)\F;, il 
+faut utiliser:\CADRE;DEFINE F1="Dessin&"En fait, le caractre "&" indique au C.L.E. \B;qu'il doit faire le \D;(RETURN)\F; 
+lui-mme\R;.Le mode \D;(Wind.)\F; donne une vue d'ensemble des programmes en excution, 
+et indique dans quelles fentres ils fonctionnent.\image astclef0w,2,=;Il permet galement d'assigner le clavier  l'un de ces programmes, \B;sans utiliser 
+la souris\R;, simplement en appuyant sur la touche fonction correspondante.\REM;Les numros des \B;grandes fentres\R; sont entre {}.Le mode \D;(Comm.)\F; prsente toutes les \B;commandes\R; qui peuvent tre donnes 
+directement depuis le C.L.E., ou dans une macro (par exemple: 100_BOOT.CLE).\image astclef0c,2,=;\T;2.2 La macro de dmarrage\A;La macro de dmarrage, gnralement contenue dans le fichier \B;100_BOOT.CLE\R;, 
+contient des commandes C.L.E. qui dterminent \B;comment initialiser le SMAKY au 
+moment de la mise sous tension\R;, ou lors du \I;reset\R;. Gnralement, son contenu 
+est le suivant:	display no	abort no	100_mouse	100_clock	install #mm1 $flo	install #printer $%%p	install #pr $usart_0	install #pp $usart_1	install #mi $usart_2	install #mo $usart_3	assign #load #pr	assign #punch #pp	command/i #load nyew[200.w]feheae	command/i #punch nyew[200.w]heae	cache sma_ldima.code	cache sma_gencar.lib	cache sma_dbox.lib	cache sma_dgenc.lib	cache sma_list.lib	cache sma_scroll.lib	define f15="arrt"	start #mm0: {1}	abort yes	display yesAvant d'excuter la macro 100_BOOT.CLE, le C.L.E. regarde s'il existe une macro 
+\B;100_345.CLE\R;. Le numro 345 est donn comme exemple; il correspond en fait au 
+\B;numro de srie du SMAKY\R;. Si cette macro existe, 100_345.CLE est excut en 
+lieu et place de 100_BOOT.CLE.Ceci permet de \B;personnaliser le dmarrage d'un SMAKY\R;. Lors de la mise  jour 
+d'une nouvelle rvision de logiciel, votre fichier 100_numro.CLE ne sera pas 
+mis  jour.\B;Avec le rseau\R;, si la macro 100_numro.CLE n'est pas trouve, c'est 
+\B;100_REMOTE.CLE\R; qui est excute  la place de 100_BOOT.CLE.\ATTENTION;\REM;Pour \B;connatre le numro de srie d'un SMAKY\R;, il suffit de 
+\I;cliquer\R; le bouton du milieu de la souris (depuis START), et de choisir 
+l'option \I;informations\R;.Voici une explication complte, ligne par ligne, de la macro de dmarrage 
+standard:\CADRE;display no\demi;N'affiche pas les commandes au fur et  mesure de leur excution.\CADRE;abort no\demi;Continue l'excution de la macro, mme en cas d'erreur.\CADRE;100_mouse\CADRE;100_clock\demi;Dmarre les programmes de gestion de la souris et de l'horloge.\CADRE;install #mm1 $flo\demi;Installe #MM1: sur une unit de disquette $FLO, sans prciser laquelle. 
+Lorsque le numro n'est pas donn, le FOS \B;cherche la premire unit non encore 
+installe\R;. En fonction de la configuration hardware, #MM1: sera donc install 
+comme suit:\newtab 35mm,80mm;\B;configuration	installation dj faite	nouvelle installation\R;\line 0.2mm,120mm;une disquette	#MM0: --> $FLO_0:	rien (impossible)deux disquettes	#MM0: --> $FLO_0:	#MM1: --> $FLO\B;_1\R;:un disque dur et	#MM0: --> $WIN_0:	#MM1: --> $FLO\B;_0\R;:une disquette\CADRE;install #printer $%%p\demi;Installe l'imprimante choisie avec START. Le nom est contenu dans le fichier 
+100_INFO.\CADRE;install #pr $usart_0\CADRE;install #pp $usart_1\CADRE;install #mi $usart_2\CADRE;install #mo $usart_3\CADRE;assign #load #pr\CADRE;assign #punch #pp\CADRE;command/i #load nyew[200.w]feheae\CADRE;command/i #punch nyew[200.w]heae\demi;Installe les deux lignes sries #PR/#PP et #MI/#MO. Les assignations #LOAD 
+et #PUNCH sont utiles pour les ordres LOAD et PUNCH du \B;FILER\R;.\CADRE;cache sma_ldima.code\demi;Cache le programme SMA_LDIMA qui affiche les images gnriques de DESSIN, EDICAR, 
+PLAN, FICHE, etc. Ce programme doit absolument tre charg par l'ordre \I;cache\R; 
+pour que les images s'affichent!\CADRE;cache sma_gencar.lib\CADRE;cache sma_dbox.lib\CADRE;cache sma_dgenc.lib\CADRE;cache sma_list.lib\CADRE;cache sma_scroll.lib\demi;Cache les principaux modules .LIB, \B;afin d'acclrer le chargement des 
+programmes\R; qui les utilisent. Il est possible de complter cette liste en 
+fonction des modules utiliss par les programmes que l'on excute le plus souvent.\CADRE;define f15="arrt"\demi;Dfinit la touche \D;(F15)\F; du C.L.E. (voir paragraphe 2.1).\CADRE;start #mm0: {1}\demi;Excution du programme START dans la premire grande fentre {1}, avec 
+ouverture automatique de #MM0:.\CADRE;abort yes\CADRE;display yes\demi;Remet le mode normal d'affichage des macros et d'arrt en cas d'erreur.\T;2.3 Les crans spciaux\A;L'cran du SMAKY fonctionne avec une frquence de 20MHz, contrairement aux 
+tlvisions ou vidos grand publique qui fonctionnent  16MHz. Il est possible 
+de \B;connecter une tlvision au SMAKY\R;, via la sortie vido, et de dsynchroniser 
+l'cran du SMAKY au profit de la tlvision:\D;(PROGRA-SHOW-F16)\F;\ind 40mm;Mode \B;normal\R; du SMAKY (20MHz)\D;(PROGRA-SHOW-F17)\F;\ind 40mm;Mode \B;tlvision externe\R; (16MHz)\D;(PROGRA-SHOW-F18)\F;\ind 40mm;Mode spcial dcal (20MHz)\D;(PROGRA-SHOW-F19)\F;\ind 40mm;Rserve\REM;Ces touches peuvent tre actionnes en tout temps, depuis n'importe quel logiciel.

@@ -1,0 +1,373 @@
+\cpage=47;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\up 0.5mm;\pug;\phchgen iip96;\code %1;\pog;\down 0.5mm;\define ICOIM:\sh;\up 4.4mm;\image %1,2,107mm;\gh;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\define ICOacc:\pug;\phchgen iif44;\code 1;\code 2;\pog;\define ICOcon:\pug;\phchgen iif44;\code 3;\code 4;\pog;\define ICOfeu:\pug;\phchgen iif44;\code 5;\code 6;\pog;\define ICOpin:\pug;\phchgen iif44;\code 7;\code 8;\pog;\define ICOre1:\pug;\phchgen iif44;\code 33;\code 34;\pog;\define ICOre2:\pug;\phchgen iif44;\code 35;\code 36;\pog;\define ICOre3:\pug;\phchgen iif44;\code 37;\code 38;\pog;\T;1.3 Les fentres\A;Chaque fois qu'une unit physique ou qu'un dossier est 
+\B;ouvert\R;, START \B;cre une nouvelle fentre\R; au-dessous 
+des fentres existantes. Chaque fentre contient les 
+lments suivants:\image startwdo,2,=;\T;1.3.1 La case de fermeture\A;\image startferm,2,=;Un \I;clic\R; de la souris dans cette case ferme la 
+fentre, qui disparat aussitt.Si la fentre ferme correspond  une disquette, il est 
+possible de la sortir du lecteur de disquettes, car l'icne 
+tout en haut de l'cran ( gauche de l'heure) s'est 
+teinte.\ATTENTION;\REM;La case de fermeture de la fentre des 
+\B;units physiques\R; permet \B;d'arrter le SMAKY\R; (voir 
+paragraphe1.4.7.Lorsqu'un dossier est \I;cliqu\R; avec le \B;bouton de gauche\R;, 
+START l'ouvre en crant une nouvelle fentre:\image dosclic,2,=;Si la touche \D;(KILL)\F; est maintenue presse pendant 
+le \I;clic\R;, START remplace le contenu de la fentre par 
+celui du dossier  ouvrir. Il n'y a donc pas de nouvelle 
+fentre ouverte:\image doskclic,2,=;Si la touche \D;(KILL)\F; est maintenue presse pendant 
+le \I;clic\R; dans la \B;case de fermeture\R;, START remplace 
+le contenu de la fentre par celui de l'unit ou du dossier "pre":\image doskferm,2,=;\T;1.3.2 La case "en bas"\A;\image startebas,2,=;La petite flche en haut  gauche du cadre \B;dplace la 
+fentre tout en bas de l'cran\R;.\image startbas,2,=;\REM;Toutes les fentres ont cette petite flche, \B;sauf la 
+premire\R; (units physiques) et \B;la dernire\R; 
+(forcment).\T;1.3.3 La case AUTRE\A;Cette case, prsente uniquement dans la fentre des 
+\B;units physiques\R;, permet d'ajouter (on dit 
+\I;installer\R;) une nouvelle unit physique:\image dboxautre,2,=;La \B;colonne de gauche\R; dtermine le nom de la 
+nouvelle unit physique (#MM0:, #MM1:, #QUICK:, @SERVEUR:, 
+etc.). La \B;colonne de droite\R; dtermine de quelle unit 
+physique il s'agit. On constate donc qu'une mme unit 
+physique peut avoir un nom diffrent selon la configuration 
+du systme. Par exemple, le mme lecteur de disquettes peut 
+trs bien s'appeler #MM0:, #MM1: ou #MM2:!\image startloph,2,=;\ATTENTION;\REM;Un nom d'unit physique ne peut s'utiliser 
+\B;qu'une seule fois\R;. En consquence, les noms dj 
+utiliss apparaissent en gris.Le \B;disque virtuel\R; (parfois appel \I;RAM-disk\R;) 
+est un "disque" simul dans une portion de la mmoire vive 
+du SMAKY. Son accs est donc trs rapide, d'o le nom 
+#QUICK: qui lui est gnralement donn. En revanche, en cas 
+de coupure de courant, ou lorsque le SMAKY est teint, tout 
+son contenu est perdu. On utilise donc ce "disque" 
+uniquement pour des sauvetages \B;temporaires\R;, par 
+exemple pour transfrer des fichiers d'une disquette sur une 
+autre lorsque le SMAKY ne dispose que d'un seul lecteur de 
+disquettes.Voici comment procder dans cette situation:\DBF;Installer le disque virtuel\DBF;L'ouvrir (\I;clic\R; dans #QUICK: avec le bouton de 
+gauche)\DBF;Dupliquer les fichiers souhaits de #MM0: jusque dans la 
+fentre de #QUICK:\DBF;Mettre la nouvelle disquette (\I;clic\R; dans la petite 
+disquette tout en haut  gauche de l'heure, mettre la 
+nouvelle disquette, puis de nouveau \I;clic\R;)\DBF;Dplacer les fichiers de #QUICK: jusque dans la fentre 
+de #MM0:\REM;La \B;taille\R; standard d'un disque virtuel est de 
+100'000octets. Cette taille peut varier d'un cas  l'autre, 
+mais elle ne peut en aucun cas tre infrieure  
+2'560octets, ce qui correspond de toute faon  un disque 
+virtuel minuscule!Pour installer un nouveau \B;serveur rseau\R;, il faut 
+\I;cliquer\R;  gauche dans le dernier bouton rond, et taper 
+le \B;nom du serveur\R; (par exemple: @SERVEUR:, @AMELIA:, 
+@SM8:, etc.). La colonne de droite permet de choisir le 
+\B;type du rseau\R; (Z, NANET ou SWAN) et le \B;numro du 
+serveur\R;.\T;1.3.4 La case LISTE\A;Par dfaut, les icnes sont reprsentes par \B;ordre 
+alphabtique\R;, et les fichiers \I;systme\R; ne sont pas 
+visibles. L'indication \B;78/124fichiers\R; (par exemple) 
+informe qu'il y a 78 fichiers visibles sur un total de 124.Un \I;clic\R; dans la case \B;LISTE\R;, en haut  droite 
+de chaque fentre, prsente la bote de dialogue suivante:\image dboxliste,2,=;\B;\_Fichiers  lister:\_\R;\demi;L'toile dans le rectangle indique qu'il faut lister tous 
+les fichiers. Par exemple, \B;*.CODE\R; indiquerait de ne 
+reprsenter que les \B;logiciels\R;, c'est--dire les 
+fichiers dont l'extension est \B;.CODE\R;. Les caractres 
+spciaux suivants peuvent tre employs:\demi;\D;(*)\F;\ind 30mm;Remplace n'importe quoi.\D;(?)\F;\ind 30mm;Remplace un (et un seul) caractre.Par exemple, \B;a*.image\R; liste toutes les images dont 
+le nom commence par la lettre "a".Pour donner plusieurs critres, il faut utiliser 
+la barre verticale "\code 124;". Par exemple, pour lister 
+les images \B;et\R; les textes, il faut donner 
+\B;*.image\code 124;*.text\R;.\B;\_Liste en plus les:\_\R;\demi;\DBC;\B;\_.CODE\_\R;\DBC;\B;\_dossiers\_\R;\demi;Lorsque ces options sont slectionnes, les \B;logiciels 
+.CODE\R; et les \B;dossiers\R; sont toujours visibles, quel 
+que soit le critre.\B;\_Affiche les:\_\R;\demi;\DBO;\B;\_icnes\_\R;\DBO;\B;\_noms\_\R;\DBO;\B;\_noms, tailles et dates\_\R;\demi;Normalement, START affiche une icne pour chaque fichier, 
+avec son nom. Il est possible de n'afficher \B;que les 
+noms\R;, ce qui permet de reprsenter \B;trois fois plus\R; 
+de fichiers sur une mme surface. START permet galement 
+d'afficher \B;une ligne par fichier\R;, avec les 
+informations suivantes:\demi;\DBC;nom\DBC;taille en bytes\DBC;date et heure de cration\DBC;date et heure de dernire modification\DBC;date et heure de dernire utilisation\image start2,2,5mm;Dans cet exemple, les trois fentres infrieures 
+utilisent les trois modes d'affichage.\B;\_Classement par:\_\R;\demi;Les deux colonnes dterminent \B;deux critres de 
+classement\R;. Dans l'exemple ci-dessus, les fichiers sont 
+classs par \I;ordre alphabtique\R;, et en cas d'galit 
+par \I;extensions\R;.\ATTENTION;\REM;Lors d'un classement par \B;extensions\R;, 
+les \B;dossiers\R; apparaissent tout au dbut!\B;\_Liste les fichiers:\_\R;\demi;\DBC;\B;\_cachs\_\R;\demi;Une petite croix ici fera afficher mme les fichiers 
+cachs. Le paragraphe1.2.2 explique comment cacher un 
+fichier.\DBC;\B;\_systme\_\R;\demi;Une petite croix ici indique qu'il faut afficher aussi 
+les fichiers systme, c'est--dire les fichiers dont le nom 
+commence par "SMA_", "SYS_", "100_" ou "324_".Lorsque tous les choix ont t effectus dans la bote de 
+dialogue \B;LISTE\R;, les cases suivantes peuvent tre 
+\I;cliques\R;:\D;(LISTE)\F;\ind 30mm;Refait la liste selon les choix 
+effectus.\D;(MEMORISE)\F;\ind 30mm;Refait galement la liste selon 
+les choix effectus. De plus, lors de la \B;prochaine 
+ouverture\R; de cette unit ou de ce dossier, la liste 
+rapparatra selon ces choix.\ind 30mm;Les choix pour afficher la liste sont enregistrs 
+dans le fichier START_DIR.INFO de l'unit ou du dossier 
+concern.\D;(ANNULE)\F;\ind 30mm;Laisse la liste telle quelle, sans 
+tenir compte des ventuels choix effectus.\T;\NOUVEAU;1.3.5 La case REFAIT\A;La case REFAIT, situe  gauche de la case LISTE, n'existe 
+que dans les fentres qui correspondent  un serveur distant 
+sur le rseau. Un \I;clic\R; dans cette case \B;remet  jour 
+la liste\R; en fonction du contenu du disque ou du dossier.Prenons un exemple:  l'aide du logiciel DESSIN4, vous 
+crez trois nouvelles images dans la fentre @BANQUE:. De 
+retour dans START, la fentre @BANQUE: contient les trois nouvelles 
+images. Par contre, si un utilisateur travaillant sur 
+un autre SMAKY cre de nouvelles images dans le mme dossier 
+@BANQUE:, votre fentre @BANQUE: ne les contiendra pas. Alors? 
+...un \I;clic\R; dans REFAIT, et elles apparaissent!\image refaitn,2,=;Dans l'exemple ci-dessus, une nouvelle image est cre sur 
+le client de gauche, dans le dossier @BANQUE: situ sur le 
+serveur. La nouvelle icne apparat dans la fentre du client 
+qui a cr l'image, et dans la fentre du serveur, mais pas 
+dans la fentre du client de droite, qui devra utiliser \D;(REFAIT)\F;.\T;1.4 Le bouton du milieu\A;Le \B;bouton du milieu\R; prsente toujours le mme menu, 
+quelle que soit la position de la souris:\image startmm,3,=;\T;\NOUVEAU;1.4.1 Imprimante\carte;\ICONE 123;\A;Permet de changer de \B;prsentation\R;, de \B;papier\R; ou 
+d'\B;imprimante\R;:\image dbox3li,2,=;Pour changer de prsentation, il suffit de \I;cliquer\R; dans son 
+nom, puis de \I;cliquer\R; dans la longue case \D;(TERMINE)\F;. 
+Un nom de prsentation en \I;italique\R; indique que cette prsentation 
+utilise un autre papier ou une autre imprimante. Si un tel nom 
+est \I;cliqu\R;, le papier et l'imprimante correspondant sont 
+automatiquement slectionns.Pour \B;crer\R; une nouvelle prsentation, un nouveau papier ou 
+une nouvelle imprimante, il faut \I;cliquer\R; en haut de la liste, 
+dans \B;<vide>\R;. La case \D;(MODIFIE)\F; au-dessous de la liste 
+devient alors \D;(CREE)\F;.\T;1.4.1.1 Les prsentations\A;\image dboxpres,2,=;Une prsentation est lie  une \B;imprimante\R; et  un 
+\B;papier\R; (voir plus loin). 
+C'est elle qui dtermine le caractre utilis, les marges, 
+l'interligne, etc. Par exemple, il est possible de crer 
+une prsentation avec le logiciel TABLEAU pour imprimer 
+ses tableaux avec des petits caractres troits, une 
+autre avec le logiciel DESSIN4 pour imprimer ses images 
+sans marges, etc.Pour modifier une marge, il faut \I;cliquer\R; avec 
+la souris dans le chiffre correspondant. Le curseur 
+se place entre la valeur et l'unit (10.02_mm). Il suffit 
+alors de frapper la nouvelle valeur (il n'est pas ncessaire 
+de redonner l'unit). \D;(UNDO)\F; remet la valeur initiale, 
+et \D;(RETURN)\F; passe  la valeur suivante.\B;\_Caractre\R; \DBO1; \B;de l'imprimante\_\R;\demi;Choix d'un caractre interne de l'imprimante. Ces caractres 
+sont imprims trs rapidement. La partie 
+suprieure de la liste donne tous les caractres disponibles, 
+et la partie infrieure les diffrentes largeurs.\demi;\REM;Les largeurs disponibles dpendent du caractre 
+choisi.\B;\_Caractre\R; \DBO1; \B;du disque\_\R;\demi;Choix d'un caractre stock sur disque. Ces caractres 
+sont imprims plus lentement, mais permettent plus de 
+fantaisies.\demi;\REM;Seuls les caractres visibles (avec START, \B;modifie\R; 
+puis \DBC1;visualisation) sont prsents dans 
+la liste.\B;\_Zoom graphique: \D;(    )\F;\_\R;\demi;Avec une LQ800, le zoom vaut gnralement 2. Avec la 
+valeur 1, les images et les caractres du disque seront 
+deux fois plus petits.\DBC1;\ind 8mm;\B;\_tronque les lignes\_\R;\demi;Les lignes trop longues qui dbordent dans la marge 
+droite sont tronques. Sans petite croix, ces lignes 
+sont coupes, et imprimes en plusieurs lignes distinctes.\DBC1;\ind 8mm;\B;\_zoom avec lissage\_\R;\demi;Avec un zoom graphique diffrent de 1, indique que le 
+pilote d'imprimante va tenter d'amliorer l'impression 
+des images et des textes utilisant les caractres du 
+disque.\DBC1;\ind 8mm;\B;\_double frappe\_\R;\demi;L'impression sera plus noire mais plus lente. Ceci est 
+utile, par exemple, lorsque le ruban encreur est us.\DBC1;\ind 8mm;\B;\_frappe unidirect.\_\R;\demi;La tte d'impression imprime seulement de gauche  droite, 
+afin de diminuer certaines imprcisions mcaniques. 
+Cette fonction est utilise principalement pour les 
+images.\ATTENTION;\REM;Les prsentations cres ou modifies sur un SMAKY 
+client, avec le rseau, restent locales. De plus, lors du prochain 
+redmarrage de ce SMAKY, les prsentations cres ou modifies ne 
+seront plus l!\T;1.4.1.2 Les papiers\A;\image dboxpap,2,=;Par papier, on dfinit le \B;format des feuilles\R; utilises, 
+et le \B;mode d'introduction\R; dans l'imprimante. Lorsqu'on 
+change de papier, par exemple pour passer de feuilles 
+A4  des feuilles A5, il ne faut pas oublier de l'indiquer 
+au SMAKY!\DBO1;\ind 8mm;\_\ICOacc;  \B;accordon\_\R;\demi;Papier pli en accordon, avec deux ranges de trous 
+qui permettent de le tracter dans l'imprimante par des 
+roues dentes.\DBO1;\ind 8mm;\_\ICOfeu;  \B;introducteur\_\R;\demi;Introducteur feuille  feuille. Les feuilles sont disposes 
+en tas dans un magasin, et introduites une  une automatiquement 
+par l'imprimante.\DBO1;\ind 8mm;\_\ICOcon;  \B;continu (h=infini)\_\R;\demi;Papier sans fin, pli ou non, les tiquettes auto-collantes 
+par exemples.\DBO1;\ind 8mm;\_\ICOpin;  \B;pinc\_\R;\demi;Feuilles introduites une  une manuellement, comme dans 
+une machine  crire.\T;1.4.1.3 Les imprimantes\A;\image dboximpr,2,=;Nom de l'imprimante utilise. Gnralement, on donne 
+directement le type de l'imprimante (LQ800, GQ3500, OKI192, etc.). 
+Dans le cas d'un rseau comprenant plusieurs imprimantes 
+identiques mais ddies  des fonctions particulires, on 
+pourra donner le nom de la fonction  chaque imprimante 
+(Courrier, Listing, Etiquettes, etc.).\DBO1;\ind 8mm;\_\ICOre1;  \B;locale, non accessible depuis le rseau\_\R;\demi;Cette option convient pour un SMAKY isol (sans rseau), 
+avec ou sans imprimante connecte.\image reseau1,1,=;\ATTENTION;\REM;Pour un SMAKY \B;sans imprimante\R;, il faut donner le nom de l'imprimante 
+qui sera utilise lorsque les documents seront imprims. Ceci permet 
+au logiciel TEXT de mettre en page le texte de faon dfinitive, et donc d'viter 
+les mauvaises surprises lors de l'impression!\DBO1;\ind 8mm;\_\ICOre2;  \B;locale, accessible  d'autres Smaky par rseau\_\R;\demi;Cette option convient pour un SMAKY auquel une imprimante 
+est connecte. L'imprimante pourra servir au SMAKY lui-mme, 
+et galement  d'autres SMAKY clients par le rseau.\image reseau2,1,=;\DBO1;\ind 8mm;\_\ICOre3;  \B;distante, sur le serveur rseau \D;(     )\F;\_\R;\demi;Cette option convient pour un SMAKY qui n'a pas d'imprimante, 
+mais qui voudrait imprimer en utilisant l'imprimante 
+d'un autre SMAKY,  travers le rseau.\image reseau3,1,=;\REM;Le ou les serveurs disque ne sont pas forcment 
+les mmes machines que les serveurs d'impression.\T;1.4.1.4 Quelques dtails\A;Les diffrents logiciels du SMAKY utilisent l'imprimante de diverses 
+faons. On peut les regrouper en quatre catgories:1)\ind 8mm;\B;\_BASIC, LOGO, FILER, etc.\_\R;\demi;Ces logiciels utilisent la \B;prsentation courante\R;, c'est--dire 
+celle choisie depuis START, avec le bouton du milieu de la souris. 
+Il en va de mme lors de l'impression d'une copie d'cran avec \D;(SHIFT-M3)\F;.2)\ind 8mm;\B;\_DESSIN4\_\R;\demi;Ce logiciel utilise la \B;prsentation courante\R; choisie depuis START, 
+mais permet galement de changer de prsentation avant l'impression 
+(\D;(Imp.)\F; puis \D;(CHOIX)\F;).3)\ind 8mm;\B;\_TEXT\_\R;\demi;Ce logiciel utilise certains paramtres de la prsentation courante, 
+et gre d'autres paramtres lui-mme:\newtab 47mm;dimensions du papier:	selon la prsentationmarges sup. et inf.:	depuis TEXT, avec \D;(Param.)\F;marges gauche et droite:	depuis TEXT, avec les rglesinterligne:	depuis TEXT, avec \D;(Param.)\F; et les rgleschoix des caractres:	depuis TEXT, avec \D;(Car.)\F;zoom graphique:	toujours 2 avec une LQ800tronque les lignes:	jamaiszoom avec lissage:	selon la prsentationdouble de frappe:	selon la prsentationfrappe unidirect.:	selon la prsentationSi l'on change de prsentation (depuis START), et que cela modifie les 
+dimensions physiques du papier, TEXT rejustifie tout et dplace les sparations 
+de pages. Si la marge droite d'une rgle dpasse, elle est pousse vers la gauche, 
+afin de ne plus dpasser. Si des tabulateurs dpassent dans la marge droite, ils 
+sont supprims.4)\ind 8mm;\B;\_TABLEAU et FICHE\_\R;\demi;Ces logiciels permettent de choisir la prsentation  utiliser, avec 
+la case \D;(CHOIX)\F; dans la bote de dialogue approprie. Le nom de 
+la prsentation choisie est alors mmoris avec le document (.TABLE et .PFI). 
+Ainsi,  chaque nouvelle impression, les marges, le caractre 
+ utiliser, etc. seront conservs.Avec TABLEAU, il n'est pas possible d'utiliser n'importe quel caractre, 
+ni de choisir l'interligne:\image dboxpret,2,=;Les prsentations pour TABLEAU doivent donc tre cres depuis TABLEAU 
+avec la case \D;(CHOIX)\F;, et non depuis START.Toutes les listes des prsentations, des papiers et des 
+imprimantes sont sauves sur disque dans le dossier systme, 
+dans un fichier unique appel SMA_PRINT.INFO. Lors d'une 
+mise  jour du systme (duplique SYSTEM.CODE avec START), 
+ce fichier est conserv.\T;1.4.2 Date et heure\carte;\ICONE 124;\A;Permet de modifier la date et l'heure de l'\B;horloge 
+interne\R; du SMAKY:\image dboxheure,2,=;Le \B;jour de la semaine\R; est calcul automatiquement, 
+en tenant compte des mois de 28, 29, 30 et 31 jours.\T;1.4.3 Informations\carte;\ICONE 120;\A;Donne quelques informations gnrales sur le SMAKY:\image dboxinfo,2,=;\DBF;\B;\_Systme rvision 5.0\_\R;\demi;Numro de rvision de l'ensemble du systme,  ne pas confondre 
+avec le numro de rvision du logiciel START (bien qu'ils 
+soient presque toujours identiques).\DBF;\B;\_Smaky 324 numro 4'104\_\R;\demi;Le \B;numro du SMAKY\R; correspond au numro utilis sur 
+le \B;rseau\R; si ce SMAKY devient serveur. Ceci est 
+valable pour les rseaux Z et NANET, mais pas pour SWAN.\DBF;\B;\_Capacit mmoire\_\R;\demi;Capacit mmoire totale. Ce nombre ne varie jamais.\DBF;\B;\_Mmoire libre\_\R;\demi;Quantit de mmoire  disposition de l'utilisateur.\DBF;\B;\_Plus grand trou\_\R;\demi;La mmoire est fragmente en une succession de zones 
+libres ou occupes plus ou moins grandes. Ce nombre 
+correspond  la taille de la plus grande zone libre.\T;\NOUVEAU;1.4.4 Divers\carte;\ICONE 127;\A;Choix de quelques paramtres globaux pour le fonctionnement 
+du SMAKY:\image dboxdiv,2,=;\ind 8mm;\B;\_Rptition du clavier\_\R;\demi;Lorsqu'une touche du clavier est maintenue enfonce un certain 
+temps, elle est rpte automatiquement, jusqu' ce qu'elle 
+soit relche.\image cladel,2,=;\ATTENTION;\REM;Les touches fonctions et certaines touches 
+spciales ne sont jamais rptes. La figure ci-dessous indique 
+en hachur les touches qui sont rptes:\image clarep,2,=;\DBC;\B;\_commutation de fentre rapide\_\R;\demi;En appuyant sur les touches \D;(F16)\F;, \D;(F17)\F;, 
+\D;(F18)\F; ou \D;(F19)\F;, l'cran est commut dans les diffrents 
+logiciels en excution dans le SMAKY. Sans petite croix, la 
+commutation s'effectue par glissement, comme un changement de 
+diapositives. Avec une petite croix, la commutation est instantane.\ind 8mm;\B;\_Endort le SMAKY:\_\R;\demi;Afin d'\B;conomiser le phosphore de l'cran\R;, le SMAKY peut 
+s'endormir aprs un certain temps d'inactivit. Une pendule 
+est alors visible. Chaque minute, sa position et sa dimension 
+changent, pour ne pas \I;user\R; toujours la mme partie de l'cran. 
+Une pression sur la barre d'espace rveille le SMAKY.Lorsque la pendule est visible, il est possible d'teindre 
+directement le SMAKY, sans passer par la procdure habituelle 
+d'arrt.\REM;Avec le rseau, un SMAKY serveur est rveill chaque fois 
+qu'un client l'utilise  distance!\T;1.4.5 Normal, plat et petit\carte;\ICONE 100;\A;Normalement, START permet d'ouvrir un maximum de quatre 
+fentres. Avec la premire fentre des units physiques, il 
+est donc possible d'ouvrir simultanment trois dossiers. 
+Pour augmenter ce nombre, les icnes peuvent tre 
+\B;rduites d'un facteur deux\R;, soit en hauteur uniquement 
+(plat), soit en hauteur et en largeur (petit).\image starte22,2,5mm;\REM;Dans ce mode, il est galement possible de ne 
+reprsenter que les noms des fichiers avec la case LISTE.\T;\NOUVEAU;1.4.6 Mot de passe\carte;\ICONE 109;\A;Il peut s'avrer utile de \B;protger l'accs  un SMAKY disposant 
+d'un disque dur\R; (winchester) par un mot de passe. Toute personne 
+ne connaissant pas le mot de passe ne pourra pas utiliser ce 
+SMAKY.\image dboxmot,2,=;Le mot de passe doit tre constitu d'un maximum de 14 lettres 
+ou chiffres.\DBO;\B;\_prochain dmarrage sans mot de passe\_\R;\demi;Supprime le mot de passe. Le SMAKY dmarrera de nouveau 
+normalement, sans demander de mot de passe.\DBO;\B;\_prochain dmarrage avec mot de passe\_\R;\demi;Le prochain dmarrage du SMAKY ne pourra s'effectuer qu'en 
+donnant le mot de passe correct.\DBO;\B;\_demande tout de suite le mot de passe\_\R;\demi;Verrouille tout de suite le SMAKY avec le mot de passe choisi, 
+sans qu'il soit ncessaire de redmarrer.Lorsque le SMAKY est protg par un mot de passe, la question 
+suivante apparat pendant le dmarrage:\image dboxmoth,2,=;Le mot de passe frapp apparat  l'cran sous la forme 
+XXXXX, pour viter que quelqu'un puisse le dcouvrir en regardant 
+par-dessus votre paule! Si le mot de passe est incorrect, 
+un dlai est forc. A chaque faute, le dlai s'allonge, pour viter 
+qu'un intrus puisse essayer rapidement tous les noms qui lui passent 
+par la tte.\T;1.4.7 Arrt\carte;\ICONE 122;\A;Permet d'arrter le SMAKY, ou de redmarrer avec une 
+autre disquette systme.\image dboxarret,2,=;\REM;Un \I;clic\R; dans la case de fermeture (en haut  
+gauche) de la fentre des units physiques est quivalent.Quatre choix sont alors possibles:1)\ind 10mm;Enlever la ou les disquettes, puis couper le 
+courant. Attention cependant  une chose: \B;assurez-vous 
+que le travail en cours dans d'autres fentres est 
+archiv!\R;2)\ind 10mm;Enlever la disquette systme, en mettre une 
+autre, puis \I;cliquer\R; dans \D;(REDEMARRE)\F;. 
+Assurez-vous galement que le travail en cours dans d'autres 
+fentres est archiv!3)\ind 10mm;Quitte le logiciel START. L'emploi du SMAKY sera 
+nettement moins commode, mais vous aurez un peu plus de 
+mmoire  disposition (environ 100'000 octets)!4)\ind 10mm;Laisser la ou les disquettes en place, et 
+\I;cliquer\R; dans \D;(ANNULE)\F;. Toutes les fentre 
+ouvertes ont t fermes, mais il est possible de les 
+rouvrir.\T;1.5 Les astuces de START\A;La lecture de ce paragraphe n'est pas indispensable. Le 
+spcialiste trouvera peut-tre ici quelques rponses  ses 
+questions...\T;1.5.1 Le fichier START_USER.INFO\A;Lorsque vous \I;cliquez\R; MAISON.IMAGE avec la souris, 
+START dcide d'excuter le logiciel DESSIN4.CODE. Cette 
+\B;correspondance\R; entre \I;fichier .IMAGE\R; et 
+\I;logiciel DESSIN4\R; est contenue dans le fichier 
+START.INFO. De plus, ce fichier indique  START quelle icne 
+afficher pour les images et pour le logiciel DESSIN4 (un 
+petit crayon en l'occurrence).\ATTENTION;\REM;\B;Les fichiers START.INFO et SMA_IIP24.GENC 
+ne doivent jamais tre modifis\R;. En cas de besoin, ce 
+sont les fichiers START_USER.INFO et SMA_JIP24.GENC qu'il 
+faut modifier (ou crer s'ils n'existent pas)!Le fichier START_USER.INFO peut tre modifi  volont 
+par START lui-mme (fonction \I;dite\R; du bouton de droite 
+de la souris), ou par un diteur de texte tout  fait 
+classique.Chaque ligne termine par un \D;(RETURN)\F; contient une 
+information relative  un logiciel. Par exemple:\newtab 15mm,38mm,61mm,84mm,107mm;\CADRE;34	"DESSIN4"	.IMAGE\B;34\R;\ind 30mm;code de l'icne du petit crayon dans 
+IIP24\B;"DESSIN4"\R;\ind 30mm;nom du logiciel DESSIN4.CODE 
+correspondant\B;.IMAGE\R;\ind 30mm;extension des documents associsCes trois parties doivent tre spares par un ou 
+plusieurs tabulateurs ou espaces.Un numro compris entre 0 et 127 indique  START qu'il 
+faut chercher l'icne dans \B;IIP24\R;. Si le numro est 
+prcd d'un "j", c'est \B;JIP24\R; qui est utilis.\B;34\R;	icne 34 de \B;IIP24\R;\B;j45\R;	icne 45 de \B;JIP24\R;\CADRE;32	"TEXT 10000/M"	.TEXTIndique quelle \B;quantit de mmoire\R; rserver pour le 
+document cr avec le logiciel TEXT (ici 10'000 
+caractres).Il est galement possible de rserver un certain 
+pourcentage en fonction de la mmoire libre (par exemple: 
+"TEXT 50%/M"). Ne jamais dpasser 90%!Pour rserver toute la mmoire libre moins une certaine 
+quantit, il faut utiliser "TEXT -300000/M" (prend toute la 
+mmoire, moins 300'000 octets).Les logiciels suivants acceptent une rservation de 
+mmoire: TEXT, EDIT, SMILE, PLAN, BASIC et LOGO.\CADRE;49	"SIGMAS"	.MIDI\CADRE;50	"SIGMAS"	.RYTHMDans cet exemple, c'est l'icne 49 qui est affiche pour 
+les fichiers .MIDI, et l'icne 50 pour les fichiers .RYTHM. 
+Le logiciel SIGMAS.CODE sera affich avec l'icne 49 (la 
+premire ligne).En \I;cliquant\R; avec le bouton de gauche de la souris 
+dans un fichier .MIDI ou .RYTHM, c'est SIGMAS.CODE qui sera 
+excut dans les deux cas.\B;Si une mme extension est mentionne plusieurs 
+fois\R;, START proposera un \B;menu\R; pour dterminer quel 
+logiciel excuter.\CADRE;83	"BASIC"	.BAS	.CBAS\CADRE;41	"EDIT"	.BAS	.LOGO	.ASMAvec l'exemple ci-dessus, un \I;clic\R; du bouton de 
+gauche dans le document ESSAI.BAS proposera un menu avec 
+BASIC et EDIT:\image startmex,3,=;L'icne affiche dans les documents .BAS sera celle 
+indique dans la \B;premire ligne o .BAS est mentionn\R;, 
+donc 83 dans cet exemple (petit bonhomme).\ATTENTION;\REM;Lorsqu'un logiciel est \B;dfini deux 
+fois\R; diffremment dans START.INFO et dans 
+START_USER.INFO, c'est toujours \B;START_USER.INFO qui a la 
+priorit\R;. Il est donc possible de redfinir les 
+logiciels rfrencs dans START.INFO sans toucher  ce 
+dernier!\NOUVEAU;Le fichier START.INFO contient, tout au dbut, 
+un certain nombre d'instruction .PRINTEXT suivies de catgories 
+de fichiers:\CADRE;.PRINTEXT	*.TEXT	*.IMAGE	*.FICHECes instructions dterminent quels sont les fichiers contenant 
+du texte (fichiers ASCII), qu'il sera possible d'\B;diter\R;, de 
+\B;visualiser\R; et d'\B;imprimer\R; depuis START.Pour allonger cette liste, il est possible d'ajouter des 
+instructions .PRINTEXT au dbut de START_USER.INFO.\ATTENTION;Lorsque le fichier START_USER.INFO a t 
+modifi, il faut \I;cliquer\R; dans la case vide  gauche de 
+la case \B;AUTRE\R; (dans la fentre des units physiques) 
+pour prendre en compte les modifications.\T;1.5.2 Les fichiers "!"\A;Lorsque START dtruit, dplace ou duplique un fichier 
+(par exemple LETTRE.TEXT), il regarde tout d'abord si le 
+fichier "!" correspondant existe (LETTRE!TEXT). Si oui, 
+\B;celui-ci donne les noms de tous les fichiers qui doivent 
+tre pris avec le fichier initial\R;.Tous les logiciels importants ont un fichier "!" 
+associ. Ainsi, il est possible de dupliquer un logiciel 
+sur une nouvelle disquette sans risque d'oublier quelque 
+chose. Voici par exemple le contenu du fichier DESSIN4!CODE:	"image gnrique"/1/A	"images d'aide"/2/A	"explications des nouveauts"/3/A	DESSIN4!CODE/D -CXL	DESSIN4.CODE/D -C+L	SMA_IDP20.GENC -CXL	SMA_GENCAR.LIB -CXL	SMA_DBOX.LIB -CXL	SMA_DGENC.LIB -CXL	SMA_DESSIN.LIB -CXL	SMA_LIST.LIB -CXL	SMA_SCROLL.LIB -CXL	SMA_SPLINE.LIB -CXL	SMA_STRETCH.LIB -CXL	DESSIN4.IMAGE/D/1 -CL	DESSIN4_H.IMAGE/D/2 -CL	DESSIN4_R.IMAGE/D/2 -CL	DESSIN4.NEWS/D/3 -C+Let oui, il faut tout a (en plus du systme) pour que 
+DESSIN4 fonctionne!Les trois premires lignes contiennent les questions poses 
+lorsque DESSIN4.CODE est dupliqu. Le texte d'une question est 
+donn entre guillemets, suivit d'un numro et d'un /A ou /E:\CADRE;/1../7\demi;Numro de la question, qui est rpt une ou plusieurs fois 
+aprs certains noms de fichiers. Dans l'exemple ci-dessus, le /1 
+aprs la premire question "image gnrique" est rpt une 
+seule fois aprs le fichier DESSIN4.IMAGE/1. Cela signifie que 
+si la petite croix est enleve lorsque la question est pose, 
+START ne dupliquera pas DESSIN4.IMAGE.\CADRE;/A\demi;Indique que le petite croix correspondant  la question 
+doit tre \B;a\R;llume (prsente) lorsque la question est 
+pose.\CADRE;/E\demi;Indique que le petite croix correspondant  la question 
+doit tre \B;\R;teinte (absente) lorsque la question est 
+pose.Les lignes suivantes sont constitues d'un nom de fichier, suivi 
+ventuellement d'un ou de plusieurs \I;switches\R; (par 
+exemple: /D), suivi d'ventuelles modifications d'attributs 
+(par exemple: -CXL).Les \I;switches\R; possibles sont les suivants:\CADRE;/D\demi;Lors d'une destruction ou d'un dplacement, indique que 
+\B;le fichier peut tre dtruit\R;. C'est le cas pour 
+DESSIN4.IMAGE par exemple. Par contre, SMA_DBOX.LIB n'a pas 
+le \I;switch\R; /D, car ce module peut trs bien tre encore 
+utilis par un autre logiciel!\ATTENTION;\REM;\B;Le /D ne doit pas tre mis  un fichier 
+susceptible d'tre utilis par un autre logiciel!\R;\CADRE;/N\demi;Si le fichier source n'existe pas, \B;ne donne pas 
+d'erreur\R;.\CADRE;/A\demi;Transfre toujours le fichier, mme s'il a une date plus 
+ancienne. Ceci est utilis dans SYSTEM!CODE pour le fichier 
+100_INFO.\CADRE;/W\demi;Ne transfre pas le fichier s'il existe un mot de passe. 
+Ceci est utilis dans SYSTEM!CODE pour le pilote 100_WIN.DRIV, 
+qui ne doit pas tre transfr sur les disquettes afin d'interdire 
+dfinitivement l'accs  un SMAKY protg.\CADRE;/X\demi;Dtruit le fichier sur l'unit destination. Ceci permet de purger 
+certains fichiers devenus inutiles dans de nouvelles rvisions, et 
+d'viter ainsi une prolifration de "vieilleries".Les \B;modifications d'attributs\R; permettent d'enlever 
+ou d'ajouter d'office quelques attributs au fichier 
+\B;destination\R;. Pour tous les autres attributs, START 
+copie dans le fichier destination ceux du fichier source.\CADRE;-\demi;\B;Enlve\R; les attributs qui suivent.\CADRE;+\demi;\B;Ajoute\R; les attributs qui suivent.\CADRE;C\demi;Lorsque cet attribut n'est pas l (-C), il n'est pas 
+possible de \B;changer le nom\R; du fichier.\CADRE;X\demi;Cet attribut ne doit exister (+X) que sur les 
+\B;logiciels excutables\R; (.CODE).\CADRE;L\demi;Lorsque cet attribut n'est pas l (-L), le fichier n'est 
+normalement \B;pas visible\R; avec START.Par exemple, \I;DESSIN4.CODE -C+L\R; indique qu'il ne sera 
+pas possible de changer le nom du logiciel DESSIN4 et qu'il 
+sera visible.\REM;Lorsqu'un nom de fichier commence par 100_, 324_ ou SYS_, 
+START le transforme en \B;SMA_\R; (fichier commun SMAKY100, 
+SMAKY324 et SMAKY8). Si le fichier SMA_ n'existe pas, il le 
+transforme en 100_ si l'on est sur un SMAKY100, 324_ si l'on 
+est sur un SMAKY324 et SYS_ si l'on est sur un SMAKY8.\ATTENTION;\SREM;De plus, si le fichier source SMA_ existe, 
+START \B;dtruit\R; les fichiers destinations 100_, 324_ et SYS_ 
+(pour donner la priorit au fichier SMA_, et pour viter 
+d'utiliser trop de place sur disque)!\CADRE:%%m\demi;Ces deux caractres sont remplacs par le \B;nom de la 
+machine\R;, c'est--dire:\demi;\B;SMAKY100\R;\ind 30mm;%%m=100\demi;\B;SMAKY324\R;\ind 30mm;%%m=324\demi;\B;SMAKY8\R;\ind 30mm;%%m=SYS\demi;\CADRE:%%p\demi;Ces deux caractres sont remplacs par le \B;nom de 
+l'imprimante\R; (contenu dans 100_INFO). Par exemple: LQ800, 
+OKI192, CPA80, etc.Exemple: 100_%%p.DRIV\CADRE:%%q\demi;Ces deux caractres sont remplacs par le \B;nom de 
+l'imprimante sans le numro\R; du modle. Par exemple: LQ, 
+OKI, CPA, etc.Exemple: %%q_DRF07.GENC\CADRE:.genboot\demi;Ecrit les fichiers SMA_FBOOT.BIN et SMA_SBOOT.BIN (disque 
+dur seulement) sur les premiers blocs du disque destination. 
+Ceci permettra au disque en question de \B;dmarrer de faon 
+autonome\R; (disque systme).\CADRE:.ifeq chane1 chane2\CADRE:.else\CADRE:.endif\demi;Permet de transfrer diffrents fichiers selon un 
+\B;test\R;. Par exemple:	.ifeq %%m SYS	  SMA_SNF11.GENC -CX+L	.else	  SMA_SNF07.GENC -CX+L	.endifTransfre SNF11 sur un SMAKY8 (%%m=SYS), et SNF07 sur 
+n'importe quelle autre machine (SMAKY100, SMAKY324, etc.).\T;1.5.3 La ligne de commande\A;Gnralement, START est dmarr par la macro 100_BOOT.CLE 
+qui contient:\demi;\CADRE;START {1}Il est possible de complter cette commande comme suit:\CADRE;START #MM0:\demi;Ouvre directement l'unit #MM0:.\CADRE;START/Q\demi;Lorsque l'on \I;clique\R; dans la case de fermeture 
+(carr en haut  gauche), on \B;retourne directement au 
+logiciel appelant\R; (C.L.E. ou autre), sans passer par la 
+bote de dialogue habituelle.\ATTENTION;Sans le \B;/Q\R;, il faut \B;appuyer deux foix 
+rapidement\R; sur \D;(F0)\R; ou \D;(END)\F;.\CADRE;START/A\demi;La case \B;AUTRE\R; de la fentre des units physiques 
+n'existe plus, ni l'opration \B;dinstalle\R; du bouton de 
+droite de la souris.\CADRE;START/P\demi;L'opration \B;paramtres\R; (lorsque le bouton de droite 
+de la souris \I;clique\R; un logiciel) n'existe plus.\CADRE;START/S\demi;L'opration \B;systme\R; lorsque l'on \I;clique\R; avec 
+le bouton de droite sur une unit physique n'existe plus. De 
+plus, la partie suprieure de l'cran n'affiche plus "Systme 
+en #MM0:".\CADRE;START/M\demi;Il n'est plus possible de protger l'accs  un SMAKY par 
+un \B;mot de passe\R;.\NOUVEAU;\CADRE;START/I\demi;Il n'est plus possible de crer ou de modifier des papiers ou des 
+imprimantes, lorsque l'opration \B;imprimante\R; est choisie 
+dans le menu du bouton du milieu de la souris.\REM;Pour les dbutants, il est utile de dmarrer START avec 
+\B;/A/P/S/M/I\R;, afin d'interdire les oprations rarement utilises, 
+ou trop compliques  comprendre.

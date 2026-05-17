@@ -1,0 +1,53 @@
+\cpage=117;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define DBC:\DBC1;\ind 8mm;\define DBO:\DBO1;\ind 8mm;\define DBF:\DBF1;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\up 0.5mm;\pug;\phchgen iip96;\code %1;\pog;\down 0.5mm;\define ICOIM:\sh;\up 4.4mm;\image %1,2,107mm;\gh;\define PRESS:\pug;\phchgen iip48;\code 105;\pog;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;10 L'diteur graphique PLAN\A;\sh;\image iplan,3;\gh;\ind 40mm;PLAN remplace favorablement la \B;planche  dessin\R;, dans des 
+domaines aussi varis que l'lectronique, l'lectricit, la mcanique, 
+la chimie, le gnie rural, le gnie civil, l'architecture, les techniques 
+du btiment et ainsi de suite. Un trait, ou tout autre objet, peut tre 
+dtruit, dplac, rallong, polycopi, align, zoom, tourn, etc.\image dplan,2,5mm;Voici un autre exemple de dessin ralis entirement avec PLAN:\demi;\image livres,2,=;La souris est \bold;indispensable\roman; pour crer ou modifier un graphique. 
+Elle s'utilise de la faon suivante:\image plansou,2,=;Voici la signification des \bold;touches fonctions\roman;:\D;(Fin)\F;\ind 25mm;\B;quitte\R; le logiciel PLAN\demi;
+\D;(Prend)\F;\ind 25mm;\B;prend un nouveau plan\R; sur la disquette\D;(Ajoute)\F;\ind 25mm;ajoute, en donnant son nom, un plan du disque\D;(Biblio)\F;\ind 25mm;accs et slction d'un lment d'une \B;bibliothque\R;\D;(Sauve)\F;\ind 25mm;\B;sauve ou met  jour\R; un plan\demi;
+\D;(Df.)\F;\ind 25mm;prsente la liste des options (format, rticule etc.)\D;(Coul.)\F;\ind 25mm;choix des couleurs visibles\D;(Car.)\F;\ind 25mm;choix du type de caractre\D;(Spc.)\F;\ind 25mm;insre un caractre quelconque\D;(Centre)\F;\ind 25mm;centre la fentre  l'endroit montr par la souris\demi;
+\D;(Loupe _)\F;\ind 25mm;loigne pour une vision plus globale\D;(Loupe 1:1)\F;\ind 25mm;met la vision standard\D;(Loupe +)\F;\ind 25mm;rapproche pour une vision plus dtaille\demi;
+\D;(Rgle)\F;\ind 25mm;met ou enlve les deux \B;rgles mtriques\R;\D;(Grille)\F;\ind 25mm;met ou enlve une grille selon le pas choisi\D;(Pas)\F;\ind 25mm;met ou enlve le pas\demi;
+\D;(Tout)\F;\ind 25mm;montre le plan entier  l'cran\D;(Refait)\F;\ind 25mm;refait proprement tout le plan\D;(Efface)\F;\ind 25mm;efface le plan\D;(Impr.)\F;\ind 25mm;imprime ce qui est visible  la fentre\D;(Trace)\F;\ind 25mm;trace le plan sur plotter\T;10.1 Les objets graphiques\A;Le \bold;bouton de gauche\roman; de la souris dessine l'objet indiqu 
+en bas  gauche, dans le cadre:\image planobj,3,=;Par dfaut, il s'agit d'un \bold;trait  main leve\roman;. 
+Pour dessiner autre chose, \I;cliquez\R; sur l'objet dans le cadre, 
+et choisissez l'objet voulu dans la liste:\image pal,2,=;Le travail du professionnel devient trs efficient avec les \B;bibliothques 
+de symboles\R;. En effet, chaque utilisateur peut crer des lments utiliss 
+quotidiennement dans son domaine: composants lectroniques, symboles de 
+l'lectricien, mobilier, symboles de l'installateur, etc:\image planbib,2,5mm;\T;10.2 Les modifications\A;Le \B;bouton de droite\R; de la souris permet de manipuler une 
+partie du dessin de la manire suivante:\demi;1)\ind 15mm;choisir la zone  modifier, en l'entourant d'un rectangle2)\ind 15mm;choisir l'opration3)\ind 15mm;effectuer l'opration\image pal1,2,=;La figure ci-dessous illustre le \B;dplacement\R;:\image plandepl,2;\T;10.3 Les images\A;Lors du sauvetage d'un document PLAN, une image peut 
+tre cre simultanment. Ces images pourront tre imprimes ou 
+reprises par DESSIN, ou encore colles dans TEXT. Le cadrage peut 
+tre choisi par l'utilisateur selon la figure ci-dessous:\image pal2,2,=;Afin d'viter des dsagrments lors de l'impression, PLAN avertit si 
+l'image  sauver est plus grande que la dimension de la page prsente 
+sur l'imprimante installe.La dfinition analytique des objets est sauve (fichier.PLAN) dans tous 
+les cas, afin de garantir la reprise possible du dessin par PLAN ou 
+encore la reproduction du dessin sur traceur  l'aide de PLOT.\T;11 L'interprteur BASIC\A;\sh;\image ibasic,3;\gh;\ind 40mm;Le BASIC est un langage de programmation 
+performant et trs simple d'emploi. Il est 
+particulirement bien adapt  l'apprentissage 
+de la programmation. De plus, il permet la 
+gestion de toutes les ressources du SMAKY (graphique, 
+synthtiseur, souris, touches fonctions, etc).\T;11.1 Visualisation d'un programme\A;Appuyez sur la touche fonction \D;(List)\F; puis sur \D;(RETURN)\F;. Les 
+touches fonctions suivantes peuvent alors tre utilises:\D;(Pause)\F;\ind 40mm;interrompt \bold;provisoirement\roman; le dfilement\D;(Continue)\F;\ind 40mm;reprend le dfilement 
+aprs \D;(Pause)\F;\D;(Stop)\F;\ind 40mm;interrompt \bold;dfinitivement\roman; le dfilement\D;(Rapide)\F;\ind 40mm;acclre le dfilement tant que cette touche reste 
+pressePour ne lister qu'une partie du programme, utilisez:List .. 100 \D;(RETURN)\F;       depuis le dbut jusqu' la ligne 100List 100 .. \D;(RETURN)\F;       depuis la ligne 100 jusqu' la finList 100 .. 200 \D;(RETURN)\F;   depuis la ligne 100 jusqu' la 200\T;11.2 Liste des programmes\A;Pour connatre les noms de tous les programmes contenus sur la 
+disquette \bold;principale\roman;, donnez l'ordre:	\bold;Lib\roman; \D;(RETURN)\F;Pour connatre les noms de tous les programmes contenus sur la 
+disquette \bold;secondaire\roman;, donnez l'ordre:	\bold;Lib '#mm1:\roman; \D;(RETURN)\F;\ATTENTION;\REM;Le nom \bold;#mm1:\roman; s'obtient simplement en 
+appuyant sur la touche \D;(TAB)\F;.\T;11.3 Chargement d'un programme\A;Avant de charger un programme BASIC, il faut tre sr qu'il n'y 
+en ait pas dj un autre en mmoire. Pour effacer l'ventuel 
+programme en mmoire, donnez l'ordre:	\bold;New\roman; \D;(RETURN)\F;Vous pouvez maintenant charger un programme contenu sur la 
+disquette \bold;principale\roman; en donnant l'ordre:	\bold;Enter 'sierpinski\roman; \D;(RETURN)\F;\ATTENTION;\REM;La touche fonction \D;(SHIFT-F1)\F; 
+frappe directement le mot "Enter" suivi d'un espace et d'un 
+guillemet. Donc:	\D;(SHIFT-F1)\F; \bold;sierpinski\roman; \D;(RETURN)\F;Pour charger un programme contenu sur la disquette \bold;secondaire\roman;, 
+il faut prcder le nom du programme par "#mm1:":	\bold;Enter '#mm1:sierpinski\roman; \D;(RETURN)\F;ou	\D;(SHIFT-F1)\F; \D;(TAB)\F; \bold;sierpinski\roman; \D;(RETURN)\F;\T;11.4 Excution d'un programme\A;Lorsqu'un programme est charg en mmoire (avec Enter), il 
+s'excute automatiquement s'il contient l'ordre RUN. 
+Si ce n'est pas le cas, il faut appuyer la touche fonction 
+\D;(Run)\F; pour l'excuter.\image sierp,2,5mm;\T;11.5 Sauvetage d'un programme\A;Pour sauver sur disquette le programme actuellement en mmoire, 
+il faut donner l'ordre:	\bold;Save 'essai\roman; \D;(RETURN)\F;ou	\D;(SHIFT-F2)\F; \bold;essai\roman; \D;(RETURN)\F;Le nom "essai" est un mot de votre invention qui dsignera par 
+la suite le programme en question.S'il existe dj un programme BASIC appel "essai", le SMAKY 
+vous demande si vous voulez le dtruire.\T;11.6 Cration d'un dessin pour PLAN\A;L'ordre \bold;PLAN "xyz"\roman; enregistre dans le fichier xyz.plan toutes 
+les droites dessines par le BASIC. \bold;PLANEND\roman; termine l'enregistrement. 
+\image dbasic,2,5mm;Ceci est extrmement puissant pour gnrer des courbes, volumes, etc. avec 
+toute la puissance de calcul du BASIC. Ces dessins pourront ensuite profiter de 
+la puissance de l'diteur graphique PLAN pour modifier les traits, pour ajouter 
+du texte, etc.\image dbasicp,2,5mm;

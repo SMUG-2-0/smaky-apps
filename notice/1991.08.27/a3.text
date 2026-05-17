@@ -1,0 +1,100 @@
+\cpage=57;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\define CADRE:\sapos 1;\pug;\ub12; \ligne; \pog;\sapos 2;
+\gepos 1;\up 3.8mm;\rect 4.3mm,0.2mm,0,h2-h1;\down 3.8mm;\define EX:\cr;\pug;\ital;Exemples:\pog;\T;3 Le systme d'exploitation\A;Le systme d'exploitation du SMAKY est construit comme une \B;pyramide\R;, avec tout 
+en bas le matriel (hardware), et tout en haut les programmes d'application (USER).\image astsys,2,=;Par exemple, lorsque DESSIN.CODE (USER) utilise un \B;ascenseur\R;, il fait 
+appel au \B;module\R; SCROLL (M). Celui-ci utilise les primitives graphiques de 
+la \B;librairie\R; (LIB), qui font elles-mmes des appels au \B;gestionnaire de 
+fichiers\R; (FOS). Le FOS appelle le BIOS, qui finalement excute la primitive 
+graphique dans le \B;driver d'cran\R;.Comme le suggrent les flches de la figure ci-dessus, le programme d'application 
+(USER) peut utiliser les modules (M), la librairie (LIB), le gestionnaire de 
+fichiers (FOS), le noyau temps rel (NTR) et le gestionnaire de mmoire (MEM). 
+Par contre, il n'a pas accs au BIOS!Le systme d'exploitation, parfois appel \B;PSos\R;, est divis en plusieurs 
+morceaux distincts, qui correspondent  \B;autant de fichiers spars\R;. 
+Afin de mieux comprendre le fonctionnement du SMAKY, nous donnons dans ce 
+paragraphe la liste et la signification des principaux fichiers systme.\T;3.1 Les briques de base\A;\CADRE;100_SHI.BIN\demi;Le SHI (system hardware interface) contient toutes les \B;routines particulires 
+ une machine donne\R; (SMAKY100 ou SMAKY8), afin de rendre le NTR (noyau temps 
+rel) identique pour toutes les machines.\CADRE;100_NTR.BIN\demi;Ce fichier regroupe en fait trois \I;briques\R;:1)\ind 5mm;\B;NTR\R; (noyau temps rel)2)\ind 5mm;\B;GESMEM\R; (gestionnaire de mmoire)3)\ind 5mm;\B;BIOS\R; (basic input output subroutines)C'est le noyau temps rel qui permet  \B;plusieurs programmes de fonctionner 
+simultanment\R; (partage du processeur). Le gestionnaire de mmoire \B;alloue 
+dynamiquement la mmoire\R; aux diffrents programmes, modules, drivers, etc. 
+qui le demandent. Le BIOS effectue simplement la liaison avec les diffrents 
+\I;drivers\R;. Il ne contient pas les routines de gestions des priphriques 
+hardware; elles sont dans les drivers!\CADRE;100_FOS.BIN\demi;Le FOS (file operating system) gre tous les accs au BIOS sous forme de 
+\B;fichiers\R;. Il existe trois types de fichiers:1)\ind 5mm;les fichiers \B;disques\R; (disque souple, disque dur ou disque virtuel)2)\ind 5mm;les fichiers \B;streamer\R; (cran, clavier, USART, etc.)3)\ind 5mm;les fichiers \B;rseaux\R; (Z, SWAN ou NANET)\CADRE;SMA_F.MERR\demi;Ce fichier contient les \B;messages d'erreurs\R;, en clair et en franais 
+(textes ASCII), de tous les programmes et modules du SMAKY. C'est le FOS qui l'accde. 
+Lorsque la premire erreur survient, il est charg en mmoire, et y reste pour 
+toujours.\CADRE;100_INFO\demi;\B;Informations gnrales\R; concernant le SMAKY. Par exemple: nom de l'imprimante 
+utilise (LQ800, OKI192, CPA80, etc.).\CADRE;100_LIB.BIN\demi;\B;Librairie de base\R; du SMAKY. C'est LIB qui gre le chargement des modules *.LIB.\CADRE;SMA_FBOOT.BIN\CADRE;SMA_SBOOT.BIN\demi;Ces deux fichiers sont copis au dbut d'un disque systme \B;pour lui permettre 
+de dmarrer\R;. C'est l'ordre \B;.GENBOOT\R; contenu dans SYSTEM!CODE qui effectue cette 
+copie. SMA_FBOOT.BIN est copi sur sur les disques souples et sur les disques durs, 
+alors que SMA_SBOOT.BIN n'est copi que sur les disques durs.\T;3.2 Les drivers\A;\image astidriv,2,=;Les fichiers \I;drivers\R; contiennent le code ncessaire au pilotage des 
+diffrentes \B;units physiques\R; du SMAKY (disques, cran, clavier, souris, etc.).\CADRE;100_FLO.DRIV\demi;Driver des \B;disques souples\R; (floppy-disk). Permet de piloter une ou deux units 
+de disquettes ($FLO_0 et $FLO_1).Avec un SMAKY  deux units de disques souples, les installations sont gnralement 
+les suivantes:#MM0: --> $FLO_0#MM1: --> $FLO_1\CADRE;100_WIN.DRIV\demi;Driver des \B;disques durs\R; (winchesters). Ce driver convient pour toutes les marques 
+de disques durs (Miniscribe, Rodime, Tandom, etc.). Pour cela, le troisime 
+bloc physique de chaque disque dur contient une description du modle (nom, nombre 
+de plateaux, nombre de cylindres, etc.). Ce driver permet de piloter \B;plusieurs 
+disques durs de marques diffrentes\R;!Avec un SMAKY  un disque dur et un disque souple, les installations sont gnralement 
+les suivantes:#MM0: --> $WIN_0#MM1: --> $FLO_0\CADRE;SMA_MEM.DRIV\demi;Ce driver \B;simule un ou plusieurs disques\R; dans une portion plus ou moins grande 
+de la mmoire vive du SMAKY (Ram-disk).Gnralement, l'installation est la suivante:#QUICK: --> $MEM [10000.L]Le nombre entre [] indique la \B;quantit de mmoire vive\R; alloue.\CADRE;100_Z.DRIV\CADRE;100_SWAN.DRIV\CADRE;100_NANET.DRIV\demi;Drivers \B;rseaux\R; Z, SWAN et NANET.L'installation est faite sans donner de nom logique. Par contre, des 
+\B;assignations\R; permettent d'atteindre les diffrentes machines sur le rseau:@AMELIA: --> @Z-123:@RENATA: --> @Z-258:@SOPHIA: --> @SWAN-154:Les numros 123, 258 et 154 correspondent aux numros des machines 
+connectes  travers le rseau.\CADRE;100_DIS.DRIV\demi;Driver d'\B;cran\R; (display). Ce driver utilise le module 100_GRA.LIB pour toutes 
+les fonctions graphiques.L'installation est la suivante:#DISPLAY --> $DIS_n"n" reprsente le numro de la fentre attribue au programme.\CADRE;100_KEY.DRIV\demi;Driver du \B;clavier\R; (keyboard), qui simule en fait plusieurs claviers (un par programme 
+ou par fentre).L'installation est la suivante:#KEYBOARD --> $KEY_n"n" reprsente le numro du clavier attribu au programme.\CADRE;100_SYNT.DRIV\demi;Driver du \B;haut-parleur\R; interne du SMAKY (synthesizer).L'installation est la suivante:#SYNTHESIZER --> $SYNT_n"n" reprsente le numro du haut-parleur attribu au programme.\CADRE;100_CLOCK.DRIV\demi;Driver du circuit \B;horloge\R; (clock) de la carte SMAKY. Ce circuit, maintenu par 
+une pile lorsque le SMAKY est teint, contient les heures, minutes et secondes, 
+ainsi que le jour, le mois et l'anne.L'installation est la suivante:#CLOCK --> $CLOCK_0\CADRE;100_MOUSE.DRIV\demi;Driver de la \B;souris\R; (mouse). C'est le programme systme 100_MOUSE.CODE qui lit 
+ce driver et en informe la librairie (LIB).L'installation est la suivante:#MOUSE --> $MOUSE_0\CADRE;100_USART.DRIV\demi;Driver des deux \B;lignes srie\R; du SMAKY. Les lignes srie peuvent s'utiliser 
+en mode \B;SIMSER\R; ou \B;RS-232\R;, avec diffrents baud-rates.Gnralement, l'installation est la suivante:#PR --> $USART_0#PP --> $USART_1#MI --> $USART_2#MO --> $USART_3\CADRE;SMA_LQ800.DRIV\demi;Driver pour l'\B;imprimante\R; EPSON LQ-800.\CADRE;100_LQ800.INFO\demi;\B;Informations relatives  l'imprimante\R;. C'est dans ce fichier que sont enregistrs 
+les dimensions du papier, les marges, l'interligne, etc.\CADRE;LQ_DRF07.GENC\CADRE;LQ_QRF07.GENC\demi;Ces gnrateurs de caractres \B;simulent les caractres de l'imprimante\R; 
+(normaux et qualits  chasse fixe) pour le logiciel TEXT. Le prfixe est toujours 
+constitu du nom de l'imprimante sans le numro du modle. Par exemple, le 
+gnrateur OKI_DRF07.GENC convient pour les OKI84, OKI92, OKI192 et OKI193.\T;3.3 Les modules\A;\image astilib,2,=;Les modules sont des fichiers avec l'extension \B;.LIB\R;. 
+Le principal intrt de ce concept est qu'\B;un mme module peut tre 
+utilis par plusieurs programmes diffrents\R;, d'o une plus grande intgration 
+(ou ressemblance) des programmes entre eux, et donc un temps d'apprentissage 
+rduit au strict minimum pour l'utilisateur (puisque les programmes se ressemblent).\CADRE;100_GRA.LIB\demi;Ce module contient toutes les \B;routines graphiques\R; du SMAKY. Par exemple: 
+peinture de caractres, dessin de lignes droites, remplissage de surfaces, etc.\CADRE;SMA_GENCAR.LIB\demi;Ce module \B;construit les caractres\R; en gras, italique, relief, ombr, double largeur 
+ou double dimensions. Sitt qu'un nom de gnrateur contient des parenthses, 
+le \B;driver d'cran appelle le module GENCAR\R;. Par exemple:\demi;\newtab 15mm,43mm;
+\B;TRP14\R;	utilise SMA_TRP14.GENC tel quel (times normal)\B;TIP14\R;	utilise SMA_TIP14.GENC tel quel (times italique)\B;T(I)14\R;	utilise SMA_TRP14.GENC pour construire l'italique\demi;\B;B\R;	gras	(bold)\B;I\R;	italique	(italic)\B;O\R;	relief	(outline)\B;S\R;	ombr	(shadow)\B;L\R;	double largeur	(large)\demi;\image astmlgenc,2,=;\CADRE;SMA_DBOX.LIB\demi;Module des \B;botes de dialogue\R; (dialogue boxes). Les programmes contiennent une 
+table qui dcrit les objets  placer dans la bote, et c'est le module DBOX qui 
+dessine le tout  l'cran et qui gre l'interaction avec le clavier et la souris.\image astmldb,2,=;Ce module traite galement les \B;icnes affiches en bas de l'cran\R;, en correspondance 
+avec les touches fonctions \D;(F0)\F;  \D;(15)\F;. Il est utilis par 
+FICHE, SIGMAP, SIGMAS, etc.\image astmlico,2,=;\CADRE;SMA_DGENC.LIB\demi;Module permettant de \B;choisir dix polices de caractres\R; parmi l'ensemble des 
+caractres existant. Ce module est utilis par TEXT, PLAN, DESSIN, EDICAR, SIGMAP, etc.\image astmldgen,2,=;\CADRE;SMA_LIST.LIB\demi;Module de \B;gestion des listes\R; de fichiers. Par exemple, ce module est utilis 
+par le module DGENC pour obtenir la liste des gnrateurs de caractres 
+disponibles.\CADRE;SMA_SCROLL.LIB\demi;Module de gestion des \B;ascenseurs\R; (scroll-bar), des listes avec ascenseurs 
+(scroll-list) et des \B;rgles centimtriques\R; (ruler).Ascenseur (scroll-bar):\image astmlsc,2,=;Liste avec ascenseurs (scroll-list):\image astmlsl,2,=;Rgle centimtrique (ruler):\image astmlre,2,=;\CADRE;SMA_EPRO.LIB\demi;Permet d'\B;diter\R; simplement un texte. Ce module est utilis par START et 
+LOGO.\CADRE;SMA_COUPE.LIB\demi;Ce module cherche tous les endroits o il est possible de \B;diviser un mot\R; en franais. 
+Il tient compte des divisions tymologiques  l'aide d'un dictionnaire d'exceptions 
+interne. Pour tous les autres mots, il effectue des divisions syllabiques.Ce module est utilis par TEXT et FICHE.\CADRE;SMA_DESSIN.LIB\demi;Ce module permet de \B;choisir ou de modifier\R; une collection de 7x4 \B;trames\R;, 
+\B;pinceaux\R; ou \B;points\R;. Il est utilis par PLAN, DESSIN, EDICAR et GRAPHE.\image astmldess,2,=;\CADRE;SMA_SPLINE.LIB\demi;Calcule une \B;courbe passant par des points prdfinis\R;. L'algorithme utilis 
+correspond aux \I;splines cubiques\R;, qui drivent de leur contre-partie physique.Ce module est utilis par PLAN, DESSIN, EDICAR et GRAPHE.\image astmlspli,2,=;\CADRE;SMA_FICHE.LIB\demi;Module de \B;gestion de fiches\R; (recherche, suppression, cration, etc.). Ce module 
+est utilis par FICHE et BASIC.\CADRE;SMA_CALCUL.LIB\demi;Module d'\B;dition et de calcul de formules complexes\R;. Utilis par FICHE.\image astmlcalc,2,=;\CADRE;SMA_MATH64.LIB\demi;\B;Oprations arithmtiques, logarithmiques et trigonomtriques\R; sur des nombres de 
+64 bits (donc trs prcis).\CADRE;SMA_XFOS.LIB\demi;Extension des \B;appels du FOS\R;, avec notamment l'emploi d'un \I;buffer\R; 
+intermdiaire.\CADRE;SMA_SABLIER.LIB\demi;Affichage d'un "sablier" horizontal. Ce module est utilis par FCOPY.\T;3.4 Les programmes systme\A;\image asticode,2,=;Les fichiers \B;.CODE\R; sont des programmes excutables. La liste donne ici ne 
+contient que les programes dits \B;systme\R;, c'est--dire utiles au bon 
+fonctionnement du SMAKY dans tous les cas.\CADRE;SYSTEM.CODE\demi;Fichier d'un seul caractre, permettant  START de dupliquer le systme.\CADRE;100_CLE.CODE\demi;Le C.L.E. (command line editor) est le premier programme .CODE charg et excut 
+lors du dmarrage du SMAKY. C'est lui qui excute la \B;macro de dmarrage\R; 
+100_BOOT.CLE (voir paragraphe2).\CADRE;100_BOOT.CLE\demi;\B;Macro de dmarrage\R; du SMAKY, qui contient des commandes CLE. Ce fichier 
+est ditable, par exemple avec START ou EDIT.\CADRE;100_MOUSE.CODE\demi;Ce programme \B;dplace et gre la souris\R; dans l'cran.\CADRE;100_CLOCK.CODE\demi;Ce programme \B;affiche la date et l'heure\R; en haut  droite de l'cran. Un \I;clic\R; 
+de la souris  cet endroit permet de choisir si 100_CLOCK.CODE doit afficher la 
+date et l'heure ou la \B;place mmoire restante\R;, en utilisant les touches fonctions. 
+Dans ce cas, le premier chiffre indique la \B;place totale restante\R;, et le deuxime 
+chiffre la \B;taille du plus grand trou\R;.\CADRE;SMA_LDIMA.CODE\demi;C'est ce petit programme qui est charg d'\B;afficher les images gnriques\R; des 
+programmes pendant le dmarrage. LDIMA doit tre en \I;cache\R;, c'est--dire 
+que la macro de dmarrage 100_BOOT.CLE doit contenir CACHE100_LDIMA.CODE.\CADRE;SMA_RECUP.CODE\demi;Ce programme \B;rgnre SYS_FREE\R; au prochain dmarrage aprs un panne de courant, 
+o lorsque le SMAKY est teint sans avoir effectu la procdure d'arrt.Il apparat simplement en affichant des points sur l'cran.\CADRE;START.CODE\demi;Programme START, qui reprsente le contenu des disques et des dossiers sous 
+forme d'icnes:\image aststart,2,=;\CADRE;START.INFO\demi;Ce fichier donne la correspondance entre les programmes principaux et les 
+icnes de \B;IIP24\R;. Il ne doit tre modifi en aucun cas!\CADRE;START_USER.INFO\demi;Ce fichier donne la correspondance entre les programmes spcifiques  une 
+application particulire et les icnes de \B;JIP24\R; (et ventuellement de IIP24). 
+Il peut tre modifi  volont pour rpondre aux besoins spciaux.\CADRE;SMA_IIP24.GENC\demi;Icnes des programmes principaux. Ce gnrateur ne doit tre modifi en aucun 
+cas!\CADRE;SMA_JIP24.GENC\demi;Icnes des programmes spcifiques  une application particulire. Ce gnrateur 
+peut tre modifi  volont pour contenir les icnes de programmes spciaux ou 
+nouveaux.\CADRE;SYSTEM!CODE\demi;Liste des fichiers ncessaires pour \B;gnrer un disque systme\R;. Avec START, 
+lorsque vous dupliquez SYSTEM.CODE, c'est tous les fichiers contenus dans 
+SYSTEM!CODE qui sont copis.\CADRE;RCVNET.CODE\demi;Ce programme doit fonctionner pour que le SMAKY puisse tre atteint \B; travers 
+le rseau\R; (Z, SWAN ou NANET). Gnralement, il occupe une petite fentre ($DIS_10 
+ $DIS_17), et est donc invisible.\image astrcvn,3,=;\T;3.5 Les gnrateurs de caractres\A;\image astigenc,2,=;Les fichiers \B;.GENC\R; sont des gnrateurs de caractres ou d'icnes. Nous ne 
+donnons ici que les noms des gnrateurs absolument indispensables au 
+fonctionnement du SMAKY.\CADRE;SMA_NEF07.GENC\demi;Caractres standard du SMAKY100, utiliss entre autre par le C.L.E., l'horloge 
+et les touches fonctions en bas de l'cran.\CADRE;SMA_NEF11.GENC\demi;Idem, mais pour le SMAKY8.\CADRE;SMA_SNF07.GENC\demi;Caractres graphiques qui dterminent le sigle "smaky" en haut  gauche de l'cran, 
+et les \B;cadres des touches fonctions\R; en bas de l'cran.\CADRE;SMA_SNF11.GENC\demi;Idem, mais pour le SMAKY8.\CADRE;SMA_NRF07.GENC\CADRE;SMA_NRF09.GENC\demi;Petits caractres standard  chasse fixe.

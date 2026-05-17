@@ -1,0 +1,1 @@
+ASS:(AB%,T$)LOCAL TEXT$(200),CODE$(100)LOCAL C%,H%,L%,Ps%,Pd%TEXT$=T$Ps%=ADDR(TEXT$)+1Pd%=ADDR(CODE$)+1C%=LEN(TEXT$)/2DO H%=PEEKB(Ps%): Ps%=Ps%+1 H%=H%-48 :IF H%>9 :H%=H%-7 :ENDIF L%=PEEKB(Ps%): Ps%=Ps%+1 L%=L%-48 :IF L%>9 :L%=L%-7 :ENDIF POKEB Pd%,(16*H%)+L% :Pd%=Pd%+1 C%=C%-1UNTIL C%=0RETURN USR(ADDR(CODE$)+1,AB%)

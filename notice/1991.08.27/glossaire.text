@@ -1,0 +1,352 @@
+\cpage=1;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\sh;\saute 1mm;\line 0.2mm,120mm;\gh;\\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define DEBUT:\pug;\ub12;\sapos 8;\hspace 0.5mm;\ligne;\\sapos 9;\texte;\gepos 8;\up 0.9il;\\rect v8-v9+1.1il,0.2mm,0,h9-h8+1mm;\\fillrect v8-v9+1.1il,21,h9-h8+1mm;\\gepos 9;\cr;\define FIN:\pog;\ub20;\centre;\_Glossaire des mots rservs\_\_du langage Basic\_\ur12;\drapeau;\newtab 80mm;\DEBUT;ABS  \FIN;Abs(exp_num)\ind 40mm;valeur absolue de l'expression numrique exp_num.\DEBUT;ACCORD  \FIN;Accord(n1,n2,n3,e,d)\ind 40mm;gnre un son d'une dure de d cinquantimes de secondes, 
+en jouant les notes de numro n1, n2 et n3. L'enveloppe 
+du son est donne par la valeur de e. 
+Les notes sont codes par demi-tons: 
+do=0, do#=1, r=2, r#=3, mi=4, fa=5, ..., do=48, ... .\DEBUT;AND  \FIN;exp1 And exp2\ind 40mm;valeur logique (True ou False) obtenue en calculant 
+le "et" logique des expressions exp1 et exp2.\DEBUT;ASC  \FIN;Asc(var_alpha)\ind 40mm;valeur du code ASCII du premier caractre de la chane 
+range dans la variable var_alpha. Les valeurs possibles 
+de la fonction Asc sont des entiers entre 0 et 127.\DEBUT;ATAN  \FIN;Atan(exp_num)\ind 40mm;Arc en radians dont la tangente est la valeur de exp_num.\DEBUT;AUDIT  \FIN;Audit "nom_fich"\ind 40mm;copie  la fin du fichier "nom_fich" les caractres qui 
+normalement s'affichent  l'cran. Un fichier auditeur 
+est ainsi ouvert et complt.Audit End\ind 40mm;ferme le fichier auditeur.\DEBUT;AUTO  \FIN;Auto\ind 40mm;active une numrotation automatique des lignes  partir 
+de 100, puis de 10 en 10.Auto num1,pas\ind 40mm;active la numrotation des lignes. Le premier numro est 
+num1 et les numros se succdent avec un intervalle fix 
+par la valeur pas. 
+En tapant successivement les touches \D;(UNDO)\F; puis \D;(RETURN)\F;, 
+on revient au mode ordinaire du Basic.\DEBUT;BEEP  \FIN;Beep(no_son)\ind 40mm;met un bip dont la sonorit dpend de la valeur de no_son. 
+Le paramtre no-son est un numro compris entre 1 et 7.\DEBUT;BREAK  \FIN;La touche \D;(Break)\F;\ind 40mm;interrompt subitement le programme excut.\DEBUT;BUTLEFT$  \FIN;Butleft$(exp_alpha,n)\ind 40mm;chane de caractres obtenue,  partir de la valeur de 
+exp_alpha, par retranchement des n premiers caractres.\DEBUT;BUTRIGHT$  \FIN;Butright$(exp_alpha,n)\ind 40mm;chane de caractres obtenue,  partir de la valeur de 
+exp_alpha, par retranchement des n derniers caractres.\DEBUT;BYE  \FIN;Bye\ind 40mm;quitte l'interprteur Basic.\DEBUT;CARXY  \FIN;Carxy(col,li)\ind 40mm;positionne, sur l'cran, le curseur  la colonne col de 
+la ligne li. 
+CARXY s'utilise aussi avec l'ordre PRINT.\DEBUT;CARYX  \FIN;Caryx(li,col)\ind 40mm;place le curseur de l'cran  la ligne li et  la colonne 
+col. Les lignes sont numrotes de haut en bas et les 
+colonnes de gauche  droite. La numrotation commence par 
+zro. 
+CARYX s'utilise aussi avec l'ordre PRINT.\DEBUT;CASE  \FIN;\sh;Case list_val bloc\gh;\ind 40mm;annonce un nouveau bloc d'instrutions  effectuer 
+dans le cas o l'expression de slection de l'ordre SELECT 
+donne l'une des valeurs de la liste list_val. 
+La liste list_val est de l'un des quatre types suivants:\ind 35mm;1  val [{,val}] --liste de valeurs spares par ","\ind 35mm;2  val .. val  --intervalle de valeurs\ind 35mm;3  val ..     --valeurs sup. ou gales  val\ind 35mm;4  .. val     --valeurs inf. ou gales  val\sh;Case Else bloc\gh;\ind 40mm;annonce le bloc des instructions  effectuer lorsque la 
+valeur de slection n'entre pas dans les cas prvus par 
+les list_val des "Case" qui prcdent.\ind 40mm;La rubrique SELECT donne le contexte d'emploi de Case.\DEBUT;CGRAPH  \FIN;Cgraph\ind 40mm;copie les caractristiques graphiques courantes, soit 
+COOR, ROT, SCALE, TYPNT et TYPDASH, dans la zone auxiliaire.\DEBUT;CHANGE  \FIN;Change "#nom:"\ind 40mm;permet de changer la disquette range dans l'unit dont 
+le nom logique est soit #mm0: soit #mm1: .\DEBUT;CHKFRE  \FIN;Chkfre\ind 40mm;affiche la proximit entre la pile et le sommet du 
+programme source. Emploi rserv au pre du Basic!\DEBUT;CHR$  \FIN;Chr$(exp_num)\ind 40mm;caractre dont le code est la valeur de exp_num. 
+Les codes sont des entiers compris entre 0 et 255.\DEBUT;CIRCLE  \FIN;Circle(r)\ind 40mm;trace un cercle de rayon r autour de la position courante 
+du marqueur graphique.\DEBUT;CLEAR  \FIN;Clear\ind 40mm;efface la pile gre par l'interprteur Basic.Clear Dir$\ind 40mm;annule le routage qui prfixe les noms de fichiers.\DEBUT;CLOCK$  \FIN;Clock$\ind 40mm;valeur alphanumrique forme de 16 chiffres lus sur 
+l'horloge permanente. La chane a la structure suivante: 
+00hhmiss0njjmmaa, son sens est donn par hh=heure, 
+mi=minute, ss=seconde, n=numro du jour dans la semaine, 
+jj=jour, mm=mois et aa=anne.\DEBUT;CLOSE  \FIN;Close\ind 40mm;ferme tous les fichiers ouverts.Close File (no)\ind 40mm;ferme le fichier rfrenc par le numro no.\DEBUT;CODE  \FIN;Code (list_codma)\ind 40mm;excute des ordres cods en langage machine. 
+Les ordres  excuter sont ceux de la liste list_codma, 
+ils sont spars par des virgules et occupent au maximum 
+32 octets. 
+L'ordre CODE est exclusivement rserv aux spcialistes.\DEBUT;COMMAND  \FIN;Command File(no), no_type, exp_alpha\ind 40mm;envoie, via le canal de numro no, le texte de commande 
+fourni par exp_alpha, au contrleur de priphrique dont 
+le type est prcis par no_type. 
+L'usage de COMMAND est rserv aux spcialistes.\DEBUT;CONT  \FIN;Cont\ind 40mm;continue l'xcution du programme aprs une interruption 
+programme \D;(Stop)\F; ou interractive (touche \D;(Break)\F;).\DEBUT;COOR  \FIN;Coor(0)\ind 40mm;abscisse de la position graphique de l'origine.Coor(1)\ind 40mm;ordonne de la position graphique de l'origine.Coor(Xo,Yo)\ind 40mm;positionne l'origine d'un systme d'axes au point graphique 
+Po(Xo,Yo).\DEBUT;COPY  \FIN;Copy "nom_fich"\ind 40mm;copie, sous forme code, le programme et ses variables dans 
+le fichier dont le nom complet est "nom_fich.CBAS".\DEBUT;COS  \FIN;Cos(exp_num)\ind 40mm;cosinus de l'angle dont la mesure en radians est la valeur 
+de exp_num.\DEBUT;COSH  \FIN;Cosh(exp_mum)\ind 40mm;cosinus hyperbolique de la valeur de exp_num.\DEBUT;CPOINT  \FIN;Cpoint\ind 40mm;nombre de points affects par le dernier trac graphique.\DEBUT;CTURN  \FIN;Cturn\ind 40mm;calcule puis range dans la variable TURN la valeur en 
+radians de l'angle que fait le dernier trac avec l'axe 
+horizontal.\DEBUT;CWINDOW  \FIN;Cwindow\ind 40mm;efface l'aire de traage dfinie par Window.\DEBUT;DATA  \FIN;Data list_val\ind 40mm;annonce une liste de valeurs. Les valeurs numriques ou 
+alphanumriques de la liste list_var sont  sparer par 
+des virgules.Data\ind 40mm;affiche des renseignements sur les lignes de donnes.\DEBUT;DEC  \FIN;Dec var_num\ind 40mm;diminue de 1 la valeur de la variable numrique var_num.\DEBUT;DEF  \FIN;Def Fn_nom (list_param) = exp_numDef Fn_nom$(list_param) = exp_alpha\ind 40mm;dfinit une fonction  valeurs numriques ou alphanumriques. 
+La fonction est rfrence par Fn_ suivi d'un 
+nom de variable. La liste des paramtres est forme de 
+noms de variables. L'valuation de la fonction, avec des 
+valeurs choisies pour les paramtres, se fait par l'expression 
+qui suit le signe "=".\DEBUT;DEL  \FIN;Del segment\ind 40mm;supprime les lignes dont le numro est dans l'intervalle 
+segment. Un segment est de l'une des formes suivantes:\ind 40mm; 1  etiq	 2  etiq..etiq\ind 40mm; 3  etiq..	 4  ..etiq\ind 40mm;o etiq est soit un numro de ligne soit une tiquette 
+du type Label_nom.\DEBUT;DELETE  \FIN;Delete "nom_fich"\ind 40mm;dtruit le fichier dont le nom est prsis entre les Delete exp_alpha\ind 40mm;guillemets ou par la valeur alphanumrique de exp_alpha.\DEBUT;DELMS  \FIN;Delms exp_num\ind 40mm;suspend toute activit durant la valeur de exp_num 
+cinquantimes de secondes.\DEBUT;DIM  \FIN;Dim var(list_dim)\ind 40mm;dfinit la taille de la variable indice var. Les indices 
+varient entre 0 et une valeur prcise dans la liste 
+list_dim.Dim(nom_var(*),0)\ind 40mm;nombre d'indices de la variable indice nom_var.Dim(nom_var(*),n)\ind 40mm;nombre de dimensions du n-ime indice de la variable.\DEBUT;DIR$  \FIN;Dir$("nom_rep:")\ind 40mm;complte le routage des fichiers par l'ajout du rpertoire 
+nomm nom_rep.Dir$\ind 40mm;chane de caractres formant le routage par dfaut des fichiers.Clear Dir$\ind 40mm;annule le routage qui prfixe les noms de fichiers.\DEBUT;DIV  \FIN;exp1 Div exp2\ind 40mm;valeur de la division entire de exp1 par exp2. 
+L'opration DIV n'est possible qu'avec des entiers.\DEBUT;DO  \FIN;\sh;Do If cond bloc1Do Else bloc2End Do\gh;\ind 40mm;annonce un traitement diffrenti selon que la condition 
+cond est satisfaite ou non.\ind 40mm;Si la condition est remplie, les instructions du bloc1 
+sont excutes, sinon ce sont celles du bloc2.\DEBUT;DREAL  \FIN;Dreal(exp_num)\ind 40mm;valeur de exp_num code comme un rel "double-prcision". 
+N'est utile que si la "double-prcision" est  disposition.\DEBUT;EDIT  \FIN;Edit\ind 40mm;met les lignes du programme en mode d'dition.Edit segment\ind 40mm;Si un segment est prsis, seules les lignes dont le 
+numro est dans l'intervalle segment passent en mode 
+d'dition. Les segments possibles sont:\ind 40mm; 1  etiq	 2  etiq..etiq\ind 40mm; 3  etiq..	 4  ..etiq\ind 40mm;o etiq est soit un numro de ligne soit une tiquette 
+de la forme Label_nom.Edit Line var_alpha, curs%, max, ret%\ind 40mm;met la chane contenue dans var_alpha en dition. 
+Au dbut de l'dition, le curseur est plac  la position 
+donne par la valeur range dans curs%.\ind 40mm;A la fin de l'dition, la chane contient au maximum max 
+caractres, la position du curseur est range dans la 
+variable curs% et le code du caractre de fin d'dition 
+est recueilli dans la variable entire ret%.\DEBUT;ELSE  \FIN;... Else traitem\ind 40mm;annonce, en conjonction avec IF ou ON, le traitement 
+traitem  effectuer "dans les autres cas".\ind 40mm;Pour des prcisions ou d'autres utilisations, consulter 
+IF, ON, ou DO et SELECT.\DEBUT;END  \FIN;End\ind 40mm;termine un programme et retourne au mode interractif.End Do\ind 40mm;marque la fin de l'alternative annonce par Do.End Loop\ind 40mm;marque la fin du bloc d'instructions annonc par Loop.End Select\ind 40mm;marque la fin de l'aiguillage annonc par Select.End While\ind 40mm;marque la fin du bloc d'instructions annonc par While.... End\ind 40mm;marque une fin en liaison avec l'un des ordres AUDIT ou 
+ENTER.\DEBUT;ENTER  \FIN;Enter\ind 40mm;valeur logique indiquant si un fichier de remplacement 
+du clavier est ouvert ou non.Enter "nom_fich"\ind 40mm;active un fichier en lieu et place du clavier. Le texte 
+du fichier appel "nom_fich.BAS" commande l'interprteur 
+ou rpond  ses requtes comme le ferait un utilisateur 
+depuis son clavier.Enter End\ind 40mm;dconnecte le fichier d'entre qui remplaait le clavier.Enter Off\ind 40mm;suspend l'activit du fichier d'entre pour redonner 
+au clavier ses fonctions habituelles.Enter On\ind 40mm;redonne le contrle des entres au fichier d'entre.\DEBUT;EOF  \FIN;Eof(no)\ind 40mm;valeur logique indiquant si la prochaine lecture dans le 
+fichier rfrenc par le numro no rencontrera la fin de 
+ce fichier.\DEBUT;EOLN  \FIN;Eoln(no)\ind 40mm;valeur logique indiquant si le prochain caractre  lire 
+dans le fichier de numro no est un "RETURN".\DEBUT;EOMOVE  \FIN;Eomove\ind 40mm;valeur logique indiquant si le dernier trac fait avec un 
+type de point spcial est complet ou non.Eomove\ind 40mm;termine un trac interrompu. Cet ordre n'a d'effet que 
+pour certains types de point.\DEBUT;EOP  \FIN;Eop\ind 40mm;efface l'cran et place le curseur en haut  gauche.\DEBUT;ERROR  \FIN;Error\ind 40mm;numro de la dernire erreur.Error no\ind 40mm;provoque l'erreur de numro no.\DEBUT;ERROR$  \FIN;Error$(no)\ind 40mm;texte donnant l'explication de l'erreur de numro no.\DEBUT;EXEC  \FIN;Exec exp_alpha\ind 40mm;interprte, en la considrant comme un texte Basic, la 
+chane de caractres fournie par exp_alpha et, si elle 
+est comprhensible, l'excute immdiatement.\DEBUT;EXIT  \FIN;Exit If cond\ind 40mm;sort de la boucle Loop si la condition cond est remplie.\DEBUT;EXP  \FIN;Exp(exp_num)\ind 40mm;valeur de l'exponentielle de base e=2.71828.. applique 
+ l'expression numrique exp_num.\DEBUT;FALSE  \FIN;False\ind 40mm;valeur logique reprsentant "faux" et reprensente, dans 
+la machine, par le nombre entier zro.\DEBUT;FILE  \FIN;File(no)\ind 40mm;affiche des renseignements cods (et incomprhensibles) 
+sur le fichier de numro no.... File(no),\ind 40mm;n'a d'effet qu'en liaison avec un ordre de traitement 
+des fichiers.Pour les dtails, consulter les rubriques 
+CLOSE, COMMAND, GET, INPUT, OPEN, POS, PRINT ou PUT.List File "nom_gen"\ind 40mm;affiche la liste des noms de fichiers slectionns 
+par le nom gnrique nom_gen.\DEBUT;FILL  \FIN;Fill\ind 40mm;remplit,  partir de la position du marqueur graphique, 
+la surface contenant le point de dpart et dlimite par 
+un contour ferm.\DEBUT;FIX  \FIN;Fix(exp_num)\ind 40mm;nombre entier obtenu  partir de la valeur de exp_num 
+en considrant une partie fixe (16 bits avant la virgule) 
+de sa reprsentation binaire.\DEBUT;FN  \FIN;Fn_nom(list_exp)\ind 40mm;valeur de la fonction Fn_nom dfinie par un ordre DEF. 
+La liste des expressions list_exp donne des valeurs aux 
+paramtres de la fonction.\DEBUT;FOR  \FIN;For var=exp_ini To exp_fin [ Step exp_pas ] blocNext [ var ]\ind 40mm;annonce et excute la rptition des instructions contenues 
+dans bloc. La variable var sert de compteur, elle prend 
+des valeurs comprises entre celles de exp_ini et de exp_fin. 
+Lors de la premire excution, la variable var prend une 
+valeur initiale donne par exp_ini, lors de la deuxime, var 
+augmente de 1 ou de exp_pas, lors des excutions suivantes, 
+l'augmentation reste constante. 
+Les excutions se poursuivent tant que le compteur indique 
+une valeur comprise la valeur initiale et la finale.\DEBUT;FORMAT  \FIN;Format(c,d) var_num\ind 40mm;valeur arrondie de var_num avec c chiffres avant le point 
+dcimal et d dcimales aprs. Le formatage des nombres 
+s'utilise principalement pour contrler la mise en page 
+avec l'ordre PRINT.\DEBUT;FREE  \FIN;Free\ind 40mm;nombre d'octets encore libres en mmoire centrale.\DEBUT;FUNCTION  \FIN;Function\ind 40mm;affiche la liste des fonctions prdfinies en Basic.\DEBUT;GESDO  \FIN;Gesdo (no_fonc,no_fich)\ind 40mm;valeur fournie par une fonction du logiciel de gestion de 
+donnes GESDO. La fonction de numro no_fonc s'applique au 
+fichier de numro no_fich.Gesdo (no_com,no_fich), list_param\ind 40mm;excute la commande de numro no_com du logiciel GESDO. 
+Cette commande s'applique au fichier de numro no_fich 
+avec des paramtres spcifis dans la liste list_param. 
+Consulter la brochure GESTION.\DEBUT;GET  \FIN;Get File(no), list_var\ind 40mm;lit des valeurs codes en binaire et les range dans les 
+variables de list_var. La lecture se fait sur le fichier 
+de numro no. 
+Chaque variable alphanumrique emmagasine autant d'octets 
+que son actuelle longueur.\DEBUT;GOSUB  \FIN;Gosub num_ligne\ind 40mm;branche l'excution sur les instructions qui suiventGosub Label_nom\ind 40mm;num_lign ou l'tiquette Label_nom. Lorsque l'ordre RETURN 
+est rencontr, l'excution reprend  l'ordre qui suit 
+l'appel fait par Gosub.Gosub Label_nom(list_param_effect)\ind 40mm;excute la procdure Label_nom en remplaant les paramtres 
+formels de la dfinition (Cf. LABEL) par des paramtres 
+effectifs prciss dans list_param_effect. Aux paramtres 
+indirects, dclars par le prfixe @, doivent se substituer 
+soit des variables normales ( var_num ou var_alpha ), soit 
+des variables indices ( var(*) ), soit des noms de fonctions 
+( Fn_var ), soit encore des variables indirectes 
+( @var ). Chaque paramtre direct doit tre remplac par 
+une expression qui lui donne une valeur.\DEBUT;GOTO  \FIN;Goto num_lign\ind 40mm;envoie l'excution  la ligne num_lign.Goto Label_nom\ind 40mm;envoie l'excution  la ligne rfrence par l'tiquette 
+Label_nom\DEBUT;H'  \FIN;H'hexa\ind 40mm;nombre crit en base seize. Le prfixe H' annonce un nombre 
+hexadcimal, hexa, qui s'crit avec des chiffres et quelques 
+lettres  prendre dans la liste A, B, C, D, E et F.\DEBUT;HEX$  \FIN;Hex$(exp_num)\ind 40mm;chane des caractres du codage hexadcimal de la valeur 
+de l'expression numrique exp_num.\DEBUT;HIGH  \FIN;High(exp_num)\ind 40mm;nombre entier, compris entre 0 et 255, obtenu par rduction 
+modulo 256 de la partie entire du quotient exp_num/256.\DEBUT;IF  \FIN;If cond Then traitem\ind 40mm;n'excute le traitement traitem que lorsque la condition 
+cond est satisfaite.If cond Then traitem1 Else traitem2\ind 40mm;excute soit le traitement traitem1 soit traitem2 selon 
+que la condition cond est remplie ou non. 
+Les traitements possibles aprs un Then ou un Else sont 
+de trois types:\ind 35mm;1  num_lign  --comme "Goto num_lign"\ind 35mm;2  Label_nom --comme "Goto Label_nom"\ind 35mm;3  liste d'instructions Basic spares par ":".\ind 40mm;La liste peut tre vide!\DEBUT;IGRAPH  \FIN;Igraph\ind 40mm;initialise les paramtres graphiques:\ind 40mm;Coor(0,0), Rot=0, Scale=1, Typnt=1, Typdash=1.\DEBUT;INC  \FIN;Inc var_num\ind 40mm;augmente de 1 la valeur de la variable numrique var_mum.\DEBUT;INPUT  \FIN;Input [annonce;] list_var [;]\ind 40mm;entre des valeurs pour chacune des variables de la liste 
+list_var. La virgule est le sparateur des variables de 
+list_var, tandis que le sparateur des donnes est soit 
+une virgule soit une suite d'espaces.\ind 40mm;L'option [annonce;] permet d'afficher une chane de caractres 
+pour solliciter les entres. L'annonce elle-mme est 
+soit une chane entre guillemets, soit une expression alphanumrique entre parenthses.\ind 40mm;L'option [;] finale inhibe  l'cran l'effet du "RETURN" 
+qui termine les donnes.Input Line [annonce;] var_alpha [;]\ind 40mm;entre une ligne de caractres et mmorise cette chane 
+dans la variable var_alpha.Input File(no), list_var\ind 40mm;entre des valeurs pour les variables de list_var en les 
+lisant sur le fichier dont le numro de rfrence est no.Input Line File(no), var_alpha\ind 40mm;entre une ligne complte depuis le fichier de numro no et 
+la mmorise dans la variable var_alpha.\DEBUT;INPUT$  \FIN;Input$(exp_num)\ind 40mm;chane forme de exp_num caractres lus sur le clavier.Input$(File(no), exp_num)\ind 40mm;chane forme de exp_num caractres lus sur le fichier 
+de numro no.\DEBUT;INSTR  \FIN;Instr(A$,B$)\ind 40mm;position de la premire occurence de B$ dans A$. 
+Lorsque B$ n'est pas une sous-chane de A$, la position 
+est nulle.Instr(A$,B$,n)\ind 40mm;position de B$ dans la chane A$, la recherche commenant 
+ partir du n-ime caractre.\ind 40mm;Il va de soit que A$ et B$ peuvent tre remplacs par 
+n'importe quelle variable alphanumrique.\DEBUT;INT  \FIN;Int(exp_num)\ind 40mm;partie entire de la valeur de exp_num.\DEBUT;KEY  \FIN;Key\ind 40mm;nombre dont la valeur dpend du code du caractre tap 
+sur le clavier. Tant qu'aucun caractre n'est tap, Key 
+est indfini et toute activit est suspendue. 
+Si une touche-fonction est presse en mme temps qu'un 
+caractre, le code du caractre est augment d'une certaine 
+puissance de deux. 
+Avec LOW et HIGH, on peut rcuprer, d'une part le code 
+de la touche, et d'autre part le code de la touche-fonction.\DEBUT;LABEL  \FIN;Label\ind 40mm;affiche la liste des tiquettes prsentes en mmoire.Label_nom\ind 40mm;joue le rle d'tiquette en affectant  la ligne qui porte 
+cette instruction un nom de rfrence.Label_nom (list_param) blocReturn\ind 40mm;cre un procdure  paramtres en lui attribuant un nom. 
+Le bloc d'instructions, situ entre la dclaration par 
+Label et l'ordre RETURN, dcrit exactement le traitement 
+qu'effectuera la procdure.\ind 40mm;Les paramtres de la procdures sont prciss dans la liste 
+list_param. Ils sont de deux types distingus par l'absence 
+ou la prsence du prfixe @:\ind 40mm;\bold;nom_param\roman;  paramtre, dit direct, d'entre de valeurs\ind 40mm;\bold;@nom_param\roman;  paramtre, dit indirect, de communication.\DEBUT;LEFT$  \FIN;Left$(exp_alpha,eXxp_num)\ind 40mm;valeur alphanumrique forme des exp_num caractres de 
+gauche de la chane produite par exp_alpha.\DEBUT;LEN  \FIN;Len(var_alpha)\ind 40mm;nombre de caractres que contient la variable var_alpha.\DEBUT;LET  \FIN;Let var = exp\ind 0mm;attribue  la variable var la valeur de l'expression exp.Let list_affect\ind 40mm;attribue des valeurs  des variables selon la liste des 
+affectations. Les affectations sont de la forme var = exp, 
+elles sont spares par des virgules.\DEBUT;LIB  \FIN;Lib\ind 40mm;affiche le nom de tous les programmes Basic contenus 
+dans la mmoire de masse principale.Lib "unit:"\ind 40mm;affiche le nom des programmes Basic contenus 
+dans l'unit prcise.\DEBUT;LINE  \FIN;Input Line ...\ind 40mm;lit et mmorise tous les caractres jusqu' la fin de la 
+ligne. La rubrique INPUT donne la syntaxe complte.\DEBUT;LINE$  \FIN;Line$(exp_num)\ind 40mm;chane des caractres de la ligne de programme dont le 
+numro est la valeur de exp_num.\DEBUT;LIST  \FIN;List\ind 40mm;affiche successivement toutes les lignes du programme.List segment\ind 40mm;affiche les lignes du programme dont le numro est dans 
+l'intervalle segment. Les segments possibles sont:\ind 40mm; 1  etiq	 2  etiq..etiq\ind 40mm; 3  etiq..	 4  ..etiq\ind 40mm;o etiq est soit un numro de ligne soit une tiquette 
+de la forme Label_num.List File "nom_gen"\ind 40mm;affiche la liste des noms de fichiers slectionns 
+par le nom gnrique nom_gen.\DEBUT;LN  \FIN;Ln(exp_num)\ind 40mm;valeur du logarithme naturel de exp_num. 
+Provoque une erreur si la valeur de exp_num est ngative.\DEBUT;LOAD  \FIN;Load "nom_fich"\ind 40mm;efface la mmoire et y charge le programme cod en binare 
+et rang dans le fichier "nom_fich.CBAS" par l'ordre COPY.\DEBUT;LOG  \FIN;Log(exp_num)\ind 40mm;valeur du logarithme dcimal de exp_num. 
+Provoque une erreur si la valeur de exp_num est ngative.\DEBUT;LOOP  \FIN;\sh;Loop blocEnd Loop\gh;\ind 40mm;annonce une boucle gnralise qui consiste  rpter 
+l'xcution des instructions du bloc jusqu' ce qu'une 
+sortie de boucle (cf. EXIT) fasse passer  l'instruction 
+qui suit End Loop.\ind 40mm;La prsence dans bloc d'au moins une instruction EXIT est 
+indispensable.\DEBUT;LOW  \FIN;Low(exp_num)\ind 40mm;nombre entier, compris entre 0 et 255, obtenu par rduction 
+modulo 256 de la partie entire de exp_num.\DEBUT;LOWER$  \FIN;Lower$(exp_alpha)\ind 40mm;chane forme des caractres minuscules correspondants  
+ceux du texte produit par exp_alpha.\DEBUT;MID$  \FIN;Mid$(exp_alpha,pos,n)\ind 40mm;chane forme des n caractres extraits,  partir de la 
+position pos, du texte produit par exp_alpha.\DEBUT;MOD  \FIN;exp1 Mod exp2\ind 40mm;valeur du reste de la division euclidienne de exp1 par 
+exp2. L'opration Mod n'est possible qu'avec des entiers.\DEBUT;MODWDO  \FIN;Modwdo(col,li,ncol,nli)\ind 40mm;dfinit une nouvelle fentre dans laquelle se feront les 
+affichages de tous les textes. Le coin suprieur gauche 
+de cette fentre est pos  la colonne col de la ligne li. 
+La taille de la fentre est donne par son nombre de 
+colonnes ncol et son nombre de lignes nli. 
+L'unit de mesure est le point graphique.\DEBUT;MOUSE  \FIN;Mouse Off\ind 40mm;attribue le contrle de la souris  l'interprteur Basic.Mouse On \ind 40mm;redonne  la souris ses fonctions ordinaires lies au 
+systme d'exploitation Psos.Mouse(x,y)\ind 40mm;place le curseur de la souris au point P(x,y).Mouse(0)\ind 40mm;valeur de l'abscisse de la position graphique de la souris. 
+L'appel de Mouse(0) rgnre tous les paramtres de la 
+souris (tat des boutons et coordonnes de position).Mouse(1)\ind 40mm;valeur de l'ordonne de la position graphique de la souris.Mouse(2)\ind 40mm;valeur logique indiquant si la bouton de gauche est press.Mouse(3)\ind 40mm;valeur logique indiquant si le bouton de droite est press.Mouse(4)\ind 40mm;valeur logique indiquant si le bouton du centre est press.Mouse(5)\ind 40mm;valeur logique indiquant si l'un des boutons a chang d'tat 
+depuis le dernier relev des paramtres.\DEBUT;MOVE  \FIN;Move(long)\ind 40mm;trace un vecteur de longueur long dans la direction et 
+le sens fix par l'angle TURN des coordonnes polaires.\DEBUT;MOVESM6  \FIN;Movesm6(x,y,t)\ind 40mm;fait un trac selon la syntaxe du Smaky 6.\DEBUT;MOVETO  \FIN;Moveto(x,y)\ind 40mm;trace un segment joignant la postion courante du marqueur 
+et le point de coordonnes x et y.\DEBUT;MOVETOR  \FIN;Movetor(dx,dy)\ind 40mm;trace,  partir de la position courante, un vecteur 
+dont les composantes sont dx et dy.\DEBUT;NEW  \FIN;New\ind 40mm;efface la mmoire centrale rserve au Basic.\DEBUT;NEXT  \FIN;Next\ind 40mm;marque la fin de la dernire boucle "For".Next list_var\ind 40mm;marque la fin d'une srie de boucles "For" imbriques. 
+La premire variable de la liste est le compteur de la 
+dernire boucle active.\DEBUT;NOT  \FIN;Not exp\ind 40mm;valeur logique contraire  celle de l'expression exp.\DEBUT;NUM  \FIN;Num(exp_alpha)\ind 40mm;valeur numrique de la chane de caractres produite par 
+l'expression exp_alpha.\DEBUT;OFF  \FIN;... Off\ind 40mm;marque une supension d'activit. Ne s'utilise qu'avec 
+les ordres ENTER et MOUSE.\DEBUT;ON  \FIN;On Break Then etiq\ind 40mm;enclenche une dviation potentielle vers la ligne identifie 
+par etiq. La dviation n'est effective que lorsque 
+la touche \D;(Break)\F; est presse.On Break Then Stop\ind 40mm;redonne  la touche \D;(Break)\F; sa fonction normale d'arrt.On Error Then etiq\ind 40mm;enclenche une dviation potentielle vers la ligne identifie 
+par etiq. La dviation n'est effective que lorsqu'une 
+erreur est produite.On Error Then Stop\ind 40mm;redonne aux erreurs leur effet normal,  savoir l'arrt de 
+l'excution en cours et le passage au mode erreur.On exp_num Gosub list_etiq [ Else traitem ]On exp_num Goto list_etiq [ Else traitem ]\ind 40mm;opre une dviation (GOSUB ou GOTO) vers la ligne qui porte 
+l'tiquette dont le numro d'ordre dans list_etiq est la 
+valeur de l'expression exp-num. Lorsque exp_num ne dtermine 
+pas une des tiquettes, c'est le traitement traitem 
+qui est effectu.\ind 40mm;Les tiquettes (num_lign ou Label_nom) de la liste sont  
+sparer par des virgules. Les types de traitement possibles 
+aprs Else sont dcrits dans la rubrique IF.\DEBUT;OPEN  \FIN;Open File(no), "nom_fich", mode [, tampon]\ind 40mm;ouvre le fichier nom_fich, lui attribue le numro de 
+rfrence no, prcise le mode d'utilisation et fixe la 
+taille (en octets) de la mmoire tampon.\ind 40mm;Le nom du fichier est soit mis entre guillemets soit 
+rang dans une variable alphanumrique. 
+Les modes possibles sont les entiers de 2  7:\ind 40mm;  mode=2  --ouverture en lecture\ind 40mm;  mode=3  --ouverture exclusive pour lecture\ind 40mm;  mode=4  --ouverture en criture\ind 40mm;  mode=5  --ouverture exclusive pour criture\ind 40mm;  mode=6  --ouverture en lecture et criture\ind 40mm;  mode=7  --ouverture exclusive pour lecture et criture\ind 40mm;Les numros de rfrence "no" sont compris entre 1 et 7. 
+Tampon est un nombre positif ou nul dont la valeur par 
+dfaut est 1024.\DEBUT;OPER  \FIN;Oper\ind 40mm;affiche la liste des oprateurs reconnus par le Basic.\DEBUT;OR  \FIN;exp1 Or exp2\ind 40mm;valeur logique obtenue en calculant le "ou" logique de 
+exp1 et exp2.\DEBUT;ORDER  \FIN;Order\ind 40mm;affiche la liste des ordres du Basic.\DEBUT;ORDER$  \FIN;Let Order$(no)="nouv_nom"\ind 40mm;attribue un nouveau nom  l'ordre qui porte le numro no.\DEBUT;PDUMP  \FIN;Pdump(0)\ind 40mm;cre une copie papier de l'tat de l'cran. 
+Cet ordre ne fonctionne que si une imprimante  aiguilles 
+est lie effectivement au Smaky.\DEBUT;PI  \FIN;Pi\ind 40mm;valeur du nombre pi=3.1415926.\DEBUT;POINT  \FIN;Point(x,y)\ind 40mm;place le marqueur graphique au point P(x,y). 
+Alors que le dplacement du marqueur reste sans traces, 
+le point P(x,y) est marqu selon le type de point TYPNT.\DEBUT;POINTR  \FIN;Pointr(dx,dy)\ind 40mm;dplace le marqueur graphique d'un vecteur de composantes 
+dx et dy. La position finale du marqueur est montre selon 
+le type de point TYPNT.\DEBUT;POP  \FIN;Pop\ind 40mm;retire un lment au sommet de la pile du Basic.Pop list_var\ind 40mm;range les dernires valeurs empiles dans les variables 
+de la liste list_var.\DEBUT;POS  \FIN;Pos Eof(no)\ind 40mm;pose la tte de lecture-criture  la fin du fichier de 
+numro no.Pos Eof(no)\ind 40mm;nombre d'octets que contient le fichier no.Pos File(no), n\ind 40mm;pose la tte de lecture aprs le n-ime octet du fichier 
+de numro no.Pos File(no)\ind 40mm;nombre d'octets qui prcdent la position de la tte de 
+lecture-criture dans le fichier de numro no.\DEBUT;PRECED  \FIN;... Preced ...\ind 40mm;affiche le niveau de prcdence dans une expression. 
+Usage rserv au pre du Basic.\DEBUT;PRINT  \FIN;Print\ind 40mm;envoie le caractre "RETURN"  l'cran ce qui met le 
+curseur au dbut de la ligne suivante.Print expr\ind 40mm;affiche la valeur d'une expression et envoie un "RETURN".Print list_elem\ind 40mm;affiche une liste d'lments et envoie un "RETURN". 
+La liste est forme d'expressions numriques ou alphanumriques 
+et de fonctions spciales -TAB() ou CARYX( , )-. 
+Les lements de la liste sont spars par ";" ou des "," 
+dont les effets sont respectivement la juxtaposition et 
+la tabulation.Print list_elem;\ind 40mm;affiche les lments et laisse le curseur au bout de la 
+ligne crite.Print list_elem,\ind 40mm;affiche une liste d'lments puis positionne le cuseur 
+quelques espaces plus loin pour qu'il soit  une distance 
+multiple de 8 du dbut de ligne.Print File(no), list_elemPrint File(no), list_elem;Print File(no), list_elem,\ind 40mm;imprime, sur le fichier de numro no, une liste d'lments 
+selon le mme principe que ci-dessus.\DEBUT;PRIORITY  \FIN;Priority\ind 40mm;nombre donnant le niveau de priorit du Basic dans la 
+hirarchie des tches du systme Psos.Priority niv\ind 40mm;fixe  niv le niveau de priorit du Basic. Le niveau 
+ne peut tre manipul que par des connaisseurs.\DEBUT;PROGRAM  \FIN;Program "nom_fich"\ind 40mm;excute le programme assembl et rang dans le fichier de 
+nom complet "nom_fich.CODE". L'activit du Basic est 
+suspendue jusqu' ce que le programme appel soit termin.          Ex.\ind 40mm;Program "Filer list #mm1:*.bas" 
+affiche la liste des programmes BASIC qui sont accessibles sur la mmoire nomme #mm1.\DEBUT;PUSH  \FIN;Push list_var\ind 40mm;dpose successivement sur la pile les valeurs des 
+variables de list_var. Ceci permet la cration d'une 
+liste de variables locales!\DEBUT;PUT  \FIN;Put File(no), list_var\ind 40mm;crit, en codes binaires, les valeurs des variables de 
+la liste list_var. La virgule est le sparateur, elle ne 
+provoque pas, dans ce type d'criture, de tabulation. 
+Une variable entire occupe 2 octets, une relle 4 et 
+une alphanumrique autant que sa longueur.\DEBUT;RANDOMIZ  \FIN;Randomiz\ind 40mm;mlange les nombres alatoires.\DEBUT;RDSTATUS  \FIN;\ind 40mm;Rdstatus File(no), no_type, n, var_alpha 
+lit, via le canal de numro no, l'tat du contrleur 
+de type no_type et range les informations dans var_alpha. 
+Le paramtre n indique le nombre de caractres  lire.\DEBUT;READ  \FIN;Read list_var\ind 40mm;lit, sur les lignes de DATA, des valeurs et les range dans 
+les variables de la liste list_var.\DEBUT;REAL  \FIN;Real(exp_num)\ind 40mm;valeur de exp_num code comme un nombre rel. 
+N'est utile que si l'on utilise un codage spcial pour 
+les entiers.\DEBUT;REFGOTO  \FIN;Refgoto\ind 40mm;affiche les numros de lignes qui servent de rfrence 
+dans les ordres GOTO.\DEBUT;REM  \FIN;Rem commentaire\ind 40mm;annonce que le texte situ entre REM et la fin de la 
+ligne n'est qu'une remarque ou un commentaire que l'interprteur Basic doit ignorer.\DEBUT;RENAME  \FIN;Rename "anc_nom", "nouv_nom"\ind 40mm;change le nom d'un fichier. Le fichier "anc_nom" s'appelle 
+dsormais "nouv_nom". Les noms de fichiers peuvent aussi 
+tre produits par des expressions alphanumriques.\DEBUT;RENUM  \FIN;Renum\ind 40mm;renumrote, de 10 en 10, les lignes du programme situ en 
+mmoire. La premire ligne porte le numro 100.Renum = dep, pas\ind 40mm;renumrote, avec des numros qui se succdent avec un 
+cart "pas" fix, les lignes du programme. La premire 
+ligne porte le numro de dpart dep.Renum segment = dep, pas\ind 40mm;renumrote la partie du programme dont les numros de 
+ligne sont compris dans l'intervalle segment. 
+Un segment est de l'une des formes num_lign..num_lign, 
+num_lign, num_lign..  ou  ..num_lig.\DEBUT;REPEAT  \FIN;\sh;Repeat blocUntil cond\gh;\ind 40mm;rpte l'excution des instructions contenues dans bloc 
+jusqu' ce que la condition cond soit remplie.\DEBUT;RESTORE  \FIN;Restore\ind 40mm;ractive la premire ligne de DATA. Les valeurs de cette 
+ligne peuvent tre ainsi relues.Restore num_lign\ind 40mm;positionne la tte de lecture des DATA devant la premire 
+donne de la ligne num_lign.\DEBUT;RESUME  \FIN;\ind 40mm;Dans un traitement d'erreurs:Resume\ind 40mm;reprend l'excution depuis l'ordre qui a provoqu l'erreur.Resume Next\ind 40mm;reprend l'excution depuis l'ordre qui suit immdiatement 
+celui qui a provoqu l'erreur.Resume etiq\ind 40mm;oublie l'erreur et dvie l'excution vers la ligne tiquete 
+etiq. L'tiquette est soit num_lign soit Label_nom.\DEBUT;RETURN  \FIN;Return\ind 40mm;marque la fin d'une procdure et retourne  l'excution 
+des instructions qui suivent l'appel (GOSUB) de la 
+procdure.\DEBUT;RIGHT$  \FIN;Right$(exp_alpha,exp_mun)\ind 40mm;chane forme des exp_num caractres de droite du texte 
+produit par exp_alpha.\DEBUT;RND  \FIN;Rnd\ind 40mm;valeur alatoire comprise entre 0 et 1, 0 tant compris 
+et 1 non compris dans l'intervalle des valeurs possibles. 
+La fonction RND simule une distribution uniforme.\DEBUT;ROT  \FIN;Rot\ind 40mm;valeur, en radians, de l'angle que font l'axe Ox et l'axe 
+horizontal.Rot(exp_num)\ind 40mm;effectue une rotation des axes d'un angle de exp_alpha 
+radians.\DEBUT;ROTR  \FIN;Rotr(exp_num)\ind 40mm;augmente l'angle entre l'axe horizontal et l'axe Ox de 
+exp_num radians.\DEBUT;RUN  \FIN;Run\ind 40mm;lance l'excution du programme aprs avoir mis  zro 
+les variables du programme.\DEBUT;SAVE  \FIN;Save "nom_fich"\ind 40mm;sauve le programme en copiant son texte dans un fichier 
+dont le nom complet est "nom_fich:BAS"Save "nom_fich", New, Run\ind 40mm;sauve le programme en crant un fichier qui contient 
+d'abord l'ordre New, puis le texte du programme et enfin 
+l'ordre Run.\DEBUT;SCALE  \FIN;Scale \ind 40mm;nombre donnant le facteur d'chelle sur les axes.Scale(exp_num)\ind 40mm;dtermine un nouveau facteur d'chelle avec la valeur 
+exp_num, valeur qui doit tre comprise entre 1 et 7.\DEBUT;SELECT  \FIN;\sh;Select var{ Case list_val   bloc }[ Case Else   bloc ]End Select\gh;\ind 40mm;selectionne un traitement diffrenti selon la valeur 
+de la variable var.\ind 40mm;Rappelons que ce qui est entre accolades peur tre rpt 
+ souhait (plusieurs Case possibles), tandis que ce qui 
+est entre crochets est optionnel (au plus un Else). 
+Consulter la rubrique CASE pour des dtails. \DEBUT;SETBAR  \FIN;Setbar exp\ind 40mm;allume des barres sous les lgendes des touches programmables. 
+Les barres allumes simulent, de droite  gauche, 
+l'criture binaire, avec 16 bits, de la valeur de exp.          Ex.\ind 40mm;Setbar 14*8^n allume une barre sous le (n+1)-ime 
+groupe de trois touches.\DEBUT;SETMENU  \FIN;Setmenu H0$,B0$,H1$,B1$,H2$,B2$,H3$,B3$,H4$,B4$,H5$,B5$\ind 40mm;affiche les textes contenus dans les variables comme 
+nouvelles lgendes des groupes de touches programmes.\ind 40mm;H0$, H1$, H2$, H3$, H4$ et H5$ sont les lgendes du haut.\ind 40mm;B0$, B1$, B2$, B3$, B4$ et B5$ sont les lgendes du bas.\DEBUT;SETSKEY  \FIN;Setskey exp_alpha\ind 40mm;dvie de leur emploi normal les touches du clavier notes 
+par les caractres fournis par exp_alpha.          Ex.\ind 40mm;Setskey Chr$(0)+"SDFG" dvie les "flches horizontales".\DEBUT;SGN  \FIN;Sgn(exp_num)\ind 40mm;signe (0, 1 ou -1) de la valeur de exp_num.\DEBUT;SGRAPH  \FIN;Sgraph\ind 40mm;permute les caractristiques graphiques courantes avec 
+celles de la zone auxiliaire. Consulter aussi CGRAPH.\DEBUT;SIN  \FIN;Sin(exp_num)\ind 40mm;sinus de l'angle dont la mesure en radians est la valeur 
+de exp_num.\DEBUT;SINH  \FIN;Sinh(exp_num)\ind 40mm;sinus hyperbolique de la valeur de exp_num.\DEBUT;SKEY  \FIN;Skey(0)\ind 40mm;nombre entier dont la dcomposition binaire indique 
+quelles sont parmi les touches dvies par SETSKEY, 
+celles dont l'tat vient de changer.Skey(1)\ind 40mm;nombre entier dont la dcomposition binaire indique 
+quelles sont les touches dvies qui sont actuellement 
+presses.          Ex.\ind 40mm;Si Skey(1) vaut 2\up;n\down;, seule la (n+1)-\up;ime\down; 
+touche dvie est actuellement presse.\DEBUT;SKIP  \FIN;Skip(long)\ind 40mm;dplace, de manire invisible, le marqueur graphique d'un 
+vecteur de longueur long dans la direction et le sens fix 
+par l'angle TURN des coordonnes polaires.\DEBUT;SKIPTO  \FIN;Skipoto(x,y)\ind 40mm;dplace, de manire invisible, le marqueur graphique 
+jusqu'au point P(x,y).\DEBUT;SKIPTOR  \FIN;Skiptor(dx,dy)\ind 40mm;dplace, de manire invisible, le marqueur graphique d'un 
+vecteur de composantes dx et dy.\DEBUT;SPACE$  \FIN;Space$(n)\ind 40mm;chane forme de n caractres "espace".\DEBUT;SQRT  \FIN;Sqrt(exp_num)\ind 40mm;valeur de la racine carre de l'expression exp_num. 
+Provoque une erreur si exp_num a une valeur ngative.\DEBUT;STACK  \FIN;Stack\ind 40mm;affiche l'tat de la pile gre par le Basic.\DEBUT;STEP  \FIN;... Step exp_pas\ind 40mm;fixe la valeur du pas dans une boucle  compteur. 
+Consulter FOR.\DEBUT;STOP  \FIN;Stop\ind 40mm;stoppe l'excution d'un programme et revient au mode 
+ordinaire.\DEBUT;STRING$  \FIN;Sring$(n, cod)\ind 40mm;chane forme de n caractres gaux dont le code ASCII 
+est la valeur de cod.\DEBUT;SWAP  \FIN;Swap var1, var2\ind 40mm;change les contenus des deux variables var1 et var2.\DEBUT;TAB  \FIN;Tab(n)\ind 40mm;avance le curseur jusqu' la colonne n de la ligne 
+courante.... Tab(n); ...\ind 40mm;positionne, en relation avec un ordre PRINT, la tte 
+d'criture  la colonne n de la ligne courante.\DEBUT;TAN  \FIN;Tan(exp_num)\ind 40mm;tangente de l'angle dont la mesure en radians est la 
+valeur de exp_num.\DEBUT;TANH  \FIN;Tanh(exp_num)\ind 40mm;tangente hyperbolique de la valeur de axp_num.\DEBUT;TESTBIT  \FIN;Testbit(exp_num, no_bit)\ind 40mm;valeur logique indiquant si le bit de numro no_bit 
+est 1 dans l'criture binaire du nombre entier produit 
+par exp_num.\DEBUT;TESTP  \FIN;Testp(x,y)\ind 40mm;valeur logique indiquant si le point P(x,y) est allum 
+ou non.\DEBUT;TESTPR  \FIN;Testpr(dx,dy)\ind 40mm;valeur logique indiquant si l'extrmit du vecteur de 
+composantes dx et dy est allume ou non.\DEBUT;THEN  \FIN;.. Then traitem\ind 40mm;annonce le traitement  effectuer lorsque .. . 
+Consulter IF.\DEBUT;TIMEOUT  \FIN;Timeout\ind 40mm;valeur du dlai d'attente avant que le clavier soit 
+considr provisoirement comme hors-circuit.Timeout n\ind 40mm;fixe  n cinquantimes de secondes le dlai d'attente 
+pour une lecture du clavier. Si n=-1, l'attente est 
+perptuelle.\DEBUT;TO  \FIN;... To exp_fin ...\ind 40mm;annonce la valeur extrme que peut prendre le compteur 
+d'une boucle FOR.\DEBUT;TRUE  \FIN;True\ind 40mm;valeur logique reprsentant "vrai" et reprsente, dans 
+la machine, par le nombre entier -1.\DEBUT;TURN  \FIN;Turn\ind 40mm;valeur, en radians, de l'angle des coordonnes polaires.Turn(exp_num)\ind 40mm;fixe l'angle des coordonnes polaires  exp_num radians.\DEBUT;TURNR  \FIN;Turnr(exp_num)\ind 40mm;augmente l'angle des coordonnes polaires de exp_num 
+radians.\DEBUT;TYPDASH  \FIN;Typdash\ind 40mm;nombre entier indiquant le type de trait.Typdash(ty_da)\ind 40mm;fixe le type de trait utilis pour tracer de vecteurs. 
+le paramtre ty_da peut prendre des valeurs de 0  84. 
+Si ty_da est nul le trait est spcial, de 1  4, il est 
+continu plus ou moins fin, de 5  8, la ligne est 
+pointille, etc.\DEBUT;TYPNT  \FIN;Typnt\ind 40mm;nombre entier indiquant le type de point que dessine 
+le marqueur graphique.Typnt(typ)\ind 40mm;fixe le type de point  la valeur de typ. 
+Le paramtre typ peut prendre des valeurs entires 
+comprises entre 0 et 12.\ind 40mm;Avec no_typ=0, les points ne sont pas marqus, avec 1, 
+les points sont allums, avec 2, ils sont teints, avec 
+3, ils sont inverss. Pour les types suprieurs  3, 
+l'effet est spcial mais pas dcrit ici.\DEBUT;UNTIL  \FIN;Until cond\ind 40mm;termine ou reprend la rptition des instructions qui 
+suivent REPEAT selon que la condition est remplie ou non.\DEBUT;UPPER$  \FIN;Upper$(exp_alpha)\ind 40mm;chane des caractres majuscules correspondants  ceux 
+du texte produit par exp_alpha.\DEBUT;USING  \FIN;\ind 40mm;permettra de fixer un format symbolique dans un PRINT.\DEBUT;VAL  \FIN;Val(exp_alpha)\ind 40mm;valeur du nombre donn par la chane produite par exp_alpha.\DEBUT;VALHEX  \FIN;Valhex(exp_alpha)\ind 40mm;valeur du nombre cod en hexadcimal par la chane 
+produite par exp_alpha.\DEBUT;VAR  \FIN;Var\ind 40mm;affiche des renseignements (nom, type et contenu) sur 
+toutes les variables dfinies par l'utilisateur.\DEBUT;VARSYS  \FIN;Varsys\ind 40mm;affiche la liste des variables utilises par le Basic.\DEBUT;VERSION  \FIN;Version\ind 40mm;numro de version de l'interprteur Basic.\DEBUT;WHEREPEN  \FIN;Wherepen(m)\ind 40mm;valeur d'une des coordonnes des rcents points calculs. 
+Avec m=0, on obtient la dernire abscisse programme, 
+avec m=1 ,l'ordonne, avec m=2, l'abscisse graphique 
+du marqueur, avec m=3, l'ordonne, avec m=4, l'avant 
+dernire abscisse programme, avec m=5, l'ordonne, 
+avec m=6, l'abcisse de la position prcdente du marqueur, 
+avec m=7, l'ordonne.\DEBUT;WHILE  \FIN;\sh;While cond blocEnd While\gh;\ind 40mm;excute de manire rptitive les instructions du bloc, 
+ ceci tant que la condition cond est ralise.\ind 40mm;Si la condition n'est pas remplie l'excution du programme 
+se poursuit aprs End While.\DEBUT;WINDOW  \FIN;Window(Xmin,Ymin,Xmax,Ymax)\ind 40mm;dfinit une aire de traage limite par des parallles 
+aux axes de coordonnes.\ind 40mm;\bold;Window(0)\roman;  abscisse minimum sur l'aire de traage.\ind 40mm;\bold;Window(1)\roman;  ordonne minimum sur l'aire de traage.\ind 40mm;\bold;Window(2)\roman;  abscisse maximum sur l'aire de traage.\ind 40mm;\bold;Window(3)\roman;  ordonne maximum sur l'aire de traage.\DEBUT;XOR  \FIN;exp1 XOR exp2\ind 40mm;valeur logique obtenue en faisant le "ou exclusif" des 
+valeurs des deux expressions.\ind 95mm;Rv 20.12.84\ind 95mm;MYB/dr

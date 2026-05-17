@@ -1,0 +1,110 @@
+\cpage=58;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define R:\bold;REMARQUE\roman;:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\define ICONE:\sh;\up 78lp;\image %1,3,1224lp;\gh;\define DT;\pug;\ub12;\_\define FT;\_\pog;\demi;\T;4.16 Le manipulateur de fichiers FILER\A;\sh;\image ifiler,3;\gh;\ind 40mm;Le FILER permet de visualiser le contenu 
+d'une disquette, de copier slectivement des 
+fichiers sur une autre disquette, de dtruire 
+ou de renommer un fichier, etc.Un nom de fichier est termin par une \bold;extension\roman;, c'est--dire 
+un point suivi de quelques caractres. Cette extension prcise la 
+\bold;nature\roman; du fichier. Les extensions les plus courantes sont:\mb10;     |-----------|-------------------------------------------|     | extension | nature                                    |     |-----------|-------------------------------------------|     | .text     | document ralis avec TEXT                |     | .plan     | dessin ralis avec PLAN                  |     | .image    | dessin prt pour l'impression             |     | .calc     | tableau ralis avec CALC                 |     | .bas      | texte d'un programme BASIC                |     | .logo     | texte d'un programme LOGO                 |     | .asm      | texte d'un programme SMILE (assembleur)   |     | .code     | programme excutable                      |     | .genc     | gnrateur de caractres                  |     |-----------|-------------------------------------------|\ur10;Lorsque le FILER vous demande le \bold;nom d'un fichier\roman;, vous pouvez 
+utiliser les caractres suivants:\D;(*)\F;\ind 15mm;remplace un nombre quelconque de caractres 
+(ventuellement aucun)\D;(?)\F;\ind 15mm;remplace un (et un seul) caractrePar exemple, pour prendre en considration tous les programmes 
+BASIC, il faut donner le nom:	\bold;*.bas\roman;Si un fichier est sur le \bold;deuxime floppy\roman;, il faut prcder le 
+nom du fichier par:	\bold;#mm1:\roman;qui s'obtient simplement en appuyant sur la touche \D;(TAB)\F;.Par exemple:	\bold;#mm1:*.bas\roman;\ATTENTION;\R;Il ne faut \bold;jamais mettre d'espaces\roman;  l'intrieur 
+d'un nom de fichier. Une erreur classique consiste  donner:	\bold;#mm1:  *.bas\roman;		<--- FAUXPour \bold;quitter le FILER\roman;, il faut appuyer sur la touche fonction 
+\D;(Stop)\F;, puis sur \D;(RETURN)\F;.\T;4.16.1 Listage d'une disquette\A;Appuyez sur la touche fonction \D;(List)\F;, puis sur 
+\D;(RETURN)\F;. Le SMAKY pose alors la question:	\bold;Fichier(s)  lister :\roman;Appuyez sur les deux touches fonctions \D;(*)\F; et \D;(.bas)\F;, puis sur 
+\D;(RETURN)\F;. Lorsque la liste est termine, le caractre ">" appa
+rat, et vous pouvez donner une autre commande.Pour faire apparatre quelques informations supplmentaires 
+pour chaque fichier, il faut appuyer sur \D;(List)\F; puis \D;(/)\F; \D;(E)\F; 
+\D;(RETURN)\F;. Le FILER vous donne alors la taille, les attributs et la 
+date et l'heure de cration du fichier.Pour \bold;imprimer la liste\roman; au lieu de l'afficher, il faut prcder 
+le dernier \D;(RETURN)\F; des deux touches fonctions 
+\D;(>)\F; et \D;(#printer)\F;. Voici un exemple complet:	\D;(List)\F; \D;(/)\F; \D;(E)\F; \D;(RETURN)\F;	\D;(*)\F; \D;(.bas)\F; \D;(>)\F; \D;(#printer)\F; \D;(RETURN)\F;\T;4.16.2 Copie slective\A;Comme exemple, nous allons copier tous les programmes BASIC 
+contenus dans la disquette principale sur une deuxime disquette. 
+Il faut d'abord insrer une disquette formate (voir paragraphe4.14) 
+dans le floppy un ( droite) puis appuyer sur \D;(M1)\F;. Les deux 
+icnes en haut de l'cran doivent s'allumer.Appuyez sur la touche fonction \D;(Mxfer)\F;, puis 
+\D;(RETURN)\F;. Le SMAKY demande:	\bold;Fichier(s)  transfrer :\roman;Appuyez sur les deux touches fonctions \D;(*)\F; et 
+\D;(.bas)\F; puis \D;(RETURN)\F;. Le SMAKY pose la question:	\bold;Rpertoire de destination :\roman;Appuyez sur la touche fonction \D;(#mm1:)\F;, puis 
+\D;(RETURN)\F;. Le transfert dmarre, et le FILER affiche les fichiers 
+transfrs au fur et  mesure. La touche \D;(END)\F; permet d'interrompre 
+en tout temps.\T;4.16.3 Destruction\A;Pour dtruire un fichier (sans possibilit de retour), appuyez 
+sur la touche fonction \D;(Delet.)\F;, puis sur 
+\D;(RETURN)\F;. Le SMAKY demande:	\bold;Fichier(s)  dtruire :\roman;Tapez le nom du fichier  dtruire, puis \D;(RETURN)\F;. 
+Une confirmation est encore demande par scurit.\T;4.16.4 Changement de nom\A;Pour changer le nom d'un fichier, appuyer sur \D;(Renam.)\F; puis sur 
+\D;(RETURN)\F;. Le SMAKY demande:	\bold;Fichier  renommer :\roman;Donnez le nom du fichir  renommer, puis \D;(RETURN)\F;. Le SMAKY 
+demande encore:	\bold;Nouveau nom :\roman;Donnez le nouveau nom termin par \D;(RETURN)\F;.\T;4.16.5 Mise  l'heure\A;Pour mettre  l'\bold;heure\roman; l'horloge interne du SMAKY, il faut donner la 
+commande \bold;STIME\roman; \D;(RETURN)\F;. Les trois questions suivantes sont 
+alors poses successivement:\bold;	Heure (0..23) :	Minute (0..59) :	Seconde (0..59) :\roman;Pour modifier la \bold;date\roman;, il faut donner la 
+commande \bold;SDATE\roman; \D;(RETURN)\F;. Les trois questions suivantes sont 
+alors poses successivement:\bold;	Jour (1..31) :	Mois (1..12) :	Anne (00..99) :\roman;Le \bold;jour de la semaine\roman; est calcul automatiquement en 
+tenant compte des mois  28, 29, 30 et 31 jours.\ATTENTION;\R;Il faut attendre une minute au maximum avant 
+la mise  jour de l'heure et de la date affiches en haut  droite de l'cran.\T;5 Quelques dtails\A;Ce chapitre explique quelques dtails sur le SMAKY pour 
+l'utilisateur \bold;avanc\roman;.\T;5.1 L'icne REP\A;\sh;\image irep,3;\gh;\ind 40mm;L'icne REP permet de dterminer, d'une 
+faon globale, si les fichiers de donnes (tex
+tes, dessins, programmes BASIC, etc.) doivent 
+tre cherchs sur le floppy principal (floppy 
+zro) ou sur le floppy secondaire (floppy un). 
+Ce deuxime cas est trs utile, car il permet 
+de mettre dans le floppy principal une \bold;disquet
+te "systme"\roman; sur laquelle aucun fichier ne sera 
+crit.Voici comment procder pour mettre vos fichiers de donnes sur 
+le floppy secondaire  partir d'une disquette vierge:  -	mettez une disquette vierge dans le floppy un ( droite)  -	formatez cette disquette avec l'icne FORMAT  -	slectionnez l'icne REP, puis FLOPPY 1Vous pouvez maintenant utiliser EDIT, PLAN, BASIC, etc. Tous 
+vos fichiers seront archivs sur cette nouvelle disquette. Avant 
+de l'enlever, \bold;n'oubliez pas d'appuyer sur la touche\roman; 
+\D;(M1)\F; (voir paragraphe2.7).\T;5.2 ICONE\A;Lorsque les icnes de base sont visibles, les touches suivantes 
+peuvent tre utilises:\sh;\image kcursor;\gh;\ind 30mm;La touche \D;(CURSOR)\F; associe aux flches 
+\D;(R)\F;, \D;(D)\F;, \D;(F)\F;, etc. permet de \bold;dplacer\roman; 
+l'icne slectionne (voir paragraphe4 pour plus de dtails).\ind 30mm;\bold;Il est possible de taper une ligne de commande en toutes 
+lettres. Ds que le premier caractre est frapp, la ligne est ditable 
+de faon classique, c'est--dire avec la touche \D;(CURSOR)\F; associe 
+aux flches, avec \D;(DEL)\F;, etc.\roman;\sh;\image kundo;\gh;\ind 30mm;Efface toute la ligne de commande frappe.\sh;\image kreturn;\gh;\ind 30mm;Excute la ligne de commande frappe.\sh;\image kend;\gh;\ind 30mm;La touche \D;(END)\F; ou la touche fonction 
+\D;(F0)\F; appuye deux fois rapidement quitte l'environnement 
+ICONE. Pour le retrouver, il faut taper:\demi;\ind 30mm;\bold;ICONE 100_TEXT\roman; \D;(RETURN)\F;\demi;\ind 30mm;100_TEXT correspond au nom de la disquette, qui contient la 
+description des icnes dans un fichier \ital;100_???.icone\roman;.\sh;\image kdefine;\gh;\ind 30mm;La touche \D;(DEFINE)\F; permet d'atteindre les commandes 
+(Mem, Install, Dir, etc.) directement avec les 
+touches fonctions.\sh;\image kmacro;\gh;\ind 30mm;La touche \D;(MACRO)\F; inverse l'affichage des icnes 
+(blanc sur fond noir). Ceci est utile avant d'imprimer 
+une copie de l'cran avec \D;(SHIFT-M3)\F;.\ATTENTION;Lorsque les icnes ne sont pas utiliss pendant plus de cinq 
+minutes (aucune touche frappe au clavier), l'cran passe en 
+\bold;intensit rduite\roman;, par mesure d'conomie. Il suffit alors 
+d'appuyer sur n'importe quelle touche pour repasser en intensit 
+normale, ou de bouger la souris.\T;5.3 Paramtrisation du dmarrage\A;Lors du dmarrage du SMAKY (appel parfois \ital;bootstrap\roman;), un 
+certain environement est install. Il s'agit de:  -	affichage de l'heure en haut  droite dans l'cran  -	installation de la souris  -	deuxime floppy appel \bold;#mm1:\roman;  -	imprimante CPA-80 appele \bold;#printer\roman;Il est parfois ncessaire de \bold;changer cet environnement\roman;. Ceci 
+s'effectue trs simplement en ditant le fichier 100_BOOT.CLE 
+comme suit:\demi;	\bold;TEXT 100_BOOT.CLE\roman; \D;(RETURN)\F;Le contenu de 100_BOOT.CLE est approximativement le suivant:\mb10;	|---------------------------------------|	|                                       |	|       Display no                      |	|       Abort no                        |	|       100_clock                       |	|       100_mouse                       |	|       Install #mm1 $flo_1             |	|       Install #printer $cpa80         |	|       Module gencar dbox list ...     |	|       Define F1="filer "              |	|       ...                             |	|       Icone 100_text.icone {1}        |	|                                       |	|---------------------------------------|\ur10;\DT;Display no\FT;N'affiche pas les lignes de 100_BOOT.CLE pour acclrer le 
+dmarrage.\DT;Abort no\FT;En cas d'erreur (fichier manquant par exemple), continue normalement.\DT;100_clock\FT;Excute dans la fentre numro 9 (en haut  droite de l'cran) 
+le programme \ital;100_clock.code\roman; qui affiche la date, le jour de la semaine 
+et l'heure.\DT;100_mouse\FT;Installe la souris et excute le programme \ital;100_mouse.code\roman; qui 
+dplace la flche de la souris.\DT;Install #mm1 $flo_1\FT;Installe le deuxime floppy en lui donnant le nom #mm1:. S'il 
+n'existe pas, l'installation n'est pas faite.\DT;Install #printer $cpa80\FT;Installe l'imprimante CPA-80.\DT;Module ...\FT;Charge en permanance les modules spcifis. Ceci acclre considrablement 
+le chargement de beaucoup de programmes, mais occupe un peu plus de mmoire. 
+Les modules utiliss par plusieurs programmes sont: \ital;gencar, dbox, dgenc, list, 
+scroll, sablier, xfos, math32, \roman;etc.\DT;Define Fn=".."\FT;Dtermine les touches fonctions lorsque le clavier est assign au CLE 
+par un \ital;clic\roman; de la souris tout en haut de l'cran.\DT;Icone ... {1}\FT;Excute le programme ICONE dans la fentre principale numro un. La liste 
+des icnes est donne dans le fichier \ital;100_text.icone\roman; par exemple.\T;5.4 Paramtrisation des icnes\A;Les icnes affiches sur l'cran peuvent tre changes facilement, 
+puisqu'elles sont contenues dans un gnrateur de caractres 
+appel IIP60. Le programme EDGAR permet de les visualiser, de les 
+modifier, ou d'en crer de nouvelles (voir paragraphe4.12).Pour modifier l'ordre dans lequel elles apparaissent  l'cran, 
+il faut diter le fichier \ital;100_???.ICONE\roman; (les points 
+d'interrogations correspondent au nom de la disquette). 
+La syntaxe gnrale est la suivante:\mb10;	|-------------------------------|	|       IIP60                   |	|       49      "Text"          |	|       13      "Plan"          |	|       etc ...                 |	|-------------------------------|\ur10;L'icne FCOPY fait apparatre une deuxime srie de trois icnes 
+pour choisir le sens de la copie. Ceci s'crit de la faon suivante:\mb10;	|------------------------------------------------------|	|        7  "Fcopy"  ICONE 25 26 29  "4" "5" "1"       |	|------------------------------------------------------|\ur10;ICONE\ind 30mm;indique une deuxime liste d'icnes25 26 29\ind 30mm;codes des ces icnes"4"\ind 30mm;suite de la ligne de commande (exemple: FCOPY4)Certaines icnes ne doivent pas ragir de la mme faon selon 
+la \bold;configuration du SMAKY\roman; (un ou deux floppy ou winchester). 
+C'est le cas, par exemple, pour TFLO, FCOPY et FORMAT.\mb10;	|-------------------------------------------------------|	|       IF F   8 "Tflo"  ICONE 23     "$FLO_0"          |	|       IF D   8 "Tflo"  ICONE 23 24  "$FLO_0" "$FLO_1" |	|       IF W   8 "Tflo"  ICONE 23     "$FLO_0"          |	|-------------------------------------------------------|\ur10;IF F\ind 30mm;configuration avec un seul floppyIF D\ind 30mm;configuration avec deux floppyIF W\ind 30mm;configuration avec un winchester et un floppy\T;5.5 Utilisation du "ram-disk"\A;Un \ital;ram-disk\roman; est un disque virtuel simul dans la mmoire 
+du SMAKY. Son accs est instantan, et sa capacit dpend de la quantit 
+de mmoire utilise. En cas de coupure de courant, son contenu est bien 
+entendu perdu. Il est donc utile uniquement comme moyen de stockage 
+provisoire. Pour l'installer, il faut possder le fichier 
+\ital;100_mem.driv\roman; et procder comme suit:\demi;	\bold;INSTALL #QUICK: $MEM [5000.L]\roman; \D;(RETURN)\F;\bold;#QUICK:\roman; est son nom standard, au mme titre que #MM0: pour 
+un disque rel. Depuis la plupart des programmes, #QUICK: s'obtient avec 
+\D;(SHIFT-F1)\F;. \bold;[5000.L]\roman; indique la quantit de mmoire  
+utiliser. Il ne faut pas utiliser moins de 5000bytes!Lorsque ce \ital;disque\roman; est install, il faut le formater (mais oui) 
+puis l'entrer:\demi;	\bold;FORMAT #QUICK: 1\roman; \D;(RETURN)\F;	\bold;ENTER #QUICK:\roman; \D;(RETURN)\F;\demi;	\bold;DISK #DISK:\roman; \D;(RETURN)\F;	\bold;Reste: 3'584   Utilis: 1'280 ou 26%\roman;Essayons maintenant de transfrer un fichier ESSAI.PLAN sur une autre 
+disquette, en utilisant uniquement le floppy zro. Il faut tout d'abord 
+mettre ESSAI.PLAN dans #QUICK: somme suit:\demi;	\bold;MXFER ESSAI.PLAN #QUICK:\roman; \D;(RETURN)\F;Vous pouvez alors changer de disquette:\demi;	\D;(M0)\F;	mettez l'autre disquette	\D;(M0)\F;Il ne reste plus qu' transfrer ESSAI.PLAN sur la nouvelle disquette:\demi;	\bold;MXFER #QUICK:ESSAI.PLAN #MM0:\roman; \D;(RETURN)\F;	\D;(M0)\F;	remettez la disquette initiale	\D;(M0)\F;Si la capacit de #QUICK: est suffisante, vous pouvez transfrer 
+plusieurs fichiers en un seul coup.\T;5.6 Liste des fichiers\A;En plus des fichiers ncessaires pour le systme PSos complet 
+(dont la liste est donne au paragraphe2.1 de la notice FILER) 
+chaque programme utilise un certain nombre de modules, de 
+gnrateurs de caractres, etc. La liste ci-dessous essaye de 
+donner les fichiers ncessaires pour les principaux programmes.\newtab 16mm,51mm;\bold;TEXT\roman;	TEXT.CODE	code du programme	100_GENCAR.LIB	construction des caractres	100_DBOX.LIB	botes de dialogues	100_DGENC.LIB	choix des caractres	100_LIST.LIB	liste des fichiers	100_SCROLL.LIB	ascenseurs	100_COUPE.LIB	divisions dans le mots	100_ITP16.GENC	icnes	100_NEF11.GENC	caractre standard	100_URP09.GENC	caractre "Fond" (depuis TEXT 2.4)\bold;PLAN\roman;	PLAN.CODE	code du programme	PLAN_F.HELP	text d'aide imprimable	100_GENCAR.LIB	construction des caractres	100_DBOX.LIB	botes de dialogues	100_DGENC.LIB	choix des caractres	100_LIST.LIB	liste des fichiers	100_SCROLL.LIB	ascenseurs	100_SPLINE.LIB	calcul des courbes	100_IPP16.GENC	icnes	100_NEF11.GENC	caractres standards	100_NRF07.GENC	caractres pour les rgles mtriques\ATTENTION;De plus, pour TEXT et PLAN, l'imprimante doit tre installe.\bold;CALC\roman;	CALC.CODE	code du programme	100_DBOX.LIB	botes de dialogues	100_LIST.LIB	liste des fichiers	100_SCROLL.LIB	ascenseurs	100_XFOS.LIB	entres/sorties disque	100_MATH32.LIB	routines mathmatiques	100_ICP16.GENC	icnes	100_NRF09.GENC	caractres standards\bold;BASIC\roman;	BASIC.CODE	code du programme	BASIC_F.MERR	messages d'erreurs	BASIC_F.HELP	textes d'aide	100_BGRA.LIB	routines graphiques	100_FFP.LIB	routines mathmatiques	100_NRF09.GENC	caractres standards\bold;LOGO\roman;	LOGO.CODE	code du programme	100_EPRO.LIB	module diteur	100_LGRA.LIB	routines graphiques	100_BFILE.LIB	entres/sorties disque	100_INT32.LIB	routines mathmatiques nombres entiers	100_FP32.LIB	routines mathmatiques nombres rels	LOGO_CONT_F.BIN		100_NRF09.GENC	caractres standards\bold;SMILE\roman;	SMILE.CODE	code du programme en CALM-3	SMILE_F.HELP	texte d'aide	SMILE.TEXT	mode d'emploi	ASSMILE.BIN	assembleur	M68000.BIN	instruction pour le processeur	SMAKY.SYMB	table des symboles	100_NRF09.GENC	caractres standards\bold;GESDO\roman;	GESDO.CODE	code du programme	GESDO.HELP	textes d'aide	CLASSE.CODE	programme de classement	100_DBOX.LIB	botes de dialogues	100_LIST.LIB	liste des fichiers	100_SABLIER.LIB	sabliers	100_UTILE.LIB	routines diverses	100_MATH32.LIB	routines mathmatiques	100_GESDO.LIB	librairie gesdo	BASIC...	tous les fichiers pour le basic	FORMAT.CBAS	programme de formatage	100_IGP24.GENC	icnes	100_NRF09.GENC	caractres standards\bold;COMPTA\roman;	COMPTA.CODE	code du programme	100_COMPTA1.LIB	module	100_COMPTA2.LIB	module	100_COMPTA3.LIB	module	100_COMPTA4.LIB	module	100_COMPTA5.LIB	module	100_COMPTA6.LIB	module	100_COMPTA8.LIB	module	100_DBOX.LIB	botes de dialogues	100_LIST.LIB	liste des fichiers	100_GESDO.LIB	librairie gesdo	100_UTILE.LIB	routines diverses	100_NRF09.GENC	caractres standards	100_MRF17.GENC	caractres pour les titres\bold;CALCUL\roman;	CALCUL.CODE	code du programme	MEMOIRE.CALCUL	contenu des mmoires permanentes	100_DBOX.LIB	botes de dialogues	100_MATH32.LIB	routines mathmatiques	100_NRF09.GENC	caractres standards\bold;AGENDA\roman;	AGENDA.CODE	code du programme	SCAN.CODE	 excuter dans une petite fentre	AGENDA.DATA	description de tous les rendez-vous	100_NRF09.GENC	caractres standards\bold;EDGAR\roman;	EDGAR.CODE	code du programme	100_NRF09.GENC	caractres standards\bold;FILER\roman;	FILER.CODE	code du programme	FILER_F.HELP	texte d'aide imprimable	100_NRF09.GENC	caractres standards\bold;TFLO\roman;	TFLO.CODE	code du programme	100_DBOX.LIB	botes de dialogues	100_NRF09.GENC	caractres standards\bold;FCOPY\roman;	FCOPY.CODE	code du programme	100_DBOX.LIB	botes de dialogues	100_SABLIER.LIB	sabliers	100_NRF09.GENC	caractres standards\T;5.7 Clavier sans pav numrique\A;Si votre SMAKY100 ne possde pas de pav numrique, la touche \D;(CTRL)\F; 
+associe  l'une des touches fonction \D;(F0)\F;  \D;(F15)\F; le remplace 
+comme suit:\newtab 25mm,60mm;\D;(CTRL-F0)\F;	\D;(M0)\F;	entre/sort le floppy de gauche\D;(CTRL-F1)\F;	\D;(M1)\F;	entre/sort le floppy de droite\D;(CTRL-F2)\F;	\D;(M2)\F;\D;(CTRL-F3)\F;	\D;(M3)\F;\D;(CTRL-F4)\F;	\D;(SHIFT-M0)\F;\D;(CTRL-F5)\F;	\D;(SHIFT-M1)\F;\D;(CTRL-F6)\F;	\D;(SHIFT-M2)\F;\D;(CTRL-F7)\F;	\D;(CTRL-M0)\F;\D;(CTRL-F8)\F;	\D;(CTRL-M1)\F;\D;(CTRL-F9)\F;	\D;(CTRL-M2)\F;\D;(CTRL-F10)\F;	\D;(CLEAR)\F;	annule le nombre frapp\D;(CTRL-F11)\F;	\D;(000)\F;	triple zro\D;(CTRL-F12)\F;	\D;(ENTER)\F;	entre le nombre frapp\D;(CTRL-F13)\F;	\D;(CTRL-M3)\F;	Stoppe une impression\D;(CTRL-F14)\F;	\D;(SHIFT-M3)\F;	Imprime une photo de l'cran\D;(CTRL-F15)\F;	\D;(M3)\F;	Donne le clavier au CLE\carte;DR 10.10.85

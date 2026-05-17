@@ -1,0 +1,79 @@
+\define DBC0:\pug;\phchgen ixp24;\code 65;\pog;\define DBC1:\pug;\phchgen ixp24;\code 66;\pog;\define DBO0:\pug;\phchgen ixp24;\code 67;\pog;\define DBO1:\pug;\phchgen ixp24;\code 68;\pog;\define DBF0:\pug;\phchgen ixp24;\code 69;\pog;\define DBF1:\pug;\phchgen ixp24;\code 70;\pog;\define ICOacc:\pug;\phchgen iif44;\code 1;\code 2;\pog;\define ICOcon:\pug;\phchgen iif44;\code 3;\code 4;\pog;\define ICOfeu:\pug;\phchgen iif44;\code 5;\code 6;\pog;\define ICOpin:\pug;\phchgen iif44;\code 7;\code 8;\pog;\define ICOre1:\pug;\phchgen iif44;\code 33;\code 34;\pog;\define ICOre2:\pug;\phchgen iif44;\code 35;\code 36;\pog;\define ICOre3:\pug;\phchgen iif44;\code 37;\code 38;\pog;\define T:\ub20;\up 2.5mm;\line 0.2mm,166mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,166mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\identoff;\image smakyinfo,3,=;\centr;\T;GESTION DES IMPRIMANTES\A;\justif;La gestion des imprimantes du SMAKY a t entirement 
+revue, afin de rsoudre au mieux toutes les applications. 
+Par exemple, il n'est plus jamais ncessaire de donner 
+des commandes depuis le C.L.E. (command #printer h=296mm, 
+etc.). Avec un rseau, il est trs simple d'installer 
+plusieurs imprimantes accessibles depuis tous les SMAKY, 
+sans modifier les macros de dmarrage, donc sans tre 
+spcialiste. Tous les logiciels (pas seulement TEXT) 
+peuvent faire de l'\I;impression simultane\R;, n'imprimer 
+que les pages de 8  15, etc.Dans START, un \I;clic\R; avec le bouton du milieu de 
+la souris prsente un menu. Le choix \B;imprimante\R; 
+propose le dialogue suivant:\image dbox3li,2,=;\T;1.1 Prsentation\A;\image dboxpres,2,=;Une prsentation est lie  une \B;imprimante\R; et  un 
+\B;papier\R; (voir plus loin). 
+C'est elle qui dtermine le caractre utilis, les marges, 
+l'interligne, etc. Par exemple, il est possible de crer 
+une prsentation avec le logiciel TABLEAU pour imprimer 
+ses tableaux avec des petits caractres troits, une 
+autre avec le logiciel DESSIN pour imprimer ses images 
+sans marges, etc.\pum;\centre;\bold;- 2 -\roman;\pom;Pour modifier une marge, il faut \I;cliquer\R; avec 
+la souris dans le chiffre correspondant. Le curseur 
+se place entre la valeur et l'unit (10.02_mm). Il suffit 
+alors de frapper la nouvelle valeur (il n'est pas ncessaire 
+de redonner l'unit). \D;(UNDO)\F; remet la valeur initiale, 
+et \D;(RETURN)\F; passe  la valeur suivante.\B;Caractre\R; \DBO1; \B;de l'imprimante\R;\demi;Choix d'un caractre interne de l'imprimante. Ces caractres 
+sont imprims trs rapidement. La partie 
+suprieure de la liste donne tous les caractres disponibles, 
+et la partie infrieure les diffrentes largeurs.\REM;Les largeurs disponibles dpendent du caractre 
+choisi.\B;Caractre\R; \DBO1; \B;du disque\R;\demi;Choix d'un caractre stock sur disque. Ces caractres 
+sont imprims plus lentement, mais permettent plus de 
+fantaisies.\REM;Seuls les caractres visibles (avec START, \B;modifie\R; 
+puis \DBC1;visualisation) sont prsents dans 
+la liste.\B;Zoom graphique:\R; \D;(    )\F;\demi;Avec une LQ800, le zoom vaut gnralement 2. Avec la 
+valeur 1, les images et les caractres du disque seront 
+deux fois plus petits. Avec le logiciel TEXT, il faut 
+donner la valeur 2. Avec le logiciel SIGMAP, il faut 
+donner la valeur 1. Pour les autres logiciels, cette 
+valeur est libre.\DBC1;\ind 8mm;\B;tronque les lignes\R;\demi;Les lignes trop longues qui dbordent dans la marge 
+droite sont tronques. Sans petite croix, ces lignes 
+sont coupes, et imprimes en plusieurs lignes distinctes.\DBC1;\ind 8mm;\B;zoom avec lissage\R;\demi;Avec un zoom graphique diffrent de 1, indique que le 
+pilote d'imprimante va tenter d'amliorer l'impression 
+des images et des textes utilisant les caractres du 
+disque.\DBC1;\ind 8mm;\B;double frappe\R;\demi;L'impression sera plus noire mais plus lente. Ceci est 
+utile, par exemple, lorsque le ruban encreur est us.\DBC1;\ind 8mm;\B;frappe unidirect.\R;\demi;La tte d'impression imprime seulement de gauche  droite, 
+afin de diminuer certaines imprcisions mcaniques. 
+Cette fonction est utilise principalement pour les 
+images.\T;1.2 Papier\A;\image dboxpap,2,=;Par papier, on dfinit le format des feuilles utilises, 
+et le mode d'introduction dans l'imprimante. Lorsqu'on 
+change de papier, par exemple pour passer de feuilles 
+A4  des feuilles A5, il ne faut pas oublier de l'indiquer 
+au SMAKY!\pum;\centre;\bold;- 3 -\roman;\pom;\DBO1;\ind 8mm;\ICOacc;  \B;accordon\R;\demi;Papier pli en accordon, avec deux ranges de trous 
+qui permettent de le tracter dans l'imprimante par des 
+roues dentes.\DBO1;\ind 8mm;\ICOfeu;  \B;introducteur\R;\demi;Introducteur feuille  feuille. Les feuilles sont disposes 
+en tas dans un magasin, et introduites une  une automatiquement 
+par l'imprimante.\DBO1;\ind 8mm;\ICOcon;  \B;continu (h=infini)\R;\demi;Papier sans fin, pli ou non, les tiquettes auto-collantes 
+par exemples.\DBO1;\ind 8mm;\ICOpin;  \B;pinc\R;\demi;Feuilles introduites une  une manuellement, comme dans 
+une machine  crire.\T;1.3 Imprimante\A;\image dboximp,2,=;Nom de l'imprimante utilise. Gnralement, on donne 
+directement le type de l'imprimante (LQ800, GQ3500, OKI192, etc.). 
+Dans le cas d'un rseau comprenant plusieurs imprimantes 
+identiques mais ddies  des fonctions particulires, on 
+pourra donner le nom de la fonction  chaque imprimante 
+(Courrier, Listing, Etiquettes, etc.).\DBO1;\ind 8mm;\ICOre1;  \B;locale, non accessible depuis le rseau\R;\demi;Cette option convient pour un SMAKY isol (sans rseau), 
+avec ou sans imprimante connecte.\image reseau1,1,40mm;\DBO1;\ind 8mm;\ICOre2;  \B;locale, accessible  d'autres Smaky par rseau\R;\demi;Cette option convient pour un SMAKY auquel une imprimante 
+est connecte. L'imprimante pourra servir au SMAKY lui-mme, 
+et galement  d'autres SMAKY clients par le rseau.\image reseau2,1,40mm;\pum;\centre;\bold;- 4 -\roman;\pom;\DBO1;\ind 8mm;\ICOre3;  \B;distante, sur le serveur rseau \D;(     )\F;\R;\demi;Cette option convient pour un SMAKY qui n'a pas d'imprimante, 
+mais qui voudrait imprimer en utilisant l'imprimante 
+d'un autre SMAKY,  travers le rseau.\image reseau3,1,40mm;\REM;Le ou les serveurs disque ne sont pas forcment 
+les mmes machines que les serveurs d'impression.\T;2 L'impression\A;\image dboxgo,2,=;\DBC1;\ind 8mm;\B;nombre de copies  tirer :\R; \D;(1  )\F;\demi;Nombre d'exemplaires  imprimer.\DBC1;\ind 8mm;\B;impression simultane\R;\demi;Tout ce qui doit tre imprim est d'abord sauv sur 
+disque. Il est alors possible de continuer d'utiliser 
+le logiciel, avec l'impression qui s'excute en "tche 
+de fond".\REM;Sur un serveur d'impression, l'impression est toujours 
+simultane. Avec une disquette protge contre l'criture, 
+l'impression ne peut pas tre simultane.\DBC1;\ind 8mm;\B;imprime seulement les pages de\R; \D;(1  )\F; \B;\R; \D;(999)\F;\DBC1;\ind 8mm;\B;pages paires\R;\DBC1;\ind 8mm;\B;pages impaires\R;\demi;Choix des pages  imprimer. Les options pages paires 
+ou impaires permettent d'imprimer d'abord le recto, 
+puis le verso dans un deuxime passage.\DBC1;\ind 8mm;\B;rsultat dans le fichier\R; \D;(          )\F;\demi;L'impression est dtourne dans un fichier disque, qui 
+pourra tre contrl et imprim par la suite.\T;3 Quelques dtails\A;Toutes les listes des prsentations, des papiers et des 
+imprimantes sont sauves sur disque dans le dossier systme, 
+dans un fichier unique appel SMA_PRINT.INFO. Lors d'une 
+mise  jour du systme (duplique SYSTEM.CODE avec START), 
+ce fichier est conserv.\up 1.5mm;\line 0.2mm,166mm;\down 1.5mm;\ub20;EPSITEC system sa, \ur10;CH-1092 Belmont\carte;Mars 1988
