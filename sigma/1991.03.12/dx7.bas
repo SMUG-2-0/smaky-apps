@@ -1,0 +1,1 @@
+  100 Open File (1),"t.dx",2  110 Open File(2),"t.asm",7  120 Pos File (1),8  130 For I=0 To 127  140 Let A$="x"  150 Get File (1),A$  160 Print Asc(A$),  170 Print File(2),Asc(A$)  180 Next I  190 Close File(1)  200 Close File(2)  210 End

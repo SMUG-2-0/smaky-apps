@@ -1,0 +1,235 @@
+\cpage=9;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;2 L'diteur de partitions\A;\image sigjolip,2,=;\B;Produire rapidement des partitions de bonne qualit a toujours pos des 
+problmes\R; aux musiciens, professeurs de musique, directeurs, etc. Avec 
+l'diteur de partitions SIGMAP, rien de plus facile. Jugez plutt:\demi;1)\ind 10mm;Vous \B;dessinez\R; les notes sur l'cran, avec la souris. Des menus 
+permettent d'insrer tous les signes courants (altrations, silences, 
+points d'orgue, signes de reprises, etc.).\image sigdpart,2,=;2)\ind 10mm;Vous pouvez demander au SMAKY d'\B;interprter\R; tout ou partie de la 
+partition dessine, permettant ainsi de dceler immdiatement les ventuelles 
+fautes!3)\ind 10mm;Vous \B;imprimez\R; la partition, prte  l'emploi. En cas de besoin, 
+vous pouvez la transposer dans n'importe quelle tonalit et la rimprimer.La faon de procder pour dessiner la partition sur l'cran avec la souris 
+ressemble beaucoup aux logiciels DESSIN ou PLAN. 
+Vous pouvez d'ailleurs aussi dessiner des lignes droites, des rectangles, etc., 
+pour complter la partition. \B;L'insertion de lignes de texte permet l'criture 
+des paroles d'un chant\R; par exemple.L'exemple ci-dessous montre le choix d'un symbole d'altration dans un menu:\image sigmenu,2,=;\T;2.1 Les icnes\A;L'cran est bord de \B;deux ranges d'icnes\R;, l'une verticale  gauche et l'autre 
+horizontale en bas.\B;Range verticale\ind 45mm;-->   choix principalRange horizontale\ind 45mm;-->   choix secondaire\R;\image sigicohv,2,=;Par exemple, l'icne\image sigicoex1,2;\saute -1il;tout en haut de la range verticale slectionne le dessin de 
+\B;notes\R;. Les icnes\image sigicoex2,2;\saute -1il;au bas de l'cran permettent alors de choisir \B;quelle note\R; 
+dessiner (ronde, blanche, noire, croche, etc.), avec quelle altration, quelle nuance, etc.\ATTENTION;\B;Pour les icnes horizontales, il faut \I;cliquer\R; avec la souris 
+dans le rectangle correspondant, et non dans les touches fonctions!\R;La partie suprieure de l'cran donne les indications suivantes:\B;Mes:3-8\R;\ind 30mm;La partition comporte huit mesures, et on se trouve dans 
+la troisime.\B;Symb:350 9%\R;\ind 30mm;350 symboles sont utiliss (notes, silences, liaisons, etc.) 
+et occupent le 9% de la mmoire attribue.\image sighaut,2,=;La signification des \B;trois boutons de la souris\R; est toujours indique 
+en haut  droite de l'cran.Le \B;bouton de gauche\R; de la souris \B;dessine le symbole slectionn\R;. 
+\B;Tant qu'il est maintenu press\R;, le symbole peut toujours tre dplac.Le \B;bouton de droite\R; de la souris \B;dtruit\R; ou \B;dplace\R; le symbole 
+montr comme suit:\demi;-\ind 10mm;Un \I;clic\R; \B;sans bouger\R; la souris \B;dtruit\R; le symbole montr.-\ind 10mm;Si le bouton est \B;maintenu press\R;, le symbole est dplac.\T;2.2 Les mesures\A;L'cran ne montre qu'une mesure  la fois (mme si elle est courte), et c'est 
+\B;l'ascenseur horizontal\R; qui permet d'avancer ou de reculer dans les mesures.\image sigasc,2,=;Au dpart, la partition ne contient qu'une seule mesure. La touche \D;(RETURN)\F; 
+\B;cre une nouvelle mesure vide\R;. Un \I;clic\R; dans la flche de droite de l'ascenseur 
+a le mme effet. En fait, ceci n'est valable que si l'on est dans la dernire 
+mesure de la partition. Dans tous les autres cas, on passe simplement  la 
+mesure suivante.\REM;Il n'est pas possible de crer plus d'une mesure vide  la fin de la partition.\D;(RETURN)\F;\ind 30mm;Passe  la mesure \B;suivante\R;.\D;(SHIFT-RETURN)\F;\ind 30mm;Passe  la mesure \B;prcdente\R;.\T;2.3 Les notes\A;Le \B;bouton de gauche\R; de la souris dessine la note choisie avec les 
+icnes au bas de l'cran. \B;Tant qu'il est maintenu press\R;, la note peut 
+toujours tre dplace. La partie suprieure de l'cran affiche alors le nom 
+de la note (do, r, mi, etc.).Les notes vont de la \B;ronde\R;  la \B;triple croche\R;. Un \I;clic\R; en 
+bas de l'cran permet de choisir.\image signotes,2,=;La touche fonction \D;(F8)\F; intitule \D;(Sansqueue)\F; dessine des notes 
+sans les queues, ce qui est utile dans le cas suivant:\image signsq,3,=;\ATTENTION;Pour dessiner un \B;accord de croches\R;, seule la note suprieure doit 
+tre une croche. Toutes les notes au-dessous doivent tre des noires.\image signcr,3,=;A l'coute, il s'agira bien d'un accord de trois croches.La touche fonction \D;(F9)\F; intitule alternativement \D;(Bas)\F; ou \D;(Haut)\F; 
+dtermine le sens de la queue des notes.\image signhb,3,=;Chaque porte peut contenir \B;une ou deux voix\R; (voir paragraphe2.10). 
+Dans le cas o une porte contient deux voix, c'est le sens de la queue qui 
+dtermine  quelle voix appartient la note.\image sigvoix,2,=;\T;2.3.1 Les triolets\A;Le touche fonction \D;(F7)\F; intitule \D;(Pointetc.)\F; droule un menu 
+permettant de choisir une \B;modification de dure\R; associe  la note.\image sigmtrio,3,=;Le \B;point\R; se place automatiquement aprs la note et augmente sa valeur 
+de la moiti de sa dure primitive. Une blanche, par exemple, vaut deux noires; 
+tant pointe, elle vaudra une noire de plus, c'est--dire trois noires.Le \B;triolet\R; est la \I;division ternaire\R; d'une note. Par exemple, 
+un triolet form de trois croches aura la mme dure que deux croches (ou une noire):\image signote3,2,=;Pratiquement, il faut procder comme suit:\demi;1)\ind 10mm;\I;Cliquer\R; avec la souris dans le carr vide au-dessus de 
+l'indication \B;Pointetc.\R; et choisir \B;triolet\R;. Le carr vide indique 
+maintenant \B;3\R;.2)\ind 10mm;Dessiner normalement les trois notes constituant le triolet.3)\ind 10mm;\I;Cliquer\R; de nouveau dans le carr au-dessus de l'indication 
+\B;Pointetc.\R; et choisir la case vide. La carr est de nouveau vide.4)\ind 10mm;Dessiner une liaison au-dessus des trois notes (voir paragraphe2.6).5)\ind 10mm;Dessiner un \I;trois\R; au-dessus de la liaison (voir paragraphe2.6.1).\ATTENTION;En fait, la liaison surmonte d'un \I;trois\R; est purement 
+dcorative pour SIGMA.On nomme double triolet ou \B;sextolet\R;, l'union en un seul groupe de deux 
+triolets voisins. Au lieu d'indiquer par un \I;3\R; chacun des triolets spars, 
+on indique le sextolet par un \I;6\R; plac au-dessus du groupe entier:\image signote6,2,=;Le \B;duolet\R; est la \I;division binaire\R; d'une note pointe:\image signote2,2,=;On appelle \B;quartolet\R; la runion en un seul groupe de deux duolets; 
+ainsi, dans le \I;quartolet\R;, quatre notes remplacent six notes identiques:\image signote4,2,=;Des groupes divisant irrgulirement une note se prsentent 
+quelquefois:\image signote57,2,=;\REM;Un triolet peut ne pas former un groupe de trois notes gales, \B;pourvu 
+que la somme de ses dures soit quivalente  celle des trois notes gales\R;:\image signote3b,2,=;Dans ce cas, toutes les notes ou silences du groupe doivent tre dessins avec 
+le carr \B;3\R; allum.\T;2.3.2 Les altrations\A;Le touche fonction \D;(F10)\F; intitule \D;(Altration)\F; droule un menu pour 
+choisir un signe qui se placera \B;devant\R; la note.\image sigmalt,3,=;Le \B;bmol\R; abaisse d'un demi-ton le son de la note devant laquelle il est 
+plac. Le \B;double bmol\R; abaisse la note deux fois plus que le simple bmol.Le \B;dise\R; lve d'un demi-ton le son de la note devant laquelle il est 
+plac. Le \B;double dise\R; lve la note deux fois plus que le simple dise.Le \B;bcarre\R; dtruit l'effet du dise ou du bmol. Ainsi, il abaisse un 
+son prcdemment lev par le dise, ou il lve un son prcdemment abaiss par 
+le bmol.\image sigalter,2,=;\T;2.3.3 Les accents\A;La touche fonction \D;(F11)\F; intitule \D;(Accent)\F; droule un menu 
+permettant de choisir un signe d'accentuation qui se placera au-dessus ou au-dessous 
+de la note (selon le sens de la queue).\image sigmacc,3,=;Les deux premiers \B;accents\R; modifient la force de frappe de la note (voir 
+paragraphe2.3.4). Le premier (\B;>\R;) a plus d'effet que le second (\B;v\R;).Les signes \B;dtach\R; et \B;piqu\R; modifient la dure pendant laquelle 
+une note est presse. Normalement, une note d'une seconde est presse pendant 
+trois quarts de seconde, puis relche le quart de seconde restant. Une note 
+dtache est presse deux fois moins longtemps, et une note pique quatre fois 
+moins longtemps.\image sigacc,2,=;\T;2.3.4 Les nuances\A;Avec SIGMA, \B;chaque note possde sa propre nuance\R;, indpendamment des 
+autres notes. Une nouvelle note dessine aura la nuance indique dans le carr 
+au-dessus de \D;(F12)\F;.Un \I;clic\R; de la souris agit diffremment s'il a lieu dans la \B;moiti 
+suprieure\R; ou dans la \B;moiti infrieure\R; du carr:\image signuan,2,=;\D;(SHIFT-F12)\F;\ind 30mm;\B;augmente\R; la force de frappe\D;(F12)\F;\ind 30mm;\B;diminue\R; la force de frappeVoici la signification des cinq nuances possibles:\B;ff\R;\ind 30mm;\I;Fortissimo\R;\ind 70mm;Trs fort\B;f\R;\ind 30mm;\I;Forte\R;\ind 70mm;Fortm\B;f\R;\ind 30mm;\I;Mezzo forte\R;\ind 70mm;Moyennement fort\B;p\R;\ind 30mm;\I;Piano\R;\ind 70mm;Faible\B;pp\R;\ind 30mm;\I;Pianissimo\R;\ind 70mm;Trs faible\ATTENTION;Les nuances agissent sur la \B;force de frappe\R; d'un son. L'effet 
+obtenu varie beaucoup en fonction du synthtiseur utilis:\demi;\L;Lorsque l'coute s'effectue avec le \B;haut-parleur interne du SMAKY\R;, 
+les nuances n'ont aucun effet.\demi;\L;Avec un synthtiseur sans clavier \B;FB01\R;, pratiquement tous les timbres sont 
+sensibles  la force de frappe.\demi;\L;Avec un synthtiseur \B;DX100\R; ou \B;DX27\R;, les sons standards (rgls d'usine) 
+ne sont malheureusement pas sensibles  la force de frappe. Cependant, ils peuvent tre 
+rendus sensibles en modifiant les quatre paramtres \I;Key velocity\R; 
+(voir paragraphe3.5.2.1).\demi;\L;Avec un synthtiseur \B;DX7\R;, la plupart des sons standards varient selon la force 
+de frappe (cuivres, cordes, percussions). Les sons d'orgue sont gnralement 
+insensibles, ou trs peu sensibles.\T;2.3.5 Les barres des croches\A;La touche fonction \D;(F13)\F; intitule \D;(Barre)\F; permet de remplacer les 
+crochets d'un groupe de croches par des barres. Pour cela, il faut 
+les \I;cliquer\R; une  une avec le bouton de gauche de la souris. 
+Les queues des croches, doubles croches et triples croches dsignes disparaissent. 
+Lorsqu'elles sont toutes dsignes, un \I;clic\R; du bouton de droite fait apparatre 
+les barres.\image signli,4,=;\ATTENTION;Une croche unie  d'autres peut toujours tre \B;dplace ou dtruite 
+individuellement\R; avec le bouton de droite.\REM;Pour ajouter une croche  un groupe existant, il suffit de \I;cliquer\R; 
+la nouvelle croche, et l'une des croches du groupe.\T;2.3.6 Quelques trucs\A;Pendant que le \B;bouton de gauche est maintenu press pour dessiner une 
+note\R;, il est possible de \I;cliquer\R; les deux autres boutons de la souris, ou 
+d'appuyer quelques touches du clavier, pour obtenir les effets suivants:\B;bouton du milieu\R;\ind 36mm;allonge la dure (croche -> noire -> blanche)\B;bouton de droite\R;\ind 36mm;raccourcit (blanche -> noire -> croche)\D;(B)\F;\ind 36mm;met un \B;bmol\R;\D;(D)\F;\ind 36mm;met un \B;dise\R;\D;(0)\F;\ind 36mm;met un \B;bcarre\R;\D;(P)\F;\ind 36mm;met ou enlve le \B;point\R;\D;(2)\F;\ind 36mm;met ou enlve le \B;duolet\R;\D;(3)\F;\ind 36mm;met ou enlve le \B;triolet\R;\D;(4)\F;\ind 36mm;met ou enlve le \B;quartolet\R;\D;(5)\F;\ind 36mm;met ou enlve le \B;quintolet\R;\D;(6)\F;\ind 36mm;met ou enlve le \B;sextolet\R;\D;(7)\F;\ind 36mm;met ou enlve le \B;septolet\R;\D;(V)\F;\ind 36mm;met ou enlve l'\B;accentuation\R;\D;(.)\F;\ind 36mm;met ou enlve l'accent \B;dtach\R;\D;(,)\F;\ind 36mm;met ou enlve l'accent \B;piqu\R;\D;([)\F;\ind 36mm;diminue la nuance (f -> mf -> p)\D;(])\F;\ind 36mm;augmente la nuance (p -> mf -> f)Ces quelques trucs acclrent normment le dessin d'une partition!\REM;Tous ces caractres sont indiqus entre crochets []  droite dans les 
+menus pour aider  s'en souvenir.\T;2.4 Les silences\A;Les silences sont dessins de faon tout  fait similaire aux notes.\image sigsil,2,=;\ATTENTION;La touche fonction \D;(F9)\F; intitule alternativement \D;(Bas)\F; 
+ou \D;(Haut)\F; dtermine si le silence appartient  la voix suprieure ou infrieure, 
+bien que son apparence ne change pas.\REM;Un silence peut trs bien tre \B;point\R;, ou faire partie d'un \B;triolet\R; 
+(voir paragraphe2.3.1).\T;2.5 Les signes spciaux\A;Les signes spciaux sont rangs en deux catgories. Le groupe de touches fonctions 
+intitul \D;(Suite)\F; permet de changer de catgorie.Les \B;indicateurs de mesures\R; permettent de dessiner les chiffres 0  9, 
+12 et 16 ainsi que les signes C et C barr placs au dbut d'une mesure.\image sigimes,2,=;Les \B;accents\R; sont normalement associs  des notes (voir paragraphe2.3.3). 
+Cependant, il est parfois ncessaire de dessiner l'accent sparment:\image sigaccs,2,=;\REM;Dans ce cas, les accents ne sont pas interprts!Il en va de mme pour les \B;bmols\R;, les \B;dises\R; et les \B;bcarres\R;, 
+qui peuvent tre dessins sparment dans certains cas exceptionnels.\T;2.6 Les objets graphiques\A;Les objets graphiques sont l pour \B;amliorer la prsentation\R; d'une partition. 
+Seule une \B;liaison\R; entre deux notes de mme hauteur est interprte:\image sigleq,4,=;Normalement, \B;l'cran ne montre qu'une mesure  la fois\R;. Cependant, il est 
+parfois utile de grouper deux mesures dans un mme cran lorsqu'une liaison ou 
+un autre signe doit partir d'une mesure pour arriver dans la mesure suivante.\image siggmes,2,=;Dans ce cas \B;et uniquement dans ce cas\R;, il faut dessiner une droite 
+verticale pour sparer graphiquement les deux mesures.\ATTENTION;\REM;Pour SIGMA, ces deux mesures ne forment qu'une seule et mme 
+mesure. Elles ne seront donc jamais spares lors de l'impression!Le groupe de touches fonctions intitul \D;(Epaisseur)\F; dtermine le type de 
+trait utilis pour les droites, les rectangles, les cercles et les liaisons,  
+savoir:\image sigmep,3,=;La touche fonction intitule \D;(Aligngrille)\F; dtermine si le dessin des 
+objets graphiques doit tre align sur la grille ou pas.\ATTENTION;\REM;Ceci est indpendant du fait que la grille soit visible ou pas. 
+Par exemple, le dessin peut trs bien tre align sur la grille mme si elle 
+n'est pas visible.\T;2.6.1 Les caractres\A;La touche fonction \D;(F7)\F; intitule \D;(Curseur)\F; permet de placer le curseur 
+(petit trait horizontal) en \I;cliquant\R; avec le bouton de gauche  l'endroit 
+o l'on veut frapper une ligne de texte. Les possibilits habituelles d'dition 
+existent avec \D;(DEL)\F;, \D;(CURSOR-flche)\F;, etc.\ATTENTION;\REM;Pour \B;corriger\R; une ligne de texte existante, il suffit de placer 
+le curseur  l'endroit o effectuer la correction en \I;cliquant\R; le bouton de gauche.Pour \B;aligner les syllabes\R; d'un chant sous les notes correspondantes, le plus 
+simple consiste  frapper une seule ligne de texte, et  utiliser plusieurs fois 
+le caractre \I;soulign\R; pour raliser un trait horizontal.\image sigsylla,2,=;La touche fonction \D;(F8)\F; intitule \D;(Typo)\F; permet de choisir jusqu' 
+\B;dix graphismes de caractres diffrents\R;, tout comme avec les logiciels TEXT, DESSIN 
+ou PLAN. Le caractre utilis lors de la frappe au clavier est celui dont le bouton 
+est slectionn.\image sigdbtypo,2,=;Les noms "Titre", "Editeur" et "Auteur" sont rservs pour l'impression des 
+titres (voir paragraphe2.13). Le nom "Paroles" est donn ici comme exemple. Il 
+est possible de crer d'autres caractres: "Accords", "Nuances", "Spcial", etc.\T;2.7 Les modifications\A;Le bouton de droite de la souris \B;dtruit\R; ou \B;dplace\R; le symbole 
+montr comme suit:-\ind 10mm;Un \I;clic\R; \B;sans bouger\R; la souris \B;dtruit\R; le symbole montr.-\ind 10mm;Si le bouton est \B;maintenu press\R;, le symbole est \B;dplac\R;.Pour les \B;droites\R;, les \B;rectangles\R; et les \B;liaisons\R;, 
+il est possible de ne dplacer qu'une extrmit ou qu'un coin selon l'endroit 
+montr par la souris.\image siggdet,2,=;Si le bouton de droite est press alors que la souris est dans une \B;zone vide\R;, 
+un rectangle pointill est dessin tant qu'il est maintenu press pour entourer 
+un groupe. Lorsqu'il est relch, le menu suivant apparat:\image sigmgroup,3,=;La partie suprieure de l'cran affiche le \B;nombre d'objets inclus\R; dans le 
+rectangle pointill. Par exemple:\ind 30mm;\B;*** 4 objets trouvs  ***\R;Seuls les symboles \B;entirement inclus\R; sont compts. Par exemple, 
+si la queue d'une croche dpasse le rectangle pointill, elle n'est pas 
+compte. Si l'une des extrmits d'une ligne droite est en dehors, la droite 
+n'est pas non plus compte.\image sigdet,2,=;Dans cet exemple, seuls 4 objets sont entirement inclus:\demi;-\ind 10mm;les trois noires pointes-\ind 10mm;le long trait vertical\B;\_Dtruit\_\R;\demi;Dtruit tous les symboles entirement inclus dans le rectangle pointill.\B;\_Dplace\_\R;\B;\_Duplique\_\R;\demi;Dplace ou duplique tous les symboles inclus, \B;tant que le bouton de la 
+souris est maintenu press\R;.\B;\_Nuances\_\R;\demi;Modifie les nuances de toutes les \B;notes\R; incluses (voir paragraphe2.3.4). 
+Un deuxime menu apparat pour choisir les nuances; il faut donc prendre garde  
+\B;maintenir press le bouton de la souris\R; en \I;cliquant\R; \B;nuances\R; dans le 
+premier menu.\REM;Si le rectangle pointill entoure d'autres objets (silences, caractres, droites, 
+etc.), cette opration n'a pas d'effet sur eux!\B;\_Lie les croches\_\R;\demi;Remplace les crochets de toutes les croches incluses par des \B;barres\R;.\image sigclie,2,=;Cela revient au mme que de \I;cliquer\R; les croches une  une, comme expliqu 
+au paragraphe2.3.5.\B;\_Fichier image\_\R;\demi;Cre une image (fichier \I;.image\R;) rectangulaire, qui pourra ensuite 
+tre colle dans un texte, ou reprise par le logiciel DESSIN. Cette fonction 
+est trs pratique pour raliser des mthodes d'enseignement du solfge, par 
+exemple. Le document final, ralis avec le logiciel TEXT, comportera des 
+textes explicatifs entrecoups d'images en provenance de SIGMAP.\T;2.8 Les portes\A;Par dfaut, SIGMAP prsente trois portes: deux clefs de sol et une clef 
+de fa. Si cela ne convient pas, il est possible de choisir de une  trois 
+portes, avec n'importe quelle clef.\ATTENTION;Le choix du nombre de portes, de leur position, etc. doit 
+s'effectuer \B;avant de commencer  dessiner la partition\R;. En effet, chaque fois 
+que vous crez une nouvelle mesure, SIGMA prend les dfinitions de la mesure 
+prcdente:\image sigport5,2,=;\T;2.8.1 Les altrations  la clef\A;\image sigialt,3;Dtermine l'altration  la clef. Les icnes \D;(_)\F; et \D;(+)\F; diminuent 
+ou augmentent le nombre de dises ou de bmols, qui peut varier de zro  sept. 
+Un \I;clic\R; dans l'icne \D;(Bmol)\F; permet d'utiliser des dises, et 
+rciproquement.\T;2.8.2 Les clefs\A;\image sigiclef,3;Dtermine le \B;nombre de portes\R; (de une  trois) et le \B;type de clef\R; utilis 
+(sol ou fa). Un \I;clic\R; dans une icne \D;(F4)\F;  \D;(F6)\F; teinte l'allume, 
+sans rien changer. 
+Un \I;clic\R; dans une icne dj allume effectue la transformation suivante:\demi;clef de sol\ind 30mm;-->   clef de faclef de fa\ind 30mm;-->   supprime la portepas de porte\ind 30mm;-->   remet la porte avec une clef de sol\image sigimd,3;Monte ou descend d'un cran la porte slectionne selon \D;(F4)\F;  \D;(F6)\F;.\image sigilie,3;Lie la porte slectionne selon \D;(F4)\F;  \D;(F6)\F;  la porte place 
+directement au-dessous par une barre verticale.\T;2.8.3 Les reprises\A;\image sigirep,3;Les signes de reprises permettent d'excuter plusieurs fois de suite certaines 
+parties d'un morceau de musique. Un \I;clic\R; dans le carr \D;(Reprises)\F; prsente 
+les choix suivants:\image sigdbrep,2,=;Ces choix sont subdiviss en quatre catgories:\demi;1)\ind 10mm;Les doubles-barres.2)\ind 10mm;Les signes \I;coda\R;, \I;renvoi\R;, \I;D.C.\R; et \I;FIN\R;.3)\ind 10mm;Les indications pour les premire, deuxime et troisime parties.4)\ind 10mm;Les instructions de sauts et de boucles.Les trois premires catgories correspondent  des signes reconnus en musique, 
+qui sont \B;imprims correctement quelle que soit la mise en page\R;. La quatrime 
+catgorie correspond  des instructions spciales, qui ne sont pas imprimes.\ATTENTION;Tous ces signes sont interprts lors de l'coute de la partition 
+(voir paragraphe2.10), et lors du sauvetage sous forme \I;.midi\R; (voir 
+paragraphe2.9).\REM;Les \I;doubles-barres\R; lient les portes entre elles selon les choix 
+effectus (voir paragraphe2.8.2):\image sigdblie,2,=;Lorsqu'une partie d'un morceau doit tre \B;excute deux fois de suite\R;, elle 
+est comprise entre deux \I;doubles-barres\R;, dont la premire est suivie et la 
+seconde prcde de deux points.\image sigrep1,2,=;Lorsqu'une reprise commence au \B;dbut mme d'un morceau\R;, on ne met pas la 
+premire double-barre; on se contente d'indiquer la reprise par la seconde 
+double-barre, prcde de deux points.\image sigrep2,2,=;Le \I;renvoi\R; est un signe qui, lorsqu'il se prsente pour la seconde fois, 
+indique qu'il faut retourner  l'endroit o il s'est dj montr. La premire 
+fois, il doit tre dessin  gauche de la mesure, et la seconde fois  droite.\image sigrep3,2,=;Le signe \I;coda\R; indique une partie du morceau qui doit tre saute lors 
+de la reprise.\image sigrep4,2,=;Si, dans la rptition d'une partie, on devait, en la terminant, remplacer 
+une ou plusieurs mesures par une ou plusieurs autres mesures, on l'indiquerait 
+ainsi:\image sigrep5,2,=;Voici un exemple plus complexe qui mlange tout ce qui a t vu jusqu'ici:\image sigrep6,2,=;Les instructions "\I;saute\R;" et "\I;ici=\R;" permettent d'effectuer des 
+\B;sauts et des boucles\R;. Par exemple, lorsqu'une mesure contient "\I;saute2x\R;", 
+ la fin de celle-ci, on saute (en avant ou en arrire) jusqu' la mesure qui 
+contient "\I;ici=2x\R;", et ceci deux fois au maximum:\image sigrep7,2,=;Voici un exemple d'utilisation des sauts. A la fin de la deuxime partie, on 
+saute pour excuter les deux dernires mesures de la partition:\image sigrep8,2,=;\T;2.8.4 La grille\A;\image sigigri,3;Dtermine si la grille de points est visible ou non. \B;La grille conserve son 
+effet mme lorsqu'elle est invisible\R;.\T;2.8.5 La longueur d'une mesure\A;\image sigitron,3;Raccourcit les portes pour que la largeur de la mesure corresponde juste  
+son contenu. Il est galement possible de dplacer cette largeur directement avec 
+la souris.\image sigemes,2,=;Les trois flches  droite de l'cran dterminent les \B;frontires entre les 
+portes\R;. Ces frontires peuvent varier d'une mesure  l'autre.\image sigfmes,3,=;Pour dplacer une flche, il suffit de la \I;tirer\R; contre en haut ou contre 
+en bas avec la souris.\T;2.9 Les accs disque\A;\image sigiflo,3;Les touches fonction \B;Prend\R; et \B;Sauve\R; sont l pour reprendre une 
+partition existante, ou pour sauver la partition en cours de travail. Le sauvetage 
+gnre des fichiers \B;partition\R; (.part) et/ou \B;morceau\R; (.midi).\image sigdbsave,2,=;Seul le format \B;partition\R; peut tre repris par l'diteur \B;SigmaP\R;. 
+Le format \B;morceau\R; peut tre repris par le squenceur \B;SigmaS\R;.\image sigsauve,2,=;\image sigieff,3;\B;Efface toute la partition\R; en mmoire, pour permettre d'en crer une nouvelle.\T;2.10 L'coute\A;\image sigihp,3;Dtermine comment couter la partition. Il est possible d'couter \B;tout 
+le morceau avec les reprises\R;, la \B;mesure courante\R; (\I;une mesure\R;), 
+ou toute une \B;phrase musicale\R; (\I;mesures de __  __ \R;).\image sigdbhp,2,=;Le choix \I;une ou deux voix par porte\R; indique si le sens de la queue des 
+notes dtermine deux voix diffrentes dans la mme porte.L'\B;ascenseur\R;  droite indique la vitesse d'excution.Le carr \I;synthtiseur\R; dtermine si l'coute a lieu dans le SMAKY, ou 
+dans le synthtiseur, via l'interface MIDI. Dans ce cas, les six rectangles 
+au-dessous indiquent quelles voix entendre, et quels canaux MIDI utiliser.La quittance avec \D;(ECOUTE)\F; fait entendre le fragment choisi. La touche 
+\D;(END)\F; permet d'interrompre avant la fin. La quittance avec \D;(MEMORISE)\F; 
+ne fait rien entendre du tout, mais tous les paramtres sont mmoriss. Une 
+pression sur \D;(DEFINE)\F; \B;fera entendre le fragment choisi en tout temps\R;.\T;2.11 Les copies\A;\image sigicop,3;Lorsqu'une ou plusieurs mesures se ressemblent, plutt que de les crire 
+ nouveau, il est possible d'utiliser les copies. Les mesures \I;dupliques\R; 
+pourront ensuite tre ventuellement modifies.\image sigdbcopy,2,=;Les oprations \B;dtruit\R;, \B;dplace\R; et \B;duplique\R; concernent 
+toujours les mesures indiques dans les rectangles \B;de__\R; et \B;__\R;. La 
+dernire mesure est toujours incluse. Par exemple, \B;de25\R; indique que 
+les quatre mesures 2, 3, 4 et 5 sont concernes.\REM;Pour ne prendre qu'une seule mesure, il faut donner deux fois son numro. 
+Par exemple: \B;de1515\R;.Voici un exemple de \B;duplication\R;:\image sigcopy,2,=;\T;2.12 Les transpositions\A;\image sigiton,3;La touche fonction \D;(F9)\F; intitule \D;(Tonalit)\F; permet de transposer 
+rapidement et simplement toute la partition dans n'importe quelle tonalit.\image sigdbton,2,=;Il suffit d'indiquer la \B;nouvelle tonalit\R;, et de \I;cliquer\R; dans 
+\D;(TRANSPOSE)\F;. SIGMA se charge du reste!Par exemple:\image sigdomi,2,=;Ici, SIGMA a transpos de DO  MI, en dplaant vers le haut toutes les notes, 
+et en mettant quatre dises  la clef.Lorsque la tonalit actuelle est DO et que vous voulez transposer en LA, l'cran 
+affiche \B;+9demi-tons\R;. En \I;cliquant\R; dans \B;-uneoctave\R;, l'indication 
+devient \B;-3demi-tons\R;. Il est donc toujours possible de choisir si la transposition 
+doit s'effectuer contre le haut ou contre le bas.Les notes, les silences et les liaisons sont dplaces lors d'une transposition. 
+Par contre, les caractres et autres objets graphiques ne sont pas dplacs. 
+Cela ncessitera ventuellement quelques ajustages manuels.En principe, SIGMA transpose toutes les mesures de la partition. Cependant, 
+si la partition contient plusieurs mesures altres diffremment, seules les 
+mesures adjacentes  la mesure visible, et ayant la mme altration, sont 
+transposes:\image sigtranm,2,=;Dans l'exemple ci-dessus, o la mesure 3 est visible, SIGMA ne transposera que les 
+mesures ayant galement deux bmols, c'est--dire les mesures 2, 3 et 4.\REM;Lors d'une transposition o la nouvelle tonalit est la mme que la tonalit 
+actuelle, \B;SIGMA enlve toutes les altrations accidentelles superflues\R;. 
+Par exemple:\image sigsimpl,2,=;\image sigitran,3;La touche fonction \D;(F8)\F; intitule \D;(Transpose)\F; permet diffrentes 
+\B;transpositions spciales\R;.\image sigdbtran,2,=;Les slecteurs 0  7 indiquent l'\B;amplitude du dplacement\R;, en demi-interlignes, 
+comme suit:\image sigitl,2,=;Les slecteurs "idem", "+1demi-ton", etc. permettent d'ajuster prcisment 
+le \B;nombre total de demi-tons\R; de la transposition, affich en haut  droite de 
+la bote de dialogue.La \B;nouvelle altration\R; s'indique simplement en donnant le nombre de 
+dises ou de bmols, en tapant un chiffre compris entre \D;(0)\F; et \D;(7)\F; 
+au clavier. A la limite, il est possible de modifier l'altration  la clef sans 
+monter ni descendre les notes. SIGMA ajoutera ou enlvera les dises, bmols et 
+bcarres ncessaires devant chaque note!L'exemple ci-dessous montre deux transpositions diffrentes, toutes les deux 
+d'un demi-ton vers le haut:\image sigtrans,2,=;La premire transposition ne dplace pas les notes, mais monte les sons d'un 
+demi-ton. Le rsultat est une mlodie un demi-ton plus haut.La deuxime transposition dplace les notes d'un demi-interligne vers le haut, 
+ce qui a pour effet de monter les sons de deux demi-tons. Le slecteur "-1demi-ton" 
+redescend les sons, ce qui donne galement une mlodie un demi-ton plus haut!\ATTENTION;\REM;Une transposition ncessite parfois d'ajouter quelques altrations 
+accidentelles devant certaines notes. Il faut donc prendre garde  \B;espacer 
+suffisamment les notes\R; lors du dessin d'une partition susceptible d'tre 
+transpose par la suite.\T;2.13 L'impression\A;\image sigiprint,3;L'impression donne de trs bons rsultats avec les imprimantes EPSON (LQ800, 
+LQ1000, LQ1500, etc.). La bote de dialogue suivante permet de choisir les 
+diffrents paramtres d'impression:\image sigdbim,2,=;Le \B;titre\R; est imprim en haut et au milieu de la premire page. 
+L'\B;diteur\R; est imprim juste au-dessous du titre,  gauche, et l'\B;auteur\R; 
+ ct de l'diteur,  droite.\image sigtea,2,=;Ces trois informations sont imprimes en utilisant les graphismes des caractres 
+appels \I;Titre\R;, \I;Editeur\R; et \I;Auteur\R; (voir  la fin du paragraphe2.6.1).Par exemple, pour imprimer le titre avec de plus gros caractres, il faut procder 
+comme suit:\demi;1)\ind 10mm;\I;Cliquer\R; l'icne de la range verticale pour les objets graphiques.2)\ind 10mm;\I;Cliquer\R; dans la touche fonction \D;(F8)\F; intitule \D;(Typo)\F;.3)\ind 10mm;\I;Cliquer\R; dans le slecteur du caractre \I;Titre\R;.4)\ind 10mm;\I;Cliquer\R; dans \D;(MODIFIE)\F;.5)\ind 10mm;Choisir un autre caractre.Les mesures sont \B;justifies\R; dans la ligne, c'est--dire que SIGMA largit 
+les portes entre les mesures pour aligner toutes les mesures  droite.\L;\B;\_dernire porte complte\_\R;\demi;La dernire ligne de portes n'est pas toujours complte. Une petite croix 
+termine cette dernire ligne par une porte vide jusqu' droite.\image sigimpv,2,=;\L;\B;\_justifie la dernire ligne\_\R;\demi;Justifie galement la dernire ligne de portes. Attention: si la dernire 
+ligne ne contient qu'une ou deux mesures, le rsultat n'est pas trs russi!o  \B;\_imprime tout\_\R;o  \B;\_imprime les mesures de __  __\_\R;\demi;Lorsqu'une partition est trs longue, il est parfois utile de n'imprimer qu'un 
+fragment. Le numro de la dernire mesure est inclus.Les \B;quatre marges\R; sont spcifies en millimtres. Pour modifier une marge, 
+un \I;clic\R; de la souris suffit. Il est tout  fait normal que certaines marges 
+ne puissent pas tre nulles (cela dpend de l'imprimante utilise).\ATTENTION;La marge droite n'est pas compte depuis le bord du papier, 
+mais de la largeur maximale de l'imprimante.\image sigimmg,2,=;\REM;Tous les paramtres d'impression sont sauvs avec le fichier \I:.part\R; 
+(titre, diteur, auteur, marges, slecteurs, etc.).La touche \D;(VERIFIE)\F; affiche une \B;vue d'ensemble\R; sur l'cran, 
+avant d'imprimer.\image sigdbimt1,2,=;\REM;Les numros  gauche de chaque page indiquent les numros des premires mesures 
+de chaque ligne.Par dfaut, SIGMA montre les trois premires pages. La touche \D;(+)\F; 
+montre \B;plus de pages simultanment\R;. La touche \D;(_)\F; revient en arrire.\image sigdbimt2,2,=;Lorsque SIGMA justifie les mesures dans une ligne, afin d'aligner les marges 
+gauche et droite, il ajoute des "cales" entre les mesures (au dbut et  la fin). 
+Plus ces cales sont larges, moins bonne sera l'impression. Dans la vue d'ensemble, 
+une cale apparat sous forme d'un vide.\image sigdbimt3,2,=;\REM;Il est particulirement utile de voir les cales lorsque l'option \B;justifie 
+la dernire ligne\R; est enclenche.La demi-flche en bas  droite dtermine la \B;hauteur utilise pour imprimer 
+les mesures\R;.\image sighprint,2,=;\ATTENTION;\REM;Lorsque cette flche est dplace, il faut rpter l'opration 
+dans toutes les mesures!\T;2.14 Le bouton du milieu\A;Le bouton du milieu de la souris prsente toujours le menu suivant:\image sigmmil,3,=;\B;Prend\R;\ind 30mm;Prend une nouvelle partition.\ind 30mm;Equivalent  \D;(SHOW-DEFINE)\F;.\B;Sauve\R;\ind 30mm;Sauve la partition sur disque.\ind 30mm;Equivalent  \D;(COPY-DEFINE)\F;.\B;Ecoute\R;\ind 30mm;Ecoute la mesure courante. Equivalent  \D;(DEFINE)\F;.\B;Imprime\R;\ind 30mm;Imprime toute la partition.\B;Copie\R;\ind 30mm;Duplique la mesure courante.\B;Dtruit\R;\ind 30mm;Dtruit la mesure courante, et prsente la mesure suivante.\T;2.15 La ligne de commande\A;La ligne de commande de SIGMAP peut contenir les indications suivantes:\B;SIGMAP/M\R;\ind 35mm;Utilise un synthtiseur MIDI sur le canal 1 par dfaut.\B;SIGMAP 50%/M\R;\ind 35mm;Utilise la moiti de la mmoire libre pour la partition.\B;SIGMAP 10000/M\R;\ind 35mm;Utilise 10Koctets de mmoire pour la partition.

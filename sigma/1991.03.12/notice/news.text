@@ -1,0 +1,30 @@
+\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define CREM:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\image smakynews,2,=;\saute 5mm;\ur10;\bold;4 mai 1987\carte;No 41\roman;\saute -20mm;\image sigjolis,2,=;\justif;\ur10;
+\B;Produire rapidement des partitions de bonne qualit a toujours pos des 
+problmes\R; aux musiciens, professeurs de musique, directeurs, etc. Avec 
+l'diteur de partitions SIGMAP, rien de plus facile. Jugez plutt:\demi;1)\ind 10mm;Vous \B;dessinez\R; les notes sur l'cran, avec la souris. Des menus 
+permettent d'insrer tous les signes spciaux courants (altrations, silences, 
+points d'orgue, signes de reprise, etc.).\demi;2)\ind 10mm;Vous pouvez demander au SMAKY d'\B;interprter\R; tout ou partie de la 
+partition dessine, permettant ainsi de dceler immdiatement les ventuelles 
+fautes!\demi;3)\ind 10mm;Vous \B;imprimez\R; la partition, prte  l'emploi. En cas de besoin, 
+vous pouvez la transposer dans n'importe quelle tonalit et la rimprimer.\demi;\image sigdpart,2,=;La \B;nouvelle version 1.0\R; de SIGMAP contient les amliorations principales 
+suivantes:\demi;-duolets, triolets, quartolets, etc.\ind 84mm;-copies de mesures-nuances\ind 84mm;-transpositions dans n'importe quelle tonalit-tous les signes de reprises\ind 84mm;-vue d'ensemble avant impressionLe \B;triolet\R; est la \I;division ternaire\R; d'une note. Par exemple, 
+un triolet form de trois croches aura la mme dure que deux croches (ou une noire). 
+Un triolet peut ne pas former un groupe de trois notes gales, \B;pourvu 
+que la somme de ses dures soit quivalente  celles des trois notes gales\R;:\image signote3b,2,=;Avec SIGMA, \B;chaque note possde sa propre nuance\R;, indpendamment des 
+autres notes. Une nouvelle note dessine aura la nuance indique dans le carr 
+en dessus de \D;(F12)\F;:\image signuan,2,=;Les cinq nuances possibles sont:\demi;\B;ff\R;\ind 30mm;\I;Fortissimo\R;\ind 70mm;Trs fort\B;f\R;\ind 30mm;\I;Forte\R;\ind 70mm;Fortm\B;f\R;\ind 30mm;\I;Mezzo forte\R;\ind 70mm;Moyennement fort\B;p\R;\ind 30mm;\I;Piano\R;\ind 70mm;Faible\B;pp\R;\ind 30mm;\I;Pianissimo\R;\ind 70mm;Trs faibleLes \B;signes de reprises\R; permettent d'excuter plusieurs fois de suite certaines 
+parties d'un morceau de musique:\image sigdbrep,2,=;Tous ces signes sont interprts lors de l'\B;coute\R; de la partition, 
+et lors du \B;sauvetage\R; sous forme \I;.midi\R; pour SIGMAS.Les \I;doubles-barres\R; lient les portes entre elles selon les choix 
+effectus:\image sigdblie,2,=;Lorsqu'une partie d'un morceau doit tre \B;excute deux fois de suite\R;, elle 
+est comprise entre deux \I;doubles-barres\R;. 
+Le signe \I;coda\R; indique une partie du morceau qui doit tre saute lors de la 
+reprise:\image sigrep4,2,=;Voici un exemple d'utilisation de plusieurs signes de reprise diffrents:\image sigrep6,2,=;La touche fonction \D;(F9)\F; intitule \D;(Tonalit)\F; permet de transposer 
+rapidement et simplement toute la partition dans n'importe quelle tonalit.\image sigdbton,2,=;Il suffit d'indiquer la \B;nouvelle tonalit\R;, et de \I;cliquer\R; dans 
+\D;(TRANSPOSE)\F;. SIGMA se charge du reste! Par exemple:\image sigdomi,2,=;Ici, SIGMA a transpos de DO  MI, en dplaant vers le haut toutes les notes, 
+et en mettant quatre dises  la clef.\REM;Lors d'une transposition o la nouvelle tonalit est la mme que la tonalit 
+actuelle, \B;SIGMA enlve toutes les altrations accidentelles superflues\R;. 
+Par exemple:\image sigsimpl,2,=;L'impression donne de trs bons rsultats avec les imprimantes EPSON (LQ800, 
+LQ1000, LQ1500, etc.). La bote de dialogue suivante permet de choisir les 
+diffrents paramtres d'impression:\image sigdbim,2,=;La touche \D;(VERIFIE)\F; affiche une \B;vue d'ensemble\R; sur l'cran, 
+avant d'imprimer:\image sigdbimt1,2,=;\REM;Les numros  gauche de chaque page indiquent les numros des premires mesures 
+de chaque ligne.Voici un extrait  l'chelle 1:1 d'une partition imprime sur LQ800:\saute 100mm;\ub20;EPSITEC system sa\carte;\ur10;Chemin de la Mouette, CH-1092 Belmont

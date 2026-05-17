@@ -1,0 +1,54 @@
+\cpage=3;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;1 Introduction\A;Le logiciel \B;SIGMA\R;, crit spcialement pour \B;SMAKY100\R;, permet de commander 
+\B;tout synthtiseur disposant d'une prise MIDI\R;. L'emploi d'un ordinateur 
+pour commander un synthtiseur ouvre des possibilits indites et inconnues jusqu' 
+ce jour. Par exemple, SIGMA est une aide prcieuse pour l'apprentissage de la 
+musique et du solfge, ainsi que pour la composition.Si vous ne disposez pas d'un "vrai" synthtiseur, \B;le gnrateur de sons interne 
+du SMAKY peut tre utilis\R;, jouant ainsi jusqu' trois voix simultanment.\T;1.1 Le standard MIDI\A;Les initiales \B;MIDI\R; signifient \B;Musical Instrument Digital Interface\R;. 
+Ce standard permet de connecter plusieurs instruments lectroniques (synthtiseurs, 
+botes  rythme, etc.) entre eux. 
+Il a l'avantage d'tre respect par tous les constructeurs, 
+qu'ils soient amricains, europens ou japonais.Prenons l'exemple d'un synthtiseur quip MIDI: son clavier commande les 
+gnrateurs internes et en mme temps \B;envoie des informations vers l'extrieur\R;. 
+Son clavier peut donc commander un autre instrument. En outre, son lectronique 
+peut travailler en rception et \B;recevoir les informations d'un ordinateur ou 
+d'un autre clavier\R;. Un tel instrument a besoin de deux prises: \B;MIDIOUT\R; pour 
+l'mission et \B;MIDIIN\R; pour la rception. Comme en outre un clavier doit pouvoir 
+commander plusieurs instruments, certains appareils sont quips d'une 
+troisime prise \B;MIDITHRU\R;, assurant la rmission d'un signal reu.\image sigmidi3,2,=;L'une des caractristiques essentielles du systme MIDI est de pouvoir 
+envoyer les informations sur les synthtiseurs gnrateurs que l'on dsire. 
+Pour cela, il existe \B;16 canaux\R;. Chaque information envoye sur une ligne MIDI 
+comporte un numro de canal, et chaque instrument rpond  un canal diffrent. 
+Ainsi, si l'information reue par un synthtiseur ne contient pas son numro de 
+canal, elle transite par MIDITHRU jusqu'au synthtiseur suivant, jusqu' ce 
+qu'elle trouve preneur.\image sigthru,2,=;Les informations MIDI se dcomposent en plusieurs catgories. La plus importante 
+vhicule des vnements du type \B;note presse\R; ou \B;note relche\R;. 
+Par exemple, l'vnement note presse contient le numro de la note et la vlocit 
+(force de frappe). Une autre catgorie transmet les effets produits par les molettes 
+ gauche du synthtiseur.\REM;Physiquement, la ligne MIDI transmet des mots de huit bits sous forme srielle, 
+comme une ligne RS-232. La vitesse de transmission est de \B;31'250bauds\R;.\T;1.2 Connection d'un synthtiseur\A;Voici le schma de connection de l'\B;interface MIDI\R; plac entre le SMAKY100 et 
+le synthtiseur:\image sigconnec,2,=;Gnralement, le SMAKY envoie ses informations sur le \B;canal MIDI numro un\R;. 
+Le synthtiseur doit donc rpondre  ce canal.Avec un synthtiseur Yamaha\B;FB01\R;, il faut procder comme suit:\demi;\L;appuyer sur la touche \D;(SYSTEMSETUP)\F; jusqu' ce que le synthtiseur 
+affiche: \B;Systemch#\R; (canal MIDI systme)\L;appuyer sur la touche \D;(_1/NO)\F; jusqu' ce que le synthtiseur 
+affiche: Systemch#\B;1\R;Avec un synthtiseur Yamaha\B;DX100\R; ou \B;DX27\R;, il faut procder comme suit:\demi;\L;appuyer sur la touche brune \D;(FUNCTION)\F;\L;appuyer sur la touche verte \D;( 3   )\F; jusqu' ce que le synthtiseur 
+affiche: \B;Midi R Ch=\R; (canal MIDI en rception)\L;appuyer sur la touche verte \D;(_1   )\F; jusqu' ce que le synthtiseur 
+affiche: Midi R Ch= \B;1\R;\L;appuyer sur la touche verte \D;(INTERNAL)\F;Avec un synthtiseur Yamaha\B;DX7\R;, il faut procder comme suit:\demi;\L;appuyer sur la touche brune \D;(FUNCTION)\F;\L;appuyer sur la touche verte \D;( 8   )\F;\L;le synthtiseur affiche: MIDI CH=\L;appuyer sur la touche verte \D;(_1   )\F; jusqu' ce que le synthtiseur 
+affiche: MIDI CH= \B;1\R;\L;appuyer sur la touche verte MEMORY SELECT \D;(INTERNAL)\F;\REM;Lorsque le synthtiseur est teint, il conserve cette information.Il n'est pas ncessaire d'enlever la \B;protection mmoire\R;. En effet, 
+lorsque le SMAKY envoie un groupe de timbres au synthtiseur, c'est lui 
+qui l'enlve et qui la remet lorsque le transfert est termin.\rect 4.8il,0.3mm,0;\pulm;\marge #+5mm;\large #-10mm;\B;ATTENTION\R;:\ind 30mm;\B;Si le synthtiseur contient des timbres 
+importants que vous voulez conserver, il ne faut pas oublier de les sauver au 
+pralable sur disquette (voir paragraphe3.5).\R;\polm;\ATTENTION;Le synthtiseur doit tre enclench \B;avant\R; le dmarrage du 
+programme SIGMA. \B;Pendant le dmarrage de SIGMA, ainsi que lors de la recherche 
+d'un morceau sur disque, il ne faut pas pianoter sur le synthtiseur\R;.\T;1.3 Vue d'ensemble du logiciel\A;Le logiciel SIGMA comporte \B;deux parties principales\R; qui correspondent  deux 
+icnes et  deux fichiers .CODE sur la disquette:\image sig2ico,4,=;\B;SIGMAP\R;\ind 20mm;Editeur de partition permettant de dessiner des symboles 
+musicaux avec la souris (notes, silences, liaisons, etc.), et d'imprimer des 
+partitions de trs bonne qualit.\demi;\B;SIGMAS\R;\ind 20mm;Squenceur multi-pistes permettant d'enregistrer ce qui 
+est jou au clavier, de composer des rythmes, de modifier les timbres des sons, etc.\ATTENTION;Lorsque les morceaux de musique sont placs sur le deuxime lecteur 
+de disquettes (ou dans un dossier), il ne faut pas oublier de crer un \B;accs\R; 
+ SIGMAP et SIGMAS sur la deuxime disquette:\image sigdacces,2,=;\demi;Pour excuter SIGMAP ou SIGMAS, il faut \I;cliquer\R; l'\B;accs\R; (hexagone 
+pointill) avec le bouton de gauche \B;dans la fentre de la deuxime disquette\R;, 
+et non le programme principal (hexagone continu)!Ces deux parties sont interconnectes comme suit:\image sigtout,2,=;Les cercles reprsentent des \B;fichiers sur disquette\R; de natures diffrentes.\B;.PART\R;\ind 20mm;Fichier partition contenant les symboles musicaux, les 
+textes, les lments graphiques, etc.\B;.MIDI\R;\ind 20mm;Fichier MIDI contenant une succession de notes presses 
+(avec la force de frappe) ou relches.\B;.RYTHM\R;\ind 20mm;Fichier rythme contenant une ou plusieurs mesures, avec 
+les noms des diffrentes percussions et les tops de dclenchement.\B;.CFB1\R;\ind 20mm;Fichier contenant la configuration des huit instruments 
+du synthtiseur FB01.\B;.DX100\R;\ind 20mm;Fichier contenant 24 timbres pour le synthtiseur DX100 
+ou DX27.\B;.DX\R;\ind 20mm;Fichier contenant 32 timbres pour le synthtiseur DX7.

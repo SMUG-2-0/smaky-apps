@@ -1,0 +1,4 @@
+\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;
+\marge 40mm;\marsup 40mm;\largeur 120mm;\image smaky100,2,=;\image sigtit1,2,=;\saute -3mm;
+\image sigtit2,3,=;\saute -2mm;
+\image sigtit3,2,=;\centre;\ur12;Daniel ROUX\ub20;EPSITEC-system sa\ur12;Mars 1987

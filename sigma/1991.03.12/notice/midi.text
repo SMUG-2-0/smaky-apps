@@ -1,0 +1,5 @@
+\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\centre;\br80;SIGMA\line 0.2mm;\br20;INTERFACE MIDI\line 0.2mm;\justif;\ur10;Voici le schma de connection de l'interface MIDI plac entre le Smaky100 et 
+le synthtiseur:\image midi,2,=;Le synthtiseur doit rpondre au \bold;canal MIDI numro un\roman;. 
+Par exemple, avec un synthtiseur YamahaDX7, il faut procder comme suit:\L;appuyer sur la touche brunne \D;(FUNCTION)\F;\L;appuyer sur la touche verte \D;( 8   )\F;\L;le synthtiseur affiche: MIDI CH=\L;amener le potentiomtre "DATA ENTRY" tout en bas\L;le synthtiseur affiche: MIDI CH= 1\L;appuyer sur la touche verte MEMORY SELECT \D;(INTERNAL)\F;Lorsque le synthtiseur est teint, il conserve cette information.Le synthtiseur doit tre enclench \bold;avant\roman; le dmarrage du 
+programme SIGMA. Pendant le dmarrage de SIGMA, ainsi que lors de la recherche 
+d'un morceau sur disque, il ne faut pas jouer sur le synthtiseur.\carte;DR 13.12.85

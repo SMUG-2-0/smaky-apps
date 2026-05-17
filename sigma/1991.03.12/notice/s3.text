@@ -1,0 +1,217 @@
+\cpage=52;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;3 Le squenceur\A;\image sigjolis,2,=;SIGMA s'utilise galement comme un \B;enregistreur multi-piste\R;. 
+Vous pouvez par exemple jouer l'accompagnement d'un morceau et l'enregistrer 
+sur la premire piste. Ensuite, tout en coutant la premire piste enregistre, 
+vous jouez la mlodie qui s'enregistre sur la deuxime piste. Et ainsi de suite, 
+jusqu' huit pistes. Et si les huit pistes ne suffisent pas, vous les fusionnez 
+en une seule piste, ce qui laissera de nouveau sept pistes libres pour d'autres 
+voix!\image sigdseq,2,=;Un \B;mtronome\R;, rglable entre 30 et 240 oscillations par minute, 
+vous aide  jouer rgulirement.La \B;vitesse d'excution\R; est ajustable pour permettre, par exemple, 
+d'enregistrer un morceau plus lentement qu'il ne sera reproduit.\image sigiflo,3;\B;Prend\R; ou \B;sauve\R; un morceau sur disquette (fichier .MIDI). 
+Chaque morceau contient une succession de notes rparties entre huit pistes. 
+De plus, il contient galement \B;toutes les mesures du rythme\R; et les \B;noms des 
+timbres utiliss par les diffrents synthtiseurs\R;. Lors de la reprise d'un 
+morceau, SIGMA va donc renvoyer aux synthtiseurs les diffrents timbres  
+utiliser!\T;3.1 Les huit pistes\A;A l'coute, chaque piste peut utiliser un canal MIDI diffrent, donc commander 
+un synthtiseur diffrent. Le canal 16 est d'ailleurs attribu au \B;gnrateur 
+de sons interne du Smaky\R;, ce qui est trs pratique si vous ne disposez pas 
+d'un "vrai" synthtiseur.\image sigtrack,2,=;Les sept premires pistes sont numrotes de 1  7. La huitime piste marque 
+R est rserve pour le rythme. \B;Une piste inutilise est grise\R;.Les \B;huits carrs\R;  gauche des pistes dterminent quelles sont les voix 
+entendues lors de l'coute \D;(PLAY)\F; ou lors d'un enregistrement \D;(RECORD)\F;.Les \B;huit boutons ronds\R; dterminent \B;sur quelle piste s'effectue 
+l'enregistrement\R; \D;(RECORD)\F;. Il ne peut y avoir qu'un seul bouton rond 
+slectionn. Les touches fonctions \D;(F10)\F;, \D;(F11)\F; et \D;(F12)\F; 
+intitules \B;Param.\R;, \B;Son\R; et \B;Filtre\R; agissent galement sur la 
+piste slectionne pour l'enregistrement.\D;(PLAY)\F;\ind 30mm;ou\D;(RETURN)\F;\ind 30mm;\B;Dmarre l'coute\R;  l'endroit montr par la petite flche 
+en haut de la premire piste (indicateur d'avance). 
+\B;Le bouton de gauche de la souris permet d'ailleurs de dplacer cette petite flche\R; 
+directement  l'endroit souhait.\D;(RECORD)\F;\ind 30mm;ou\D;(espace)\F;\ind 30mm;\B;Dmarre l'enregistrement\R;, avec coute simultane de toutes 
+les pistes choisies. Les changements de prslection (touches vertes 1  24 sur 
+le DX100) et les mouvements des deux molettes sont galement enregistrs.\D;(STOP)\F;\ind 30mm;ou\D;(END)\F;\ind 30mm;\B;Stoppe l'coute ou l'enregistrement\R;. En fait, n'importe 
+quelle touche ou action avec la souris stoppe tout.\D;( << )\F;\ind 30mm;ou\D;(TAB)\F;\ind 30mm;\B;Revient au dbut\R; (met la petite flche tout  gauche).Le \B;mtronome\R; permet de marquer chaque temps par un petit top sonore produit 
+dans le haut-parleur du SMAKY. En fonction de la vitesse choisie par l'\B;ascenseur\R;, 
+le mtronome produit de 30  240 tops par minute.\L;\B;\_synthtiseur\_\R;\demi;Si l'on enlve la petite croix, SIGMA force le canal 16 sur les huit pistes, 
+c'est--dire que c'est le gnrateur interne du SMAKY qui est utilis.Si l'on met la petite croix,  SIGMA force le canal 1 sur les sept premires 
+pistes, et le canal 10 (bote  rythme) sur la huitime.\L;\B;\_in --> out\_\R;\demi;Indique que tout ce qui entre dans la prise MIDIIN de l'interface MIDI est 
+\B;retransmis\R; dans la prise MIDIOUT lors d'un enregistrement avec \D;(RECORD)\F;. 
+Ceci est ncessaire si le clavier gnrateur ne produit pas de sons.\image siginout,2,=;\L;\B;\_enregistre tout\_\R;\demi;Normalement, les informations reues dans la prise MIDIIN sont toutes enregistres 
+sur la piste slectionne par le bouton rond, quels que soient les numros de 
+canaux.Si une petite croix est inscrite ici, les informations reues avec le canal 
+1 sont enregistres sur la piste 1, les informations reues avec le canal 
+2 sont enregistres sur la piste 2, etc. Les informations reues sur les canaux 
+9  16 ne sont pas enregistres.Un \I;clic\R; du \B;bouton de droite\R; dans une piste prsente le menu 
+suivant:\image sigmtrack,3,=;\B;Dtruit\R;\ind 30mm;Efface toute la piste, qui devient grise.\B;Dplace\R;\ind 30mm;Dplace la piste montre dans la piste d'enregistrement 
+(slectionne par le petit bouton rond).\B;Duplique\R;\ind 30mm;Fonction identique au dplacement, mais l'original 
+subsiste. Les paramtres de la copie pourront par exemple tre modifis pour rejouer 
+cette piste sur un autre canal MIDI, ou une octave en dessus, etc.\T;3.2 Le ruban perfor\A;\image sigiedit,3;Cette reprsentation montre un fragment d'environ 8secondes d'un morceau de 
+musique, d'une faon semblable aux vieux rubans perfors des pianos mcaniques. 
+\B;L'axe horizontal reprsente le temps\R;, avec un trait vertical  chaque 
+seconde.\B; L'axe vertical reprsente la hauteur des notes\R;, avec un 
+traitill horizontal entre \I;si\R; et \I;do\R;, et un autre entre 
+\I;mi\R; et \I;fa\R;. Le clavier de piano dessin verticalement 
+ gauche aide  reprer la hauteur d'une note.\image sigdedit,2,=;Les traits horizontaux plus ou moins longs correspondent aux \B;notes joues\R;. 
+Plus un trait est fonc, et plus la note a t joue fortement.\ATTENTION;\REM;Les \B;traits verticaux\R;, trs utiles pour reprer une note 
+dans le temps, n'apparaissent \B;que si le mtronome est enclench\R;. Ils 
+apparaissent toutes les secondes si le mtronome est sur \B;30..120\R;, et 
+deux fois par seconde s'il est sur \B;60..240\R;.Les deux \B;ascenseurs\R; permettent de dplacer la partie visible du morceau, 
+soit dans le temps (avec l'ascenseur horizontal), soit dans la hauteur des notes 
+(avec l'ascenseur vertical).Les deux petites flches aux extrmits de l'ascenseur horizontal avancent ou 
+reculent dans le temps d'un demi-cran (environ 4secondes).Les deux petites flches de l'ascenseur vertical montent ou descendent d'une 
+octave.\image sigedit,2,=;L'intrt de cette reprsentation est bien sr de pouvoir \B;corriger, dplacer ou 
+ajouter des notes avec la souris\R;. Ainsi, si vous faites une fausse note en 
+enregistrant un morceau, il n'est plus ncessaire de tout recommencer!Le \B;bouton de gauche\R; dessine une nouvelle note appartenant  la piste 
+dont le numro est indiqu en haut  droite. Un \I;clic\R; dans ce numro passe 
+ la piste suivante. Les \B;huit rectangles gris  droite correspondent  huit forces 
+de frappe diffrentes\R;, qu'il faut choisir avant de dessiner la note.Un \I;clic\R; du \B;bouton de droite\R; dtruit la note montre, pour autant 
+qu'elle appartienne  la piste choisie en haut  droite. Si le bouton de droite 
+est \B;maintenu press\R;, la note est \B;dplace\R; ou \B;modifie\R; selon 
+l'endroit montr:\image signedit,3,=;\T;3.3 Le rythme\A;\image sigirythm,3;Le rythme est \B;dessin avec la souris\R; directement sur l'cran. 
+Chaque ligne horizontale correspond  une ou deux percussions diffrentes 
+(grosse caisse, tambour, cymbale, etc.). 
+Les \I;tops\R; de dclenchement sont dessins avec le \B;bouton de gauche\R;. 
+Le \B;bouton de droite\R; supprime le \I;top\R; montr.\image sigdrythm,2,=;Cette partie du logiciel SIGMA \B;s'adapte  n'importe quelle bote  rythme\R;, 
+jusqu' un maximum de 32 percussions. 
+En effet, les listes des noms de percussion  gauche et des numros correspondant 
+ droite sont modifiables  volont, par un simple \I;clic\R; de la souris  
+l'endroit souhait.L'exemple ci-dessus correspond  la bote  rythmes \B;Roland TR-707\R;. 
+Le fichier TR707.RYTHM contient une mesure vide, avec toutes les dfinitions 
+de percussions de cette bote  rythme.Un rythme est compos de plusieurs mesures diffrentes, permettant ainsi de 
+crer des \I;breaks\R;, des \I;solos\R;, ou d'autres variations. Un \I;clic\R; 
+en haut  gauche permet ventuellement de changer le \B;1x\R; jusqu' \B;999x\R;, 
+pour indiquer le nombre de rptitions de la mesure. L'\B;ascenseur\R; horizontal 
+permet de parcourir l'ensemble des mesures.\image sigiflo,3;\B;Prend\R; ou \B;sauve\R; sur disquette un \B;rythme complet\R; ou 
+\B;seulement une mesure\R; (fichier .RYTHM). L'icne \B;Prend\R; permet 
+d'insrer une ou plusieurs mesures entre la mesure courante et la suivante, 
+en utilisant \D;(AJOUTE)\F;.\image sigirss,3;\B;Dmarre\R; ou \B;stoppe\R; le rythme. \B;Il est possible de travailler sur 
+un rythme sans l'arrter!\R;\image sigirtm,3;Choix du \B;nombre de temps\R; et de la \B;vitesse\R; d'excution.\image sigdbryth,2,=;Normalement, la valeur d'une unit est fixe  64 (\B;Unit:64\R;), ce qui 
+correspond  une noire. Dans certains cas trs spciaux, cette unit peut tre 
+change.Par dfaut, SIGMA choisit de travailler avec un rythme  \B;4temps\R;, 
+subdivis par 16lignes verticales.\image sigirno,3;Chaque ligne horizontale peut correspondre  \B;deux percussions diffrentes\R;. 
+Par exemple: HiHat ouvert ou ferm. Un rectangle plein ou vide permet de distinguer 
+de quelle percussion il s'agit.\image sigirfo,3;Choix de la \B;force de frappe\R; sur la percussion.\image sigires,3;Les \I;tops\R; de dclenchement peuvent tre dessins soit \B;juste sur le temps\R;, 
+soit \B;entre deux temps\R;, soit \B;n'importe o\R;. Ce dernier cas permet des effets de 
+roulement, ou des rythmes trs spciaux.\image sigirco,3;\B;Ajoute\R;\ind 30mm;Ajoute une nouvelle mesure vide entre la mesure courante 
+et la suivante.\B;Copie\R;\ind 30mm;Duplique la mesure courante. La copie devient la nouvelle 
+mesure courante.\B;Dtruit\R;\ind 30mm;Supprime la mesure courante. La mesure suivante devient 
+la mesure courante.Lorsque le rythme est \B;termin\R;, il faut utiliser la touche fonction \D;(F0)\F;. 
+Toutes les mesures du rythme sont alors copies le nombre de fois souhait dans 
+la huitime piste.\REM;Lors de l'appel de la partie rythmique, \B;la mesure visible correspond toujours 
+ l'endroit o l'coute s'est arrte\R; (petite flche en haut de la premire piste). 
+Prenons un exemple: vous coutez un morceau, et, tout  coup, vous vous apercevez 
+que le rythme n'est pas correct. Vous appuyez alors sur \D;(STOP)\F; puis sur 
+la touche fonction intitule \D;(Rythme)\F;. La mesure visible est alors directement 
+la mesure  corriger!\T;3.4 Les paramtres\A;\image sigiparam,3;Chaque piste enregistre possde des paramtres propres, qui sont \B;indpendants 
+des autres pistes\R;. Avec \B;transposition\R;, vous pouvez par exemple 
+dcider de monter d'une octave une voix, sans changer les autres voix:\image sigdparam,2,=;\B;\_Transposition\_\R;\demi;L'ascenseur de gauche correspond au rglage grossier. Chaque pas vaut une 
+octave.L'ascenseur de droite correspond au rglage fin. Chaque pas vaut un demi-ton.\B;\_Amplitude et Dynamique\_\R;\demi;Il est possible de contrler la \B;force de frappe\R; des notes d'une piste, en 
+ajustant l'amplitude et la dynamique. La \B;dynamique\R; permet d'augmenter ou de 
+diminuer la diffrence entre les notes joues \I;pianissimo\R; ou 
+\I;fortissimo\R;.\ATTENTION;\REM;La piste modifie correspond  la piste slectionne pour 
+l'enregistrement (bouton rond).\image sigicanal,3;Choix du \B;canal MIDI\R; (compris entre 1 et 16) utilis pour couter cette piste. 
+Les icnes \D;(_)\F; ou \D;(+)\F; diminuent ou augmentent le numro affich au milieu.La partie suprieure, dans le cadre de la fentre, indique le \B;type du synthtiseur\R; 
+rpondant au canal choisi (DX7, DX100, Rythm, Smaky, etc.).\image sigicansy,3;\B;Synth.\R;\ind 30mm;Utilise le canal MIDI numro 1.\B;Rythm.\R;\ind 30mm;Utilise le canal MIDI numro 10.\B;Smaky\R;\ind 30mm;Utilise le canal MIDI numro 16.\image siginpist,3;Permet de modifier les paramtres de la piste \B;suivante\R;.\image sigippist,3;Permet de modifier les paramtres de la piste \B;prcdente\R;.\T;3.5 Les sons\A;\image sigison,3;Cette icne permet \B;d'accder aux sons du synthtiseur\R;, selon la piste 
+slectionne pour l'enregistrement (bouton rond). Ceci n'est possible que si la 
+piste utilise un synthtiseur Yamaha FB01, DX100, DX27 ou DX7.\REM;Il est possible que cette liste soit complte avec l'arrive de nouveaux 
+synthtiseurs sur le march!\T;3.5.1 Le synthtiseur FB01\A;Le synthtiseur numrique FM YamahaFB01 est une petite bote ayant approximativement 
+la surface d'une feuille A4, sans clavier. Il est particulirement bien adapt pour 
+la composition de partitions avec SIGMAP. Sa principale attraction est de pouvoir 
+jouer \B;simultanment plusieurs sons diffrents\R;, contrairement au DX100, DX27 
+ou DX7. Le FB01 peut jouer simultanment jusqu' 8 notes, rparties entre plusieurs 
+instruments diffrents. Par exemple, il peut jouer la mlodie avec un son de piano, 
+l'accompagnement avec un son d'orgue, et la basse avec un son de guitare:\demi;\L;3 notes: mlodie (piano)\L;4 notes: accompagnement (orgue)\L;1 note: basse (guitare)\demi;\ind 8mm;\B;8 notes au total\R;\image sigdfb01,2,=;\image sigipss,3;Prend ou sauve la configuration dans le synthtiseur.\ATTENTION;Normalement, tous les choix s'effectuent depuis le SMAKY (son, banque, niveau 
+de sortie, etc.). Sitt qu'une modification est faite sur l'cran du SMAKY, le 
+FB01 est mis  jour. \B;Si les modifications sont effectues directement avec les 
+boutons du FB01\R;, le SMAKY n'est pas mis  jour. Dans ce cas, \B;il faut appuyer sur 
+la touche fonction \D;(F4)\F; intitule \D;(PREND)\F; pour mettre  jour le SMAKY\R;. 
+Bien entendu, il faut que la sortie MIDIOUT du FB01 soit connecte  
+l'entre MIDIIN de l'interface MIDI!\image sigifb01b,3;Choix de la \B;banque de son\R; utilise. Une banque contient 48sons figs (ROM). 
+Les cinq banques  disposition permettent donc de choisir un son parmi 240.\image sigifb01i,3;Passe  l'\B;instrument\R; suivant ou prcdent. Chaque instrument est tout  fait 
+indpendant des autres. Par exemple, la banque et le son peuvent tre diffrents 
+pour chaque instrument.\REM;En fait, le FB01 ragit comme s'il tait plusieurs synthtiseurs  lui tout 
+seul, rpondant  plusieurs canaux MIDI diffrents (un par instrument). 
+Le \B;canal systme\R; permet au SMAKY d'adresser le FB01 comme une entit. 
+C'est ce canal qui est dclar dans la \B;configuration\R; (voir paragraphe3.7).\image sigfb01ch,2,=;Dans l'exemple ci-dessus, deux FB01 sont dclars pour rpondre aux canaux 
+systmes 1 et 2. Le premier FB01 joue les notes envoyes sur les canaux 1, 6 et 
+7. Le deuxime FB01 joue les notes envoyes sur les canaux 2, 3, 8 et 12. 
+On remarque que les notes envoyes sur le canal 3 sont joues par un DX100 \B;et\R; 
+par un instrument d'un FB01.\T;3.5.1.1 Accs  la configuration\A;\image sigiacces,3;Accs  tous les paramtres de configuration du FB01.\image sigdfb01c,2,=;Les \B;huit lignes\R; correspondent aux huit instruments possibles. Un \I;clic\R; 
+du \B;bouton de gauche\R; de la souris permet de modifier n'importe quel paramtre. 
+\B;Une petite explication sur le fonctionnement du paramtre apparat tout en bas\R;.\demi;\REM;Cette explication commence toujours par un dise suivit du numro de l'instrument 
+(par exemple: \B;#3\R; pour l'instrument 3).Lorsqu'un paramtre est slectionn, les icnes en bas de l'cran aident  le 
+modifier. \B;Il est toujours possible de taper directement au clavier la valeur 
+du paramtre\R;.\D;(RETURN)\F;\ind 30mm;Passe au paramtre suivant (gnralement en dessous).\D;(SHIFT-RETURN)\F;\ind 30mm;Passe au paramtre prcdent (gnralement en dessus).\D;(TAB)\F;\ind 30mm;Passe au paramtre situ  droite.\D;(SHIFT-TAB)\F;\ind 30mm;Passe au paramtre situ  gauche.\image sigim1p1,3;Les grandes flches augmentent ou diminuent le paramtre de 10 en 10. 
+Les petites flches augmentent ou diminuent d'une unit.\image sigimmm,3;Met la valeur \B;minimale\R;, \B;moyenne\R; ou \B;maximale\R;.\image sigioffon,3;\B;Enclenche\R; ou \B;dclenche\R; le paramtre.\image sigikey,3;Choix d'une \B;touche du clavier\R:. Les flches augmentent ou diminuent d'un demi-ton. 
+Les deux icnes de droite augmentent ou diminuent d'une octave.\image sigister,3;Choix du \B;canal strophonique\R; (gauche, milieu ou droite).\image sigipoly,3;Choix du mode \B;polyphonique\R; ou \B;monophonique\R;.\B;\_Ch. MIDI\_\R;\demi;Canal MIDI de l'instrument. Plusieurs instruments peuvent trs bien utiliser 
+le mme canal, avec des sons diffrents par exemple.\image sigfb01m,2,=;\B;\_Nb\_\R;\demi;Nombre maximal de notes attribues  l'instrument. \B;La somme de tous les 
+nombres de cette colonne ne doit pas dpasser 8!\R; La valeur zro indique que 
+l'instrument n'est pas utilis. Par exemple: \B;43100000\R; indique que l'on 
+dsire utiliser seulement les trois premiers instruments.\B;\_Limite basse\_\R;\B;\_Limite haute\_\R;\demi;Si les notes limites sont diffrentes de \B;C-2\R; et \B;G8\R;, cela signifie 
+que toutes les notes non comprises dans l'intervalle ne seront pas joues par 
+cet instrument.\B;\_Bank\_\R;\B;\_Son\_\R;\B;\_Nom\_\R;\demi;Numro de banque et de son utiliss par l'instrument. La colonne \B;Nom\R; indique 
+en clair le son rsultant des deux numros \I;Bank\R; et \I;Son\R;.\B;\_Niveau\_\R;\demi;Niveau de sortie (volume) de l'instrument.\B;\_Octave\_\R;\demi;Transposition de l'instrument, de deux octaves au maximum vers le haut ou vers 
+le bas. Par exemple: \B;+1\R; indique une transposition d'une octave vers le haut.\B;\_Dsaccord\_\R;\demi;Le dsaccordage d'instruments peut tre utilis pour produire des effets de 
+chorus.\B;\_Stro\_\R;\demi;Choix du canal strophonique utilis par l'instrument: gauche, milieu (gauche 
+et droite) ou droite.\B;\_LFO\_\R;\demi;Active ou dsactive le LFO (oscillateur  basse frquence).\T;3.5.2 Le synthtiseur DX100 ou DX27\A;Le synthtiseur numrique FM YamahaDX100 dispose d'un clavier  espacement rduit 
+de 4 octaves. Le DX27 a exactement la mme lectronique, mais avec un clavier 
+normal de 5 octaves. Ces deux claviers sont insensibles au toucher, contrairement 
+au DX7. Le DX100 et le DX27 sont capables de jouer 8 notes au maximum, 
+toutes avec le mme son  un instant donn.\ATTENTION;\REM;Lorsque l'on utilise un DX27, il faut toujours indiquer \B;DX100\R; 
+ SIGMA!\image sigdson,2,=;Les 24 noms visibles dans la partie suprieure correspondent aux \B;24 prslections\R; 
+du DX100. Un \I;clic\R; du \B;bouton de gauche\R; dans l'un des noms visibles 
+donne immdiatement l'ordre au synthtiseur d'utiliser ce timbre.\image sigipsd,3;\B;Prend\R; ou \B;sauve\R; les 24 timbres de la partie suprieure \B;sur disquette\R;.\image sigipss,3;\B;Prend\R; ou \B;sauve\R; les 24 timbres de la partie suprieure \B;dans le 
+synthtiseur\R;. L'opration \B;Prend\R; n'est possible que si la sortie MIDIOUT 
+du synthtiseur est connecte  l'entre MIDIIN de l'interface MIDI.\ATTENTION;\REM;L'opration \I;sauve dans le synthtiseur\R; \B;dtruit tous les 
+timbres contenus dans le synthtiseur\R;! S'ils sont prcieux, utilisez avant 
+l'opration \I;prend dans le synthtiseur\R; puis \I;sauve sur disquette\R; pour 
+les conserver.\image sigpsds,2,=;Les 24 cases de la partie infrieure servent de \B;cases temporaires\R;, qui 
+ne sont pas modifies par les oprations \B;prend\R; et \B;sauve\R;. 
+Ceci est trs pratique pour construire des groupes de 24 timbres sur la base de 
+timbres parpills dans diffrents fichiers.Un \I;clic\R; du \B;bouton de droite\R; supprime le timbre montr. Si le bouton 
+de droite est \B;maintenu press\R;, le timbre est dplac, par exemple dans une 
+case temporaire.\REM;La \B;suppression d'un timbre\R; produit en fait le timbre le plus simple 
+que peut gnrer le synthtiseur, c'est--dire une sinusode.\T;3.5.2.1 Accs  un timbre\A;\image sigiacces,3;Les timbres prsents sur disquette ne sont que des exemples. \B;Vous pouvez trs 
+bien en crer une infinit d'autres\R;.Le synthtiseur numrique FM YamahaDX100 ou DX27 utilise des \B;ondes sinusodales\R; 
+pures dont l'interaction permet de crer \B;l'ensemble du spectre harmonique de tous 
+les sons\R;. Chaque oscillateur sinusodal numrique est combin avec son propre 
+gnrateur d'enveloppe pour former un \B;oprateur\R;.Chaque fois qu'une note est joue, le DX100 utilise \B;quatre oprateurs\R;. 
+L'cran ci-dessous montre l'\B;ensemble des paramtres\R; permettant de synthtiser 
+un son quelconque. Certains paramtres sont globaux, et d'autres ne concernent 
+qu'un oprateur.\image sigddx100,2,=;Un \I;clic\R; du \B;bouton de gauche\R; dans n'importe quel paramtre permet 
+de le modifier. \B;Une petite explication sur le fonctionnement du paramtre 
+apparat tout en bas\R;.Lorsqu'un paramtre est slectionn, les icnes en bas de l'cran aident  le 
+modifier. \B;Il est toujours possible de taper directement au clavier la valeur 
+du paramtre\R;.\D;(RETURN)\F;\ind 30mm;Passe au paramtre suivant (gnralement en dessous).\D;(TAB)\F;\ind 30mm;Passe au paramtre situ  droite.\D;(UNDO)\F;\ind 30mm;Remet la valeur initiale du paramtre.\D;(SHIFT-UNDO)\F;\ind 30mm;Remet les valeurs initiales de tous les paramtres.\image sigim1p1,3;Les grandes flches augmentent ou diminuent le paramtre de 10 en 10. 
+Les petites flches augmentent ou diminuent d'une unit.\image sigimmm,3;Met la valeur \B;minimale\R;, \B;moyenne\R; ou \B;maximale\R;.\image sigioffon,3;\B;Enclenche\R; ou \B;dclenche\R; le paramtre.\image sigiwave,3;Choix de la \B;forme d'onde\R; du LFO, c'est--dire de l'oscillateur basse 
+frquence (Low Frequency Oscillator).\image sigikey,3;Choix d'une \B;touche du clavier\R:. Les flches augmentent ou diminuent d'un demi-ton. 
+Les deux icnes de droite augmentent ou diminuent d'une octave.\image sigipoly,3;Choix du mode \B;polyphonique\R; ou \B;monophonique\R;.\image sigifull,3;Choix du mode de \B;portamento\R;, possible uniquement en mode monophonique.\T;3.5.2.2 Choix de l'algorithme\A;Lorsque qu'un oprateur \B;module\R; un second oprateur, un spectre d'harmoniques 
+complet est cr, qui peut produire toute une srie de formes d'onde complexes, 
+y compris les formes traditionnelles triangulaires, en dent de scie et rectangulaires. 
+Et ceci, avec deux oprateurs seulement!Les oprateurs ne doivent pas ncessairement tre connects \B;verticalement\R;. 
+Les sorties des deux oprateurs peuvent tre combines, de la mme faon que les 
+registres d'un orgue sont combins. Dans ce cas, les sons s'additionnent, sans 
+effet de modulation.Les quatre oprateurs du DX100 peuvent se combiner de diffrentes faons. 
+Chaque combinaison d'oprateurs s'appelle \B;algorithme\R;. La case en haut  
+gauche de l'cran reprsente l'algorithme. Un \I;clic\R; avec le \B;bouton de 
+droite\R; prsente les huit possibilits:\image sigdal100,2,=;\T;3.5.2.3 Dessin des enveloppes\A;Un \I;clic\R; du \B;bouton de droite\R; dans l'un des paramtres du gnrateur 
+d'enveloppes permet de modifier \B;graphiquement\R; les quatre enveloppes:\image sigden100,2,=;Le \B;bouton de gauche\R; permet alors de \B;dplacer n'importe quel point d'une 
+enveloppe\R;.\ATTENTION;Pour plus de dtails sur la cration d'un timbre, consultez le \B;manuel 
+d'utilisation du synthtiseur\R;, qui est trs complet.\T;3.5.3 Le synthtiseur DX7\A;Le synthtiseur numrique FM YamahaDX7 dispose d'un clavier sensible au 
+toucher (force de frappe) de 5octaves. Il est capable de jouer 16 notes au maximum, 
+toutes avec le mme son  un instant donn.\T;3.5.3.1 Accs  un timbre\A;Le synthtiseur DX7 ressemble beaucoup au DX100, DX27 ou FB01. Il possde 
+6 oprateurs (contre4), et 32 algorithmes (contre8). Voici tous les paramtres 
+du DX7:\image sigddx7,2,=;\T;3.5.3.2 Choix de l'algorithme\A;Choix de l'algorithme du DX7:\image sigdal7,2,=;\T;3.5.3.3 Dessin des enveloppes\A;Dessin des enveloppes du DX7:\image sigden7,2,=;\T;3.6 Le filtre\A;\image sigifilt,3;Un morceau jou au clavier comporte forcment des imperfections. Le \B;filtre\R; 
+permet de rectifier toutes les imprcisions temporelles.\image sigdbfilt,2,=;\ATTENTION;\REM;Le filtre agit sur la piste slectionne pour l'enregistrement 
+(bouton rond).\B;\_Notes de __  __\_\R;\demi;Dtermine quelles sont les notes qui seront concernes par le filtre. Par 
+dfaut, \B;do0si9\R; signifie toutes les notes.\L;\B;\_dbut note\_\R;\demi;Dplace le dbut des notes, c'est--dire l'instant o la touche du clavier 
+est presse.\L;\B;\_fin note\_\R;\demi;Dplace la fin des notes, c'est--dire l'instant o la touche du clavier 
+est relche.\REM;Il est souvent intressant de ne filtrer \B;que le dbut des notes\R;, pour 
+rendre le morceau plus prcis, sans toutefois enlever toute l'interprtation!o  \B;\_1/1  ronde\_\R;o  \B;\_1/2  blanche\_\R;o  \B;\_1/4  noire\_\R;o  \B;\_1/8  croche\_\R;o  \B;\_1/16 double-croche\_\R;o  \B;\_1/32 triple-croche\_\R;\demi;Choix de la finesse (ou du pas) du filtre. Avec le \B;ruban perfor\R; et le 
+mtronome sur \B;30..120\R;, il y a une blanche (1/2) d'une barre verticale  
+l'autre. Lorsque le mtronome est sur \B;60..240\R;, il y a une noire (1/4) d'une 
+barre  l'autre.\L;\B;\_piste (1..8) __\_\R;\demi;Modifie la piste des notes filtres. Lorsque deux voix ont t joues par erreur 
+sur la mme piste, cette possibilit permet de les sparer.Prenons un exemple. La piste 1 contient le mlodie et la basse d'un morceau. 
+L'opration \I;filtre\R; avec \B;Notesdedo0do2\R; et \B;piste(1..8)\_2\_\R; 
+dplacera la basse (notes de do0  do2) sur la piste 2.Voici un exemple o le \B;dbut\R; et la \B;fin\R; des notes sont filtrs:\image sigfiltre,2,=;On constate que les notes trs courtes ont compltement disparues!\T;3.7 La configuration\A;\image sigiconf,3;La configuration dtermine quels sont les synthtiseurs, botes  rythmes, 
+etc. \B;connects au SMAKY\R;, et \B;quels canaux MIDI ils utilisent\R;.\image sigdconf,2,=;La touche \D;(RETURN)\F; passe au nom suivant. Un \I;clic\R; de la souris est 
+galement possible. Le canal 16 intitul \B;Smaky\R; ne peut pas tre modifi.\ATTENTION;Lorsque plusieurs synthtiseurs sont connects comme indiqu au 
+paragraphe1.1, \B;le synthtiseur dont la prise MIDIOUT est connecte  la prise 
+MIDIIN de l'interface MIDI doit obligatoirement rpondre au canal 1\R;.\REM;La configuration est \B;sauve sur disquette\R; dans le fichier 
+\B;100_MIDI.INFO\R;.

@@ -1,0 +1,10 @@
+\cpage=64;\debutpage:\\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;\marge 40mm;\marsup 40mm;\\ur10;\ind 55mm;- \cpage; -\cpage=+;\;\largeur 120mm;\define T:\ub20;\up 2.5mm;\line 0.2mm,120mm;\down 2.5mm;\define A:\ur10;\up 1.5mm;\line 0.2mm,120mm;\down 1.5mm;\define B:\pug;\bold;\define I:\pug;\ital;\define R:\pog;\define D:\pug;\phchgen krp28;\define F:\pog;\define L:\up 2mm;\rect 2mm,0.2mm,0,2mm;\down 2mm;\ind 8mm;\define REM:\bold;REMARQUE\roman;:\ind 30mm;\define SREM:\ind 30mm;\define C:\pug;\phchgen krp28;\code 3;\pog;\define NOUVEAU:\pulm;\pug;\marge #-10mm;\phchgen fmp46;n\bl;\pog;\polm;\define ANCIEN:\pulm;\pug;\marge #-10mm;\phchgen fmp46;o\bl;\pog;\polm;\define ATTENTION:\pulm;\pug;\marge #-10mm;\phchgen fmp46;!\bl;\pog;\polm;\T;3.5 Les sons\A;\image sigison,3;Cette icne permet \B;d'accder aux sons du synthtiseur\R;, selon la piste 
+slectionne pour l'enregistrement (bouton rond). Ceci n'est possible que si la 
+piste utilise un synthtiseur Yamaha FB01, DX100, DX27 ou DX7.\REM;Il est possible que cette liste soit complte avec l'arrive de nouveaux 
+synthtiseurs sur le march!\T;3.5.1 Le synthtiseur FB01\A;Le synthtiseur numrique FM YamahaFB01 est une petite bote ayant approximativement 
+la surface d'une feuille A4, sans clavier. Il est particulirement bien adapt pour 
+la composition de partitions avec SIGMAP. Sa principale attraction est de pouvoir 
+jouer \B;simultanment plusieurs sons diffrents\R;, contrairement au DX100, DX27 
+ou DX7. Le FB01 peut jouer simultanment jusqu' 8 notes, rparties entre plusieurs 
+instruments diffrents. Par exemple, il peut jouer la mlodie avec un son de piano, 
+l'accompagnement avec un son d'orgue, et la basse avec un son de guitare:\demi;\L;3 notes: mlodie (piano)\L;4 notes: accompagnement (orgue)\L;1 note: basse (guitare)\demi;\ind 8mm;\B;8 notes au total\R;

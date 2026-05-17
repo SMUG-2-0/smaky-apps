@@ -1,0 +1,4 @@
+\marge 25mm;\marsup 35mm;\rect 212mm,0.1mm,0,150mm;
+\marge 40mm;\marsup 40mm;\largeur 120mm;\image smaky100m,2,=;\image sigtit1m,2,=;\saute -3mm;
+\image sigtit2m,3,=;\saute -2mm;
+\image sigtit3m,2,=;
