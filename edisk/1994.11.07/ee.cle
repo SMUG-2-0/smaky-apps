@@ -1,0 +1,1 @@
+cle ask EDISK.CODE KB.DI<cr>D<F0><F1>execute edisk/n #mm2:valise B.DIpause 50execute edisk #B:deinstall #B:execute FCOPYexecute sma_recup #mm2:tflo {6}ask TFLO.CODE <F4><F1><F1>

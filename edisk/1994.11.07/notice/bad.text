@@ -1,0 +1,43 @@
+\ver 1;\disable <cr>;\zoom;\width 7pt;\hauteur 296.5mm;\marsup 24.9mm;\marinf 13mm;\interligne 15pg;\large 0mm;\marge 20.1mm;\large 203.3mm;\dimcar 11pg,3pg,9pg;\disable justmode textdef textfact;\disable justif drapeau drapd centre;\disable marge large renf newtab justtab;\disable coupe nocoupe label <tab>;\justmode 100,10,5;\textdef 219;\textfact 4,4;\enable <cr>;\define g_Fond:\q(f)7pg;\define g_Evidence:\q(bf)7pg;\define g_titre:\m(f)17pg;\g_Fond;\centre;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;\hn 125pg;\g_titre;L'diteur de disque EDISK\g_Fond;\justif;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;EDISK est \h 9pg;un logiciel \h 9pg;permettant l'accs \h 9pg; une mmoire de masse 
+bloc \h 9pg; \h 9pg;bloc. \h 9pg;Ce \h 9pg;programme \h 9pg;est indispensable pour permettre de 
+corriger des erreurs \h 9pg;produitent par une \h 9pg;mauvaise manipulation de 
+disquette ou pour d'autres raisons incontrles.\centre;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;\hn 55pg;\g_titre;Correction d'une valeur de contrle\g_Fond;\justif;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;Le gestionnaire \h 9pg;de fichier \h 9pg;place dans \h 9pg;les blocs \h 9pg;de liste et de 
+description une valeur fixe au \h 9pg;formatage (unique par disque). Si 
+cette valeur est diffrente  la lecture \h 9pg;d'un bloc de ce type, il 
+y a \h 9pg;une erreur \h 9pg;grave (changement \h 9pg;de disquette \h 9pg;sans refermer la 
+prcdente) qui \h 9pg;peut ventuellement \h 9pg;devenir permanente (criture 
+d'un bloc sur la mauvaise disquette).Dans les cas ou le programme SMA_RECUP signale une erreur anormale 
+dans les numros de contrle, il faut utiliser EDISK pour corriger 
+cela.\image BAD01,1,28.5mm;Un cas semblable peut se prsent avec des blocs de description:\image bad11,1,27.4mm;Ce genre de problmes interdit en \h 9pg;gnrale l'accs  la disquette 
+par le message "RELEASE pas fait".\image bad02,1,0mm;Aprs \h 9pg;avoir \h 9pg;charger \h 9pg;EDISK \h 9pg;et \h 9pg;choisi l'unit  corriger, EDISK 
+explore le disque. Les dfauts rencontrs sont signaler en inverse 
+vido sur les touches programmables SHIFT-F7 et SHIFT-F8.\image bad03,1,0mm;Une pression sur \h 9pg;cette touche slectionne \h 9pg;le bloc dfectueux. La 
+touche \h 9pg;programmage \h 9pg;"CHK" \h 9pg;disparat \h 9pg;s'il \h 9pg;n'y \h 9pg;a \h 9pg;plus \h 9pg;de bloc 
+problmatiques.Il \h 9pg;est \h 9pg;possible \h 9pg;de \h 9pg;corriger \h 9pg;le \h 9pg;bloc \h 9pg;avec la fonction "Edit" 
+(touche F8). \h 9pg;Il faut \h 9pg;s'assurer que \h 9pg;les noms \h 9pg;de fichiers soient 
+corrects et modifier le CHK par une pression sur RETURN.\image bad04,1,0mm;Le cas des blocs de description est semblable.\image bad12,1,0mm;Aprs \h 9pg;modification, \h 9pg;utiliser \h 9pg;END \h 9pg;ou \h 9pg;F0 \h 9pg;pour \h 9pg;quitter le mode 
+d'dition et utiliser Write (F9) pour mettre  jour le bloc sur la 
+mmoire de masse.\image bad05,1,0mm;Erreur de bloc utiliss  double sur l'unit de masse.\image bad21,1,20.6mm;Aprs \h 9pg;chargement \h 9pg;du \h 18pg;programme \h 9pg;EDISK \h 9pg;et \h 18pg;choix \h 9pg;de \h 9pg;l'unit, 
+l'exploration du \h 9pg;disque va \h 9pg;signaler aprs \h 9pg;quelques secondes une 
+erreur "2*BLK" sur la touche SHIFT-F8.\image bad22,1,0mm;Aprs pression \h 9pg;sur SHIFT-F8, \h 9pg;le bloc \h 9pg;concern est \h 9pg;slectionn. 
+EDISK signale  quels fichiers ce bloc est attribu.\image bad23,1,0mm;Il \h 9pg;faut \h 9pg;utiliser \h 9pg;la \h 9pg;fonction \h 9pg;Rewind \h 9pg;ou \h 9pg;Rew2 (F4 ou F5) pour 
+arriver au bloc de descrition ou de liste de l'un des fichiers. Il 
+faut \h 9pg;supprimer \h 9pg;le \h 9pg;fichier \h 9pg;qui \h 9pg;ne \h 9pg;correspond \h 9pg;pas \h 9pg;au donnes 
+contenues dans le bloc  double.\centre;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;\hn 69pg;\g_titre;Rcupration d'un fichier dtruit\g_Fond;\justif;\interligne 15pg;\marge 20.1mm;\large 169.4mm;\renf 0mm;\newtab 45.2mm;\justtab n;\nocoupe;Le \h 9pg;gestionnaire \h 9pg;dtruit \h 9pg;les \h 9pg;fichiers \h 9pg;en \h 9pg;supprimant le nom du 
+fichier de liste SYS_LIST ou DOSSIER.DIR. En fait le nom n'est pas 
+entirement \h 9pg;effac, \h 9pg;mais \h 9pg;copi \h 9pg;dcal \h 9pg;d'un \h 9pg;caractre vers la 
+droite, le premier caractre du nom devenant un nul.Un \h 9pg;fichier \h 9pg;ainsi \h 9pg;dtruit \h 9pg;peut \h 9pg;tre \h 9pg;rcuprer facilement avec 
+l'diteur de \h 9pg;disque,  \h 9pg;condition d'agir \h 9pg;rapidement avant que de 
+nouveaux fichiers viennent prendre la place du fichier dtruit.Un clic avec \h 9pg;un bouton de \h 9pg;la souris permet \h 9pg;de se placer dans le 
+dossier o \h 9pg;le fichier \h 9pg;a t \h 9pg;dtruit. Il est ensuite possible de 
+retrouver \h 9pg;le \h 9pg;fichier \h 9pg;par \h 9pg;son \h 9pg;nom \h 9pg;en \h 9pg;utilisant \h 9pg;la \h 9pg;fonction 
+Hach(F7) et en donnant le nom.\image bad31,1,0mm;\image bad32,1,0mm;Aprs deux pression sur RETURN le bloc de liste devant contenir le 
+fichier \h 9pg;est \h 9pg;slectionn \h 9pg; \h 9pg;l'cran. \h 9pg;Le \h 9pg;fichier \h 9pg;dtruit \h 9pg;doit 
+apparatre en demi-intensit. \h 9pg;Si ce n'est \h 9pg;pas le cas utiliser la 
+fonction Next (SHIFT-F3) pour explorer plus en avant le fichier de 
+liste.\image bad33,1,0mm;\image bad34,1,0mm;Passer dans \h 9pg;le mode \h 9pg;d'dition, puis \h 9pg;utiliser la \h 9pg;touche F5 pour 
+rtablir le nom du fichier. Terminer \h 9pg;l'dition (F0) puis faire la 
+mise  jour (F9). Procder de mme pour d'autres fichiers.\image bad35,1,0mm;ATTENTION, \h 9pg;il \h 9pg;est \h 9pg;ensuite \h 9pg;indispensable, \h 9pg;aprs \h 9pg;avoir quitter 
+EDISK, \h 9pg;d'excuter \h 9pg;le \h 9pg;programme \h 9pg;SMA_RECUP sur l'unit corrige. 
+Cette opration \h 9pg; pour \h 9pg;but de \h 9pg;rserver  \h 9pg;nouveau les blocs des 
+fichiers rtablis.
